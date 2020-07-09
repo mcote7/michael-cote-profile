@@ -9,10 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.carousel-inner {
-  height: 550px!important;
-}
+
+
 .myCert {
-  height: 300px!important;
-  width: 400px!important;
+  height: 250px!important;
+  width: 350px!important;
+  border-radius: 24%!important;
+  transition: 1s;
+}
+.myCert:hover {
+transform: scale(1.5);
 }
