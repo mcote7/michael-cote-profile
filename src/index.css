@@ -8,15 +8,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-
+/* ----------Cert component---------------------------- */
 .myCert {
   height: 250px!important;
   width: 350px!important;
-  border-radius: 24%!important;
+  border-radius: 8%!important;
   transition: 1s;
 }
 .myCert:hover {
-transform: scale(1.5);
+  transform: scale(2);
+  box-shadow: 0 0 0 1px rgb(97, 218, 251);
 }
+/*,15px 17px 20px rgba(255,255,255,.45) */
+
+/* -----------End Cert Component------------------------ */
