@@ -21,7 +21,7 @@ const MainPage = () => {
         </div>
       </div>
       <div className="titleQuote col-xl-7">
-        <img src={self} className="mySelf rounded-circle float-right ml-5" alt="self"/>
+        <img src={self} className="mySelf rounded-circle float-right ml-3" alt="self"/>
         <h4 className="quote">~ 
           Dedicated and motivated professional seeking an opportunity to showcase my creative and 
           technical proficiency.  My goal is to attain a position which will provide an opportunity 

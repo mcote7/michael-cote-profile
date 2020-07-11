@@ -1,6 +1,11 @@
 /* ------------------------ */
 .yellowWar {
+  display: inline-block!important;
   color: #ffee58!important;
+  cursor: pointer;
+}
+.yellowWar:hover {
+  color: black!important;
 }
 .titleCont {
   margin-left: 3rem !important;
@@ -28,9 +33,10 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  transition: 5.5s;
+  transition: 1.5s;
 }
 .quote:hover {
+  cursor: pointer;
   transform: skewX(-12deg);
   color: rgb(97, 218, 251);
 }
