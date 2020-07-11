@@ -1,24 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import Certificates from './components/carousel';
+import Education from './components/education/education';
+import {Route, Switch} from 'react-router-dom';
+import NavBar from './components/navigation';
+import TechnicalSkills from './components/technicalSkills';
+import MainPage from './components/mainPage';
 
-function App() {
-  return (
+class App extends Component {
+
+  render() {
+    return(
     <div className="App">
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-sm-12">
-            <h1 className="m-5">Hello there</h1>
-          </div>
+        <div className="row fullScreen">
+          <MainPage/>
         </div>
-        <div className="row">
-          <div className="col-sm-12">
-            <Certificates/>
-          </div>
+        <div className="row fullScreen">
+          <Switch>
+            <Route exact path="/technical-skills" component={TechnicalSkills}/>
+            <Route exact path="/education" component={Education}/>
+          </Switch>
         </div>
       </div>
+      <NavBar/>
     </div>
-  );
+    );
+  }
 }
-
 export default App;
