@@ -8,7 +8,6 @@ import ReduxInfo from './reduxInfo';
 import ReactInfo from './reactInfo';
 import '@brainhubeu/react-carousel/lib/style.css';
 import '../../css/education.css';
-import {onRoute} from '../../utilities/onRoute';
 
 class Education extends React.Component {
   constructor() {
@@ -37,7 +36,11 @@ class Education extends React.Component {
       else if(this.state.value === 0) return ( <ReactInfo/> );
     }
   componentDidMount() {
-    onRoute();
+    const height = document.body.scrollHeight;
+    window.scrollTo({top: 0});
+    setTimeout(()=> {
+      window.scrollTo({top: height/2.9, behavior: 'smooth'});
+    }, 100);
   }
   render() {
     return (
@@ -62,7 +65,8 @@ class Education extends React.Component {
         onChange={this.onchange}
         />
       </div>
-      <div className="col-lg-6 mt-2">
+      <div className="col-1 m-0 p-0 hidden"></div>
+      <div className="col-lg-5 mt-2">
         {this.onImageSwitch()}
       </div>
       </React.Fragment>

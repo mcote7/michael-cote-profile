@@ -29,3 +29,15 @@
     border-top: 1px solid rgb(97, 218, 251)
   }
 }
+/* ----------Dojo Component-------------------- */
+.dojoTitle {
+  color: rgb(97, 218, 251);
+}
+.dojoSub {
+  line-height: 0;
+}
+.dojoList {
+  margin-bottom: 25vh!important;
+  align-items: center!important;
+  font-size: 1.5rem;
+}
