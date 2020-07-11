@@ -8,6 +8,7 @@ import ReduxInfo from './reduxInfo';
 import ReactInfo from './reactInfo';
 import '@brainhubeu/react-carousel/lib/style.css';
 import '../../css/education.css';
+import {onRoute} from '../../utilities/onRoute';
 
 class Education extends React.Component {
   constructor() {
@@ -36,8 +37,7 @@ class Education extends React.Component {
       else if(this.state.value === 0) return ( <ReactInfo/> );
     }
   componentDidMount() {
-    const height = document.body.scrollHeight;
-    window.scrollTo({top: height, behavior: 'smooth'});
+    onRoute();
   }
   render() {
     return (
@@ -54,7 +54,7 @@ class Education extends React.Component {
           arrowRightDisabled={<span><i className="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></span>}
           addArrowClickHandler
         />
-        <hr style={{borderTop: "1px solid rgb(97, 218, 251)"}}/>
+        <hr className="carouselHR"/>
         <Dots
         number={this.state.thumbnails.length}
         thumbnails={this.state.thumbnails}

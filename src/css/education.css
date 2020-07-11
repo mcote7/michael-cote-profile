@@ -1,5 +1,4 @@
 /* ----------Education component---------------------------- */
-
 .myCertThumb {
   height: 80px!important;
   width: 140px!important;
@@ -20,11 +19,13 @@
   color: rgb(97, 218, 251);
   cursor: pointer;
 }
-
 /* -----------End Education Component----------------------- */
-
+/*  */
 @media only screen and (max-width: 768px) {
   .myCertThumb {
     display: none;
+  }
+  .carouselHR {
+    border-top: 1px solid rgb(97, 218, 251)
   }
 }

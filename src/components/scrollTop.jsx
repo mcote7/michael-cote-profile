@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Dummy = () => {
+const ScrollTop = () => {
   useEffect(() => {
     window.scrollTo({top: 0, behavior: 'smooth'})
   },[]);
@@ -8,4 +8,4 @@ const Dummy = () => {
     <div className="dummy m-0 p-0">dum-dum</div>
   );
 }
-export default Dummy;
+export default ScrollTop;

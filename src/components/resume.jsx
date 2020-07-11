@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { onRoute } from './../utilities/onRoute';
 
-const Home = () => {
+const Resume = () => {
   useEffect(() => {
     onRoute();
   },[])
   return (
-    <h1>Technical Skills</h1>
+    <h1>Resume</h1>
   );
 }
 
-export default Home;
+export default Resume;
