@@ -2,7 +2,7 @@
 .myCertThumb {
   height: 80px!important;
   width: 140px!important;
-  box-shadow: 0 0 0 1px rgb(97, 218, 251);
+  box-shadow: 0 0 0 1px #ffee58;
 }
 .myCertImg {
   height: auto!important;

@@ -1,5 +1,9 @@
 /* ------------------------ */
+.yellowWar {
+  color: #ffee58!important;
+}
 .titleCont {
+  margin-left: 3rem !important;
   text-align: left!important;
   line-height: 0!important;
 }
@@ -13,8 +17,10 @@
   letter-spacing: 1.9rem;
   font-size: 1.7rem;
   font-weight: 600;
+  padding-bottom: 1rem;
 }
 .titleQuote {
+  margin-left: 3rem !important;
   line-height: 1;
   margin-top: -12rem!important;
 }
@@ -28,3 +34,171 @@
   transform: skewX(-12deg);
   color: rgb(97, 218, 251);
 }
+.mySelf {
+  border: outset;
+  border-color: rgb(97, 218, 251);
+  border-width: 5px;
+  max-width: 111px;
+  animation: 2.5s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-right: -145%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+.titleLinks {
+  display: inline-flex;
+  line-height: 3;
+}
+.titleAtag {
+  color: rgb(97, 218, 251)!important;
+}
+/* --------------------------------------------- */
+@media only screen and (max-width: 1295px) {
+  .titleName {
+    line-height: 0.9!important;
+    font-size: 7.5rem;
+    font-weight: 500;
+  }
+  .titleSub {
+    color: rgb(97, 218, 251);
+    letter-spacing: 1.4rem!important;
+    font-size: 1.9rem;
+    font-weight: 400;
+  }
+  .quote {
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  font-weight: 200;
+  transition: 5.5s;
+  }
+}
+/* ------------------------------------------- */
+@media only screen and (max-width: 920px) {
+  .titleName {
+    line-height: 0.9!important;
+    font-size: 6rem;
+    font-weight: 500;
+  }
+  .titleSub {
+    color: rgb(97, 218, 251);
+    letter-spacing: 1rem!important;
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  .quote {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 100;
+  transition: 5.5s;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .titleLinks {
+    display: block;
+    line-height: 1;
+  }
+  .linkedin {
+    line-height: 0!important;
+    margin-bottom: 0rem!important;
+  }
+}
+/* ----------------------------------------- */
+@media only screen and (max-width: 755px) {
+
+}
+/* ------------------------------------------ */
+@media only screen and (max-width: 732px) {
+  .titleName {
+    line-height: 0.9!important;
+    font-size: 5.2rem;
+    font-weight: 400;
+  }
+  .titleSub {
+    color: rgb(97, 218, 251);
+    letter-spacing: 1rem!important;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+/* ------------------------------------------- */
+@media only screen and (max-width: 635px) {
+  .titleName {
+    line-height: 0.9!important;
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+  .titleSub {
+    color: rgb(97, 218, 251);
+    letter-spacing: 0.6rem!important;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+/* ------------------------------------------- */
+@media only screen and (max-width: 555px) {
+  .titleName {
+    line-height: 0.9!important;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .titleSub {
+    color: rgb(97, 218, 251);
+    letter-spacing: 0.3rem!important;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+/* ------------------------------------------- */
+@media only screen and (max-width: 505px) {
+  .titleName {
+    line-height: 0.9!important;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  .titleSub {
+    color: rgb(97, 218, 251);
+    letter-spacing: 0.3rem!important;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+/* -----------phone--------------------------- */
+@media only screen and (max-width: 420px) {
+  .titleCont {
+    margin-left: 0rem!important;
+    margin-top: 2rem!important;
+  }
+  .titleName {
+    line-height: 1.5!important;
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+  .titleSub {
+    color: rgb(97, 218, 251);
+    letter-spacing: 0.1rem!important;
+    line-height: 1;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  .quote {
+  margin-top: 2.5rem !important;
+  font-size: 1.2rem;
+  letter-spacing: 0rem!important;
+  transition: 5.5s;
+  }
+  .titleLinks {
+    font-size: 0.9rem!important;
+  }
+  .mySelf {
+    border-width: 4px;
+    max-width: 80px;
+  }
+  .titleQuote {
+    margin-left: 0rem !important;
+  }
+}
+

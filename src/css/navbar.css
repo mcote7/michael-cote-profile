@@ -114,6 +114,24 @@
   }
 }
 /* -------------------------------------- */
+@media only screen and (min-width:1201px) and (max-width:1247px) {
+  .myNavLinks {
+    margin: 0.9rem!important;
+    padding: 0.4rem!important;
+    font-size: 2rem!important;
+    line-height: 2.5;
+    color: rgb(97, 218, 251);
+    filter: blur(0px)!important;
+    transition: 0.55s;
+  }
+  .myNavLinks-on {
+    cursor: pointer;
+    color: white;
+    filter: blur(0px)!important;
+    text-decoration: none;
+  }
+}
+/* ----------------------------------------- */
 @media only screen and (max-width: 645px) {
   .myNavBar {
     border-top: solid 1px rgb(97, 218, 251)!important;

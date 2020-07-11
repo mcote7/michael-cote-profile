@@ -42,7 +42,7 @@ class Education extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <div className="col-lg-6">
+      <div className="col-lg-6 mt-3">
         <Carousel
           offset={5}
           value={this.state.value}
@@ -62,7 +62,7 @@ class Education extends React.Component {
         onChange={this.onchange}
         />
       </div>
-      <div className="col-lg-6">
+      <div className="col-lg-6 mt-2">
         {this.onImageSwitch()}
       </div>
       </React.Fragment>

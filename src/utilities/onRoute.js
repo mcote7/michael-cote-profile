@@ -3,5 +3,5 @@ export function onRoute() {
   window.scrollTo({top: 0});
   setTimeout(()=> {
     window.scrollTo({top: height, behavior: 'smooth'});
-  }, 10);
+  }, 100);
 }

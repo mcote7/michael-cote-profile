@@ -24,10 +24,11 @@ body {
 }
 /* -- */
 /* ---Main-App-Component--- */
-.fullScreen {
-  height: 100vh!important;
-}
 .dummy {
   height: 0vh!important;
   display: none!important;
 }
+.fullScreen {
+  height: 100vh!important;
+}
+/* -------------------------------------------- */
