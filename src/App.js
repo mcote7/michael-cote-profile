@@ -1,10 +1,13 @@
-import React, {Component} from 'react';
 import './App.css';
-import Education from './components/education/education';
-import {Route, Switch} from 'react-router-dom';
+import React, {Component} from 'react';
+import {Route, Redirect, Switch} from 'react-router-dom';
+import Dummy from './components/dummy';
+import NotFound from './components/notFound';
 import NavBar from './components/navigation';
-import TechnicalSkills from './components/technicalSkills';
 import MainPage from './components/mainPage';
+import Education from './components/education/education';
+import TechnicalSkills from './components/technicalSkills';
+
 
 class App extends Component {
 
@@ -19,6 +22,10 @@ class App extends Component {
           <Switch>
             <Route exact path="/technical-skills" component={TechnicalSkills}/>
             <Route exact path="/education" component={Education}/>
+            <Route exact path="/not-found" component={NotFound}/>
+            <Route exact path="/michael-cote" component={Dummy}/>
+            <Redirect from="/" exact to="/michael-cote"/>
+            <Redirect to="/not-found"/>
           </Switch>
         </div>
       </div>

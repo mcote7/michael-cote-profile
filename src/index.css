@@ -9,21 +9,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 /* ScrollBar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 20px;
-}
+} */
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   color: black;
   background-color: black;
-}
+} */
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   color: black;
   background-color: black;
-}
+} */
 /* -- */
 /* ---Main-App-Component--- */
 .fullScreen {
   height: 100vh!important;
+}
+.dummy {
+  height: 0vh!important;
+  display: none!important;
 }
