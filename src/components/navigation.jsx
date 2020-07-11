@@ -7,7 +7,10 @@ class NavBar extends Component {
   render() {
   return (
     <nav className="navbar fixed-bottom navbar-expand-xl myNavBar">
-      <div className="nameGroup"><NavLink className="myNavLinksName" to="/">Michael Cote</NavLink><span className="navSpan">web developer in 2020</span></div>
+      <div className="nameGroup">
+        <NavLink className="myNavLinksName" to="/">Michael Cote</NavLink>
+        <NavLink className="navSpan" to="/">web developer in 2020</NavLink>
+      </div>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span><i className="fa fa-bars barsIcon" aria-hidden="true"></i></span>
       </button>

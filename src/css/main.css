@@ -1,0 +1,30 @@
+/* ------------------------ */
+.titleCont {
+  text-align: left!important;
+  line-height: 0!important;
+}
+.titleName {
+  line-height: 0.9!important;
+  font-size: 8.5rem;
+  font-weight: 700;
+}
+.titleSub {
+  color: rgb(97, 218, 251);
+  letter-spacing: 1.9rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.titleQuote {
+  line-height: 1;
+  margin-top: -12rem!important;
+}
+.quote {
+  font-size: 1.7rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  transition: 5.5s;
+}
+.quote:hover {
+  transform: skewX(-12deg);
+  color: rgb(97, 218, 251);
+}

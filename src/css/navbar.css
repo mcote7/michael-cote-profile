@@ -6,8 +6,10 @@
 .nameGroup {
   display: grid!important;
   line-height: 0.8!important;
+  cursor: pointer;
 }
 .navSpan {
+  color: white!important;
   margin-bottom: 2.75rem!important;
 }
 /* -------------------------------------------- */
@@ -17,7 +19,7 @@
   font-size: 2.5rem;
   color: rgb(255, 255, 255);
   filter: blur(2px)!important;
-  transition: 1s;
+  transition: 0.55s;
 }
 .myNavLinks:hover {
   cursor: pointer;
@@ -47,7 +49,6 @@
   margin: 1.5rem 1.5rem 0rem 1.5rem;
   padding: 1rem 1rem 0rem 1rem;
   font-size: 1.75rem;
-  
   text-decoration: none;
   color: rgb(97, 218, 251);
   transition: 1s;
@@ -75,6 +76,10 @@
   .barsIcon {
     color: white!important;
   }
+  .nameGroup {
+    display: grid!important;
+    line-height: 0.8!important;
+  }
   .myNavLinks {
     margin: 1rem;
     padding: 1rem;
@@ -82,7 +87,7 @@
     line-height: 2.5;
     color: rgb(97, 218, 251);
     filter: blur(0px)!important;
-    transition: 1s;
+    transition: 0.55s;
   }
   .myNavLinks:hover {
     cursor: pointer;
@@ -99,7 +104,7 @@
   .myNavLinksName {
     margin: 1rem 1rem 0rem 1rem;
     padding: 1rem 1rem 0rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: rgb(97, 218, 251);
     filter: blur(0px)!important;
     transition: 1s;
