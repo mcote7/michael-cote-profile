@@ -1,0 +1,16 @@
+.projTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  border-bottom: 2px solid white;
+  box-shadow: 0px -30px 29px -35px white inset;
+  background: -webkit-linear-gradient(hsl(193, 95%, 40%), white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projectTitleWrap {
+  display: inline-flex!important;
+}
+.projectIcon {
+  color: rgb(97, 218, 251);
+}

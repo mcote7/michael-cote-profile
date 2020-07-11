@@ -7,7 +7,7 @@ import NavBar from './components/navigation';
 import MainPage from './components/mainPage';
 import Education from './components/education/education';
 import TechnicalSkills from './components/technicalSkills';
-import Projects from './components/projects';
+import Projects from './components/projects/projects';
 import Resume from './components/resume';
 
 class App extends Component {
