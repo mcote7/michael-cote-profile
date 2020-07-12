@@ -12,5 +12,23 @@
   display: inline-flex!important;
 }
 .projectIcon {
-  color: rgb(97, 218, 251);
+  color: white;
+}
+.movieImg {
+  height: auto!important;
+  max-width: 400px!important;
+  border-radius: 1%!important;
+  box-shadow: 0 0 0 1px rgb(97, 218, 251);
+  transition: 3s;
+  cursor: pointer;
+}
+.movieImg:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 0 1px #ffee58;
+}
+.movieAtag {
+  color: rgb(97, 218, 251)!important;
+}
+.moreBtm {
+  margin-bottom: 35vh!important;
 }

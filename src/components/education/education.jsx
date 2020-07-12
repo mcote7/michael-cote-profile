@@ -37,6 +37,7 @@ class Education extends React.Component {
     }
   componentDidMount() {
     const height = document.body.scrollHeight;
+    console.log("educationHeight",document.body.scrollHeight)
     window.scrollTo({top: 0});
     setTimeout(()=> {
       window.scrollTo({top: height/2.9, behavior: 'smooth'});
@@ -52,9 +53,9 @@ class Education extends React.Component {
           slides={this.state.slides}
           onChange={this.onchange}
           arrowLeft={<span><i className="fa fa-arrow-circle-left fa-3x arrowIcon" aria-hidden="true"></i></span>}
-          arrowLeftDisabled={<span><i className="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i></span>}
+          arrowLeftDisabled={<span><i className="fa fa-arrow-circle-o-left fa-2x hidden" aria-hidden="true"></i></span>}
           arrowRight={<span><i className="fa fa-arrow-circle-right fa-3x arrowIcon" aria-hidden="true"></i></span>}
-          arrowRightDisabled={<span><i className="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></span>}
+          arrowRightDisabled={<span><i className="fa fa-arrow-circle-o-right fa-2x hidden" aria-hidden="true"></i></span>}
           addArrowClickHandler
         />
         <hr className="carouselHR"/>

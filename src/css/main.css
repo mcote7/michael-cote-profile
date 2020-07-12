@@ -10,9 +10,14 @@
 .titleCont {
   margin-left: 3rem !important;
   text-align: left!important;
-  line-height: 0!important;
 }
 .titleName {
+  border-top: 2px solid!important;
+  line-height: 0.9!important;
+  font-size: 8.5rem;
+  font-weight: 700;
+}
+.titleNameSpec {
   line-height: 0.9!important;
   font-size: 8.5rem;
   font-weight: 700;
@@ -23,6 +28,7 @@
   font-size: 1.7rem;
   font-weight: 600;
   padding-bottom: 1rem;
+  line-height: 0!important;
 }
 .titleQuote {
   margin-left: 3rem !important;
@@ -57,7 +63,6 @@
 }
 .titleLinks {
   display: inline-flex;
-  line-height: 3;
 }
 .titleAtag {
   color: rgb(97, 218, 251)!important;
@@ -69,11 +74,17 @@
     font-size: 7.5rem;
     font-weight: 500;
   }
+  .titleNameSpec {
+    line-height: 0.9!important;
+    font-size: 7.5rem;
+    font-weight: 500;
+  }
   .titleSub {
     color: rgb(97, 218, 251);
     letter-spacing: 1.4rem!important;
     font-size: 1.9rem;
     font-weight: 400;
+    line-height: 0!important;
   }
   .quote {
   font-size: 1.5rem;
@@ -85,6 +96,11 @@
 /* ------------------------------------------- */
 @media only screen and (max-width: 920px) {
   .titleName {
+    line-height: 0.9!important;
+    font-size: 6rem;
+    font-weight: 500;
+  }
+  .titleNameSpec {
     line-height: 0.9!important;
     font-size: 6rem;
     font-weight: 500;
@@ -123,6 +139,11 @@
     font-size: 5.2rem;
     font-weight: 400;
   }
+  .titleNameSpec {
+    line-height: 0.9!important;
+    font-size: 5.2rem;
+    font-weight: 400;
+  }
   .titleSub {
     color: rgb(97, 218, 251);
     letter-spacing: 1rem!important;
@@ -133,6 +154,11 @@
 /* ------------------------------------------- */
 @media only screen and (max-width: 635px) {
   .titleName {
+    line-height: 0.9!important;
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+  .titleNameSpec {
     line-height: 0.9!important;
     font-size: 4.5rem;
     font-weight: 400;
@@ -151,6 +177,11 @@
     font-size: 4rem;
     font-weight: 400;
   }
+  .titleNameSpec {
+    line-height: 0.9!important;
+    font-size: 4rem;
+    font-weight: 400;
+  }
   .titleSub {
     color: rgb(97, 218, 251);
     letter-spacing: 0.3rem!important;
@@ -161,6 +192,11 @@
 /* ------------------------------------------- */
 @media only screen and (max-width: 505px) {
   .titleName {
+    line-height: 0.9!important;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  .titleNameSpec {
     line-height: 0.9!important;
     font-size: 3.5rem;
     font-weight: 400;
@@ -179,6 +215,11 @@
     margin-top: 2rem!important;
   }
   .titleName {
+    line-height: 1.5!important;
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+  .titleNameSpec {
     line-height: 1.5!important;
     font-size: 2.8rem;
     font-weight: 400;

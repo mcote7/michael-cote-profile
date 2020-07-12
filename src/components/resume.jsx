@@ -5,10 +5,11 @@ import '../css/resume.css';
 
 const Resume = () => {
   useEffect(() => {
-    const height = document.body.scrollHeight;
+    // const height = document.body.scrollHeight;
+    console.log("resumeHeight",document.body.scrollHeight)
     window.scrollTo({top: 0});
     setTimeout(()=> {
-      window.scrollTo({top: height/3, behavior: 'smooth'});
+      window.scrollTo({top: 755, behavior: 'smooth'});
     }, 100);
   },[])
   return (
@@ -18,5 +19,4 @@ const Resume = () => {
     </div>
   );
 }
-
 export default Resume;
