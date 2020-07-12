@@ -19,7 +19,8 @@ const RecipieApp = () => {
       <br/>
       <h4>•	Search results displayed on custom Bootstrap table with pagination and active links to full recipes, api call to recipe database with Axios.</h4>
       <br/>
-      <h4>•	GitHub: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7/Recipe-App-react">SEE THE CODE *</a></h4>
+      <h4>•	GitHub: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7/Recipe-App-react">SEE THE CODE
+      <span><i className="fa fa-external-link fa-sm ml-2" aria-hidden="true"></i></span></a></h4>
     </React.Fragment>
   );
 }

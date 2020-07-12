@@ -10,7 +10,7 @@ const Home = () => {
     <React.Fragment>
       <div className="col-xl-3 mt-5">
         <div className="techTitleWrap mr-5">
-          <span className="techIcons"><i className="fa fa-file-code-o fa-5x" aria-hidden="true"></i></span>
+          <span className="techIcons"><i className="fa fa-file-code-o fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Languages</h1>
         </div>
         <ul className="techList titleLeftMargin">
@@ -23,7 +23,7 @@ const Home = () => {
       </div>
       <div className="col-xl-3 mt-5">
         <div className="techTitleWrap mr-5">
-          <span className="techIcons"><i className="fa fa-book fa-5x" aria-hidden="true"></i></span>
+          <span className="techIcons"><i className="fa fa-book fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Libraries</h1>
         </div>
         <ul className="techList titleLeftMargin">
@@ -39,7 +39,7 @@ const Home = () => {
       </div>
       <div className="col-xl-3 mt-5">
         <div className="techTitleWrap mr-5">
-          <span className="techIcons"><i className="fa fa-database fa-5x" aria-hidden="true"></i></span>
+          <span className="techIcons"><i className="fa fa-database fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Database</h1>
         </div>
         <ul className="techList titleLeftMargin">
@@ -53,7 +53,7 @@ const Home = () => {
       </div>
       <div className="col-xl-3 mt-5">
         <div className="techTitleWrap tools">
-          <span className="techIcons"><i className="fa fa-wrench fa-5x" aria-hidden="true"></i></span>
+          <span className="techIcons"><i className="fa fa-wrench fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Tools</h1>
         </div>
         <ul className="techList titleLeftMargin titleBottom">

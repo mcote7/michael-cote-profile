@@ -17,7 +17,8 @@ const BugApp = () => {
       <br/>
       <h4>• Integrated with React UI, backend API made with Node.js and unit testing with Jest.</h4>
       <br/>
-      <h4>•	GitHub: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7/Redux-bug-tracker">SEE THE CODE *</a></h4>
+      <h4>•	GitHub: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7/Redux-bug-tracker">SEE THE CODE
+      <span><i className="fa fa-external-link fa-sm ml-2" aria-hidden="true"></i></span></a></h4>
     </React.Fragment>
   );
 }

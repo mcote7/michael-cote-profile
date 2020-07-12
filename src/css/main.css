@@ -3,6 +3,7 @@
   display: inline-block!important;
   color: #ffee58!important;
   cursor: pointer;
+  transition: ease-in 0.2s;
 }
 .yellowWar:hover {
   color: black!important;
@@ -39,8 +40,18 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  transition: 1.5s;
+  transition: ease 1.5s;
+  /* animation: 5.5s slide-right; */
 }
+@keyframes slide-right {
+  from {
+    margin-left: -145%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
 .quote:hover {
   cursor: pointer;
   transform: skewX(-12deg);
@@ -51,7 +62,7 @@
   border-color: rgb(97, 218, 251);
   border-width: 5px;
   max-width: 111px;
-  animation: 2.5s slide-left;
+  /* animation: 2.5s slide-left; */
 }
 @keyframes slide-left {
   from {

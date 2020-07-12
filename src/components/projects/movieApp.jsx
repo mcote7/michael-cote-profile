@@ -21,9 +21,11 @@ const MovieApp = () => {
       <br/>
       <h4>•	Navigation with scroll to top feature and protected routes using react-router.</h4>
       <br/>
-      <h4>•	Deployed via Heroku: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://desolate-springs-64141.herokuapp.com/">SEE FULL APP *</a></h4>
+      <h4>•	Deployed via Heroku: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://desolate-springs-64141.herokuapp.com/">SEE FULL APP
+      <span><i className="fa fa-external-link fa-sm ml-2" aria-hidden="true"></i></span></a></h4>
       <br/>
-      <h4>•	GitHub: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7/React-movie-app">SEE THE CODE *</a></h4>
+      <h4>•	GitHub: <a className="movieAtag" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7/React-movie-app">SEE THE CODE
+      <span><i className="fa fa-external-link fa-sm ml-2" aria-hidden="true"></i></span></a></h4>
       <div className="moreBtm"></div>
     </React.Fragment>
   );
