@@ -7,7 +7,7 @@ const MainPage = () => {
   useEffect(() => {
     setTimeout(()=> {
       setLight(true);
-    }, 2000)},[])
+    }, 2000)})
   return (
     <React.Fragment>
       <div className="titleCont col-xl-12 mt-4">

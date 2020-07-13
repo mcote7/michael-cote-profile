@@ -9,7 +9,7 @@ const Resume = () => {
     onRoute();
   },[])
   return (
-    <div className="col-xl-12 mb-5">
+    <div className="col-xl-12 mb-5 p-0">
       <img src={resume1} className="resumeImg" alt="img"/>
       <img src={resume2} className="resumeImg yelly" alt="img"/>
     </div>

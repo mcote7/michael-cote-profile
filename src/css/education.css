@@ -5,6 +5,7 @@
   box-shadow: 0 0 0 1px #ffee58;
 }
 .myCertImg {
+  margin: 0.5rem;
   height: auto!important;
   max-width: 550px!important;
   border-radius: 1%!important;
@@ -19,11 +20,17 @@
   color: rgb(97, 218, 251);
   cursor: pointer;
 }
+.disable {
+  color: black;
+}
 /* -----------End Education Component----------------------- */
 /*  */
 @media only screen and (max-width: 768px) {
   .myCertThumb {
     display: none;
+  }
+  .myCertImg {
+    margin: 0rem;
   }
   .carouselHR {
     border-top: 1px solid rgb(97, 218, 251)
@@ -43,4 +50,10 @@
 }
 .hidden {
   display: none!important;
+}
+
+@media only screen and (max-width: 420px) {
+  .myCertImg {
+    margin: 0rem;
+  }
 }

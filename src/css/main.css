@@ -3,13 +3,12 @@
   display: inline-block!important;
   color: #ffee58!important;
   cursor: pointer;
-  transition: ease-in 0.2s;
+  transition: ease-in 0s;
 }
 .yellowWar:hover {
   color: black!important;
 }
 .titleCont {
-  /* margin-left: 3rem !important; */
   text-align: left!important;
 }
 .titleName {
@@ -19,6 +18,8 @@
   font-weight: 700;
 }
 .titleNameSpec {
+  display: inline-block!important;
+  border-top: 2px solid!important;
   line-height: 0.9!important;
   font-size: 8.5rem;
   font-weight: 700;
@@ -243,6 +244,7 @@
     font-weight: 100;
   }
   .quote {
+    margin-left: 0rem!important;
   margin-top: 2.5rem !important;
   font-size: 1.2rem;
   letter-spacing: 0rem!important;

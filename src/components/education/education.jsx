@@ -16,9 +16,9 @@ class Education extends React.Component {
     this.state = {
       value: 1,
       slides: [
-        (<img src={img2} className="myCertImg m-2" alt="img"/>),
-        (<img src={img1} className="myCertImg m-2" alt="img"/>),
-        (<img src={img3} className="myCertImg m-2" alt="img"/>),
+        (<img src={img2} className="myCertImg" alt="img"/>),
+        (<img src={img1} className="myCertImg" alt="img"/>),
+        (<img src={img3} className="myCertImg" alt="img"/>),
       ],
       thumbnails: [
         (<img src={img2} className="myCertThumb m-0" alt="img"/>),
@@ -42,16 +42,16 @@ class Education extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <div className="col-lg-6 mt-3">
+      <div className="col-lg-6 mt-3 mr-5">
         <Carousel
           offset={5}
           value={this.state.value}
           slides={this.state.slides}
           onChange={this.onchange}
           arrowLeft={<span><i className="fa fa-arrow-circle-left fa-3x arrowIcon" aria-hidden="true"></i></span>}
-          arrowLeftDisabled={<span><i className="fa fa-arrow-circle-o-left fa-2x hidden" aria-hidden="true"></i></span>}
+          arrowLeftDisabled={<span><i className="fa fa-arrow-circle-left fa-3x disable" aria-hidden="true"></i></span>}
           arrowRight={<span><i className="fa fa-arrow-circle-right fa-3x arrowIcon" aria-hidden="true"></i></span>}
-          arrowRightDisabled={<span><i className="fa fa-arrow-circle-o-right fa-2x hidden" aria-hidden="true"></i></span>}
+          arrowRightDisabled={<span><i className="fa fa-arrow-circle-right fa-3x disable" aria-hidden="true"></i></span>}
           addArrowClickHandler
         />
         <hr className="carouselHR"/>
@@ -62,7 +62,6 @@ class Education extends React.Component {
         onChange={this.onchange}
         />
       </div>
-      <div className="col-1 m-0 p-0 hidden"></div>
       <div className="col-lg-5 mt-2">
         {this.onImageSwitch()}
       </div>
