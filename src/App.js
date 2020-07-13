@@ -15,10 +15,10 @@ class App extends Component {
     return(
     <div className="App">
       <div className="container-fluid">
-        <div className="row fullScreen">
+        <div id="cote" className="row fullScreen">
           <MainPage/>
         </div>
-        <div className="row fullScreen">
+        <div className="row">
           <Switch>
             <Route exact path="/technical-skills" component={TechnicalSkills}/>
             <Route exact path="/education" component={Education}/>

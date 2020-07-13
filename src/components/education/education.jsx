@@ -1,4 +1,5 @@
 import React from 'react';
+import { onRoute } from '../../utilities/onRoute';
 import img1 from '../../images/DojoCert.png';
 import img2 from '../../images/MasterReactCert.png';
 import img3 from '../../images/ReduxCert.png';
@@ -36,12 +37,7 @@ class Education extends React.Component {
       else if(this.state.value === 0) return ( <ReactInfo/> );
     }
   componentDidMount() {
-    const height = document.body.scrollHeight;
-    console.log("educationHeight",document.body.scrollHeight)
-    window.scrollTo({top: 0});
-    setTimeout(()=> {
-      window.scrollTo({top: height/2.9, behavior: 'smooth'});
-    }, 100);
+    onRoute();
   }
   render() {
     return (

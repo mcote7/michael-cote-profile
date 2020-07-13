@@ -1,16 +1,12 @@
 import React, { useEffect } from 'react';
+import { onRoute } from './../utilities/onRoute';
 import resume1 from '../images/resume1.jpg';
 import resume2 from '../images/resume2.jpg';
 import '../css/resume.css';
 
 const Resume = () => {
   useEffect(() => {
-    // const height = document.body.scrollHeight;
-    console.log("resumeHeight",document.body.scrollHeight)
-    window.scrollTo({top: 0});
-    setTimeout(()=> {
-      window.scrollTo({top: 755, behavior: 'smooth'});
-    }, 100);
+    onRoute();
   },[])
   return (
     <div className="col-xl-12 mb-5">

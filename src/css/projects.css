@@ -19,11 +19,11 @@
   max-width: 400px!important;
   border-radius: 1%!important;
   box-shadow: 0 0 0 1px rgb(97, 218, 251);
-  transition: 3s;
+  transition: ease-in 0.3s;
   cursor: pointer;
 }
 .movieImg:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
   box-shadow: 0 0 0 1px #ffee58;
 }
 .movieAtag {
@@ -31,4 +31,28 @@
 }
 .moreBtm {
   margin-bottom: 35vh!important;
+}
+@media only screen and (max-width: 1200px) {
+  .moreBtm2 {
+    margin-bottom: 45vh!important;
+  }
+  .moreBtm {
+    margin-bottom: 5vh!important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .movieImg {
+    height: auto!important;
+    max-width: 300px!important;
+    border-radius: 1%!important;
+    box-shadow: 0 0 0 1px rgb(97, 218, 251);
+    transition: 3s;
+    cursor: pointer;
+  }
+  .moreBtm2 {
+    margin-bottom: 45vh!important;
+  }
+  .moreBtm {
+    margin-bottom: 5vh!important;
+  }
 }
