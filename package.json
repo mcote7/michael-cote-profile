@@ -2,6 +2,7 @@
   "name": "cote-profile-2020",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mcote7.github.io/michael-cote-profile-2020",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.16",
     "@reach/router": "^1.3.4",
