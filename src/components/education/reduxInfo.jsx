@@ -16,6 +16,7 @@ const ReduxInfo = () => {
         <li>action reducers used to perform all crud operations, handled asynchronous events with redux-thunk.</li>
         <br/>
       </ul>
+      <div className="btmSpace"></div>
     </React.Fragment>
   );
 }
