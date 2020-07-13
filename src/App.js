@@ -27,7 +27,7 @@ class App extends Component {
             <Route exact path="/not-found" component={NotFound}/>
             <Route exact path="/michael-cote" component={scrollTop}/>
             <Redirect from="/" exact to="/michael-cote"/>
-            <Redirect from="http://mcote7.github.io/michael-cote-profile-2020" exact to="/michael-cote"/>
+            <Redirect from="/mcote7.github.io/michael-cote-profile-2020" exact to="/michael-cote"/>
             <Redirect to="/not-found"/>
           </Switch>
         </div>
