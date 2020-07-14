@@ -1,4 +1,7 @@
 /* ------------------------ */
+.social {
+  margin-left: 1rem!important;
+}
 .yellowWar {
   display: inline-block!important;
   color: #ffee58!important;
@@ -80,9 +83,7 @@
 .titleAtag {
   color: rgb(97, 218, 251)!important;
 }
-.linkedin {
-  margin-left: 1rem!important;
-}
+
 /* --------------------------------------------- */
 @media only screen and (max-width: 1295px) {
   .titleName {
@@ -139,7 +140,7 @@
     display: block;
     line-height: 1;
   }
-  .linkedin {
+  .social {
     line-height: 0!important;
     margin-bottom: 0rem!important;
   }
@@ -264,7 +265,7 @@
   .titleQuote {
     margin-left: 0rem !important;
   }
-  .linkedin {
+  .social {
     margin-left: 0rem!important;
   }
 }

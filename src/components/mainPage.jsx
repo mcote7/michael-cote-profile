@@ -12,13 +12,13 @@ const MainPage = () => {
     <React.Fragment>
       <div className="titleCont col-xl-12 mt-4">
         <div className="titleLinks mb-1">
-          <p className="linkedin"><span><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
+          <p className="social"><span><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://github.com/mcote7">www.github.com/mcote7</a></p>
-          <p className="linkedin"><span><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
+          <p className="social"><span><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://linkedin.com/in/michael-cote-wa">www.linkedin.com/in/michael-cote</a></p>
-          <p className="linkedin"><span><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+          <p className="social"><span><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://facebook.com/profile.php?id=100012957396194">www.facebook.com/mikec</a></p>
         </div>
