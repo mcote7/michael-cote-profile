@@ -260,4 +260,7 @@
     margin-left: 0rem !important;
   }
 }
+@media only screen and (max-width: 360px) {
+  
+}
 

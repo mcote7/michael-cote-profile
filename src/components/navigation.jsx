@@ -18,7 +18,7 @@ class NavBar extends Component {
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical-skills">
-            <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical Skills</NavLink>
+            <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink>
           </li>
           <li className="nav-item">
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/education">
