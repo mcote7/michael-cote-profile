@@ -10,7 +10,7 @@ const MainPage = () => {
     }, 2000)})
   return (
     <React.Fragment>
-      <div className="titleCont col-xl-12 mt-4">
+      <div className="titleCont col-xl-12">
         <div className="titleLinks mb-1">
           <p className="social"><span><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
