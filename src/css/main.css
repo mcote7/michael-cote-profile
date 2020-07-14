@@ -1,13 +1,23 @@
 /* ------------------------ */
 .social {
   margin-left: 1rem!important;
+  animation: 2s slide-up;
+}
+@keyframes slide-up {
+  from {
+    margin-top: 45%;
+  }
+  to {
+    margin-top: 0%;
+  }
 }
 .yellowWar {
   display: inline-block!important;
   color: #ffee58!important;
   cursor: pointer;
-  transition: ease-in 0s;
+  transition: ease-in 0.1s;
 }
+
 .yellowWar:hover {
   color: black!important;
 }
@@ -37,47 +47,44 @@
   padding-bottom: 1rem;
   line-height: 0!important;
 }
+
+
 .titleQuote {
   margin-left: 3rem !important;
   line-height: 1;
   margin-top: -12rem!important;
+  transition: ease 1.5s;
+  animation: 6.5s fade-in;
 }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 .quote {
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
   transition: ease 1.5s;
-  /* animation: 5.5s slide-right; */
 }
-@keyframes slide-right {
-  from {
-    margin-left: -145%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-
 .quote:hover {
   cursor: pointer;
   transform: skewX(-12deg);
   color: rgb(97, 218, 251);
 }
+
 .mySelf {
   border: outset;
   border-color: rgb(97, 218, 251);
   border-width: 5px;
   max-width: 111px;
-  /* animation: 2.5s slide-left; */
 }
-@keyframes slide-left {
-  from {
-    margin-right: -145%;
-  }
-  to {
-    margin-right: 0%;
-  }
-}
+
 .titleLinks {
   display: inline-flex;
 }
