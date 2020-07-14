@@ -227,33 +227,32 @@
     margin-top: 2rem!important;
   }
   .titleName {
-    line-height: 1.5!important;
     font-size: 2.8rem;
     font-weight: 400;
   }
   .titleNameSpec {
-    line-height: 1.5!important;
     font-size: 2.8rem;
     font-weight: 400;
   }
   .titleSub {
     color: rgb(97, 218, 251);
     letter-spacing: 0.1rem!important;
-    line-height: 1;
     font-size: 1.3rem;
     font-weight: 100;
   }
   .quote {
     margin-left: 0rem!important;
-  margin-top: 2.5rem !important;
-  font-size: 1.2rem;
-  letter-spacing: 0rem!important;
-  transition: 5.5s;
+    margin-top: 13.5rem !important;
+    margin-bottom: 35vh!important;
+    font-size: 1.2rem;
+    letter-spacing: 0rem!important;
+    transition: 5.5s;
   }
   .titleLinks {
     font-size: 0.9rem!important;
   }
   .mySelf {
+    margin-top: 12rem;
     border-width: 4px;
     max-width: 80px;
   }
