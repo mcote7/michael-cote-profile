@@ -137,6 +137,8 @@
     border-top: solid 1px rgb(97, 218, 251)!important;
   }
 }
-@media only screen and (max-width: 360px) {
-  
+@media only screen and (max-height: 420px) {
+  .myNavLinks {
+    line-height: 1.8;
+  }
 }

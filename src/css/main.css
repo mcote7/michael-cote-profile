@@ -270,5 +270,17 @@
     margin-left: 0rem!important;
   }
 }
-
+@media only screen and (max-height: 420px) {
+  .mySelf {
+    margin-top: 12rem;
+  }
+  .quote {
+    display: none;
+  }
+  .fixed-bottom {
+    position: fixed;
+    top: 0!important;
+    bottom: unset!important;
+  }
+}
 
