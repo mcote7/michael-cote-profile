@@ -25,6 +25,7 @@
   font-weight: 700;
 }
 .titleSub {
+  margin-left: 1rem;
   color: rgb(97, 218, 251);
   letter-spacing: 1.9rem;
   font-size: 1.7rem;
@@ -78,6 +79,9 @@
 }
 .titleAtag {
   color: rgb(97, 218, 251)!important;
+}
+.linkeden {
+  margin-left: 1rem;
 }
 /* --------------------------------------------- */
 @media only screen and (max-width: 1295px) {
@@ -227,7 +231,7 @@
     margin-top: 2rem!important;
   }
   .titleName {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 400;
   }
   .titleNameSpec {
@@ -235,15 +239,16 @@
     font-weight: 400;
   }
   .titleSub {
+    margin-left: 0rem;
     color: rgb(97, 218, 251);
     letter-spacing: 0.1rem!important;
     font-size: 1.3rem;
     font-weight: 100;
   }
   .quote {
+    margin-bottom: 0rem!important;
     margin-left: 0rem!important;
-    margin-top: 13.5rem !important;
-    margin-bottom: 35vh!important;
+    margin-top: 2rem !important;
     font-size: 1.2rem;
     letter-spacing: 0rem!important;
     transition: 5.5s;
@@ -252,15 +257,16 @@
     font-size: 0.9rem!important;
   }
   .mySelf {
-    margin-top: 12rem;
+    margin-top: 2rem;
     border-width: 4px;
     max-width: 80px;
   }
   .titleQuote {
     margin-left: 0rem !important;
   }
+  .linkeden {
+    margin-left: 0rem;
+  }
 }
-@media only screen and (max-width: 360px) {
-  
-}
+
 

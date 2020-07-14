@@ -12,18 +12,18 @@ const MainPage = () => {
     <React.Fragment>
       <div className="titleCont col-xl-12 mt-4">
         <div className="titleLinks mb-1">
-          <p className="ml-3 linkedin"><span><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
+          <p className="linkedin"><span><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://github.com/mcote7">www.github.com/mcote7</a></p>
-          <p className="ml-3 linkedin"><span><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
+          <p className="linkedin"><span><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://linkedin.com/in/michael-cote-wa">www.linkedin.com/in/michael-cote</a></p>
-          <p className="ml-3 linkedin"><span><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+          <p className="linkedin"><span><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://facebook.com/profile.php?id=100012957396194">www.facebook.com/mikec</a></p>
         </div>
         <h1 className="titleName">M{light?<span className="yellowWar titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
-        <p className="titleSub ml-3"> web developer in &nbsp;2020</p>
+        <p className="titleSub"> web developer in &nbsp;2020</p>
       </div>
       <div className="titleQuote col-xl-7">
       <img src={self} className="mySelf float-right ml-5 rounded-circle" alt="self"/>

@@ -46,7 +46,7 @@
 @media only screen and (max-width: 420px) {
   .movieImg {
     height: auto!important;
-    max-width: 300px!important;
+    max-width: 85vw!important;
     border-radius: 1%!important;
     box-shadow: 0 0 0 1px rgb(97, 218, 251);
     transition: 3s;
