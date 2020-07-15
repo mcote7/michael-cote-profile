@@ -11,16 +11,17 @@
     margin-top: 0%;
   }
 }
+
 .yellowWar {
   display: inline-block!important;
   color: #ffee58!important;
   cursor: pointer;
   transition: ease-in 0.1s;
 }
-
 .yellowWar:hover {
   color: black!important;
 }
+
 .titleCont {
   margin-top: 1.5rem;
   text-align: left!important;
@@ -38,6 +39,35 @@
   font-size: 8.5rem;
   font-weight: 700;
 }
+
+.fadeicon {
+  color: white;
+  animation: 2s color-fade-in1;
+}
+@keyframes color-fade-in1 {
+  from {
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.titleAtag {
+  color: rgb(97, 218, 251);
+  animation: 4s color-fade-in2;
+}
+@keyframes color-fade-in2 {
+  from {
+    color: rgba(97, 218, 251, 0);
+  }
+  to {
+    color: rgba(97, 218, 251, 1);
+  }
+}
+.titleAtag:hover {
+  color: rgb(97, 218, 251)!important;
+}
 .titleSub {
   margin-left: 1rem;
   color: rgb(97, 218, 251);
@@ -46,6 +76,15 @@
   font-weight: 600;
   padding-bottom: 1rem;
   line-height: 0!important;
+  animation: 4.5s color-fade-in3;
+}
+@keyframes color-fade-in3 {
+  from {
+    color: rgba(97, 218, 251, 0);
+  }
+  to {
+    color: rgba(97, 218, 251, 1);
+  }
 }
 
 
@@ -54,7 +93,7 @@
   line-height: 1;
   margin-top: -12rem!important;
   transition: ease 1.5s;
-  animation: 6.5s fade-in;
+  animation: 6s fade-in;
 }
 @keyframes fade-in {
   from {
@@ -77,19 +116,14 @@
   transform: skewX(-12deg);
   color: rgb(97, 218, 251);
 }
-
 .mySelf {
   border: outset;
   border-color: rgb(97, 218, 251);
   border-width: 5px;
   max-width: 111px;
 }
-
 .titleLinks {
   display: inline-flex;
-}
-.titleAtag {
-  color: rgb(97, 218, 251)!important;
 }
 
 /* --------------------------------------------- */
