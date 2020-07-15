@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/michael-cote-profile-2020/precache-manifest.d22e93886a76b18e4c85048f0b2eb8a8.js"
+  "/michael-cote-profile-2020/precache-manifest.805852a0a9c17ae74d35bc7a03de3122.js"
 );
 
 self.addEventListener('message', (event) => {
