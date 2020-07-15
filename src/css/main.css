@@ -18,9 +18,6 @@
   cursor: pointer;
   transition: ease-in 0.1s;
 }
-.yellowWar:hover {
-  color: black!important;
-}
 
 .titleCont {
   margin-top: 1.5rem;
