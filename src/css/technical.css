@@ -54,9 +54,13 @@
 }
 @media only screen and (max-width: 420px) {
   .techList {
+    font-size: 2.2rem;
     margin-left: 14%;
   }
   .techTitle {
     font-size: 2.3rem;
+  }
+  .yellowBull::before {
+    margin-left: -2.1em;
   }
 }
