@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile-2020/static/css/main.af86991b.chunk.css",
-    "main.js": "/michael-cote-profile-2020/static/js/main.6d48e220.chunk.js",
-    "main.js.map": "/michael-cote-profile-2020/static/js/main.6d48e220.chunk.js.map",
+    "main.css": "/michael-cote-profile-2020/static/css/main.6450dd8d.chunk.css",
+    "main.js": "/michael-cote-profile-2020/static/js/main.d78dfb14.chunk.js",
+    "main.js.map": "/michael-cote-profile-2020/static/js/main.d78dfb14.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile-2020/static/js/runtime-main.961f7dee.js",
     "runtime-main.js.map": "/michael-cote-profile-2020/static/js/runtime-main.961f7dee.js.map",
     "static/css/2.3d09bf3b.chunk.css": "/michael-cote-profile-2020/static/css/2.3d09bf3b.chunk.css",
-    "static/js/2.148e4a7b.chunk.js": "/michael-cote-profile-2020/static/js/2.148e4a7b.chunk.js",
-    "static/js/2.148e4a7b.chunk.js.map": "/michael-cote-profile-2020/static/js/2.148e4a7b.chunk.js.map",
+    "static/js/2.3ea1f2ac.chunk.js": "/michael-cote-profile-2020/static/js/2.3ea1f2ac.chunk.js",
+    "static/js/2.3ea1f2ac.chunk.js.map": "/michael-cote-profile-2020/static/js/2.3ea1f2ac.chunk.js.map",
     "index.html": "/michael-cote-profile-2020/index.html",
-    "precache-manifest.adc0b8ed6c9ba17ddd77fd3be915c7b6.js": "/michael-cote-profile-2020/precache-manifest.adc0b8ed6c9ba17ddd77fd3be915c7b6.js",
+    "precache-manifest.d22e93886a76b18e4c85048f0b2eb8a8.js": "/michael-cote-profile-2020/precache-manifest.d22e93886a76b18e4c85048f0b2eb8a8.js",
     "service-worker.js": "/michael-cote-profile-2020/service-worker.js",
     "static/css/2.3d09bf3b.chunk.css.map": "/michael-cote-profile-2020/static/css/2.3d09bf3b.chunk.css.map",
-    "static/css/main.af86991b.chunk.css.map": "/michael-cote-profile-2020/static/css/main.af86991b.chunk.css.map",
-    "static/js/2.148e4a7b.chunk.js.LICENSE.txt": "/michael-cote-profile-2020/static/js/2.148e4a7b.chunk.js.LICENSE.txt",
+    "static/css/main.6450dd8d.chunk.css.map": "/michael-cote-profile-2020/static/css/main.6450dd8d.chunk.css.map",
+    "static/js/2.3ea1f2ac.chunk.js.LICENSE.txt": "/michael-cote-profile-2020/static/js/2.3ea1f2ac.chunk.js.LICENSE.txt",
     "static/media/DojoCert.png": "/michael-cote-profile-2020/static/media/DojoCert.51b8e780.png",
     "static/media/MasterReactCert.png": "/michael-cote-profile-2020/static/media/MasterReactCert.c60076ce.png",
     "static/media/ReduxCert.png": "/michael-cote-profile-2020/static/media/ReduxCert.e3ddf3ba.png",
@@ -30,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.961f7dee.js",
     "static/css/2.3d09bf3b.chunk.css",
-    "static/js/2.148e4a7b.chunk.js",
-    "static/css/main.af86991b.chunk.css",
-    "static/js/main.6d48e220.chunk.js"
+    "static/js/2.3ea1f2ac.chunk.js",
+    "static/css/main.6450dd8d.chunk.css",
+    "static/js/main.d78dfb14.chunk.js"
   ]
 }
