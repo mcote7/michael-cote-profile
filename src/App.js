@@ -8,12 +8,16 @@ import Education from './components/education/education';
 import TechnicalSkills from './components/technicalSkills';
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
+import ScrollProgressRead from 'react-scroll-progress-read';
 
 class App extends Component {
   render() {
     return(
     <div className="App">
       <div className="container-fluid">
+        <div className="myScrollBar">
+          <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="#ffee58" height="0.2rem"/>
+        </div>
         <div id="cote" className="row fullScreen">
           <MainPage/>
         </div>

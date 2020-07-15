@@ -32,3 +32,19 @@ body {
   height: 100vh!important;
 }
 /* -------------------------------------------- */
+.myScrollBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  animation: 3s fade-in;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
