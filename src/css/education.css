@@ -44,6 +44,7 @@
   line-height: 0;
 }
 .dojoList {
+  padding-left: 3rem;
   margin-bottom: 25vh!important;
   align-items: center!important;
   font-size: 1.5rem;
@@ -55,5 +56,13 @@
 @media only screen and (max-width: 420px) {
   .myCertImg {
     margin: 0rem;
+  }
+  .dojoList {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    list-style: none;
   }
 }
