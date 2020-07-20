@@ -50,9 +50,10 @@
     color: rgba(255, 255, 255, 1);
   }
 }
-
-.hovIcon:hover {
+.hovIcon {
   transition: ease-in-out 0.25s;
+}
+.hovIcon:hover {
   transform: rotate(360deg);
 }
 /* ---------------------------------------------------------------------------------------------------------------- */
