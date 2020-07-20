@@ -1,5 +1,6 @@
 /* ------------------------ */
 .social {
+  cursor: pointer;
   margin-left: 1rem!important;
   animation: 2s slide-up;
 }
@@ -50,6 +51,11 @@
   }
 }
 
+.hovIcon:hover {
+  transition: ease-in-out 0.25s;
+  transform: rotate(360deg);
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
 .titleAtag {
   color: rgb(97, 218, 251);
   animation: 4s color-fade-in2;
@@ -296,6 +302,7 @@
   }
   .titleLinks {
     font-size: 0.9rem!important;
+    margin-top: 0.5rem!important;
   }
   .mySelf {
     margin-top: 2rem;
@@ -318,3 +325,9 @@
   }
 }
 
+/* -------------------------------------------------- */
+
+.messageInner {
+  background-color: white;
+  color: black;
+}

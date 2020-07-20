@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import self from '../images/self1_edited.jpg';
 import '../css/main.css';
+// import Message from './message';
+//***MAKE ROWS @ 14 & 30 WHEN MESSAGE CONT ADDED***
 
 const MainPage = () => {
   const [light, setLight] = useState(false);
@@ -12,13 +14,13 @@ const MainPage = () => {
     <React.Fragment>
       <div className="titleCont col-xl-12">
         <div className="titleLinks mb-1">
-          <p className="social"><span className="fadeicon"><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
+          <p className="social"><span className="fadeicon"><i className="hovIcon fa fa-github-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://github.com/mcote7">www.github.com/mcote7</a></p>
-          <p className="social"><span className="fadeicon"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
+          <p className="social"><span className="fadeicon"><i className="hovIcon fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://linkedin.com/in/michael-cote-wa">www.linkedin.com/in/michael-cote</a></p>
-          <p className="social"><span className="fadeicon"><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+          <p className="social"><span className="fadeicon"><i className="hovIcon fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://facebook.com/profile.php?id=100012957396194">www.facebook.com/mikec</a></p>
         </div>
@@ -33,6 +35,9 @@ const MainPage = () => {
           for growth and personal development, as well as the opportunity to expand my knowledge.
         </h4>
       </div>
+      {/* <div className="messageCont col-xl-3 offset-1">
+        <Message/>
+      </div> */}
     </React.Fragment>
   );
 }
