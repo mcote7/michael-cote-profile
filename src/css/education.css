@@ -17,8 +17,16 @@
   transform: scale(1.3);
 }
 .arrowIcon {
-  color: rgb(97, 218, 251);
+  color: rgba(97, 218, 251, 0.75);
   cursor: pointer;
+  transition: ease 0.1s;
+}
+.arrowIcon:hover {
+  color: rgb(97, 218, 251);
+}
+.arrowIcon:active {
+  color: white;
+  transform: scale(0.75);
 }
 .disable {
   color: black;

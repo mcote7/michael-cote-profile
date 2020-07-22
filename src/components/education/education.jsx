@@ -19,6 +19,7 @@ class Education extends React.Component {
         (<img src={img2} className="myCertImg" alt="img"/>),
         (<img src={img1} className="myCertImg" alt="img"/>),
         (<img src={img3} className="myCertImg" alt="img"/>),
+        (null),
       ],
       thumbnails: [
         (<img src={img2} className="myCertThumb m-0" alt="img"/>),
@@ -29,13 +30,14 @@ class Education extends React.Component {
     this.onchange = this.onchange.bind(this);
   }
   onchange(value) {
-    this.setState({ value });
+    console.log("imgVal", value);
+    this.state.value === 2 ? this.setState({ value: 0 }) : this.setState({ value });
   }
   onImageSwitch = () => {
-      if(this.state.value === 1) return ( <DojoInfo/> );
-      else if(this.state.value === 2) return ( <ReduxInfo/> );
-      else if(this.state.value === 0) return ( <ReactInfo/> );
-    }
+    if(this.state.value === 1) return ( <DojoInfo/> );
+    else if(this.state.value === 2) return ( <ReduxInfo/> );
+    else if(this.state.value === 0) return ( <ReactInfo/> );
+  }
   componentDidMount() {
     onRoute();
   }
@@ -56,10 +58,10 @@ class Education extends React.Component {
         />
         <hr className="carouselHR"/>
         <Dots
-        number={this.state.thumbnails.length}
-        thumbnails={this.state.thumbnails}
-        value={this.state.value}
-        onChange={this.onchange}
+          number={this.state.thumbnails.length}
+          thumbnails={this.state.thumbnails}
+          value={this.state.value}
+          onChange={this.onchange}
         />
       </div>
       <div className="col-lg-5 mt-2">
@@ -67,6 +69,6 @@ class Education extends React.Component {
       </div>
       </React.Fragment>
     );
-  }
-}
+  };
+};
 export default Education;
