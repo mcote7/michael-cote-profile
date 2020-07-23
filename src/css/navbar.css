@@ -2,7 +2,17 @@
   height: 20vh!important;
   background-color: rgba(0, 0, 0, 0.85)!important;
   color: white!important;
+  animation: 8s fade-in-nav;
 }
+@keyframes fade-in-nav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .nameGroup {
   display: grid!important;
   line-height: 0.8!important;
@@ -18,7 +28,7 @@
   padding: 1rem;
   font-size: 2.5rem;
   color: rgb(255, 255, 255);
-  filter: blur(2px)!important;
+  filter: blur(1.75px)!important;
   transition: ease-in 0.55s;
 }
 .myNavLinks:hover {
