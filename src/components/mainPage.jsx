@@ -24,7 +24,7 @@ const MainPage = () => {
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://facebook.com/profile.php?id=100012957396194">www.facebook.com/mikec</a></p>
         </div>
-        <h1 className="titleName">M{light?<span className="yellowWar titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
+        <h1 className="titleName">M{light?<span className="yellowWar blinky titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
         <p className="titleSub"> web developer in &nbsp;2020</p>
       </div>
       <div className="titleQuote col-xl-7">

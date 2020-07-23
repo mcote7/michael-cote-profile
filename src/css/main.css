@@ -15,7 +15,7 @@
 
 .yellowWar {
   display: inline-block!important;
-  color: #ffee58!important;
+  color: #ffee58;
   cursor: pointer;
   transition: ease-in 0.1s;
 }
@@ -57,6 +57,26 @@
   transform: rotate(360deg);
   margin-right: 12px;
   color: rgba(97, 218, 251, 0.5);
+}
+/* ---------------------------------------------------- */
+.blinky {
+  animation: blink 8s ease 2s infinite;
+}
+@keyframes blink {
+  0% {color: #ffee58;}
+  0.25% {color: black;}
+  0.5% {color: #ffee58;}
+  0.75% {color: black;}
+  1% {color: #ffee58;}
+  1.25% {color: black;}
+  1.5% {color: #ffee58;}
+  1.75% {color: black;}
+  20% {color: rgb(97, 218, 251);}
+  28.5% {color: black;}
+  29.5% {color: white;}
+  30% {color: #ffee58;}
+
+  100% {color: #ffee58;}
 }
 /* ---------------------------------------------------------------------------------------------------------------- */
 .titleAtag {
