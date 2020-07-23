@@ -14,7 +14,7 @@
 }
 
 .yellowWar {
-  border-top: 1.5px solid!important;
+  border-top: 1px solid!important;
   display: inline-block!important;
   color: #ffee58;
   cursor: pointer;
@@ -32,7 +32,7 @@
   font-weight: 700;
 }
 .titleNameSpec {
-  border-top: 1.5px solid!important;
+  border-top: 1px solid!important;
   display: inline-block!important;
   line-height: 0.9!important;
   font-size: 8.5rem;
@@ -52,7 +52,7 @@
   }
 }
 .hovIcon {
-  transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.5s;
 }
 .hovIcon:hover {
   transform: rotate(360deg);
