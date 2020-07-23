@@ -14,6 +14,7 @@
 }
 
 .yellowWar {
+  border-top: 1.5px solid!important;
   display: inline-block!important;
   color: #ffee58;
   cursor: pointer;
@@ -25,14 +26,14 @@
   text-align: left!important;
 }
 .titleName {
-  border-top: 2px solid!important;
+  border-top: 3px solid;
   line-height: 0.9!important;
   font-size: 8.5rem;
   font-weight: 700;
 }
 .titleNameSpec {
+  border-top: 1.5px solid!important;
   display: inline-block!important;
-  border-top: 2px solid!important;
   line-height: 0.9!important;
   font-size: 8.5rem;
   font-weight: 700;
