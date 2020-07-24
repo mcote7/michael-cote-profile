@@ -2,11 +2,11 @@
 .social {
   cursor: pointer;
   margin-left: 1rem!important;
-  animation: 2s slide-up;
+  animation: 2.5s slide-up;
 }
 @keyframes slide-up {
   from {
-    margin-top: 45%;
+    margin-top: 100vh;
   }
   to {
     margin-top: 0%;

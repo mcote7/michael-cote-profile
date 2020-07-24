@@ -4,5 +4,5 @@ export function onRoute() {
   window.scrollTo({top: 0});
   setTimeout(()=> {
     window.scrollTo({top: cote, behavior: 'smooth'});
-  }, 100);
+  }, 500);
 }
