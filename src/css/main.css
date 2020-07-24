@@ -136,7 +136,7 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.75s;
 }
 .quote:hover {
   cursor: pointer;
