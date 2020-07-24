@@ -136,11 +136,11 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  transition: ease 0.7s;
+  transition: ease-in 0.4s;
 }
 .quote:hover {
   cursor: pointer;
-  transform: skewX(-4deg);
+  transform: skewX(-8deg);
   color: rgb(97, 218, 251);
 }
 .mySelf {
