@@ -120,7 +120,7 @@
   line-height: 1;
   margin-top: -12rem!important;
   transition: ease 1.5s;
-  animation: 6s fade-in;
+  animation: 8s fade-in;
 }
 @keyframes fade-in {
   from {
