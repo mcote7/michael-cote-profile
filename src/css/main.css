@@ -2,7 +2,7 @@
 .social {
   cursor: pointer;
   margin-left: 1rem!important;
-  animation: 2.5s slide-up;
+  animation: 2.5s ease-out slide-up;
 }
 @keyframes slide-up {
   from {
@@ -136,7 +136,7 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  transition: ease-in 0.4s;
+  transition: ease-in-out 0.4s;
 }
 .quote:hover {
   cursor: pointer;
