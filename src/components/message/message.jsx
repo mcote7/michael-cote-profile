@@ -2,6 +2,7 @@ import React from 'react';
 import '../../css/message.css';
 import Form from './form';
 import Joi from 'joi-browser';
+import { onRoute } from '../../utilities/onRoute';
 
 class Message extends Form {
   state = {
@@ -18,6 +19,9 @@ class Message extends Form {
     email: Joi.string().required().regex(/(.+)@(.+){2,}\.(.+){2,}/).label('Email'),
     message: Joi.string().required().label('Message'),
   };
+  componentDidMount() {
+    onRoute();
+  }
   doSubmit = async () => {
     try {
 
@@ -33,14 +37,18 @@ class Message extends Form {
   render() {
     return (
       <React.Fragment>
-        <div className="messageCont">
-        <h1 className="formTitle">Send me a message</h1>
-          <form className="myForm" onSubmit={this.handleSubmit}>
-            {this.renderInput("name", "Name")}
-            {this.renderInput("email", "Email")}
-            {this.renderText("message", "Message")}
-            {this.renderButton('SEND')}
-          </form>
+        <div className="container-fluid">
+          <div className="messageCont row">
+            <div className="col-xl-6 m-auto">
+              <h1 className="formTitle">Send me a message</h1>
+              <form className="myForm" onSubmit={this.handleSubmit}>
+                {this.renderInput("name", "Name")}
+                {this.renderInput("email", "Email")}
+                {this.renderText("message", "Message")}
+                {this.renderButton('SEND')}
+              </form>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );

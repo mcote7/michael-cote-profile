@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import self from '../images/self1_edited.jpg';
 import '../css/main.css';
+import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   const [light, setLight] = useState(false);
@@ -21,6 +22,7 @@ const MainPage = () => {
           <p className="social"><span className="fadeicon"><i className="hovIcon fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://facebook.com/profile.php?id=100012957396194">www.facebook.com/mikec</a></p>
+          <Link to="contact" className="contactBtn ml-5"><span>Contact me&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"></i></span></Link>
         </div>
         <h1 className="titleName">M{light?<span className="yellowWar blinky titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
         <p className="titleSub"> web developer in &nbsp;2020</p>

@@ -1,12 +1,29 @@
 /* ---------form-control-overide------------------------ */
 .messageCont {
-  float: right!important;
-  z-index: 999;
-  margin-top: -4rem!important;
+  height: 100vh!important;
+}
+.messageCont::before {
+  height: 99vh;
+  content: "";
+  background-image: url('../images/seattle.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 80vh;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  mask-image: linear-gradient(to bottom,
+  rgba(0,0,0,1),
+  rgba(0,0,0,1),
+  rgba(0,0,0,1),
+  rgba(0,0,0,0));
 }
 .form-control {
   height: auto!important;
 }
+
+
+
 .formTitle {
   font-size: smaller;
   color: rgb(97, 218, 251)!important;
