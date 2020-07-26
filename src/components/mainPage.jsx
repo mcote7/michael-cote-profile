@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import self from '../images/self1_edited.jpg';
 import '../css/main.css';
-// import Message from './message';
-//***MAKE ROWS @ 14 & 30 WHEN MESSAGE CONT ADDED***
 
 const MainPage = () => {
   const [light, setLight] = useState(false);
@@ -35,9 +33,6 @@ const MainPage = () => {
           for growth and personal development, as well as the opportunity to expand my knowledge.
         </h4>
       </div>
-      {/* <div className="messageCont col-xl-3 offset-1">
-        <Message/>
-      </div> */}
     </React.Fragment>
   );
 }

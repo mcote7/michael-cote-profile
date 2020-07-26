@@ -9,6 +9,7 @@ import TechnicalSkills from './components/technicalSkills';
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
 import ScrollProgressRead from 'react-scroll-progress-read';
+import Message from './components/message/message';
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
             <Route exact path="/education" component={Education}/>
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/resume" component={Resume}/>
+            <Route exact path="/contact" component={Message}/>
             <Route exact path="/michael-cote-profile-2020" component={scrollTop}/>
             <Redirect from="/" exact to="/michael-cote-profile-2020"/>
             <Redirect to="/michael-cote-profile-2020"/>
