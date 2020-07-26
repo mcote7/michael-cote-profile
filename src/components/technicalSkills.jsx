@@ -69,6 +69,5 @@ const Home = () => {
       </div>
     </React.Fragment>
   );
-}
-
+};
 export default Home;

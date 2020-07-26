@@ -11,13 +11,12 @@ class Message extends Form {
       email: '',
       message: '',
     },
-    
     errors: {}
   };
   schema = {
     name: Joi.string().required().label('Name'),
     email: Joi.string().required().regex(/(.+)@(.+){2,}\.(.+){2,}/).label('Email'),
-    message: Joi.string().required().label('Message'),
+    message: Joi.string().min(10).label('Message'),
   };
   componentDidMount() {
     onRoute();
@@ -37,19 +36,24 @@ class Message extends Form {
   render() {
     return (
       <React.Fragment>
-        <div className="container-fluid">
-          <div className="messageCont row">
-            <div className="col-xl-6 m-auto">
-              <h1 className="formTitle">Send me a message</h1>
-              <form className="myForm" onSubmit={this.handleSubmit}>
-                {this.renderInput("name", "Name")}
-                {this.renderInput("email", "Email")}
-                {this.renderText("message", "Message")}
-                {this.renderButton('SEND')}
-              </form>
-            </div>
+          <div className="messageCont container">
+            <form className="myForm" onSubmit={this.handleSubmit}>
+              <div className="row">
+                <div className="col-lg-6">
+                  {this.renderInput("name", "Name")}
+                  {this.renderInput("email", "Email")}
+                </div>
+                <div className="col-lg-6">
+                  {this.renderText("message", "Message")}
+                </div>
+              </div>
+              <div className="row pt-3">
+                <div className="col-lg-12 mt-4 pt-5">
+                  {this.renderButton('CONTACT ME')}
+                </div>
+              </div>
+            </form>
           </div>
-        </div>
       </React.Fragment>
     );
   };

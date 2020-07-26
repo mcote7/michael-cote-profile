@@ -1,6 +1,7 @@
 /* ---------form-control-overide------------------------ */
 .messageCont {
   height: 100vh!important;
+  text-align: left;
 }
 .messageCont::before {
   height: 99vh;
@@ -21,51 +22,79 @@
 .form-control {
   height: auto!important;
 }
-
-
-
-.formTitle {
-  font-size: smaller;
-  color: rgb(97, 218, 251)!important;
-}
+/*  ------- submit-button --------  */
 .formBtn {
+  font-size: x-large!important;
+  height: 10vh!important;
   color: white!important;
-  background-color: rgb(97, 218, 251)!important;
+  border-top: 0.25rem solid transparent!important;
+  border-left: 0.25rem solid transparent!important;
+  border-right: 0.25rem solid transparent!important;
+  border-bottom: 0.25rem solid white!important;
+  background-color: rgba(0, 0, 0, 0.25)!important;
+  transition: ease-in 0.2s;
 }
-/*  */
+.formBtn:hover {
+  color: rgb(97, 218, 251)!important;
+  border-top: 0.25rem solid rgb(97, 218, 251)!important;
+  border-left: 0.25rem solid rgb(97, 218, 251)!important;
+  border-right: 0.25rem solid rgb(97, 218, 251)!important;
+  border-bottom: 0.25rem solid rgb(97, 218, 251)!important;
+  background-color: rgba(0, 0, 0, 0.75)!important;
+}
+.formBtn:focus,.formBtn:active {
+  outline: none !important;
+  box-shadow: none!important;
+}
+.formBtn:active {
+  transform: scale(0.98)!important;
+}
+/* ----------------label------------------------------ */
+label {
+  cursor: pointer!important;
+}
+/*  ------------  */
+.myForm {
+  margin-top: 5rem;
+}
+/* ----inputs----------- */
 .twitterInputCont {
+  text-align: left!important;
   border-top: none!important;
   border-left: none!important;
   border-right: none!important;
-  border-bottom: solid 0.25rem rgb(97, 218, 251)!important;
-  color: rgb(97, 218, 251)!important;
-  /* background-color: hsl(210, 29%, 97%)!important; */
-  background-color: white!important;
+  border-bottom: solid 0.25rem white!important;
+  color: white!important;
+  background-color: rgba(0, 0, 0, 0.5)!important;
 }
 .twitterInputCont:focus-within {
-  color: #ffee58!important;
-  border-bottom: solid 0.25rem #ffee58!important;
+  color: rgb(97, 218, 251)!important;
+  border-bottom: solid 0.25rem rgb(97, 218, 251)!important;
+}
+.formLabel {
+  font-size: xx-large;
+  font-weight: 500;
 }
 .twitterInputCont:focus-within label::after {
   content: " . . ."!important;
 }
 /*  */
 .twitterInput {
-  font-size: x-large!important;
-  color: rgb(97, 218, 251)!important;
-  caret-color: rgb(97, 218, 251)!important;;
+  font-size: xx-large!important;
+  color: white!important;
+  caret-color: white!important;;
   border: none!important;
-  /* background-color: hsl(210, 29%, 97%)!important; */
-  background-color: white!important;
+  background-color: transparent!important;
 }
-/* autofill color fix */
+/* - */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
-  box-shadow: 0 0 0 30px white inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
 }
+
 /* form error message */
 .errorMess {
   color: red;
