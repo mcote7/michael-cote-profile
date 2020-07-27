@@ -31,7 +31,7 @@
   border-left: 0.25rem solid transparent!important;
   border-right: 0.25rem solid transparent!important;
   border-bottom: 0.25rem solid white!important;
-  background-color: rgba(0, 0, 0, 0.25)!important;
+  background-color: rgba(0, 0, 0, 0.5)!important;
   transition: ease-in 0.2s;
 }
 .formBtn:hover {
@@ -40,7 +40,7 @@
   border-left: 0.25rem solid rgb(97, 218, 251)!important;
   border-right: 0.25rem solid rgb(97, 218, 251)!important;
   border-bottom: 0.25rem solid rgb(97, 218, 251)!important;
-  background-color: rgba(0, 0, 0, 0.75)!important;
+  background-color: rgba(0, 0, 0, 0.85)!important;
 }
 .formBtn:focus,.formBtn:active {
   outline: none !important;
@@ -58,25 +58,35 @@ label {
   margin-top: 5rem;
 }
 /* ----inputs----------- */
+.formLabel {
+  font-size: xx-large;
+  font-weight: 500;
+}
+
 .twitterInputCont {
   text-align: left!important;
   border-top: none!important;
   border-left: none!important;
   border-right: none!important;
-  border-bottom: solid 0.25rem white!important;
+  border-bottom: solid 0.25rem rgba(0, 0, 0, 0.5)!important;
   color: white!important;
   background-color: rgba(0, 0, 0, 0.5)!important;
 }
 .twitterInputCont:focus-within {
   color: rgb(97, 218, 251)!important;
   border-bottom: solid 0.25rem rgb(97, 218, 251)!important;
+  background-color: rgba(0, 0, 0, 0.85)!important;
 }
-.formLabel {
-  font-size: xx-large;
-  font-weight: 500;
-}
+
 .twitterInputCont:focus-within label::after {
-  content: " . . ."!important;
+  content: '';
+  animation: dots 1.5s infinite;
+}
+@keyframes dots {
+  0% {content: '';}
+  25% {content: ' .';}
+  50% {content: ' . .';}
+  75% {content: ' . . .';}
 }
 /*  */
 .twitterInput {
@@ -103,4 +113,18 @@ input:-webkit-autofill:active {
   border-top: solid 0.15rem red!important;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
+}
+
+.moreBtm {
+  margin-bottom: 0rem!important;
+}
+@media only screen and (max-width: 1020px) {
+  .moreBtm {
+    margin-bottom: 12rem!important;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .moreBtm {
+    margin-bottom: 14rem!important;
+  }
 }

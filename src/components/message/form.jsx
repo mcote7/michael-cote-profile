@@ -52,8 +52,10 @@ class Form extends Component {
 
   renderButton(label) {
     return(
-    <button disabled={false}
-    className="btn col-lg-12 formBtn">{label}</button>);
+    <button
+    disabled={this.validate()} type="submit"
+    className="btn col-lg-12 formBtn">{label}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><i className="fa fa-envelope-o" aria-hidden="true"></i></span></button>);
   };
 
   renderText(name, label) {

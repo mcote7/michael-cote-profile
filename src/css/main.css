@@ -17,7 +17,7 @@
   border-top: 1px solid!important;
   display: inline-block!important;
   color: #ffee58;
-  cursor: pointer;
+  cursor: none!important;
   transition: ease-in 0.1s;
 }
 
@@ -52,30 +52,33 @@
   }
 }
 .hovIcon {
-  transition: ease-in-out 0.5s;
+  cursor: none!important;
+  transition: ease-in-out 0.25s;
 }
 .hovIcon:hover {
-  transform: rotate(360deg);
-  margin-right: 12px;
-  color: rgba(97, 218, 251, 0.5);
+  transform: scale(0.75);
+  color: rgb(97, 218, 251);
+  box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.35);
+  border-color: cornsilk;
+  border-radius: 24%;
 }
 /* ---------------------------------------------------- */
 .blinky {
   animation: blink 8s ease 2s infinite;
 }
 @keyframes blink {
-  0% {color: #ffee58;}
+  0% {color: cornsilk;}
   0.25% {color: black;}
-  0.5% {color: #ffee58;}
+  0.5% {color: cornsilk;}
   0.75% {color: black;}
-  1% {color: #ffee58;}
+  1% {color: cornsilk;}
   1.25% {color: black;}
-  1.5% {color: #ffee58;}
+  1.5% {color: cornsilk;}
   1.75% {color: black;}
   20% {color: rgb(97, 218, 251);}
   28.5% {color: black;}
   29.5% {color: white;}
-  30% {color: #ffee58;}
+  30% {color: cornsilk;}
 
   100% {color: #ffee58;}
 }
@@ -136,12 +139,11 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  transition: ease-in-out 0.75s;
+  transition: ease-in-out 10s;
 }
 .quote:hover {
-  cursor: pointer;
-  transform: skewX(-8deg);
-  color: rgb(97, 218, 251);
+  cursor: vertical-text;
+  color: cornsilk;
 }
 .mySelf {
   border: outset;
@@ -213,6 +215,9 @@
     line-height: 0!important;
     margin-bottom: 0rem!important;
   }
+  .contactLink {
+    margin-left: 0rem!important;
+  }
 }
 /* ----------------------------------------- */
 @media only screen and (max-width: 755px) {
@@ -235,6 +240,9 @@
     letter-spacing: 1rem!important;
     font-size: 1.2rem;
     font-weight: 300;
+  }
+  .contactLink {
+    margin-left: 0rem!important;
   }
 }
 /* ------------------------------------------- */
@@ -296,6 +304,9 @@
 }
 /* -----------phone--------------------------- */
 @media only screen and (max-width: 420px) {
+  .btmPhone {
+    margin-bottom: 0.5rem!important;
+  }
   .titleCont {
     margin-left: 0rem!important;
     margin-top: 0rem!important;
@@ -349,7 +360,54 @@
   }
 }
 
-/* -------------------------------------------------- */
+/* ------------------new contact btn-------------------------------- */
+.placeholder{
+  width: 290px;
+  height: 40px;
+}
+.contactLink {
+  margin-left: 1.5rem;
+}
 .contactBtn {
-  
+  z-index: 999;
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  width: 290px;
+  height: 40px;
+  color: cornsilk;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.1s ease-in-out;
+}
+.contactBtn:hover {
+  transition: 0.1s ease-in-out;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) , rgba(255, 255, 255, 0) 60%);
+  text-decoration: none;
+  color: rgb(97, 218, 251);
+}
+
+svg {
+  position: absolute;
+  fill: none;
+  stroke: cornsilk;
+  stroke-dasharray: 260 7000;
+  stroke-dashoffset: 260;
+  transition: 2s ease-in-out;
+  animation: svgOutline 4s ease-in-out infinite;
+}
+@keyframes svgOutline {
+  from {stroke-dashoffset: 260;}
+  to {stroke-dashoffset: -7000;}
+}
+
+/* ------outline override----------- */
+.contactBtn:focus,.contactBtn:active {
+  outline: none !important;
+  box-shadow: none!important;
+  color: cornsilk!important;
+  background: cornsilk!important;
+  transition-delay: 0.2s;
+  transition-duration: 0.4s;
+  transform: scale(0)!important;
 }
