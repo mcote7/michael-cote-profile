@@ -329,7 +329,7 @@
   .quote {
     margin-bottom: 0rem!important;
     margin-left: 0rem!important;
-    margin-top: 2rem !important;
+    margin-top: 6rem !important;
     font-size: 1rem!important;
     font-weight: bolder!important;
     letter-spacing: 0rem!important;
@@ -340,7 +340,7 @@
     margin-top: 0.5rem!important;
   }
   .mySelf {
-    margin-top: 2rem;
+    margin-top: 6rem;
     border-width: 4px;
     max-width: 80px;
   }
@@ -356,7 +356,7 @@
     margin-top: 12rem;
   }
   .quote {
-    display: none;
+    margin-top: 12rem;
   }
 }
 

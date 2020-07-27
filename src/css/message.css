@@ -128,3 +128,8 @@ input:-webkit-autofill:active {
     margin-bottom: 14rem!important;
   }
 }
+@media only screen and (max-height: 420px) {
+  .formBtn {
+    height: auto!important;
+  }
+}

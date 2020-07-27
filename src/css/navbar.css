@@ -153,8 +153,6 @@
     padding: 4px;
   }
   .fixed-bottom {
-    position: fixed;
-    top: 0!important;
-    bottom: unset!important;
+    display: none!important;
   }
 }
