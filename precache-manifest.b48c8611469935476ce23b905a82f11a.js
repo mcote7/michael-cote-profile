@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56c5c0c018b0142d1979d04963201452",
+    "revision": "0b43d20993dacb9a3948a198503657b8",
     "url": "/michael-cote-profile-2020/index.html"
   },
   {
-    "revision": "d812688e56b72a053bcd",
+    "revision": "4629966254aad096224a",
     "url": "/michael-cote-profile-2020/static/css/2.3d09bf3b.chunk.css"
   },
   {
-    "revision": "2cfd95d8dcd32c70d7dc",
-    "url": "/michael-cote-profile-2020/static/css/main.1bab1ce2.chunk.css"
+    "revision": "a66bb42146bacf153d7e",
+    "url": "/michael-cote-profile-2020/static/css/main.cf824bd2.chunk.css"
   },
   {
-    "revision": "d812688e56b72a053bcd",
-    "url": "/michael-cote-profile-2020/static/js/2.3ea1f2ac.chunk.js"
+    "revision": "4629966254aad096224a",
+    "url": "/michael-cote-profile-2020/static/js/2.124c7a58.chunk.js"
   },
   {
-    "revision": "26327434090b70d71b42b51eba5dbbdb",
-    "url": "/michael-cote-profile-2020/static/js/2.3ea1f2ac.chunk.js.LICENSE.txt"
+    "revision": "1cef56998f99197eb9c617b9216fe4ba",
+    "url": "/michael-cote-profile-2020/static/js/2.124c7a58.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2cfd95d8dcd32c70d7dc",
-    "url": "/michael-cote-profile-2020/static/js/main.92f7ba10.chunk.js"
+    "revision": "a66bb42146bacf153d7e",
+    "url": "/michael-cote-profile-2020/static/js/main.720f4ef7.chunk.js"
   },
   {
     "revision": "302bb3cf82baf84ae1b8",
@@ -90,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5b6025d767a7a647a87d9b99472b6c71",
     "url": "/michael-cote-profile-2020/static/media/resume2.5b6025d7.jpg"
+  },
+  {
+    "revision": "68386ff28adeed13bf188d983bc55a3b",
+    "url": "/michael-cote-profile-2020/static/media/seattle.68386ff2.jpg"
   },
   {
     "revision": "58739e43ad9e004bd4102b2eb2e0e5cd",
