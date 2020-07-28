@@ -147,6 +147,14 @@
     border-top: solid 1px rgb(97, 218, 251)!important;
   }
 }
+@media only screen and (max-width: 420px) {
+  .myNavBar {
+    padding-bottom: 1.5rem!important;
+  }
+  .myNavLinksName {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}
 @media only screen and (max-height: 420px) {
   .myNavLinks {
     line-height: 1.5;

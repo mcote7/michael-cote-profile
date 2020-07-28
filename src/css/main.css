@@ -329,7 +329,7 @@
   }
   .quote {
     margin-left: 0rem!important;
-    margin-top: 4.5rem !important;
+    margin-top: 4.5rem!important;
     font-size: 1rem!important;
     font-weight: bolder!important;
     letter-spacing: 0rem!important;
@@ -341,9 +341,9 @@
   }
   .mySelf {
     margin-left: 1rem;
-    margin-top: 4.55rem;
+    margin-top: 4.5rem;
     border-width: 4px;
-    max-width: 70px;
+    max-width: 80px;
   }
   .titleQuote {
     margin-left: 0rem !important;
