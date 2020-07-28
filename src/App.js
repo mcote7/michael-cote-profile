@@ -13,7 +13,6 @@ import Message from './components/message/message';
 
 class App extends Component {
   state = { message: false }
-  //add func for updating state and pass to message component
   handleMessage = () => {
     this.setState({message: true})
   }

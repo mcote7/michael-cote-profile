@@ -28,7 +28,7 @@ class Message extends Form {
     emailjs.sendForm('gmail', 'mytemp', e.target, 'user_KRJPD3NhrsH0tdT0veU9v')
     .then((result) => {
       console.log(result.text);
-      //???change message state = true pass up
+      //change message state = true pass up
       this.props.handleMessage();
       this.props.history.push("/");
     }, (error) => {
