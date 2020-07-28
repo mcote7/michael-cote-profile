@@ -10,21 +10,67 @@ const MainPage = ({message}) => {
     setTimeout(()=> {
       setLight(true);
     }, 2000)
+    // contact btn
     setTimeout(()=> {
       setContact(true);
     }, 3100)
     setTimeout(()=> {
       setContact(false);
-    }, 3200)
+    }, 3125)
+    setTimeout(()=> {
+      setContact(true);
+    }, 3150)
+    setTimeout(()=> {
+      setContact(false);
+    }, 3250)
     setTimeout(()=> {
       setContact(true);
     }, 3300)
+    setTimeout(()=> {
+      setContact(true);
+    }, 3350)
     setTimeout(()=> {
       setContact(false);
     }, 3400)
     setTimeout(()=> {
       setContact(true);
-    }, 3500)
+    }, 3600)
+    setTimeout(()=> {
+      setContact(false);
+    }, 3625)
+    setTimeout(()=> {
+      setContact(true);
+    }, 3750)
+    setTimeout(()=> {
+      setContact(true);
+    }, 8100)
+    setTimeout(()=> {
+      setContact(false);
+    }, 8125)
+    setTimeout(()=> {
+      setContact(true);
+    }, 8150)
+    setTimeout(()=> {
+      setContact(false);
+    }, 8250)
+    setTimeout(()=> {
+      setContact(true);
+    }, 8300)
+    setTimeout(()=> {
+      setContact(true);
+    }, 8350)
+    setTimeout(()=> {
+      setContact(false);
+    }, 8400)
+    setTimeout(()=> {
+      setContact(true);
+    }, 8600)
+    setTimeout(()=> {
+      setContact(false);
+    }, 8625)
+    setTimeout(()=> {
+      setContact(true);
+    }, 8750)
   },[]);
   return (
     <React.Fragment>

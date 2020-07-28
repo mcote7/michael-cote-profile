@@ -56,7 +56,7 @@
   transition: ease-in-out 0.25s;
 }
 .hovIcon:hover {
-  transform: scale(0.75);
+  transform: scale(0.85);
   color: rgb(97, 218, 251);
   box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.35);
   border-color: cornsilk;
@@ -407,7 +407,18 @@ svg {
   box-shadow: none!important;
   color: cornsilk!important;
   background: cornsilk!important;
-  transition-delay: 0.2s;
   transition-duration: 0.4s;
   transform: scale(0)!important;
 }
+
+@media only screen and (max-width: 520px) {
+  .contactBtn:focus,.contactBtn:active {
+    outline: none !important;
+    box-shadow: none!important;
+    color: rgba(255, 248, 220, 0.1)!important;
+    background: transparent!important;
+    transition-duration: 0.2s;
+    transform: scale(1.1)!important;
+  }
+}
+
