@@ -146,6 +146,7 @@
   color: cornsilk;
 }
 .mySelf {
+  margin-left: 3rem;
   border: outset;
   border-color: rgb(97, 218, 251);
   border-width: 5px;
@@ -339,9 +340,10 @@
     margin-top: 0.5rem!important;
   }
   .mySelf {
+    margin-left: 1rem;
     margin-top: 4.55rem;
     border-width: 4px;
-    max-width: 80px;
+    max-width: 70px;
   }
   .titleQuote {
     margin-left: 0rem !important;
