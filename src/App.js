@@ -33,7 +33,7 @@ class App extends Component {
             <Route exact path="/education" component={Education}/>
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/resume" component={Resume}/>
-            <Route exact path="/contact" component={Message} handleMessage={this.handleMessage.bind(this)}/>
+            <Route exact path="/contact" component={Message} handleMessage={this.handleMessage}/>
             <Route exact path="/michael-cote-profile-2020" component={scrollTop}/>
             <Redirect from="/" exact to="/michael-cote-profile-2020"/>
             <Redirect to="/michael-cote-profile-2020"/>

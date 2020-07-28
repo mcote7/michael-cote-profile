@@ -67,7 +67,7 @@ const MainPage = ({message}) => {
           <p className="social btmPhone"><span className="fadeicon"><i className="hovIcon fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://facebook.com/profile.php?id=100012957396194">www.facebook.com/cote</a></p>
-          {contact ? <Link to="contact" className="contactBtn contactLink">
+          {contact ? <Link to="/contact" className="contactBtn contactLink">
           <svg width="290px" height="40px" viewBox="0 0 290 40" className="contactBtn">
             <polyline points="289,1 289,39 1,39 1,1 289,1" className="bg-line" />
             <polyline points="289,1 289,39 1,39 1,1 289,1" className="hl-line" />
