@@ -2,11 +2,18 @@ import React, {useState, useEffect} from 'react';
 import self from '../images/self1_edited.jpg';
 import '../css/main.css';
 import { Link } from 'react-router-dom';
+import Loading from './isLoading';
 
 const MainPage = ({message}) => {
   const [light, setLight] = useState(false);
   const [contact, setContact] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
+    //loader
+    setTimeout(()=> {
+      setLoading(false);
+    }, 6000)
+    //my i
     setTimeout(()=> {
       setLight(true);
     }, 2000)
@@ -54,6 +61,7 @@ const MainPage = ({message}) => {
       setContact(true);
     }, 7750)
   },[]);
+  if(loading) return <Loading loading={loading}/>;
   return (
     <React.Fragment>
       <div className="titleCont col-xl-12">
