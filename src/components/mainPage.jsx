@@ -42,35 +42,17 @@ const MainPage = ({message}) => {
       setContact(true);
     }, 3750)
     setTimeout(()=> {
+      setContact(false);
+    }, 7400)
+    setTimeout(()=> {
       setContact(true);
-    }, 8100)
+    }, 7600)
     setTimeout(()=> {
       setContact(false);
-    }, 8125)
+    }, 7625)
     setTimeout(()=> {
       setContact(true);
-    }, 8150)
-    setTimeout(()=> {
-      setContact(false);
-    }, 8250)
-    setTimeout(()=> {
-      setContact(true);
-    }, 8300)
-    setTimeout(()=> {
-      setContact(true);
-    }, 8350)
-    setTimeout(()=> {
-      setContact(false);
-    }, 8400)
-    setTimeout(()=> {
-      setContact(true);
-    }, 8600)
-    setTimeout(()=> {
-      setContact(false);
-    }, 8625)
-    setTimeout(()=> {
-      setContact(true);
-    }, 8750)
+    }, 7750)
   },[]);
   return (
     <React.Fragment>

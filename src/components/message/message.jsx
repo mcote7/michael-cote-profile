@@ -29,6 +29,7 @@ class Message extends Form {
     .then((result) => {
       console.log(result.text);
       //???change message state = true pass up
+      this.props.handleMessage();
       this.props.history.push("/");
     }, (error) => {
       console.log(error.text);

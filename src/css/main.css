@@ -407,7 +407,7 @@ svg {
   box-shadow: none!important;
   color: cornsilk!important;
   background: cornsilk!important;
-  transition-duration: 0.4s;
+  transition-duration: 1s;
   transform: scale(0)!important;
 }
 
@@ -417,7 +417,7 @@ svg {
     box-shadow: none!important;
     color: rgba(255, 248, 220, 0.1)!important;
     background: transparent!important;
-    transition-duration: 0.2s;
+    transition-duration: 1s;
     transform: scale(1.1)!important;
   }
 }
