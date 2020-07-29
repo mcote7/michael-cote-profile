@@ -8,7 +8,7 @@ const NavBar = () => {
   useEffect(() => {
     setTimeout(()=> {
       setLoading(false);
-    }, 11000)
+    }, 9000)
   },[])
   if(loading) return null;
   return (
