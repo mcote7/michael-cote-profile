@@ -2,9 +2,9 @@
 .social {
   cursor: pointer;
   margin-left: 1rem!important;
-  animation: 2.5s ease-out slide-up;
+  animation: 4s ease-out slide-up-main;
 }
-@keyframes slide-up {
+@keyframes slide-up-main {
   from {
     margin-top: 100vh;
   }
@@ -41,15 +41,12 @@
 
 .fadeicon {
   color: white;
-  animation: 2s color-fade-in1;
+  animation: 4s color-fade-in1;
 }
 @keyframes color-fade-in1 {
-  from {
-    color: rgba(255, 255, 255, 0);
-  }
-  to {
-    color: rgba(255, 255, 255, 1);
-  }
+  0% {color: rgba(255, 255, 255, 0);}
+  50% {color: rgba(255, 255, 255, 0);}
+  100% {color: rgba(255, 255, 255, 1);}
 }
 .hovIcon {
   cursor: none!important;
