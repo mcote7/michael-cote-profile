@@ -103,11 +103,11 @@
   font-weight: 600;
   padding-bottom: 1rem;
   line-height: 0!important;
-  animation: 6s color-fade-in3;
+  animation: 4s color-fade-in3;
 }
 @keyframes color-fade-in3 {
   0% {color: rgba(97, 218, 251, 0);}
-  0% {color: rgba(97, 218, 251, 0);}
+  50% {color: rgba(97, 218, 251, 0);}
   100% {color: rgba(97, 218, 251, 1);}
 }
 
@@ -117,7 +117,7 @@
   line-height: 1;
   margin-top: -12rem!important;
   transition: ease 1.5s;
-  animation: 8s fade-in;
+  animation: 6s fade-in;
 }
 @keyframes fade-in {
   0% {opacity: 0;}
