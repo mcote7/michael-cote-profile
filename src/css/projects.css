@@ -33,7 +33,7 @@
   color: rgb(97, 218, 251)!important;
 }
 .moreBtm {
-  margin-bottom: 35vh!important;
+  height: 35vh!important;
 }
 @media only screen and (max-width: 1200px) {
   .moreBtm2 {
