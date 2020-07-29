@@ -1,10 +1,16 @@
-import React, {Component} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import '../css/navbar.css';
 
-class NavBar extends Component {
+const NavBar = () => {
 
-  render() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(()=> {
+      setLoading(false);
+    }, 11000)
+  },[])
+  if(loading) return null;
   return (
     <nav className="navbar fixed-bottom navbar-expand-xl myNavBar">
       <div className="nameGroup">
@@ -39,7 +45,6 @@ class NavBar extends Component {
       </div>
     </nav>
   );
-  }
 }
 
 export default NavBar;

@@ -2,7 +2,7 @@
   height: 20vh!important;
   background-color: rgba(0, 0, 0, 0.85)!important;
   color: white!important;
-  animation: 8s fade-in-nav;
+  animation: 4s fade-in-nav;
 }
 @keyframes fade-in-nav {
   from {

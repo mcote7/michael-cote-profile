@@ -16,50 +16,50 @@ const MainPage = ({message}) => {
     //my i
     setTimeout(()=> {
       setLight(true);
-    }, 2000)
+    }, 9000)
     // contact btn
     setTimeout(()=> {
       setContact(true);
-    }, 3100)
+    }, 10100)
     setTimeout(()=> {
       setContact(false);
-    }, 3125)
+    }, 10125)
     setTimeout(()=> {
       setContact(true);
-    }, 3150)
+    }, 10150)
     setTimeout(()=> {
       setContact(false);
-    }, 3250)
+    }, 10250)
     setTimeout(()=> {
       setContact(true);
-    }, 3300)
+    }, 10300)
     setTimeout(()=> {
       setContact(true);
-    }, 3350)
+    }, 10350)
     setTimeout(()=> {
       setContact(false);
-    }, 3400)
+    }, 10400)
     setTimeout(()=> {
       setContact(true);
-    }, 3600)
+    }, 10600)
     setTimeout(()=> {
       setContact(false);
-    }, 3625)
+    }, 10625)
     setTimeout(()=> {
       setContact(true);
-    }, 3750)
+    }, 10750)
     setTimeout(()=> {
       setContact(false);
-    }, 7400)
+    }, 14400)
     setTimeout(()=> {
       setContact(true);
-    }, 7600)
+    }, 14600)
     setTimeout(()=> {
       setContact(false);
-    }, 7625)
+    }, 14625)
     setTimeout(()=> {
       setContact(true);
-    }, 7750)
+    }, 14750)
   },[]);
   if(loading) return <Loading loading={loading}/>;
   return (
