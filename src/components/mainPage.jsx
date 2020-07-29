@@ -87,6 +87,7 @@ const MainPage = ({message}) => {
         <h1 className="titleName">M{light?<span className="yellowWar blinky titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
         <p className="titleSub"> web developer in &nbsp;2020</p>
       </div>
+      
       <div className="titleQuote col-xl-7">
       <img src={self} className="mySelf float-right rounded-circle" alt="self"/>
         <h4 className="quote">~ 

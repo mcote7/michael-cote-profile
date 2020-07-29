@@ -2,7 +2,7 @@
 .social {
   cursor: pointer;
   margin-left: 1rem!important;
-  animation: 4s ease-out slide-up-main;
+  animation: 2.75s ease-out slide-up-main;
 }
 @keyframes slide-up-main {
   from {
@@ -41,7 +41,7 @@
 
 .fadeicon {
   color: white;
-  animation: 4s color-fade-in1;
+  animation: 5s color-fade-in1;
 }
 @keyframes color-fade-in1 {
   0% {color: rgba(255, 255, 255, 0);}
@@ -82,7 +82,7 @@
 /* ---------------------------------------------------------------------------------------------------------------- */
 .titleAtag {
   color: rgb(97, 218, 251);
-  animation: 4s color-fade-in2;
+  animation: 6s color-fade-in2;
 }
 @keyframes color-fade-in2 {
   from {
@@ -103,15 +103,12 @@
   font-weight: 600;
   padding-bottom: 1rem;
   line-height: 0!important;
-  animation: 4.5s color-fade-in3;
+  animation: 6s color-fade-in3;
 }
 @keyframes color-fade-in3 {
-  from {
-    color: rgba(97, 218, 251, 0);
-  }
-  to {
-    color: rgba(97, 218, 251, 1);
-  }
+  0% {color: rgba(97, 218, 251, 0);}
+  0% {color: rgba(97, 218, 251, 0);}
+  100% {color: rgba(97, 218, 251, 1);}
 }
 
 
@@ -123,12 +120,9 @@
   animation: 8s fade-in;
 }
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 
