@@ -48,7 +48,7 @@ class Message extends Form {
                   {this.renderText("message", "Message")}
                 </div>
               </div>
-              <div className="row pt-3 moreBtm">
+              <div className="row pt-3 moreBtmMessage">
                 <div className="col-lg-12 mt-4 pt-5">
                   {this.renderButton('SEND MESSAGE')}
                 </div>

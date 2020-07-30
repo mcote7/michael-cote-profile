@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import self from '../images/self1_edited.jpg';
 import '../css/main.css';
 import { Link } from 'react-router-dom';
-import Loading from './isLoading';
+import Loading from './mainLoading';
 
 const MainPage = ({message}) => {
   const [light, setLight] = useState(false);

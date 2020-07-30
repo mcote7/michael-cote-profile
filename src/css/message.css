@@ -114,17 +114,20 @@ input:-webkit-autofill:active {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
+/*  */
 
-.moreBtm {
+
+
+.moreBtmMessage {
   margin-bottom: 0rem!important;
 }
 @media only screen and (max-width: 1020px) {
-  .moreBtm {
+  .moreBtmMessage {
     margin-bottom: 12rem!important;
   }
 }
 @media only screen and (max-width: 620px) {
-  .moreBtm {
+  .moreBtmMessage {
     margin-bottom: 14rem!important;
   }
 }
