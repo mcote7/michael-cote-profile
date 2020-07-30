@@ -56,6 +56,6 @@
     margin-bottom: 45vh!important;
   }
   .moreBtm {
-    margin-bottom: 5vh!important;
+    display: none!important;
   }
 }
