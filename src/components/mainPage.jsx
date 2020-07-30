@@ -60,6 +60,40 @@ const MainPage = ({message}) => {
     setTimeout(()=> {
       setContact(true);
     }, 13750)
+    setTimeout(()=> {
+      setInterval(()=> {
+        setTimeout(()=> {
+          setContact(true);
+        }, 1100)
+        setTimeout(()=> {
+          setContact(false);
+        }, 1125)
+        setTimeout(()=> {
+          setContact(true);
+        }, 1150)
+        setTimeout(()=> {
+          setContact(false);
+        }, 1250)
+        setTimeout(()=> {
+          setContact(true);
+        }, 1300)
+        setTimeout(()=> {
+          setContact(true);
+        }, 1350)
+        setTimeout(()=> {
+          setContact(false);
+        }, 1400)
+        setTimeout(()=> {
+          setContact(true);
+        }, 1600)
+        setTimeout(()=> {
+          setContact(false);
+        }, 1625)
+        setTimeout(()=> {
+          setContact(true);
+        }, 1725)
+      }, 4500)
+    }, 13750)
   },[]);
   if(loading) return <Loading loading={loading}/>;
   return (
@@ -81,7 +115,7 @@ const MainPage = ({message}) => {
             <polyline points="289,1 289,39 1,39 1,1 289,1" className="hl-line" />
           </svg>
           {message ? <span style={{color: 'white', fontSize: 'medium'}}>&nbsp;message sent, thank you</span> : 
-          <span>&nbsp;Contact me&nbsp;&nbsp;<i className="fa fa-envelope-o" aria-hidden="true"></i></span>}</Link>
+          <span>&nbsp;Contact me&nbsp;&nbsp;<i className="fa fa-envelope-o mailIcon" aria-hidden="true"></i></span>}</Link>
           : <div className="placeholder"></div>}
         </div>
         <h1 className="titleName">M{light?<span className="yellowWar blinky titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
