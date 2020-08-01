@@ -1,4 +1,6 @@
 /* ---------form-control-overide------------------------ */
+
+/* ---container & bg image--- */
 .messageCont {
   height: 100vh!important;
   text-align: left;
@@ -18,9 +20,6 @@
   rgba(0,0,0,1),
   rgba(0,0,0,1),
   rgba(0,0,0,0));
-}
-.form-control {
-  height: auto!important;
 }
 /*  ------- submit-button --------  */
 .formBtn {
@@ -49,23 +48,28 @@
 .formBtn:active {
   transform: scale(0.98)!important;
 }
-/* ----------------label------------------------------ */
-label {
-  cursor: pointer!important;
-}
-/*  ------------  */
+
+/* -----form margin top----------- */
 .myForm {
   margin-top: 5rem;
 }
-/* ----inputs----------- */
-.formLabel {
-  font-size: xx-large;
-  font-weight: 500;
+
+/* ------------height???------------------------ */
+.form-control {
+  height: auto!important;
 }
 
+/* ----------------label------------------------------ */
+.formLabel {
+  font-size: 2rem;
+  font-weight: 500;
+  transition: 0.15s ease-in;
+  cursor: pointer!important;
+}
+
+/* ---main input container-------------- */
 .twitterInputCont {
   text-align: left!important;
-  border-top: none!important;
   border-left: none!important;
   border-right: none!important;
   border-bottom: solid 0.25rem rgba(0, 0, 0, 0.5)!important;
@@ -74,11 +78,17 @@ label {
 }
 .twitterInputCont:focus-within {
   color: rgb(97, 218, 251)!important;
+  border-top: none!important;
   border-bottom: solid 0.25rem rgb(97, 218, 251)!important;
   background-color: rgba(0, 0, 0, 0.85)!important;
 }
-
-.twitterInputCont:focus-within label::after {
+/* ---label on focus------------------------------------------- */
+.twitterInputCont:focus-within .formLabel {
+  /* margin bottom 0.5rem default */
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem!important;
+}
+.twitterInputCont:focus-within .formLabel::after {
   content: '';
   animation: dots 1.5s infinite;
 }
@@ -88,15 +98,21 @@ label {
   50% {content: ' . .';}
   75% {content: ' . . .';}
 }
-/*  */
+
+/* input-only--------------------- */
 .twitterInput {
   font-size: xx-large!important;
   color: white!important;
-  caret-color: white!important;;
+  caret-color: white!important;
   border: none!important;
   background-color: transparent!important;
+  cursor: pointer!important;
 }
-/* - */
+.twitterInput:focus {
+  cursor: initial!important;
+}
+
+/* -input autofill bg color override- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -105,7 +121,8 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #fff !important;
 }
 
-/* form error message */
+
+/* form error message ------------------*/
 .errorMess {
   color: red;
   background-color: rgba(255, 0, 0,0.1);
@@ -114,9 +131,9 @@ input:-webkit-autofill:active {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-/*  */
 
 
+/* ---screen size adjustments--- */
 
 .moreBtmMessage {
   margin-bottom: 0rem!important;
