@@ -141,7 +141,6 @@ input:-webkit-autofill:active {
 
 
 /* ---screen size adjustments--- */
-
 .moreBtmMessage {
   margin-bottom: 2rem!important;
 }
@@ -150,14 +149,10 @@ input:-webkit-autofill:active {
     margin-bottom: 12rem!important;
   }
 }
+/* ---phone-------------------------------------- */
 @media only screen and (max-width: 620px) {
   .moreBtmMessage {
     margin-bottom: 14rem!important;
-  }
-}
-@media only screen and (max-height: 420px) {
-  .formBtn {
-    height: auto!important;
   }
   .formBtn {
     color: rgb(97, 218, 251)!important;
@@ -167,5 +162,11 @@ input:-webkit-autofill:active {
     border-bottom: 0.25rem solid rgb(97, 218, 251)!important;
     background-color: rgba(0, 0, 0, 0.85)!important;
     transition: none!important;
+  }
+}
+/* ---sideways phone view--- */
+@media only screen and (max-height: 420px) {
+  .formBtn {
+    height: auto!important;
   }
 }
