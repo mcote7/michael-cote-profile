@@ -160,14 +160,12 @@ input:-webkit-autofill:active {
     height: auto!important;
   }
   .formBtn {
-    font-size: x-large!important;
-    height: 10vh!important;
-    color: white!important;
-    border-top: 0.25rem solid transparent!important;
-    border-left: 0.25rem solid transparent!important;
-    border-right: 0.25rem solid transparent!important;
-    border-bottom: 0.25rem solid white!important;
-    background-color: rgba(0, 0, 0, 0.5)!important;
+    color: rgb(97, 218, 251)!important;
+    border-top: 0.25rem solid rgb(97, 218, 251)!important;
+    border-left: 0.25rem solid rgb(97, 218, 251)!important;
+    border-right: 0.25rem solid rgb(97, 218, 251)!important;
+    border-bottom: 0.25rem solid rgb(97, 218, 251)!important;
+    background-color: rgba(0, 0, 0, 0.85)!important;
     transition: none!important;
   }
 }
