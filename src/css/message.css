@@ -59,6 +59,7 @@
   height: auto!important;
 }
 
+
 /* ----------------label------------------------------ */
 .formLabel {
   font-size: 2rem;
@@ -136,9 +137,9 @@ input:-webkit-autofill:active {
 /* ---screen size adjustments--- */
 
 .moreBtmMessage {
-  margin-bottom: 0rem!important;
+  margin-bottom: 2rem!important;
 }
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1300px) {
   .moreBtmMessage {
     margin-bottom: 12rem!important;
   }

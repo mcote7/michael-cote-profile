@@ -2,7 +2,7 @@ import React from 'react';
 
 const Input = ({name, label, error, ...rest}) => {
   return (
-      <div className="form-control twitterInputCont mb-4">
+      <div className="form-control twitterInputCont name-height mb-4">
         <label className="formLabel" htmlFor={name}>&bull;&nbsp;{label}</label>
         <input {...rest}
         name={name} id={name} aria-autocomplete="none"
