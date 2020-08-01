@@ -58,7 +58,12 @@
 .form-control {
   height: auto!important;
 }
+.name-height {
 
+}
+.message-height {
+
+}
 
 /* ----------------label------------------------------ */
 .formLabel {
@@ -132,6 +137,7 @@ input:-webkit-autofill:active {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
+/* --error message placeholder----------- */
 
 
 /* ---screen size adjustments--- */
@@ -152,5 +158,16 @@ input:-webkit-autofill:active {
 @media only screen and (max-height: 420px) {
   .formBtn {
     height: auto!important;
+  }
+  .formBtn {
+    font-size: x-large!important;
+    height: 10vh!important;
+    color: white!important;
+    border-top: 0.25rem solid transparent!important;
+    border-left: 0.25rem solid transparent!important;
+    border-right: 0.25rem solid transparent!important;
+    border-bottom: 0.25rem solid white!important;
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    transition: none!important;
   }
 }
