@@ -76,6 +76,7 @@
 /* ---main input container-------------- */
 .twitterInputCont {
   text-align: left!important;
+  border-top: 1px solid white!important;
   border-left: none!important;
   border-right: none!important;
   border-bottom: solid 0.25rem rgba(0, 0, 0, 0.5)!important;
@@ -84,7 +85,7 @@
 }
 .twitterInputCont:focus-within {
   color: rgb(97, 218, 251)!important;
-  border-top: none!important;
+  border-top: 1px solid transparent!important;
   border-bottom: solid 0.25rem rgb(97, 218, 251)!important;
   background-color: rgba(0, 0, 0, 0.85)!important;
 }
