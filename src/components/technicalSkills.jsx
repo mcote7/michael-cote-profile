@@ -1,14 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { onRoute } from './../utilities/onRoute';
 import '../css/technical.css'
 
 const Home = () => {
+  const [view0, setView0] = useState(false);
+  const [view1, setView1] = useState(false);
+  const [view2, setView2] = useState(false);
+  const [view3, setView3] = useState(false);
   useEffect(() => {
     onRoute();
-  },[])
+    setTimeout(()=> {
+      setView0(true);
+    }, 500);
+    setTimeout(()=> {
+      setView1(true);
+    }, 1000);
+    setTimeout(()=> {
+      setView2(true);
+    }, 1500);
+    setTimeout(()=> {
+      setView3(true);
+    }, 2000);
+  },[]);
   return (
     <React.Fragment>
-      <div className="col-xl-3 mt-5">
+      {view0 ? <>
+      <div className="col-xl-3 techTop">
         <div className="techTitleWrap mr-5">
           <span className="techIcons"><i className="fa fa-file-code-o fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Languages</h1>
@@ -20,8 +37,9 @@ const Home = () => {
           <li>C#</li>
           <li>python</li>
         </ul>
-      </div>
-      <div className="col-xl-3 mt-5">
+      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+      {view1 ? <>
+      <div className="col-xl-3 techTop">
         <div className="techTitleWrap mr-5">
           <span className="techIcons"><i className="fa fa-book fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Libraries</h1>
@@ -36,8 +54,9 @@ const Home = () => {
           <li>Entity</li>
           <li>Django</li>
         </ul>
-      </div>
-      <div className="col-xl-3 mt-5">
+      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+      {view2 ? <>
+      <div className="col-xl-3 techTop">
         <div className="techTitleWrap mr-5">
           <span className="techIcons"><i className="fa fa-database fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Database</h1>
@@ -50,8 +69,9 @@ const Home = () => {
           <li>MySql</li>
           <li>MySqlLite</li>
         </ul>
-      </div>
-      <div className="col-xl-3 mt-5">
+      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+      {view3 ? <>
+      <div className="col-xl-3 techTop">
         <div className="techTitleWrap tools">
           <span className="techIcons"><i className="fa fa-wrench fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Tools</h1>
@@ -66,7 +86,7 @@ const Home = () => {
           <li>Git hub</li>
           <li>Photoshop</li>
         </ul>
-      </div>
+      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
     </React.Fragment>
   );
 };

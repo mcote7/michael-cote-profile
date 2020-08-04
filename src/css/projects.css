@@ -22,7 +22,7 @@
   max-width: 400px!important;
   border-radius: 1%!important;
   box-shadow: 0 0 0 1px rgb(97, 218, 251);
-  transition: ease-in 0.3s;
+  transition: ease-out 0.3s;
   cursor: pointer;
 }
 .movieImg:hover {

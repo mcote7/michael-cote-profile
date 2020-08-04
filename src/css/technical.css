@@ -1,17 +1,39 @@
+/* ---opening animation--- */
+.techTop {
+  height: 100vh;
+  margin-top: 3rem;
+  animation: fade-up-tech 2.5s ease-out;
+}
+@keyframes fade-up-tech {
+  0% {margin-top: 120vh; opacity: 0;}
+  45% {opacity: 0.15;}
+  70% {opacity: 0.25;}
+  85% {opacity: 0.5;}
+  100% {margin-top: 3rem; opacity: 1;}
+}
+/*-------------------------------------------- */
+
+
 .titleBottom {
   margin-bottom: 35vh!important;
 }
 .yella {
   list-style: none;
 }
+.yellowBull {
+  color: cornsilk;
+}
 .yellowBull::before {
   content: "\2022";
-  color: #ffee58;
+  color: cornsilk;
   font-weight: 900;
   display: inline-block;
   width: 1em;
   margin-left: -2.4em;
+
 }
+
+
 .techCont {
   text-align: left;
 }
@@ -36,6 +58,9 @@
 .titleLeftMargin {
   margin-left: 2rem;
 }
+
+
+
 @media only screen and (max-width: 1295px) {
   .techList {
     margin-left: 34%;
