@@ -12,11 +12,6 @@
   100% {margin-top: 3rem; opacity: 1;}
 }
 /*-------------------------------------------- */
-
-
-.titleBottom {
-  margin-bottom: 35vh!important;
-}
 .yella {
   list-style: none;
 }
@@ -30,10 +25,8 @@
   display: inline-block;
   width: 1em;
   margin-left: -2.4em;
-
 }
-
-
+/* ------------- */
 .techCont {
   text-align: left;
 }
@@ -58,7 +51,7 @@
 .titleLeftMargin {
   margin-left: 2rem;
 }
-
+/* ---------------------------- */
 
 
 @media only screen and (max-width: 1295px) {
@@ -87,5 +80,8 @@
   }
   .yellowBull::before {
     margin-left: -2.1em;
+  }
+  .titleBottom {
+    margin-bottom: 35vh!important;
   }
 }
