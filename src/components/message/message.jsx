@@ -4,6 +4,7 @@ import Form from './form';
 import Joi from 'joi-browser';
 import { onRoute } from '../../utilities/onRoute';
 import emailjs from 'emailjs-com';
+import MessageLoading from './messageLoading';
 
 class Message extends Form {
   state = {
@@ -12,7 +13,8 @@ class Message extends Form {
       email: '',
       message: '',
     },
-    errors: {}
+    errors: {},
+    render: false
   };
   schema = {
     name: Joi.string().required().label('Name'),
@@ -21,7 +23,10 @@ class Message extends Form {
   };
   componentDidMount() {
     onRoute();
-  }
+    setTimeout(()=> {
+      this.setState({render: true});
+    }, 3500);
+  };
 
   doSubmit = (e) => {
     e.preventDefault();
@@ -35,8 +40,10 @@ class Message extends Form {
     });
   };
   render() {
+    const {render} = this.state;
     return (
       <React.Fragment>
+        {!render ? <div className="messageCont container"><MessageLoading loading={!render}/></div> :
           <div className="messageCont container">
             <form className="myForm" onSubmit={this.doSubmit}>
               <div className="row">
@@ -54,7 +61,7 @@ class Message extends Form {
                 </div>
               </div>
             </form>
-          </div>
+          </div>}
       </React.Fragment>
     );
   };

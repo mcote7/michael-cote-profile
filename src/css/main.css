@@ -406,7 +406,6 @@
 }
 .contactBtn:hover {
   transition: 0.1s ease-in-out;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) , rgba(255, 255, 255, 0) 60%);
   text-decoration: none;
   color: rgb(97, 218, 251);
 }

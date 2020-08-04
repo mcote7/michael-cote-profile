@@ -1,3 +1,6 @@
+/*  */
+/* loading message */
+/* .messageLoaderWrapper {} */
 /* ---------form-control-overide------------------------ */
 
 /* ---container & bg image--- */
@@ -52,6 +55,14 @@
 /* -----form margin top----------- */
 .myForm {
   margin-top: 5rem;
+  transform: scale(0.9);
+  animation: pop-in 2s ease-in-out;
+}
+@keyframes pop-in {
+  0% {transform: scale(0); opacity: 0;}
+  90% {transform: scale(1.1); opacity: 1;}
+  95% {transform: scale(0.7);}
+  100% {transform: scale(0.9);}
 }
 
 /* ------------height???------------------------ */

@@ -114,8 +114,8 @@ const MainPage = ({message}) => {
             <polyline points="289,1 289,39 1,39 1,1 289,1" className="bg-line" />
             <polyline points="289,1 289,39 1,39 1,1 289,1" className="hl-line" />
           </svg>
-          {message ? <span style={{color: 'white', fontSize: 'medium'}}>&nbsp;message sent, thank you</span> : 
-          <span>&nbsp;Contact me&nbsp;&nbsp;<i className="fa fa-envelope-o mailIcon" aria-hidden="true"></i></span>}</Link>
+          {message ? <span style={{color: 'white', fontSize: 'medium'}}>&nbsp;&hearts;&nbsp;message sent, thank you</span> : 
+          <span>&nbsp;&rarr;&nbsp;Contact me&nbsp;&nbsp;<i className="fa fa-envelope-o mailIcon" aria-hidden="true"></i></span>}</Link>
           : <div className="placeholder"></div>}
         </div>
         <h1 className="titleName">M{light?<span className="yellowWar blinky titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
