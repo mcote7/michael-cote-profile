@@ -35,13 +35,13 @@
 .techTitleWrap {
   display: inline-flex;
   margin-bottom: 0.25rem;
-  border-bottom: solid rgb(97, 218, 251);
+  border-bottom: solid 2px rgb(97, 218, 251);
   animation: fade-in-border 2s;
 }
 @keyframes fade-in-border {
-  0% {border-bottom: solid rgba(97, 218, 251, 0);}
-  50% {border-bottom: solid rgba(97, 218, 251, 0);}
-  100% {border-bottom: solid rgb(97, 218, 251);}
+  0% {border-bottom: solid 2px rgba(97, 218, 251, 0);}
+  50% {border-bottom: solid 2px rgba(97, 218, 251, 0);}
+  100% {border-bottom: solid 2px rgb(97, 218, 251);}
 }
 
 .techTitle::after {
