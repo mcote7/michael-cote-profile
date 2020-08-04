@@ -36,12 +36,15 @@
   display: inline-flex;
   margin-bottom: 0.25rem;
   border-bottom: solid 2px rgb(97, 218, 251);
+  border-bottom-left-radius: 24%;
+  padding-bottom: 1rem;
   animation: fade-in-border 2s;
 }
 @keyframes fade-in-border {
-  0% {border-bottom: solid 2px rgba(97, 218, 251, 0);}
-  50% {border-bottom: solid 2px rgba(97, 218, 251, 0);}
-  100% {border-bottom: solid 2px rgb(97, 218, 251);}
+  0% {border-bottom: solid 2px rgba(97, 218, 251, 0); border-bottom-left-radius: 0%;}
+  50% {border-bottom: solid 2px rgba(97, 218, 251, 0); border-bottom-left-radius: 0%;}
+  75% {border-bottom-left-radius: 0%;}
+  100% {border-bottom: solid 2px rgb(97, 218, 251); border-bottom-left-radius: 24%;}
 }
 
 .techTitle::after {
