@@ -55,14 +55,14 @@
 /* -----form margin top----------- */
 .myForm {
   margin-top: 5rem;
-  transform: scale(0.9);
+  transform: scale(0.85);
   animation: pop-in 1s ease-in-out;
 }
 @keyframes pop-in {
   0% {transform: scale(0); opacity: 0;}
-  90% {transform: scale(1.1); opacity: 1;}
-  95% {transform: scale(0.7);}
-  100% {transform: scale(0.9);}
+  70% {transform: scale(0.8); opacity: 1;}
+  85% {transform: scale(0.75);}
+  100% {transform: scale(0.85);}
 }
 
 /* ------------height???------------------------ */
