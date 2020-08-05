@@ -30,7 +30,7 @@ const Home = () => {
           <span className="techIcons"><i className="fa fa-file-code-o fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Languages</h1>
         </div>
-        <ul className="techList titleLeftMargin">
+        <ul className="techList">
           <li>JavaScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
@@ -44,7 +44,7 @@ const Home = () => {
           <span className="techIcons"><i className="fa fa-book fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Libraries&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
-        <ul className="techList titleLeftMargin">
+        <ul className="techList">
           <ul className="yella"><li className="yellowBull">React</li></ul>
           <li>Bootstrap</li>
           <li>Node.js</li>
@@ -61,7 +61,7 @@ const Home = () => {
           <span className="techIcons"><i className="fa fa-database fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Database&nbsp;&nbsp;</h1>
         </div>
-        <ul className="techList titleLeftMargin">
+        <ul className="techList">
           <li>MongoDB</li>
           <li>Mongo Atlas</li>
           <li>Mongo compass</li>
@@ -76,7 +76,7 @@ const Home = () => {
           <span className="techIcons"><i className="fa fa-wrench fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
-        <ul className="techList titleLeftMargin titleBottom">
+        <ul className="techList titleBottom">
           <li>VSCode</li>
           <li>Jest</li>
           <li>SQL Workbench</li>

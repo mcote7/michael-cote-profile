@@ -56,7 +56,7 @@
 .myForm {
   margin-top: 5rem;
   transform: scale(0.9);
-  animation: pop-in 2s ease-in-out;
+  animation: pop-in 1s ease-in-out;
 }
 @keyframes pop-in {
   0% {transform: scale(0); opacity: 0;}

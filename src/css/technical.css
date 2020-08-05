@@ -27,9 +27,6 @@
   margin-left: -2.4em;
 }
 /* ------------- */
-.techCont {
-  text-align: left;
-}
 
 /*  */
 .techTitleWrap {
@@ -72,34 +69,28 @@
 .techTitle {
   font-size: 2.7rem;
   color: rgb(97, 218, 251);
-  /* text-decoration: underline; */
 }
 .techList {
+  margin-left: 18%;
+  padding-top: 0.5rem;
+  padding-left: 4rem;
   font-size: 1.7rem;
   text-align: left;
+  list-style-type: square;
   border-left: 1px solid #61dafb;
-  border-radius: 4%;
+  border-top-left-radius: 4%;
   animation: fade-list 2s;
 }
 @keyframes fade-list {
-  0% {opacity: 0; border-left: 1px solid rgba(97, 218, 251, 0); border-radius: 0%;}
+  0% {opacity: 0; border-left: 1px solid rgba(97, 218, 251, 0); border-top-left-radius: 0%;}
   70% {opacity: 0;}
   90% {border-left: 1px solid rgba(97, 218, 251, 0);}
-  100% {opacity: 1; border-left: 1px solid #61dafb; border-radius: 4%;}
-}
-
-.titleLeftMargin {
-  margin-left: 2rem;
+  100% {opacity: 1; border-left: 1px solid #61dafb; border-top-left-radius: 4%;}
 }
 /* ---------------------------- */
-
-
 @media only screen and (max-width: 1295px) {
   .techList {
-    margin-left: 34%;
-  }
-  .titleLeftMargin {
-    margin-left: 0rem;
+    margin-left: 12%;
   }
 }
 @media only screen and (max-width: 1201px) {
@@ -110,13 +101,15 @@
     margin-bottom: 25vh!important;
   }
 }
+/* ---phone----------------------------------- */
 @media only screen and (max-width: 420px) {
   .techList {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-left: 14%;
+    padding-left: 3rem;
   }
   .techTitle {
-    font-size: 2.3rem;
+    font-size: 2.6rem;
   }
   .yellowBull::before {
     margin-left: -2.1em;
