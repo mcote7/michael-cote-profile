@@ -5,7 +5,7 @@ const DojoInfo = () => {
   return (
     <React.Fragment>
       <h1 className="dojoTitle">CODING DOJO FULL-TIME BOOTCAMP</h1>
-      <p className="dojoSub">SEATTLE WA</p>
+      <p className="dojoSub"><span><i class="fa fa-university" aria-hidden="true"></i></span>&nbsp;SEATTLE WA</p>
       <p className="dojoSub mb-1">02/2020 – 05/2020</p>
       <br/>
       <ul className="dojoList">

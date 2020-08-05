@@ -73,7 +73,7 @@ const Home = () => {
       {view3 ? <>
       <div className="col-xl-3 techTop">
         <div className="techTitleWrap">
-          <span className="techIcons"><i className="fa fa-wrench fa-4x" aria-hidden="true"></i></span>
+          <span className="techIcons"><i className="fa fa-cogs fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
         <ul className="techList titleBottom">
