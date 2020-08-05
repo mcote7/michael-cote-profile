@@ -26,7 +26,7 @@ const Home = () => {
     <React.Fragment>
       {view0 ? <>
       <div className="col-xl-3 techTop">
-        <div className="techTitleWrap mr-5">
+        <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-file-code-o fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Languages</h1>
         </div>
@@ -40,9 +40,9 @@ const Home = () => {
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
       {view1 ? <>
       <div className="col-xl-3 techTop">
-        <div className="techTitleWrap mr-5">
+        <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-book fa-4x" aria-hidden="true"></i></span>
-          <h1 className="p-2 techTitle">Libraries</h1>
+          <h1 className="p-2 techTitle">Libraries&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
         <ul className="techList titleLeftMargin">
           <ul className="yella"><li className="yellowBull">React</li></ul>
@@ -57,9 +57,9 @@ const Home = () => {
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
       {view2 ? <>
       <div className="col-xl-3 techTop">
-        <div className="techTitleWrap mr-5">
+        <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-database fa-4x" aria-hidden="true"></i></span>
-          <h1 className="p-2 techTitle">Database</h1>
+          <h1 className="p-2 techTitle">Database&nbsp;&nbsp;</h1>
         </div>
         <ul className="techList titleLeftMargin">
           <li>MongoDB</li>
@@ -72,14 +72,14 @@ const Home = () => {
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
       {view3 ? <>
       <div className="col-xl-3 techTop">
-        <div className="techTitleWrap tools">
+        <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-wrench fa-4x" aria-hidden="true"></i></span>
-          <h1 className="p-2 techTitle">Tools</h1>
+          <h1 className="p-2 techTitle">Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
         <ul className="techList titleLeftMargin titleBottom">
           <li>VSCode</li>
           <li>Jest</li>
-          <li>MySQL Workbench</li>
+          <li>SQL Workbench</li>
           <li>Postman</li>
           <li>Heroku</li>
           <li>AWS</li>

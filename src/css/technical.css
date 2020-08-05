@@ -77,19 +77,17 @@
 .techList {
   font-size: 1.7rem;
   text-align: left;
+  border-left: 1px solid #61dafb;
+  border-radius: 4%;
   animation: fade-list 2s;
 }
 @keyframes fade-list {
-  0% {opacity: 0;}
+  0% {opacity: 0; border-left: 1px solid rgba(97, 218, 251, 0); border-radius: 0%;}
   70% {opacity: 0;}
-  100% {opacity: 1;}
+  90% {border-left: 1px solid rgba(97, 218, 251, 0);}
+  100% {opacity: 1; border-left: 1px solid #61dafb; border-radius: 4%;}
 }
-.techIcons {
-  line-height: 4;
-}
-.tools {
-  margin-right: 8rem;
-}
+
 .titleLeftMargin {
   margin-left: 2rem;
 }

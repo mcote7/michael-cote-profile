@@ -9,7 +9,7 @@ const ReduxInfo = () => {
       <p className="dojoSub mb-1">07/2020</p>
       <br/>
       <ul className="dojoList">
-        <li>&bull;&nbsp;Online course on state management with Redux and integration with react</li>
+        <li>&bull;&nbsp;Online course on state management with Redux and integration with React.</li>
         <br/>
         <li>&bull;&nbsp;Backend API created with Node.js and unit testing with Jest.</li>
         <br/>
