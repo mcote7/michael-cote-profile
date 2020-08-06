@@ -27,7 +27,7 @@
   rgba(0,0,0,1),
   rgba(0,0,0,0));
   opacity: 0.4;
-  animation: fade-in-techbg 6s ease-in-out ;
+  animation: fade-in-techbg 5s ease-in-out ;
 }
 @keyframes fade-in-techbg {
   0% {opacity: 0; transform: rotate(200deg);}
@@ -40,7 +40,7 @@
 .techTop {
   height: 100vh;
   margin-top: 3rem;
-  animation: fade-up-tech 1s ease-out;
+  animation: fade-up-tech 2s ease-out;
 }
 @keyframes fade-up-tech {
   0% {margin-top: 120vh; opacity: 0;}
@@ -158,7 +158,7 @@
   }
   .techContainer {
     height: auto!important;
-    margin-bottom: 20vh!important;
+    margin-bottom: 32vh!important;
   }
   .techContainer::before {
     display: none!important;
