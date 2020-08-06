@@ -14,7 +14,8 @@
   rgba(0,0,0,1),
   rgba(0,0,0,1),
   rgba(0,0,0,0));
-  animation: fade-in-eduBg 4s;
+  transform: rotate(160deg);
+  animation: fade-in-eduBg 2s;
 }
 @keyframes fade-in-eduBg {
   0% { opacity: 0;}
