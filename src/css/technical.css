@@ -146,6 +146,13 @@
 }
 /* ---phone----------------------------------- */
 @media only screen and (max-width: 420px) {
+  .techTop {
+    margin-top: 0rem;
+  }
+  .techContainer {
+    height: auto!important;
+    margin-bottom: 20vh!important;
+  }
   .techContainer::before {
     display: none!important;
   }
