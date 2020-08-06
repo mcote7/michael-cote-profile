@@ -11,15 +11,17 @@ const Projects = () => {
   },[])
   return (
     <React.Fragment>
-      <div className="col-xl-4 mt-5">
+    <div className="projectContainer container-fluid">
+      <div className="col-xl-4 mt-5 projectLeft">
         <RecipieApp/>
       </div>
-      <div className="col-xl-4 mt-5">
+      <div className="col-xl-4 mt-5 projectCenter">
         <MovieApp/>
       </div>
-      <div className="col-xl-4 mt-5">
+      <div className="col-xl-4 mt-5 projectRight">
         <BugApp/>
       </div>
+    </div>
     </React.Fragment>
   );
 }

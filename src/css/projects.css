@@ -1,3 +1,63 @@
+.projectContainer {
+  display: flex!important;
+  flex-wrap: wrap!important;
+  margin: 0%!important;
+  padding: 0%!important;
+}
+.projectContainer::before {
+  height: 99vh;
+  width: 99vw;
+  content: "";
+  background-image: url('../images/tech.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 80vh;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  mask-image: linear-gradient(to bottom,
+  rgba(0,0,0,0),
+  rgba(0,0,0,1),
+  rgba(0,0,0,1),
+  rgba(0,0,0,0));
+  opacity: 0.4;
+  animation: fade-in-projBg 2.5s ease-in-out ;
+}
+@keyframes fade-in-projBg {
+  0% {opacity: 0; transform: rotate(200deg);}
+  50% {opacity: 0.25;}
+  60% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0.4; transform: rotate(360deg);}
+}
+/* ----------------------------- */
+.projectLeft {
+  animation: slide-in-left-proj 2.5s ease-out;
+}
+@keyframes slide-in-left-proj {
+  0% {left: -200vw; opacity: 0; transform: scale(0);}
+  50% {opacity: 0;}
+  100% {left: 0px; opacity: 1; transform: scale(1);}
+}
+/*  */
+.projectCenter {
+  animation: slide-in-bottom-proj 2s ease-out;
+}
+@keyframes slide-in-bottom-proj {
+  0% {top: 200vh; opacity: 0; transform: scale(0);}
+  50% {opacity: 0;}
+  100% {top: 0px; opacity: 1; transform: scale(1);}
+}
+/*  */
+.projectRight {
+  animation: slide-in-right-proj 2.5s ease-out;
+}
+@keyframes slide-in-right-proj {
+  0% {left: 200vw; opacity: 0; transform: scale(0);}
+  50% {opacity: 0;}
+  100% {left: 0px; opacity: 1; transform: scale(1);}
+}
+/* ------------------------------------- */
 .btmSpace {
   margin-bottom: 100vh!important;
 }
