@@ -44,7 +44,8 @@ class Education extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <div className="col-lg-6 mt-3 mr-5">
+      <div className="myBgImage"></div>
+      <div className="col-lg-6 mt-3 mr-5 carouselContainer">
         <Carousel
           offset={5}
           value={this.state.value}

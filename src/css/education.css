@@ -1,4 +1,38 @@
+.myBgImage::before {
+  height: 99vh;
+  width: 99vw;
+  content: "";
+  background-image: url('../images/tech.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 90vh;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  mask-image: linear-gradient(to bottom,
+  rgba(0,0,0,0),
+  rgba(0,0,0,1),
+  rgba(0,0,0,1),
+  rgba(0,0,0,0));
+  animation: fade-in-eduBg 4s;
+}
+@keyframes fade-in-eduBg {
+  0% { opacity: 0;}
+  25% { opacity: 0;}
+  75% { opacity: 0;}
+  100% { opacity: 1;}
+}
 /* ----------Education component---------------------------- */
+.carouselContainer {
+  transform: scale(0.95);
+  animation: slide-in-left 2s ease-out;
+}
+@keyframes slide-in-left {
+  0% {left: -200vw; opacity: 0; transform: scale(0);}
+  50% {opacity: 0;}
+  100% {left: 0px;opacity: 1; transform: scale(0.95);}
+}
+/* -------------------------------------- */
 .myCertThumb {
   height: 80px!important;
   width: 140px!important;
