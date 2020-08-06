@@ -1,6 +1,8 @@
 /* ---bg image----- */
 .techContainer {
   height: 100vh!important;
+  width: 100vw!important;
+  overflow: hidden!important;
   display: flex!important;
   flex-direction: row!important;
   flex-wrap: wrap!important;

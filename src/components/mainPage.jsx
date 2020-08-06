@@ -80,19 +80,7 @@ const MainPage = ({message}) => {
         setTimeout(()=> {
           setContact(true);
         }, 1350)
-        setTimeout(()=> {
-          setContact(false);
-        }, 1400)
-        setTimeout(()=> {
-          setContact(true);
-        }, 1600)
-        setTimeout(()=> {
-          setContact(false);
-        }, 1625)
-        setTimeout(()=> {
-          setContact(true);
-        }, 1725)
-      }, 4500)
+      }, 8000)
     }, 13750)
   },[]);
   if(loading) return <Loading loading={loading}/>;
