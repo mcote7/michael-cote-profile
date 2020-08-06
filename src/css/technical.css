@@ -9,6 +9,7 @@
 }
 .techContainer::before {
   height: 99vh;
+
   content: "";
   background-image: url('../images/tech.jpg');
   background-size: cover;
@@ -142,6 +143,9 @@
 }
 /* ---phone----------------------------------- */
 @media only screen and (max-width: 420px) {
+  .techContainer::before {
+    display: none!important;
+  }
   .techList {
     font-size: 2rem;
     margin-left: 14%;
