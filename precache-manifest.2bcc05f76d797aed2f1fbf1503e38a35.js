@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "243404f4c5f9cfe097f23f035e914185",
+    "revision": "4fe406e5e22ef1e6e894c1e1bf082007",
     "url": "/michael-cote-profile-2020/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/michael-cote-profile-2020/static/css/2.3d09bf3b.chunk.css"
   },
   {
-    "revision": "513c4fff03cd11f3e933",
-    "url": "/michael-cote-profile-2020/static/css/main.96e54302.chunk.css"
+    "revision": "875568bc05419fd385b7",
+    "url": "/michael-cote-profile-2020/static/css/main.f53d6258.chunk.css"
   },
   {
     "revision": "a5fa257eadf4e5bd5fa5",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/michael-cote-profile-2020/static/js/2.fc1898cf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "513c4fff03cd11f3e933",
-    "url": "/michael-cote-profile-2020/static/js/main.55cc6337.chunk.js"
+    "revision": "875568bc05419fd385b7",
+    "url": "/michael-cote-profile-2020/static/js/main.18396a17.chunk.js"
   },
   {
     "revision": "302bb3cf82baf84ae1b8",
