@@ -65,7 +65,7 @@ class Education extends React.Component {
           onChange={this.onchange}
         />
       </div>
-      <div className="col-lg-5 mt-2">
+      <div className="col-lg-5 mt-2 courselInfoContainer">
         {this.onImageSwitch()}
       </div>
       </React.Fragment>

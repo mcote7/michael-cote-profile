@@ -15,25 +15,34 @@
   rgba(0,0,0,1),
   rgba(0,0,0,0));
   transform: rotate(160deg);
-  animation: fade-in-eduBg 2s;
+  animation: fade-in-eduBg 4s;
 }
 @keyframes fade-in-eduBg {
-  0% { opacity: 0;}
+  0% { opacity: 0;transform: rotate(0deg);}
   25% { opacity: 0;}
-  75% { opacity: 0;}
-  100% { opacity: 1;}
+  50% { opacity: 0.1;}
+  100% { opacity: 1;transform: rotate(160deg);}
 }
 /* ----------Education component---------------------------- */
 .carouselContainer {
   transform: scale(0.95);
-  animation: slide-in-left 2s ease-out;
+  animation: slide-in-left 2.5s ease-out;
 }
 @keyframes slide-in-left {
   0% {left: -200vw; opacity: 0; transform: scale(0);}
   50% {opacity: 0;}
-  100% {left: 0px;opacity: 1; transform: scale(0.95);}
+  100% {left: 0px; opacity: 1; transform: scale(0.95);}
 }
 /* -------------------------------------- */
+.courselInfoContainer {
+  animation: slide-from-top 4s;
+}
+@keyframes slide-from-top {
+  0% {opacity: 0; transform: scale(0);}
+  50% {opacity: 0;}
+  100% {opacity: 1; transform: scale(1);}
+}
+/* ------------------------------------- */
 .myCertThumb {
   height: 80px!important;
   width: 140px!important;
@@ -81,13 +90,14 @@
 }
 /* ----------Dojo Component-------------------- */
 .dojoTitle {
+  margin-top: 3rem;
   color: rgb(97, 218, 251);
 }
 .dojoSub {
   line-height: 0;
 }
 .dojoList {
-  padding-left: 3rem;
+  padding-left: 0rem!important;
   margin-bottom: 25vh!important;
   align-items: center!important;
   font-size: 1.5rem;
