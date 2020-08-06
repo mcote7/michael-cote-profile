@@ -32,11 +32,11 @@ const Home = () => {
           <h1 className="p-2 techTitle">Languages</h1>
         </div>
         <ul className="techList">
-          <li>JavaScript</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>C#</li>
-          <li>python</li>
+          <li className="listItem">JavaScript</li>
+          <li className="listItem">HTML5</li>
+          <li className="listItem">CSS3</li>
+          <li className="listItem">C#</li>
+          <li className="listItem">python</li>
         </ul>
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
       {view1 ? <>
@@ -47,13 +47,13 @@ const Home = () => {
         </div>
         <ul className="techList">
           <ul className="yella"><li className="yellowBull">React</li></ul>
-          <li>Bootstrap</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>ASP.NET</li>
-          <li>.NET Core</li>
-          <li>Entity</li>
-          <li>Django</li>
+          <li className="listItem">Bootstrap</li>
+          <li className="listItem">Node.js</li>
+          <li className="listItem">Express</li>
+          <li className="listItem">ASP.NET</li>
+          <li className="listItem">.NET Core</li>
+          <li className="listItem">Entity</li>
+          <li className="listItem">Django</li>
         </ul>
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
       {view2 ? <>
@@ -63,12 +63,12 @@ const Home = () => {
           <h1 className="p-2 techTitle">Database&nbsp;&nbsp;</h1>
         </div>
         <ul className="techList">
-          <li>MongoDB</li>
-          <li>Mongo Atlas</li>
-          <li>Mongo compass</li>
-          <li>mongoose</li>
-          <li>MySql</li>
-          <li>MySqlLite</li>
+          <li className="listItem">MongoDB</li>
+          <li className="listItem">Mongo Atlas</li>
+          <li className="listItem">Mongo compass</li>
+          <li className="listItem">mongoose</li>
+          <li className="listItem">MySql</li>
+          <li className="listItem">MySqlLite</li>
         </ul>
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
       {view3 ? <>
@@ -78,14 +78,14 @@ const Home = () => {
           <h1 className="p-2 techTitle">Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
         <ul className="techList titleBottom">
-          <li>VSCode</li>
-          <li>Jest</li>
-          <li>SQL Workbench</li>
-          <li>Postman</li>
-          <li>Heroku</li>
-          <li>AWS</li>
-          <li>Git hub</li>
-          <li>Photoshop</li>
+          <li className="listItem">VSCode</li>
+          <li className="listItem">Jest</li>
+          <li className="listItem">SQL Workbench</li>
+          <li className="listItem">Postman</li>
+          <li className="listItem">Heroku</li>
+          <li className="listItem">AWS</li>
+          <li className="listItem">Git hub</li>
+          <li className="listItem">Photoshop</li>
         </ul>
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
     </div>

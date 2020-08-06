@@ -64,6 +64,9 @@
   width: 1em;
   margin-left: -2.4em;
 }
+.listItem:hover {
+  color: cornsilk!important;
+}
 /* ------------- */
 
 /*  */
@@ -125,6 +128,10 @@
   80% {border-top-left-radius: 0%;}
   90% {border-left: 1px solid #61dafb;}
   100% {opacity: 1; border-left: 1px solid #61dafb; border-top-left-radius: 12%;}
+}
+.techList:hover {
+  border-left: 1px solid rgb(97, 218, 251);
+  cursor: crosshair;
 }
 /* ---------------------------- */
 @media only screen and (max-width: 1295px) {
