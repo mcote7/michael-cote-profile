@@ -21,7 +21,7 @@
   rgba(0,0,0,1),
   rgba(0,0,0,0));
   opacity: 0.4;
-  animation: fade-in-projBg 2.5s ease-in-out ;
+  animation: fade-in-projBg 3.5s ease-in-out ;
 }
 @keyframes fade-in-projBg {
   0% {opacity: 0; transform: rotate(200deg);}
@@ -32,7 +32,7 @@
 }
 /* ----------------------------- */
 .projectLeft {
-  animation: slide-in-left-proj 2.5s ease-out;
+  animation: slide-in-left-proj 3.5s ease-out;
 }
 @keyframes slide-in-left-proj {
   0% {left: -200vw; opacity: 0; transform: scale(0);}
@@ -41,7 +41,7 @@
 }
 /*  */
 .projectCenter {
-  animation: slide-in-bottom-proj 2s ease-out;
+  animation: slide-in-bottom-proj 3s ease-out;
 }
 @keyframes slide-in-bottom-proj {
   0% {top: 200vh; opacity: 0; transform: scale(0);}
@@ -50,7 +50,7 @@
 }
 /*  */
 .projectRight {
-  animation: slide-in-right-proj 2.5s ease-out;
+  animation: slide-in-right-proj 3.5s ease-out;
 }
 @keyframes slide-in-right-proj {
   0% {left: 200vw; opacity: 0; transform: scale(0);}
