@@ -10,7 +10,7 @@ body {
 }
 /* ScrollBar */
 ::-webkit-scrollbar {
-  width: 2px;
+  display: none!important;
 }
 /* Track */
 ::-webkit-scrollbar-track {

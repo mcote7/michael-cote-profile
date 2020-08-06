@@ -12,6 +12,7 @@
 
 .techContainer::before {
   height: 99vh;
+  width: 99vw;
   content: "";
   background-image: url('../images/tech.jpg');
   background-size: cover;
