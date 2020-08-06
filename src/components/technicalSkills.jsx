@@ -24,8 +24,9 @@ const Home = () => {
   },[]);
   return (
     <React.Fragment>
+    <div className="techContainer container-fluid">
       {view0 ? <>
-      <div className="col-xl-3 techTop">
+      <div className="col-xl-3 techTop image">
         <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-file-code-o fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Languages</h1>
@@ -87,6 +88,7 @@ const Home = () => {
           <li>Photoshop</li>
         </ul>
       </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+    </div>
     </React.Fragment>
   );
 };

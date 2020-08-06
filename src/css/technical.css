@@ -1,3 +1,35 @@
+/* ---bg image----- */
+.techContainer {
+  height: 100vh!important;
+  display: flex!important;
+  flex-direction: row!important;
+  margin: 0%!important;
+  padding: 0%!important;
+}
+.techContainer::before {
+  height: 99vh;
+  content: "";
+  background-image: url('../images/tech.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 80vh;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  mask-image: linear-gradient(to bottom,
+  rgba(0,0,0,0),
+  rgba(0,0,0,1),
+  rgba(0,0,0,1),
+  rgba(0,0,0,0));
+  opacity: 0.4;
+  animation: fade-in-techbg 4.25s ease-in-out ;
+}
+@keyframes fade-in-techbg {
+  0% {opacity: 0; transform: rotate(200deg);}
+  50% {opacity: 0.5;}
+  90% {opacity: 1;}
+  100% {opacity: 0.4; transform: rotate(360deg);}
+}
 /* ---opening animation--- */
 .techTop {
   height: 100vh;
