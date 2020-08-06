@@ -7,9 +7,9 @@
   margin: 0%!important;
   padding: 0%!important;
 }
+
 .techContainer::before {
   height: 99vh;
-
   content: "";
   background-image: url('../images/tech.jpg');
   background-size: cover;
@@ -24,7 +24,7 @@
   rgba(0,0,0,1),
   rgba(0,0,0,0));
   opacity: 0.4;
-  animation: fade-in-techbg 5s ease-in-out ;
+  animation: fade-in-techbg 6s ease-in-out ;
 }
 @keyframes fade-in-techbg {
   0% {opacity: 0; transform: rotate(200deg);}
