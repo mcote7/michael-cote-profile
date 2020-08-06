@@ -131,7 +131,7 @@
 @media only screen and (max-width: 1201px) {
   .techContainer {
     flex-direction: column!important;
-    flex-wrap: none!important; 
+    flex-wrap: nowrap!important; 
   }
   .techList {
     margin-left: 40%;
