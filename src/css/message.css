@@ -23,6 +23,13 @@
   rgba(0,0,0,1),
   rgba(0,0,0,1),
   rgba(0,0,0,0));
+  opacity: 1;
+  animation: fade-in-messbg 6s;
+}
+@keyframes fade-in-messbg {
+  0% {opacity: 0;}
+  35% {opacity: 0;}
+  100% {opacity: 1;}
 }
 /*  ------- submit-button --------  */
 .formBtn {

@@ -3,6 +3,7 @@
   height: 100vh!important;
   display: flex!important;
   flex-direction: row!important;
+  flex-wrap: wrap!important;
   margin: 0%!important;
   padding: 0%!important;
 }
@@ -26,7 +27,8 @@
 }
 @keyframes fade-in-techbg {
   0% {opacity: 0; transform: rotate(200deg);}
-  50% {opacity: 0.5;}
+  50% {opacity: 0.25;}
+  60% {opacity: 1;}
   90% {opacity: 1;}
   100% {opacity: 0.4; transform: rotate(360deg);}
 }
@@ -127,6 +129,10 @@
   }
 }
 @media only screen and (max-width: 1201px) {
+  .techContainer {
+    flex-direction: column!important;
+    flex-wrap: none!important; 
+  }
   .techList {
     margin-left: 40%;
   }
