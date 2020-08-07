@@ -66,6 +66,7 @@
 }
 .listItem:hover {
   color: cornsilk!important;
+  list-style-type: disc;
 }
 /* ------------- */
 
@@ -131,6 +132,7 @@
 }
 .techList:hover {
   border-left: 1px solid rgb(97, 218, 251);
+  list-style-type: circle;
   cursor: crosshair;
 }
 /* ---------------------------- */
@@ -150,11 +152,18 @@
   .titleBottom {
     margin-bottom: 25vh!important;
   }
+  .techContainer {
+    height: fit-content!important;
+    margin-bottom: 32vh!important;
+  }
+  .techTop {
+    height: auto;
+  }
 }
 /* ---phone----------------------------------- */
 @media only screen and (max-width: 420px) {
   .techTop {
-    margin-top: 0rem;
+    height: auto;
   }
   .techContainer {
     height: auto!important;
