@@ -176,6 +176,9 @@ input:-webkit-autofill:active {
     background-color: rgba(0, 0, 0, 0.85)!important;
     transition: none!important;
   }
+  .myForm {
+    transform: scale(1);
+  }
 }
 /* ---sideways phone view--- */
 @media only screen and (max-height: 420px) {
