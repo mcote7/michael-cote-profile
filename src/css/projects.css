@@ -21,7 +21,7 @@
   rgba(0,0,0,1),
   rgba(0,0,0,0));
   opacity: 0.4;
-  animation: fade-in-projBg 3.5s ease-in-out ;
+  animation: fade-in-projBg 4s ease-in-out ;
 }
 @keyframes fade-in-projBg {
   0% {opacity: 0; transform: rotate(200deg);}
