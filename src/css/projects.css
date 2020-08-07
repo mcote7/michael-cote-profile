@@ -105,7 +105,7 @@
 }
 @media only screen and (max-width: 420px) {
   .projectContainer::before {
-    display: none;
+    display: none!important;
   }
   .movieImg {
     height: auto!important;
@@ -120,5 +120,13 @@
   }
   .moreBtm {
     display: none!important;
+  }
+  .projectRight {
+    animation: slide-in-right-proj 3.5s ease-out;
+  }
+  @keyframes slide-in-right-proj {
+    0% {opacity: 0; transform: scale(0);}
+    50% {opacity: 0;}
+    100% {opacity: 1; transform: scale(1);}
   }
 }
