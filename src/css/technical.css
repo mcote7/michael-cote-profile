@@ -91,7 +91,7 @@
   display:block;
   content: '';
   border-bottom: solid 2px white;
-  animation: tech-title 2s ease-out;
+  animation: tech-title 3s ease-out;
   animation-delay: 0.5s;
 }
 @keyframes tech-title {
