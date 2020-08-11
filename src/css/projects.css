@@ -25,6 +25,7 @@
 }
 @keyframes fade-in-projBg {
   0% {opacity: 0; transform: rotate(200deg);}
+  40% {opacity: 0.1;}
   50% {opacity: 0.25;}
   60% {opacity: 1;}
   90% {opacity: 1;}
