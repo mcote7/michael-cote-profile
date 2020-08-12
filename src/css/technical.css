@@ -120,7 +120,7 @@
   font-size: 1.7rem;
   text-align: left;
   list-style-type: square;
-  border-left: 1px solid cornsilk;
+  border-left: 2px solid rgb(97, 218, 251);
   border-top-left-radius: 12%;
   animation: fade-list 2s;
 }
@@ -132,7 +132,7 @@
   100% {opacity: 1; border-left: 1px solid #61dafb; border-top-left-radius: 12%;}
 }
 .techList:hover {
-  border-left: 1px solid rgb(97, 218, 251);
+  border-left: 2px solid cornsilk;
   list-style-type: circle;
   cursor: crosshair;
 }
