@@ -69,6 +69,18 @@
   color: cornsilk!important;
   list-style-type: disc;
 }
+.listItem:hover::after {
+  position: absolute;
+  z-index: 999;
+  overflow: hidden;
+  content: "\2190";
+  animation: point 1s infinite;
+}
+@keyframes point {
+  from {margin-left: 10rem; opacity: 0; color: cornsilk;}
+  80% {color: cornsilk}
+  to {margin-left: 0rem; opacity: 1; color: rgb(97, 218, 251);}
+}
 /* ------------- */
 
 /*  */
