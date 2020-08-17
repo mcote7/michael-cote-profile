@@ -1,6 +1,6 @@
 /* --------------------- */
 .resumeContainer {
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 .resumeContainer::before {
   height: 99vh;
@@ -52,4 +52,17 @@
     max-width: 90vw;
     height: auto;
   }
+}
+/* -------------------------------------- */
+.allTypeCont {
+  z-index: 999!important;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+.typeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: flex-start;
 }
