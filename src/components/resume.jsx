@@ -15,25 +15,10 @@ const Resume = () => {
     <div className="typeContainer">
       <Typewriter
         options={{
-          strings: ["I love making beautiful user experiences with JavaScript, Html, CSS and React"],
-          autoStart: true,
-          loop: true,
-          cursor: "_",
-          deleteSpeed: 10}}/>
-    </div>
-    <div className="typeContainer">
-      <Typewriter
-        options={{
-          strings: ["Fast load times and lag free interaction, my highest priority. . ."],
-          autoStart: true,
-          loop: true,
-          cursor: "_",
-          deleteSpeed: 10}}/>
-    </div>
-      <div className="typeContainer">
-      <Typewriter
-        options={{
-          strings: ["My responsive layouts will work on any device, big or small. . ."],
+          strings: [
+          "I love making beautiful user experiences with JavaScript, Html, CSS and React",
+          "Fast load times and lag free interaction, my highest priority",
+          "My responsive layouts will work on any device, big or small"],
           autoStart: true,
           loop: true,
           cursor: "_",
