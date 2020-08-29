@@ -14,14 +14,14 @@
   rgba(0,0,0,1),
   rgba(0,0,0,1),
   rgba(0,0,0,0));
-  transform: rotate(160deg);
+  transform: rotate(176deg);
   animation: fade-in-eduBg 4s;
 }
 @keyframes fade-in-eduBg {
   0% { opacity: 0;transform: rotate(0deg);}
   25% { opacity: 0;}
   50% { opacity: 0.1;}
-  100% { opacity: 1;transform: rotate(160deg);}
+  100% { opacity: 1;transform: rotate(176deg);}
 }
 /* ----------Education component---------------------------- */
 .carouselContainer {

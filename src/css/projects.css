@@ -21,13 +21,13 @@
   rgba(0,0,0,1),
   rgba(0,0,0,0));
   opacity: 0.4;
-  animation: fade-in-projBg 4s ease-in-out ;
+  animation: fade-in-projBg 5s ease-in-out ;
 }
 @keyframes fade-in-projBg {
   0% {opacity: 0; transform: rotate(200deg);}
   40% {opacity: 0.1;}
   50% {opacity: 0.25;}
-  60% {opacity: 1;}
+  60% {opacity: 0.2;}
   90% {opacity: 1;}
   100% {opacity: 0.4; transform: rotate(360deg);}
 }
