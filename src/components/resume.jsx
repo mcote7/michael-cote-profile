@@ -16,7 +16,7 @@ const Resume = () => {
       <Typewriter
         options={{
           strings: [
-          "I love making beautiful user experiences with JavaScript, Html, CSS and React",
+          "I love making beautiful user experiences with React",
           "Fast load times and lag free interaction, my highest priority",
           "My responsive layouts will work on any device, big or small"],
           autoStart: true,
