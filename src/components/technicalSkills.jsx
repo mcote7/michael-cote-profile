@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { onRoute } from './../utilities/onRoute';
 import '../css/technical.css'
 
-const Home = () => {
+const TechnicalSkills = () => {
   const [view0, setView0] = useState(false);
   const [view1, setView1] = useState(false);
   const [view2, setView2] = useState(false);
@@ -92,4 +92,4 @@ const Home = () => {
     </React.Fragment>
   );
 };
-export default Home;
+export default TechnicalSkills;
