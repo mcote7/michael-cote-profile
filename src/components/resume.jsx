@@ -3,7 +3,7 @@ import { onRoute } from './../utilities/onRoute';
 import resume1 from '../images/resume1.jpg';
 import resume2 from '../images/resume2.jpg';
 import '../css/resume.css';
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 
 const Resume = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Resume = () => {
     <>
   <div className="allTypeCont mx-auto">
     <div className="typeContainer">
-      <Typewriter
+      {/* <Typewriter
         options={{
           strings: [
           "I love making beautiful user experiences with React",
@@ -22,7 +22,7 @@ const Resume = () => {
           autoStart: true,
           loop: true,
           cursor: "_",
-          deleteSpeed: 10}}/>
+          deleteSpeed: 10}}/> */}
     </div>
   </div>
 

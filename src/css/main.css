@@ -403,9 +403,10 @@
   cursor: pointer;
   background: transparent;
   transition: 0.1s ease-in-out;
+  
 }
+/* add blink neon animation and text shadow to contactBtn -----------------------------------------------------*/
 .contactBtn:hover {
-  transition: 0.1s ease-in-out;
   text-decoration: none;
   color: rgb(97, 218, 251);
 }
@@ -425,7 +426,7 @@ svg {
 }
 
 .mailIcon {
-  animation: mail 2.5s infinite ease-in-out;
+  animation: mail 2.4s infinite ease-in-out;
 }
 @keyframes mail {
   0% {color: cornsilk;}

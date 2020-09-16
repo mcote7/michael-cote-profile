@@ -6,8 +6,7 @@ const ScrollTop = () => {
     window.scrollTo({top: 0, behavior: 'smooth'})
   },[]);
   return (
-    <div className="hidden dummy">
-    </div>
+    <div className="hidden dummy"></div>
   );
-}
+};
 export default ScrollTop;

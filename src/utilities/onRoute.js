@@ -9,4 +9,4 @@ export function onRoute() {
   //   window.scrollTo({top: cote, behavior: 'smooth'});
   // }, 500);
 
-}
+};

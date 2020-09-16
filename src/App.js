@@ -1,6 +1,9 @@
 import './App.css';
 import React, {Component} from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom';
+
+import ScrollProgressRead from 'react-scroll-progress-read';
+
 import scrollTop from './components/scrollTop';
 import NavBar from './components/navigation';
 import MainPage from './components/mainPage';
@@ -8,14 +11,13 @@ import Education from './components/education/education';
 import TechnicalSkills from './components/technicalSkills';
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
-import ScrollProgressRead from 'react-scroll-progress-read';
 import Message from './components/message/message';
 
 class App extends Component {
   state = { message: false }
   handleMessage = () => {
     this.setState({message: true})
-  }
+  };
   render() {
     return(
     <div className="App">
@@ -42,6 +44,6 @@ class App extends Component {
       <NavBar/>
     </div>
     );
-  }
-}
+  };
+};
 export default App;

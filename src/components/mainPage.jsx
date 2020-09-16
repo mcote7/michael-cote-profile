@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 import Loading from './mainLoading';
 
 const MainPage = ({message}) => {
+
   const [light, setLight] = useState(false);
   const [contact, setContact] = useState(false);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     //loader
     setTimeout(()=> {
@@ -21,82 +23,22 @@ const MainPage = ({message}) => {
     setTimeout(()=> {
       setContact(true);
     }, 9100)
-    setTimeout(()=> {
-      setContact(false);
-    }, 9125)
-    setTimeout(()=> {
-      setContact(true);
-    }, 9150)
-    setTimeout(()=> {
-      setContact(false);
-    }, 9250)
-    setTimeout(()=> {
-      setContact(true);
-    }, 9300)
-    setTimeout(()=> {
-      setContact(true);
-    }, 9350)
-    setTimeout(()=> {
-      setContact(false);
-    }, 9400)
-    setTimeout(()=> {
-      setContact(true);
-    }, 9600)
-    setTimeout(()=> {
-      setContact(false);
-    }, 9625)
-    setTimeout(()=> {
-      setContact(true);
-    }, 9750)
-    setTimeout(()=> {
-      setContact(false);
-    }, 13400)
-    setTimeout(()=> {
-      setContact(true);
-    }, 13600)
-    setTimeout(()=> {
-      setContact(false);
-    }, 13625)
-    setTimeout(()=> {
-      setContact(true);
-    }, 13750)
-    setTimeout(()=> {
-      setInterval(()=> {
-        setTimeout(()=> {
-          setContact(true);
-        }, 1100)
-        setTimeout(()=> {
-          setContact(false);
-        }, 1125)
-        setTimeout(()=> {
-          setContact(true);
-        }, 1150)
-        setTimeout(()=> {
-          setContact(false);
-        }, 1250)
-        setTimeout(()=> {
-          setContact(true);
-        }, 1300)
-        setTimeout(()=> {
-          setContact(true);
-        }, 1350)
-      }, 8000)
-    }, 13750)
   },[]);
+
   // mouse ghost //
-  const [myMoveDisplay, setMyMoveDisplay] = useState("none");
-  const [myMoveTop, setMyMoveTop] = useState(0);
-  const [myMoveLeft, setMyMoveLeft] = useState(0);
+  const [myGhostDisplay, setMyGhostDisplay] = useState("none");
+  const [myGhostMoveTop, setMyGhostMoveTop] = useState(0);
+  const [myGhostMoveLeft, setMyGhostMoveLeft] = useState(0);
   const [inBounds, setInbounds] = useState(false);
 
   const myMoveStyle = {
-    display: `${myMoveDisplay}`,
+    display: `${myGhostDisplay}`,
     height: "200px",
     width: "200px",
     position: "fixed",
     zIndex: 10999,
-    top: `${myMoveTop}`,
-    left: `${myMoveLeft}`,
+    top: `${myGhostMoveTop}`,
+    left: `${myGhostMoveLeft}`,
     pointerEvents: "none",
   };
 
@@ -113,18 +55,19 @@ const MainPage = ({message}) => {
     console.log("eY-10", eY);
     console.log("eX-10", eX);
 
-    setMyMoveDisplay("block");
+    setMyGhostDisplay("block");
 
-    setMyMoveTop(`${eY}px`);
-    setMyMoveLeft(`${eX}px`);
+    setMyGhostMoveTop(`${eY}px`);
+    setMyGhostMoveLeft(`${eX}px`);
   };
 
   const handleMouseOut = (e) => {
     setInbounds(false);
     console.log("inBounds", inBounds);
 
-    setMyMoveDisplay("none");
+    setMyGhostDisplay("none");
   };
+
   // 
   if(loading) return <Loading loading={loading}/>;
   return (
@@ -167,6 +110,5 @@ const MainPage = ({message}) => {
     
     </React.Fragment>
   );
-}
+};
 export default MainPage;
-
