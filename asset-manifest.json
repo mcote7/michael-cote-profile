@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile-2020/static/css/main.d2b4c695.chunk.css",
-    "main.js": "/michael-cote-profile-2020/static/js/main.c2b1b76e.chunk.js",
-    "main.js.map": "/michael-cote-profile-2020/static/js/main.c2b1b76e.chunk.js.map",
+    "main.css": "/michael-cote-profile-2020/static/css/main.233952b7.chunk.css",
+    "main.js": "/michael-cote-profile-2020/static/js/main.b3d28130.chunk.js",
+    "main.js.map": "/michael-cote-profile-2020/static/js/main.b3d28130.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile-2020/static/js/runtime-main.961f7dee.js",
     "runtime-main.js.map": "/michael-cote-profile-2020/static/js/runtime-main.961f7dee.js.map",
     "static/css/2.3d09bf3b.chunk.css": "/michael-cote-profile-2020/static/css/2.3d09bf3b.chunk.css",
-    "static/js/2.1149eed9.chunk.js": "/michael-cote-profile-2020/static/js/2.1149eed9.chunk.js",
-    "static/js/2.1149eed9.chunk.js.map": "/michael-cote-profile-2020/static/js/2.1149eed9.chunk.js.map",
+    "static/js/2.7e376352.chunk.js": "/michael-cote-profile-2020/static/js/2.7e376352.chunk.js",
+    "static/js/2.7e376352.chunk.js.map": "/michael-cote-profile-2020/static/js/2.7e376352.chunk.js.map",
     "index.html": "/michael-cote-profile-2020/index.html",
-    "precache-manifest.95d46e541e885b16982a29edd57b5098.js": "/michael-cote-profile-2020/precache-manifest.95d46e541e885b16982a29edd57b5098.js",
+    "precache-manifest.bda4e078dd33de945a550ec3cf1ae145.js": "/michael-cote-profile-2020/precache-manifest.bda4e078dd33de945a550ec3cf1ae145.js",
     "service-worker.js": "/michael-cote-profile-2020/service-worker.js",
     "static/css/2.3d09bf3b.chunk.css.map": "/michael-cote-profile-2020/static/css/2.3d09bf3b.chunk.css.map",
-    "static/css/main.d2b4c695.chunk.css.map": "/michael-cote-profile-2020/static/css/main.d2b4c695.chunk.css.map",
-    "static/js/2.1149eed9.chunk.js.LICENSE.txt": "/michael-cote-profile-2020/static/js/2.1149eed9.chunk.js.LICENSE.txt",
+    "static/css/main.233952b7.chunk.css.map": "/michael-cote-profile-2020/static/css/main.233952b7.chunk.css.map",
+    "static/js/2.7e376352.chunk.js.LICENSE.txt": "/michael-cote-profile-2020/static/js/2.7e376352.chunk.js.LICENSE.txt",
     "static/media/DojoCert.png": "/michael-cote-profile-2020/static/media/DojoCert.51b8e780.png",
     "static/media/MasterReactCert.png": "/michael-cote-profile-2020/static/media/MasterReactCert.c60076ce.png",
     "static/media/ReduxCert.png": "/michael-cote-profile-2020/static/media/ReduxCert.e3ddf3ba.png",
@@ -22,6 +22,7 @@
     "static/media/font-awesome.css": "/michael-cote-profile-2020/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/fridgeImg.jpg": "/michael-cote-profile-2020/static/media/fridgeImg.4db507d2.jpg",
     "static/media/fridgeImg2.jpg": "/michael-cote-profile-2020/static/media/fridgeImg2.340edc05.jpg",
+    "static/media/main.css": "/michael-cote-profile-2020/static/media/mouse-ghost.774615ba.gif",
     "static/media/movieImg1.jpg": "/michael-cote-profile-2020/static/media/movieImg1.b6960121.jpg",
     "static/media/movieImg2.jpg": "/michael-cote-profile-2020/static/media/movieImg2.c78247d3.jpg",
     "static/media/resume1.jpg": "/michael-cote-profile-2020/static/media/resume1.1db12bc9.jpg",
@@ -33,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.961f7dee.js",
     "static/css/2.3d09bf3b.chunk.css",
-    "static/js/2.1149eed9.chunk.js",
-    "static/css/main.d2b4c695.chunk.css",
-    "static/js/main.c2b1b76e.chunk.js"
+    "static/js/2.7e376352.chunk.js",
+    "static/css/main.233952b7.chunk.css",
+    "static/js/main.b3d28130.chunk.js"
   ]
 }
