@@ -391,6 +391,26 @@
 }
 .contactLink {
   margin-left: 1.5rem;
+  animation: neon 8s ease 2s infinite;
+}
+@keyframes neon {
+  0% {color: cornsilk;}
+  0.25% {color: black;}
+  0.5% {color: cornsilk;}
+  0.75% {color: black;}
+  1% {color: cornsilk;}
+  1.25% {color: black;}
+  1.5% {color: cornsilk;}
+  1.75% {color: black;}
+  20% {color: rgb(97, 218, 251);}
+  28.5% {color: black;}
+  29.5% {color: white;}
+  30% {color: cornsilk;}
+
+  40% {color: cornsilk;}
+  80% {color: cornsilk;}
+
+  100% {color: cornsilk;}
 }
 .contactBtn {
   z-index: 999;
@@ -403,9 +423,8 @@
   cursor: pointer;
   background: transparent;
   transition: 0.1s ease-in-out;
-  
 }
-/* add blink neon animation and text shadow to contactBtn -----------------------------------------------------*/
+
 .contactBtn:hover {
   text-decoration: none;
   color: rgb(97, 218, 251);
@@ -418,7 +437,7 @@ svg {
   stroke-dasharray: 260 7000;
   stroke-dashoffset: 260;
   transition: 2s ease-in-out;
-  animation: svgOutline 4s ease-in-out infinite;
+  animation: svgOutline 3.8s ease-in-out infinite;
 }
 @keyframes svgOutline {
   from {stroke-dashoffset: 260;}
