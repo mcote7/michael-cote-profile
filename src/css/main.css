@@ -127,6 +127,7 @@
 }
 /* ------------------------------------- */
 .titleSub {
+  cursor: none;
   margin-left: 1rem;
   color: rgb(97, 218, 251);
   letter-spacing: 1.9rem;
@@ -471,4 +472,11 @@ svg {
 #mouseGhost {
   background-image: url('../images/mouse-ghost.gif');
   background-size: cover;
+  opacity: 0.5;
+  animation: ghost 2.4s ease-out forwards;
+}
+@keyframes ghost {
+  from {opacity: 0;}
+  50% {opacity: 1;}
+  to {opacity: 0.5;}
 }

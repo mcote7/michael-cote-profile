@@ -97,7 +97,6 @@ const MainPage = ({message}) => {
     zIndex: 10999,
     top: `${myMoveTop}`,
     left: `${myMoveLeft}`,
-    opacity: 0.65,
     pointerEvents: "none",
   };
 
@@ -152,7 +151,7 @@ const MainPage = ({message}) => {
         </div>
         <h1 className="titleName">M{light?<span onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="yellowWar blinky titleName">i</span>
         :<span className="titleNameSpec">i</span>}chael P Cote</h1>
-        <p className="titleSub"> web developer in &nbsp;2020</p>
+        <p onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="titleSub"> web developer in &nbsp;2020</p>
       </div>
       
       <div onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="titleQuote col-xl-7">
