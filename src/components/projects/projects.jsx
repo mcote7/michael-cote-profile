@@ -24,6 +24,5 @@ const Projects = () => {
     </div>
     </React.Fragment>
   );
-}
-
+};
 export default Projects;

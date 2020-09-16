@@ -8,5 +8,4 @@ const Loading = ({loading}) => {
     </div>
   );
 };
-
 export default Loading;
