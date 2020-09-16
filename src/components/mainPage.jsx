@@ -83,6 +83,50 @@ const MainPage = ({message}) => {
       }, 8000)
     }, 13750)
   },[]);
+  // mouse ghost //
+  const [myMoveDisplay, setMyMoveDisplay] = useState("none");
+  const [myMoveTop, setMyMoveTop] = useState(0);
+  const [myMoveLeft, setMyMoveLeft] = useState(0);
+  const [inBounds, setInbounds] = useState(false);
+
+  const myMoveStyle = {
+    display: `${myMoveDisplay}`,
+    height: "200px",
+    width: "200px",
+    position: "fixed",
+    zIndex: 10999,
+    top: `${myMoveTop}`,
+    left: `${myMoveLeft}`,
+    opacity: 0.65,
+    pointerEvents: "none",
+  };
+
+  const handleMouseMove = (e) => {
+    setInbounds(true);
+    console.log("inBounds", inBounds);
+
+    console.log("e.screenY",e.screenY);
+    console.log("e.screenX",e.screenX);
+    
+    let eY = e.screenY - 219;
+    let eX = e.screenX - 139;
+
+    console.log("eY-10", eY);
+    console.log("eX-10", eX);
+
+    setMyMoveDisplay("block");
+
+    setMyMoveTop(`${eY}px`);
+    setMyMoveLeft(`${eX}px`);
+  };
+
+  const handleMouseOut = (e) => {
+    setInbounds(false);
+    console.log("inBounds", inBounds);
+
+    setMyMoveDisplay("none");
+  };
+  // 
   if(loading) return <Loading loading={loading}/>;
   return (
     <React.Fragment>
@@ -106,11 +150,12 @@ const MainPage = ({message}) => {
           <span>&nbsp;&rarr;&nbsp;Contact me&nbsp;&nbsp;<i className="fa fa-envelope-o mailIcon" aria-hidden="true"></i></span>}</Link>
           : <div className="placeholder"></div>}
         </div>
-        <h1 className="titleName">M{light?<span className="yellowWar blinky titleName">i</span>:<span className="titleNameSpec">i</span>}chael P Cote</h1>
+        <h1 className="titleName">M{light?<span onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="yellowWar blinky titleName">i</span>
+        :<span className="titleNameSpec">i</span>}chael P Cote</h1>
         <p className="titleSub"> web developer in &nbsp;2020</p>
       </div>
       
-      <div className="titleQuote col-xl-7">
+      <div onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="titleQuote col-xl-7">
       <img src={self} className="mySelf float-right rounded-circle" alt="self"/>
         <h4 className="quote">~ 
           Dedicated and motivated professional seeking an opportunity to showcase my creative and 
@@ -118,6 +163,9 @@ const MainPage = ({message}) => {
           for growth and personal development, as well as the opportunity to expand my knowledge.
         </h4>
       </div>
+      
+      <div id="mouseGhost" style={myMoveStyle}></div>
+    
     </React.Fragment>
   );
 }

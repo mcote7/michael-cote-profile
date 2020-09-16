@@ -144,6 +144,7 @@
 
 
 .titleQuote {
+  cursor: none;
   margin-left: 3rem !important;
   line-height: 1;
   margin-top: -12rem!important;
@@ -162,11 +163,9 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  transition: ease-in-out 10s;
 }
 .quote:hover {
-  cursor: vertical-text;
-  color: cornsilk;
+  cursor: none;
 }
 .mySelf {
   margin-left: 3rem;
@@ -466,4 +465,10 @@ svg {
     top: calc(50% - 125px);
     left: calc(50% - 125px);
   }
+}
+
+/* ---mouse ghost--- */
+#mouseGhost {
+  background-image: url('../images/mouse-ghost.gif');
+  background-size: cover;
 }
