@@ -289,7 +289,7 @@
   }
 }
 /* ------------------------------------------- */
-@media only screen and (max-width: 555px) {
+/* @media only screen and (max-width: 555px) {
   .titleName {
     line-height: 0.9!important;
     font-size: 4rem;
@@ -308,7 +308,7 @@
   }
 }
 /* ------------------------------------------- */
-@media only screen and (max-width: 505px) {
+/* @media only screen and (max-width: 505px) {
   .titleName {
     line-height: 0.9!important;
     font-size: 3.5rem;
@@ -325,9 +325,9 @@
     font-size: 1.3rem;
     font-weight: 300;
   }
-}
+} */
 /* -----------phone--------------------------- */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 550px) {
   .btmPhone {
     margin-bottom: 0.5rem!important;
   }
@@ -375,6 +375,7 @@
     margin-left: 0rem!important;
   }
 }
+/* for phone orientation side view */
 @media only screen and (max-height: 420px) {
   .mySelf {
     margin-top: 12rem;
