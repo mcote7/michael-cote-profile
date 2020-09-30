@@ -161,6 +161,7 @@
     margin: 0rem 1rem 0rem 1rem;
   }
 }
+/* orientation phone sideways */
 @media only screen and (max-height: 420px) {
   .myNavLinks {
     line-height: 1.5;
