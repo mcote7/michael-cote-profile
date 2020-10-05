@@ -30,14 +30,14 @@ class Form extends Component {
     return error ? error.details[0].message : null;
   };
 
-  handleSubmit = e => {
-    e.preventDefault();
-    const errors = this.validate();
-    console.log(errors);
-    this.setState({errors: errors || {}})
-    if(errors) return;
-    this.doSubmit();
-  };
+  // handleSubmit = e => {
+  //   e.preventDefault();
+  //   const errors = this.validate();
+  //   console.log(errors);
+  //   this.setState({errors: errors || {}})
+  //   if(errors) return;
+  //   this.doSubmit();
+  // };
 
   //Check delete?
   handleChange = ({currentTarget: input}) => {

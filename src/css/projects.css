@@ -67,11 +67,32 @@
   font-weight: 900;
   border-bottom: 2px solid white;
   box-shadow: 0px -30px 29px -35px white inset;
+  color: rgb(97, 218, 251);
   background: -webkit-linear-gradient(hsl(193, 95%, 40%), white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: light-up 6s;
 }
+@keyframes light-up {
+  from {box-shadow: none; background: -webkit-linear-gradient(hsl(193, 95%, 40%), hsl(193, 95%, 40%));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  75% {box-shadow: none; background: -webkit-linear-gradient(hsl(193, 95%, 40%), hsl(193, 95%, 40%));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  99% {box-shadow: 0px -30px 29px -35px white inset; background: -webkit-linear-gradient(hsl(193, 95%, 40%), hsl(193, 95%, 40%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+  to {background: -webkit-linear-gradient(hsl(193, 95%, 40%), white);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+}
+
 .projectTitleWrap {
   display: inline-flex!important;
 }
