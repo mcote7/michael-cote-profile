@@ -67,7 +67,6 @@
   font-weight: 900;
   border-bottom: 2px solid white;
   box-shadow: 0px -30px 29px -35px white inset;
-  color: rgb(97, 218, 251);
   background: -webkit-linear-gradient(hsl(193, 95%, 40%), white);
   background-clip: text;
   -webkit-background-clip: text;
@@ -102,7 +101,7 @@
 .movieImg {
   height: auto!important;
   max-width: 400px!important;
-  border-radius: 1%!important;
+  border-radius: 4px!important;
   box-shadow: 0 0 0 1px rgb(97, 218, 251);
   transition: ease-out 0.3s;
   cursor: pointer;
