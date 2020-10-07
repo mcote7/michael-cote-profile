@@ -26,7 +26,7 @@ const TechnicalSkills = () => {
     <React.Fragment>
     <div className="techContainer container-fluid">
       {view0 ? <>
-      <div className="col-xl-3 techTop">
+      <div className="col-md-6 col-xl-3 techTop">
         <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-file-code-o fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Languages</h1>
@@ -38,9 +38,9 @@ const TechnicalSkills = () => {
           <li className="listItem">C#</li>
           <li className="listItem">python</li>
         </ul>
-      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+      </div> </> : <div className="col-md-6 col-xl-3" style={{height: '100vh'}}></div>}
       {view1 ? <>
-      <div className="col-xl-3 techTop">
+      <div className="col-md-6 col-xl-3 techTop">
         <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-book fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Libraries&nbsp;&nbsp;&nbsp;&nbsp;</h1>
@@ -55,9 +55,9 @@ const TechnicalSkills = () => {
           <li className="listItem">Entity</li>
           <li className="listItem">Django</li>
         </ul>
-      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+      </div> </> : <div className="col-md-6 col-xl-3" style={{height: '100vh'}}></div>}
       {view2 ? <>
-      <div className="col-xl-3 techTop">
+      <div className="col-md-6 col-xl-3 techTop">
         <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-database fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Database&nbsp;&nbsp;</h1>
@@ -70,9 +70,9 @@ const TechnicalSkills = () => {
           <li className="listItem">MySql</li>
           <li className="listItem">MySqlLite</li>
         </ul>
-      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+      </div> </> : <div className="col-md-6 col-xl-3" style={{height: '100vh'}}></div>}
       {view3 ? <>
-      <div className="col-xl-3 techTop">
+      <div className="col-md-6 col-xl-3 techTop">
         <div className="techTitleWrap">
           <span className="techIcons"><i className="fa fa-cogs fa-4x" aria-hidden="true"></i></span>
           <h1 className="p-2 techTitle">Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
@@ -87,7 +87,7 @@ const TechnicalSkills = () => {
           <li className="listItem">Git hub</li>
           <li className="listItem">Photoshop</li>
         </ul>
-      </div> </> : <div className="col-xl-3" style={{height: '100vh'}}></div>}
+      </div> </> : <div className="col-md-6 col-xl-3" style={{height: '100vh'}}></div>}
     </div>
     </React.Fragment>
   );

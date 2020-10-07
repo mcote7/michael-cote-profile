@@ -12,16 +12,6 @@
     opacity: 1;
   }
 }
-
-.nameGroup {
-  display: grid!important;
-  line-height: 0.8!important;
-  cursor: pointer;
-}
-.navSpan {
-  color: white!important;
-  margin-bottom: 2.75rem!important;
-}
 /* -------------------------------------------- */
 .myNavLinks {
   margin: 1rem;
@@ -31,7 +21,7 @@
   border-top: solid 2px rgba(255, 255, 255, 0);
   border-bottom: solid 2px rgba(255, 255, 255, 0);
   filter: blur(1.75px)!important;
-  transition: ease-in 0.55s;
+  transition: ease 0.4s;
 }
 .myNavLinks:hover {
   cursor: pointer;
@@ -51,6 +41,7 @@
   border-bottom: solid 2px rgb(97, 218, 251);
   border-top-right-radius: 24%;
   border-bottom-left-radius: 24%;
+  transition: ease-in-out 0.8s;
 }
 .myNavLinks-on:hover {
   cursor: pointer;
@@ -60,7 +51,16 @@
   filter: blur(0px)!important;
   text-decoration: none;
 }
-/* ----------------------------- */
+/* ------ name grid ----------------------- */
+.nameGroup {
+  display: grid!important;
+  line-height: 0.8!important;
+  cursor: pointer;
+}
+.navSpan {
+  color: white!important;
+  margin-bottom: 2.75rem!important;
+}
 .myNavLinksName {
   margin: 1.5rem 1.5rem 0rem 1.5rem;
   padding: 1rem 1rem 0rem 1rem;
@@ -74,8 +74,8 @@
   color: white;
   text-decoration: none;
 }
-/* ------------------------------------------------------- */
-@media only screen and (max-width: 1295px) {
+/* ------------- device < xxl ------------------------ */
+@media only screen and (max-width: 1395px) {
   .myNavBar {
     height: auto!important;
     padding-bottom: 3rem!important;
@@ -92,68 +92,33 @@
   .barsIcon {
     color: white!important;
   }
-  .nameGroup {
-    display: grid!important;
-    line-height: 0.8!important;
-  }
   .myNavLinks {
     margin: 1rem;
     padding: 1rem;
     font-size: 2rem;
     line-height: 2.5;
-    color: rgb(97, 218, 251);
-    filter: blur(0px)!important;
-    transition: ease-in 0.55s;
-  }
-  .myNavLinks:hover {
-    cursor: pointer;
-    color: white;
-    filter: blur(0px)!important;
-    text-decoration: none;
-  }
-  .myNavLinks-on {
-    cursor: pointer;
-    color: white;
-    filter: blur(0px)!important;
-    text-decoration: none;
   }
   .myNavLinksName {
     margin: 1rem 1rem 0rem 1rem;
     padding: 1rem 1rem 0rem 1rem;
     font-size: 1.75rem;
     color: rgb(97, 218, 251);
-    filter: blur(0px)!important;
-    transition: ease-in 1s;
   }
   .navSpan {
     margin-bottom: 0rem!important;
   }
 }
-/* -------------------------------------- */
-@media only screen and (min-width:1201px) and (max-width:1247px) {
-  .myNavLinks {
-    margin: 0.9rem!important;
-    padding: 0.4rem!important;
-    font-size: 2rem!important;
-    line-height: 2.5;
-    color: rgb(97, 218, 251);
-    filter: blur(0px)!important;
-    transition: ease-in 0.55s;
-  }
-  .myNavLinks-on {
-    cursor: pointer;
-    color: white;
-    filter: blur(0px)!important;
-    text-decoration: none;
-  }
-}
-/* ----------------------------------------- */
+/* ------- small device ---------------------------------- */
 @media only screen and (max-width: 645px) {
   .myNavBar {
     border-top: solid 1px rgb(97, 218, 251)!important;
   }
 }
+/* -------- phone ----------------------------------- */
 @media only screen and (max-width: 420px) {
+  .myNavLinks {
+    filter: blur(0px)!important;
+  }
   .myNavBar {
     padding-bottom: 1.5rem!important;
   }
@@ -163,10 +128,6 @@
 }
 /* orientation phone sideways */
 @media only screen and (max-height: 420px) {
-  .myNavLinks {
-    line-height: 1.5;
-    padding: 4px;
-  }
   .fixed-bottom {
     display: none!important;
   }
