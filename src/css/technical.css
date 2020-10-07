@@ -9,7 +9,6 @@
   margin: 0%!important;
   padding: 0%!important;
 }
-
 .techContainer::before {
   height: 99vh;
   width: 99vw;
@@ -73,7 +72,7 @@
   position: absolute;
   z-index: 999;
   overflow: hidden;
-  content: "\2190";
+  content: "\2190"; 
   color: rgb(97, 218, 251);
   margin-left: 0.5rem;
   animation: point 1s;
