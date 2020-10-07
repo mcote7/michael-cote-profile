@@ -37,7 +37,7 @@
   90% {opacity: 1;}
   100% {opacity: 0.4; transform: rotate(360deg);}
 }
-/* ---opening animation--- */
+/* --- opening animation of columns---------------------------*/
 .techTop {
   height: 100vh;
   margin-top: 3rem;
@@ -50,7 +50,7 @@
   85% {opacity: 0.5;}
   100% {margin-top: 3rem; opacity: 1;}
 }
-/*-------------------------------------------- */
+/*------- list items-------------------- */
 .yella {
   list-style: none;
 }
@@ -85,7 +85,7 @@
 }
 /* ------------- */
 
-/*  */
+/* title */
 .techTitleWrap {
   display: inline-flex;
   margin-bottom: 0.25rem;
@@ -128,7 +128,7 @@
   color: rgb(97, 218, 251);
 }
 .techList {
-  margin-left: 18%;
+  margin-left: 12%;
   padding-top: 0.5rem;
   padding-left: 4rem;
   font-size: 1.7rem;
@@ -158,7 +158,7 @@
 }
 @media only screen and (max-width: 1201px) {
   .techList {
-    margin-left: 40%;
+    margin-left: 28%;
   }
   .titleBottom {
     margin-bottom: 25vh!important;
@@ -185,7 +185,7 @@
   }
   .techList {
     font-size: 1.5rem;
-    margin-left: 14%;
+    margin-left: 12%;
     padding-left: 3rem;
   }
   .techTitle {
