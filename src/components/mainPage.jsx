@@ -44,7 +44,7 @@ const MainPage = ({message}) => {
 
   const handleMouseMove = (e) => {
     setInbounds(true);
-    // console.log("inBounds", inBounds);
+    console.log("inBounds", inBounds);
 
     // console.log("e.screenY",e.screenY);
     // console.log("e.screenX",e.screenX);
@@ -63,7 +63,7 @@ const MainPage = ({message}) => {
 
   const handleMouseOut = (e) => {
     setInbounds(false);
-    // console.log("inBounds", inBounds);
+    console.log("inBounds", inBounds);
 
     setMyGhostDisplay("none");
   };

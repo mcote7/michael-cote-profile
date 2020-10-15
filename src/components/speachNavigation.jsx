@@ -12,7 +12,7 @@ const SpeachNavigation = (props) => {
     setMicIcon("microphone-slash")
   };
 
-  
+
 
   return (
     <div className="speach" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
