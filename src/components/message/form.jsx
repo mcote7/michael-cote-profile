@@ -24,7 +24,7 @@ class Form extends Component {
     const obj = {[name]: value};
     const schema = {[name]: this.schema[name]};
     const {error} = Joi.validate(obj, schema);
-    console.log({error})
+    // console.log({error})
     if(error && error.details[0].path.includes('email'))
     error.details[0].message = '"Email" must be valid. ( person@example.com )';
     return error ? error.details[0].message : null;

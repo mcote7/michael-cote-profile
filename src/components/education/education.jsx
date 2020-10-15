@@ -30,7 +30,7 @@ class Education extends React.Component {
     this.onchange = this.onchange.bind(this);
   }
   onchange(value) {
-    console.log("imgVal", value);
+    // console.log("imgVal", value);
     this.state.value === 2 ? this.setState({ value: 0 }) : this.setState({ value });
   }
   onImageSwitch = () => {

@@ -44,16 +44,16 @@ const MainPage = ({message}) => {
 
   const handleMouseMove = (e) => {
     setInbounds(true);
-    console.log("inBounds", inBounds);
+    // console.log("inBounds", inBounds);
 
-    console.log("e.screenY",e.screenY);
-    console.log("e.screenX",e.screenX);
+    // console.log("e.screenY",e.screenY);
+    // console.log("e.screenX",e.screenX);
     
     let eY = e.screenY - 219;
     let eX = e.screenX - 139;
 
-    console.log("eY-10", eY);
-    console.log("eX-10", eX);
+    // console.log("eY-10", eY);
+    // console.log("eX-10", eX);
 
     setMyGhostDisplay("block");
 
@@ -63,7 +63,7 @@ const MainPage = ({message}) => {
 
   const handleMouseOut = (e) => {
     setInbounds(false);
-    console.log("inBounds", inBounds);
+    // console.log("inBounds", inBounds);
 
     setMyGhostDisplay("none");
   };

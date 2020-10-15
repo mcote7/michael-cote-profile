@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import '../css/navbar.css';
 
+import SpeachNavigation from '../components/speachNavigation';
+
 const NavBar = () => {
 
   const [loading, setLoading] = useState(true);
@@ -40,7 +42,7 @@ const NavBar = () => {
           </li>
         </ul>
         <span className="navbar-text">
-
+          <SpeachNavigation/>
         </span>
       </div>
     </nav>

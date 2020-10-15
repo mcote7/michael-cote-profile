@@ -138,3 +138,36 @@
     display: none!important;
   }
 }
+
+/* ---speach div--- */
+
+.speach {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ffee58;
+  color: white;
+  box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px, rgba(255, 255, 255, 1) 0px 0px 3px 1px;
+}
+.speach:hover {
+  box-shadow: none;
+  transform: scale(1.1);
+}
+.speach:active {
+  transform: scale(0.9);
+  color: rgb(97, 218, 251);
+  animation: cd-pulse 0.75s 0.1s infinite;
+}
+@keyframes cd-pulse {
+  0% {box-shadow:0 0 0 0 white}
+  100% {box-shadow:0 0 10px 25px rgba(255,150,44,0)}
+}
