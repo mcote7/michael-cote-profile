@@ -147,7 +147,6 @@
 .titleQuote {
   cursor: none;
   margin-left: 3rem !important;
-  line-height: 1;
   margin-top: -12rem!important;
   transition: ease 1.5s;
   animation: 8s fade-in;
@@ -164,6 +163,12 @@
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
+  text-align: left;
+  animation: spread 2s ease-out;
+}
+@keyframes spread {
+  from {line-height: 0;}
+  to {line-height: 1.2;}
 }
 .quote:hover {
   cursor: none;
