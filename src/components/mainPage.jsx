@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import self from '../images/self1_edited.jpg';
-import '../css/main.css';
 import { Link } from 'react-router-dom';
+
+import self from '../images/self1_edited.jpg';
 import Loading from './mainLoading';
+
+import '../css/main.css';
 
 const MainPage = ({message}) => {
 
@@ -15,7 +17,7 @@ const MainPage = ({message}) => {
     setTimeout(()=> {
       setLoading(false);
     }, 6000)
-    //my i
+    //my i light
     setTimeout(()=> {
       setLight(true);
     }, 8000)
@@ -71,6 +73,7 @@ const MainPage = ({message}) => {
   // 
   if(loading) return <Loading loading={loading}/>;
   return (
+    // parent = < row />
     <React.Fragment>
       <div className="titleCont col-xl-12">
         <div className="titleLinks mb-1">
