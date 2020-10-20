@@ -1,3 +1,9 @@
+/* --- < MainView /> - */
+.mainViewContainer {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+/* ------------------- */
 /* --- < Social /> --- */
 
 /* ------------------- */
@@ -31,10 +37,6 @@
   transition: ease-in 0.1s;
 }
 
-.titleCont {
-  margin-top: 1.5rem;
-  text-align: left!important;
-}
 .titleName {
   border-top: 3px solid;
   line-height: 0.9!important;
@@ -301,10 +303,6 @@
   .btmPhone {
     margin-bottom: 0.5rem!important;
   }
-  .titleCont {
-    margin-left: 0rem!important;
-    margin-top: 0rem!important;
-  }
   .titleName {
     font-size: 2.6rem;
     font-weight: 600;
@@ -444,6 +442,12 @@ svg {
     transform: none!important;
   }
 }
+
+
+
+
+
+
 
 /*  ----------loader------------- */
 .loaderWrapper {

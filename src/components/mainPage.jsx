@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 import self from '../images/self1_edited.jpg';
-import Loading from './mainLoading';
+import Loading from './MainView/MainLoading';
 
 import '../css/main.css';
 
@@ -76,6 +76,9 @@ const MainPage = ({message}) => {
     // parent = < row />
     <React.Fragment>
       <div className="titleCont col-xl-12">
+
+
+        
         <div className="titleLinks mb-1">
           <p className="social"><span className="fadeicon"><i className="hovIcon fa fa-github-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"

@@ -12,7 +12,8 @@ import Projects from './components/projects/projects';
 import Resume from './components/resume';
 import Message from './components/message/message';
 
-import MainPage from './components/mainPage';
+// import MainPage from './components/mainPage';
+import MainView from './components/MainView/MainView';
 
 
 class App extends Component {
@@ -28,7 +29,8 @@ class App extends Component {
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
         <div id="cote" className="row fullScreen">
-          <MainPage message={this.state.message}/>
+          {/* <MainPage message={this.state.message}/> */}
+          <MainView  message={this.state.message} />
         </div>
         <div className="row">
           <Switch>
