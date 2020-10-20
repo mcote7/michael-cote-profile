@@ -75,7 +75,7 @@ const MainPage = ({message}) => {
   return (
     // parent = < row />
     <React.Fragment>
-      <div className="titleCont col-xl-12">
+      {/* <div className="titleCont col-xl-12"> */}
 
 
         
@@ -98,10 +98,12 @@ const MainPage = ({message}) => {
           <span>&nbsp;&rarr;&nbsp;Contact me&nbsp;&nbsp;<i className="fa fa-envelope-o mailIcon" aria-hidden="true"></i></span>}</Link>
           : <div className="placeholder"></div>}
         </div>
+
         <h1 className="titleName">M{light?<span onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="yellowWar blinky titleName">i</span>
         :<span className="titleNameSpec">i</span>}chael P Cote</h1>
         <p className="titleSub"> web developer in &nbsp;2020</p>
-      </div>
+
+      {/* </div> */}
       
       <div onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="titleQuote col-xl-7">
       <img src={self} className="mySelf float-right rounded-circle" alt="self"/>

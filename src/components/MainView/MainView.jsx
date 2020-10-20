@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
 
 import Loading from '../MainView/MainLoading';
 import Social from '../MainView/Social';
@@ -72,7 +71,7 @@ const MainView = ({message}) => {
 
   return (
     <div className="mainViewContainer col-12">
-
+      <Social message={message} contact={contact}/>
     </div>
   );
 };
