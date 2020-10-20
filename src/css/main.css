@@ -130,7 +130,19 @@ svg {
 }
 /* ------------------- */
 /* --- < Title /> ---- */
-
+.titleName {
+  border-top: 0.2rem solid;
+  line-height: 0.9!important;
+  font-size: 8.5rem;
+  font-weight: 800;
+}
+.titleNameSpec {
+  display: inline-block!important;
+  border-top: 1px solid!important;
+  line-height: 0.9!important;
+  font-size: 8.5rem;
+  font-weight: 800;
+}
 /* ------------------- */
 /* --- < Bio /> ------ */
 
@@ -139,25 +151,11 @@ svg {
 /* ------------------------ */
 
 .yellowWar {
-  border-top: 1px solid!important;
   display: inline-block!important;
+  border-top: 1px solid!important;
   color: #ffee58;
   cursor: none!important;
   transition: ease-in 0.1s;
-}
-
-.titleName {
-  border-top: 3px solid;
-  line-height: 0.9!important;
-  font-size: 8.5rem;
-  font-weight: 700;
-}
-.titleNameSpec {
-  border-top: 1px solid!important;
-  display: inline-block!important;
-  line-height: 0.9!important;
-  font-size: 8.5rem;
-  font-weight: 700;
 }
 /* ---------------------------------------------------- */
 .blinky {

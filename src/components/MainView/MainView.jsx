@@ -72,7 +72,7 @@ const MainView = ({message}) => {
   return (
     <div className="mainViewContainer col-12">
       <Social message={message} contact={contact}/>
-      
+      <Title light={light} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}/>
     </div>
   );
 };

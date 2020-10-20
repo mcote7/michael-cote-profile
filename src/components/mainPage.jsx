@@ -1,77 +1,77 @@
-import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+// import React, {useState, useEffect} from 'react';
+// import { Link } from 'react-router-dom';
 
-import self from '../images/self1_edited.jpg';
-import Loading from './MainView/MainLoading';
+// import self from '../images/self1_edited.jpg';
+// import Loading from './MainView/MainLoading';
 
-import '../css/main.css';
+// import '../css/main.css';
 
-const MainPage = ({message}) => {
+// const MainPage = ({message}) => {
 
-  const [light, setLight] = useState(false);
-  const [contact, setContact] = useState(false);
-  const [loading, setLoading] = useState(true);
+//   const [light, setLight] = useState(false);
+//   const [contact, setContact] = useState(false);
+//   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    //loader
-    setTimeout(()=> {
-      setLoading(false);
-    }, 6000)
-    //my i light
-    setTimeout(()=> {
-      setLight(true);
-    }, 8000)
-    // contact btn
-    setTimeout(()=> {
-      setContact(true);
-    }, 9100)
-  },[]);
+//   useEffect(() => {
+//     //loader
+//     setTimeout(()=> {
+//       setLoading(false);
+//     }, 6000)
+//     //my i light
+//     setTimeout(()=> {
+//       setLight(true);
+//     }, 8000)
+//     // contact btn
+//     setTimeout(()=> {
+//       setContact(true);
+//     }, 9100)
+//   },[]);
 
   // mouse ghost //
-  const [myGhostDisplay, setMyGhostDisplay] = useState("none");
-  const [myGhostMoveTop, setMyGhostMoveTop] = useState(0);
-  const [myGhostMoveLeft, setMyGhostMoveLeft] = useState(0);
-  const [inBounds, setInbounds] = useState(false);
+  // const [myGhostDisplay, setMyGhostDisplay] = useState("none");
+  // const [myGhostMoveTop, setMyGhostMoveTop] = useState(0);
+  // const [myGhostMoveLeft, setMyGhostMoveLeft] = useState(0);
+  // const [inBounds, setInbounds] = useState(false);
 
-  const myMoveStyle = {
-    display: `${myGhostDisplay}`,
-    height: "200px",
-    width: "200px",
-    position: "fixed",
-    zIndex: 10999,
-    top: `${myGhostMoveTop}`,
-    left: `${myGhostMoveLeft}`,
-    pointerEvents: "none",
-  };
+  // const myMoveStyle = {
+  //   display: `${myGhostDisplay}`,
+  //   height: "200px",
+  //   width: "200px",
+  //   position: "fixed",
+  //   zIndex: 10999,
+  //   top: `${myGhostMoveTop}`,
+  //   left: `${myGhostMoveLeft}`,
+  //   pointerEvents: "none",
+  // };
 
-  const handleMouseMove = (e) => {
-    setInbounds(true);
-    console.log("inBounds", inBounds);
+  // const handleMouseMove = (e) => {
+  //   setInbounds(true);
+  //   console.log("inBounds", inBounds);
 
-    // console.log("e.screenY",e.screenY);
-    // console.log("e.screenX",e.screenX);
+  //   // console.log("e.screenY",e.screenY);
+  //   // console.log("e.screenX",e.screenX);
     
-    let eY = e.screenY - 219;
-    let eX = e.screenX - 139;
+  //   let eY = e.screenY - 219;
+  //   let eX = e.screenX - 139;
 
-    // console.log("eY-10", eY);
-    // console.log("eX-10", eX);
+  //   // console.log("eY-10", eY);
+  //   // console.log("eX-10", eX);
 
-    setMyGhostDisplay("block");
+  //   setMyGhostDisplay("block");
 
-    setMyGhostMoveTop(`${eY}px`);
-    setMyGhostMoveLeft(`${eX}px`);
-  };
+  //   setMyGhostMoveTop(`${eY}px`);
+  //   setMyGhostMoveLeft(`${eX}px`);
+  // };
 
-  const handleMouseOut = (e) => {
-    setInbounds(false);
-    console.log("inBounds", inBounds);
+  // const handleMouseOut = (e) => {
+  //   setInbounds(false);
+  //   console.log("inBounds", inBounds);
 
-    setMyGhostDisplay("none");
-  };
+  //   setMyGhostDisplay("none");
+  // };
 
-  // 
-  if(loading) return <Loading loading={loading}/>;
+  // // 
+  // if(loading) return <Loading loading={loading}/>;
   return (
     // parent = < row />
     <React.Fragment>
@@ -79,7 +79,7 @@ const MainPage = ({message}) => {
 
 
         
-        <div className="titleLinks mb-1">
+        {/* <div className="titleLinks mb-1">
           <p className="social"><span className="fadeicon"><i className="hovIcon fa fa-github-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;<a className="titleAtag" target="_blank" rel="noopener noreferrer"
           href="https://github.com/mcote7">www.github.com/cote</a></p>
@@ -97,11 +97,11 @@ const MainPage = ({message}) => {
           {message ? <span style={{color: 'white', fontSize: 'medium'}}>&nbsp;&hearts;&nbsp;message sent, thank you</span> : 
           <span>&nbsp;&rarr;&nbsp;Contact me&nbsp;&nbsp;<i className="fa fa-envelope-o mailIcon" aria-hidden="true"></i></span>}</Link>
           : <div className="placeholder"></div>}
-        </div>
+        </div> */}
 
-        <h1 className="titleName">M{light?<span onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="yellowWar blinky titleName">i</span>
+        {/* <h1 className="titleName">M{light?<span onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="yellowWar blinky titleName">i</span>
         :<span className="titleNameSpec">i</span>}chael P Cote</h1>
-        <p className="titleSub"> web developer in &nbsp;2020</p>
+        <p className="titleSub"> web developer in &nbsp;2020</p> */}
 
       {/* </div> */}
       
