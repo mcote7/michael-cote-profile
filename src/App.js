@@ -6,12 +6,14 @@ import ScrollProgressRead from 'react-scroll-progress-read';
 
 import scrollTop from './components/scrollTop';
 import NavBar from './components/navigation';
-import MainPage from './components/mainPage';
-import Education from './components/education/education';
 import TechnicalSkills from './components/technicalSkills';
+import Education from './components/education/education';
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
 import Message from './components/message/message';
+
+import MainPage from './components/mainPage';
+
 
 class App extends Component {
   state = { message: false }
