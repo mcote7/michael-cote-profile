@@ -155,12 +155,11 @@
 
 
 /* ---speach div--- */
-
 .speach {
   cursor: pointer;
   display: flex;
   position: absolute;
-  bottom: 20px;
+  bottom: 5vh;
   right: 20px;
   z-index: 9999;
   justify-content: center;
@@ -169,7 +168,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #ffee58;
+  background-color: hsl(54, 100%, 57%);
   color: white;
   box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px, rgba(255, 255, 255, 1) 0px 0px 3px 1px;
 }
@@ -180,25 +179,33 @@
 }
 .speach:hover {
   box-shadow: none;
+  background-color: #ffee58;
   transform: scale(1.1);
 }
 .speach:active {
+  cursor: none;
   transform: scale(0.9);
   color: rgb(97, 218, 251);
+  background-color: rgba(255, 255, 255, 0.2);
   animation: cd-pulse 0.75s 0.1s infinite;
 }
 @keyframes cd-pulse {
-  0% {box-shadow:0 0 0 0 white}
-  100% {box-shadow:0 0 10px 25px rgba(255,150,44,0)}
+  0% {box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
+  100% {box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: rgba(255, 255, 255, 0.2);}
 }
 .speachInfo {
   display: flex;
+  flex-direction: column;
   position: absolute;
   z-index: 1099;
   bottom: 20vh;
   right: 10px;
-  width: 20vw;
-  height: 20vh;
-
-  background-color: rgba(255, 0, 0, 1);
+  padding: 1rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #C2185B;
+  animation: speach-info 1.5s;
+}
+@keyframes speach-info {
+  from {opacity: 0; background-color: rgb(97, 218, 251);}
+  to {opacity: 1; background-color: #C2185B;}
 }
