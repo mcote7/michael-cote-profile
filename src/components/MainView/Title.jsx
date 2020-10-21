@@ -13,13 +13,13 @@ const Title = ({light, handleMouseMove, handleMouseOut}) => {
         {light?
         
         <span onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)}
-        className="yellowWar blinky titleName">i</span>
+        className="yellowWar blinky">i</span>
         
         :<span className="titleNameSpec">i</span>}
         
         chael P Cote</h1>
 
-        <p className="titleSub">web developer in&nbsp;&nbsp;2020</p>
+        <p className="titleSub">web developer in 2020</p>
       </div>
     </div>
   );

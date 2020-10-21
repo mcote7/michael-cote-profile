@@ -138,26 +138,15 @@ svg {
 }
 .titleNameSpec {
   display: inline-block!important;
-  border-top: 1px solid!important;
-  line-height: 0.9!important;
-  font-size: 8.5rem;
-  font-weight: 800;
+  border-top: 0.1rem solid!important;
+  border-color: rgba(255, 255, 255, 0)!important;
 }
-/* ------------------- */
-/* --- < Bio /> ------ */
-
-/* ------------------- */
-
-/* ------------------------ */
-
 .yellowWar {
   display: inline-block!important;
-  border-top: 1px solid!important;
+  border-top: 0.1rem solid!important;
   color: #ffee58;
   cursor: none!important;
-  transition: ease-in 0.1s;
 }
-/* ---------------------------------------------------- */
 .blinky {
   animation: blink 8s ease 2s infinite;
 }
@@ -178,9 +167,9 @@ svg {
   80% {color: #ffee58;}
   100% {color: cornsilk;}
 }
-/* ------------------------------------- */
+
 .titleSub {
-  cursor: none;
+  cursor: help;
   margin-left: 1rem;
   color: rgb(97, 218, 251);
   letter-spacing: 1.9rem;
@@ -195,6 +184,13 @@ svg {
   50% {color: rgba(97, 218, 251, 0);}
   100% {color: rgba(97, 218, 251, 1);}
 }
+/* ------------------- */
+/* --- < Bio /> ------ */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ------------------------------------- */
 
 
 .titleQuote {
@@ -210,8 +206,6 @@ svg {
   50% {opacity: 0.45;}
   100% {opacity: 1;}
 }
-
-
 .quote {
   font-size: 1.7rem;
   letter-spacing: 0.5rem;
@@ -235,8 +229,10 @@ svg {
 }
 
 
+
+
 /* --------------------------------------------- */
-@media only screen and (max-width: 1295px) {
+/* @media only screen and (max-width: 1295px) {
   .titleName {
     line-height: 0.9!important;
     font-size: 7.5rem;
@@ -260,9 +256,9 @@ svg {
   font-weight: 200;
   transition: 5.5s;
   }
-}
+} */
 /* ------------------------------------------- */
-@media only screen and (max-width: 920px) {
+/* @media only screen and (max-width: 920px) {
   .titleName {
     line-height: 0.9!important;
     font-size: 6rem;
@@ -285,9 +281,9 @@ svg {
   font-weight: 100;
   transition: 5.5s;
   }
-}
+} */
 /* ------------------------------------------ */
-@media only screen and (max-width: 732px) {
+/* @media only screen and (max-width: 732px) {
   .titleName {
     line-height: 0.9!important;
     font-size: 5.2rem;
@@ -307,9 +303,9 @@ svg {
   .contactLink {
     margin-left: 0rem!important;
   }
-}
+} */
 /* ------------------------------------------- */
-@media only screen and (max-width: 635px) {
+/* @media only screen and (max-width: 635px) {
   .titleName {
     line-height: 0.9!important;
     font-size: 4.5rem;
@@ -326,10 +322,10 @@ svg {
     font-size: 1.4rem;
     font-weight: 300;
   }
-}
+} */
 
 /* -----------phone--------------------------- */
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
 
   .titleName {
     font-size: 2.6rem;
@@ -363,7 +359,7 @@ svg {
   .titleQuote {
     margin-left: 0rem !important;
   }
-}
+} */
 /* for phone orientation side view */
 @media only screen and (max-height: 420px) {
   .mySelf {
