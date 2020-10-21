@@ -268,17 +268,7 @@ svg {
   }
 }
 /* ------------------- */
-/* ***************************************************************************** */
-/* for phone orientation side view */
-/* @media only screen and (max-height: 420px) {
-  .mySelf {
-    margin-top: 12rem;
-  }
-  .quote {
-    margin-top: 12rem;
-  }
-} */
-/*  ----------loader------------- */
+/*  -------loader----- */
 .loaderWrapper {
   position: absolute;
   top: calc(50% - 200px);
@@ -291,7 +281,8 @@ svg {
     left: calc(50% - 125px);
   }
 }
-/* ---mouse ghost--- */
+/* ------------------- */
+/* ---mouse ghost----- */
 #mouseGhost {
   background-image: url('../images/mouse-ghost.gif');
   background-size: cover;
@@ -303,3 +294,4 @@ svg {
   50% {opacity: 1;}
   to {opacity: 0.5;}
 }
+/* ------------------ */
