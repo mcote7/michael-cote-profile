@@ -147,13 +147,6 @@
 
 
 
-
-
-
-
-
-
-
 /* ---speach div--- */
 .speach {
   cursor: pointer;
@@ -191,7 +184,7 @@
 }
 .speach:active {
   cursor: none;
-  transform: scale(0.9);
+  transform: scale(1);
   color: rgb(97, 218, 251);
   background-color: rgba(255, 255, 255, 0.2);
   animation: cd-pulse 0.75s 0.1s infinite;
@@ -213,6 +206,6 @@
   animation: speach-info 1.5s;
 }
 @keyframes speach-info {
-  from {opacity: 0; background-color: rgb(97, 218, 251);}
+  from {opacity: 0; background-color: rgb(97, 218, 251)}
   to {opacity: 1; background-color: #C2185B;}
 }
