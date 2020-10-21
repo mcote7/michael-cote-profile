@@ -5,7 +5,7 @@ const SpeachNavigation = (props) => {
   // console.log("speach props",props);
 
   const [showSpeachInfo, setShowSpeachInfo] = useState(false);
-  const handleMouseOver = () => {
+  const handleMouseEnter = () => {
     setShowSpeachInfo(true);
   };
   const handleMouseLeave = () => {
@@ -24,7 +24,7 @@ const SpeachNavigation = (props) => {
   return (<>
     <div className="speach" 
       onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}
-      onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+      onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
 

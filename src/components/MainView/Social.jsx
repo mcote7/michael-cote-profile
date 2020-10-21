@@ -3,25 +3,34 @@ import { Link } from 'react-router-dom';
 
 const Social = ({message, contact}) => {
 
+  const handleMouseOver = (e) => {
+    const target = e.target.parentNode;
+    target.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+  };
+  const handleMouseLeave = (e) => {
+    const target = e.target.parentNode;
+    target.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+  };
+
   return (
-    <div className="row my-1 socialRow">
+    <div className="row socialRow">
 
       <div className="col-sm-6 col-lg-4 col-xl-3">
-        <p className="socialWraps"><span className="socialIcons mr-1"><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
-        &nbsp;<a className="socialLinks" target="_blank" rel="noopener noreferrer"
-        href="https://github.com/mcote7">www.github.com/cote</a></p>
+        <p className="socialWraps">
+        <a onMouseOver={(e)=>handleMouseOver(e)} onMouseLeave={(e)=>handleMouseLeave(e)} className="socialLinks" target="_blank" rel="noopener noreferrer"
+        href="https://github.com/mcote7"><span className="socialIcons mr-1"><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>&nbsp;www.github.com/cote</a></p>
       </div>
 
       <div className="col-sm-6 col-lg-4 col-xl-3">
-        <p className="socialWraps"><span className="socialIcons mr-1"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
-        &nbsp;<a className="socialLinks" target="_blank" rel="noopener noreferrer"
-        href="https://linkedin.com/in/michael-cote-wa">www.linkedin.com/in/cote</a></p>
+        <p className="socialWraps">
+        <a onMouseOver={(e)=>handleMouseOver(e)} onMouseLeave={(e)=>handleMouseLeave(e)} className="socialLinks" target="_blank" rel="noopener noreferrer"
+        href="https://linkedin.com/in/michael-cote-wa"><span className="socialIcons mr-1"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>&nbsp;www.linkedin.com/in/cote</a></p>
       </div>
 
       <div className="col-sm-6 col-lg-4 col-xl-3">
-        <p className="socialWraps"><span className="socialIcons mr-1"><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
-        &nbsp;<a className="socialLinks" target="_blank" rel="noopener noreferrer"
-        href="https://facebook.com/profile.php?id=100012957396194">www.facebook.com/cote</a></p>
+        <p className="socialWraps">
+        <a onMouseOver={(e)=>handleMouseOver(e)} onMouseLeave={(e)=>handleMouseLeave(e)} className="socialLinks" target="_blank" rel="noopener noreferrer"
+        href="https://facebook.com/profile.php?id=100012957396194"><span className="socialIcons mr-1"><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>&nbsp;www.facebook.com/cote</a></p>
       </div>
 
       <div className="col-sm-6 col-lg-4 col-xl-3">

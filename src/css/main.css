@@ -14,17 +14,15 @@
   }
 }
 .socialWraps {
+  background-color: rgba(255, 255, 255, 0.15);
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   transition: 0.5s;
   animation: 2.75s ease-out slide-up-main;
 }
 @keyframes slide-up-main {
-  from {margin-top: 100vh;}
-  to {margin-top: 0%;}
-}
-.socialWraps:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  from {margin-top: 100vh; background-color: rgba(255, 255, 255, 0);}
+  to {margin-top: 0%; background-color: rgba(255, 255, 255, 0.15);}
 }
 @media only screen and (max-width: 650px) {
   .socialWraps {
@@ -32,7 +30,8 @@
   }
 }
 .socialIcons {
-  cursor: none;
+  cursor: pointer;
+  pointer-events: none;
   color: white;
   transition: 0.2s;
   animation: 5s color-fade-in1;
