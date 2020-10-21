@@ -171,6 +171,13 @@
   background-color: hsl(54, 100%, 57%);
   color: white;
   box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px, rgba(255, 255, 255, 1) 0px 0px 3px 1px;
+  transition: 0.2s ease-in-out;
+  animation: heartbeat 0.5s ease-in-out 12s 12;
+}
+@keyframes heartbeat {
+  0% {background-color: hsl(54, 100%, 57%);}
+  50% {box-shadow: none; background-color: #ffee58; color: rgb(97, 218, 251); transform: scale(1.4);}
+  100% {background-color: hsl(54, 100%, 57%);}
 }
 @media only screen and (max-width: 650px) {
   .speach {
@@ -180,7 +187,7 @@
 .speach:hover {
   box-shadow: none;
   background-color: #ffee58;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .speach:active {
   cursor: none;
