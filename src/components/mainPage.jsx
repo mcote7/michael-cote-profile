@@ -115,7 +115,7 @@
         </h4>
       </div> */}
       
-      <div id="mouseGhost" style={myMoveStyle}></div>
+      {/* <div id="mouseGhost" style={myMoveStyle}></div> */}
     
     </React.Fragment>
   );

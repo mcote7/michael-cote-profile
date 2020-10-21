@@ -69,12 +69,14 @@ const MainView = ({message}) => {
   //
   if(loading) return <Loading loading={loading}/>;
 
-  return (
+  return (<>
     <div className="mainViewContainer col-12">
       <Social message={message} contact={contact}/>
       <Title light={light} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}/>
       <Bio self={self} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}/>
     </div>
-  );
+
+    <div id="mouseGhost" style={myMoveStyle}></div>
+  </>);
 };
 export default MainView;
