@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Bio = ({self, handleMouseMove, handleMouseOut}) => {
+
   return (
     <div className="row">
       <div onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="bioWrap col-md-9 mt-4">

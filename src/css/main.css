@@ -260,15 +260,14 @@ svg {
 /* ------------------- */
 /* ***************************************************************************** */
 /* for phone orientation side view */
-@media only screen and (max-height: 420px) {
+/* @media only screen and (max-height: 420px) {
   .mySelf {
     margin-top: 12rem;
   }
   .quote {
     margin-top: 12rem;
   }
-}
-
+} */
 /*  ----------loader------------- */
 .loaderWrapper {
   position: absolute;
