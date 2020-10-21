@@ -105,6 +105,7 @@
 
       {/* </div> */}
       
+      
       <div onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="titleQuote col-xl-7">
       <img src={self} className="mySelf float-right rounded-circle" alt="self"/>
         <h4 className="quote"> <span role="img" aria-label="cool">&#10024;</span> 
