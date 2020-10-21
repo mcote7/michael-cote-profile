@@ -173,6 +173,11 @@
   color: white;
   box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px, rgba(255, 255, 255, 1) 0px 0px 3px 1px;
 }
+@media only screen and (max-width: 650px) {
+  .speach {
+    display: none;
+  }
+}
 .speach:hover {
   box-shadow: none;
   transform: scale(1.1);
@@ -185,4 +190,15 @@
 @keyframes cd-pulse {
   0% {box-shadow:0 0 0 0 white}
   100% {box-shadow:0 0 10px 25px rgba(255,150,44,0)}
+}
+.speachInfo {
+  display: flex;
+  position: absolute;
+  z-index: 1099;
+  bottom: 20vh;
+  right: 10px;
+  width: 20vw;
+  height: 20vh;
+
+  background-color: rgba(255, 0, 0, 1);
 }

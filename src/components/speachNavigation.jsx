@@ -14,10 +14,12 @@ const SpeachNavigation = (props) => {
 
 
 
-  return (
+  return (<>
     <div className="speach" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
       <span className="micIcon"><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
-  );
+
+    <div className="speachInfo">Voice activated navigation!</div>
+  </>);
 };
 export default SpeachNavigation;
