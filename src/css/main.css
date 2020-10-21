@@ -183,7 +183,7 @@ svg {
   font-size: 2.75vw;
   font-weight: 500;
   line-height: 0.2!important;
-  animation: 4s color-fade-in3;
+  animation: 8s color-fade-in3;
 }
 @keyframes color-fade-in3 {
   0% {color: rgba(97, 218, 251, 0);}
@@ -192,11 +192,12 @@ svg {
 }
 @media only screen and (max-width: 705px) {
   .titleName {
-    font-size: 10vw;
+    font-size: 12vw;
   }
   .titleSub {
     margin-left: 0.25rem;
-    font-size: 2.75vw;
+    font-size: 4vw;
+    letter-spacing: 2.2vw;
   }
 }
 /* ------------------- */
