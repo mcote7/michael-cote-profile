@@ -31,10 +31,11 @@ body {
 /* ---Main-App-Component--- */
 
 .fullScreen {
-  height: 100vh!important;
+  height: max-content!important;
+  margin-bottom: 20vh!important;
 }
 .fullScreen::before {
-  height: 99vh;
+  height: auto;
   content: "";
   background-image: url('./images/city-1.jpg');
   background-size: cover;

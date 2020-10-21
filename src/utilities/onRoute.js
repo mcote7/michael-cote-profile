@@ -1,12 +1,11 @@
 export function onRoute() {
-  const cote = document.getElementById("cote").scrollHeight;
-  // console.log("scroll height",cote)
-  // window.scrollTo({top: 0});
 
-  window.scrollTo({top: cote, behavior: 'smooth'});
+  const main = document.getElementById("cote").scrollHeight;
 
-  // setTimeout(()=> {
-  //   window.scrollTo({top: cote, behavior: 'smooth'});
-  // }, 500);
+  const nav = document.getElementById("myNavbar").scrollHeight;
 
+  const result = main + nav;
+    // console.log("scroll height", result)
+
+  window.scrollTo({top: result, behavior: 'smooth'});
 };

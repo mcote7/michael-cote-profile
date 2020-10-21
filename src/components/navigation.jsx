@@ -14,7 +14,7 @@ const NavBar = () => {
   },[])
   if(loading) return null;
   return (
-    <nav className="navbar fixed-bottom navbar-expand-xl myNavBar">
+    <nav id="myNavbar" className="navbar fixed-bottom navbar-expand-xl myNavBar">
       <div className="nameGroup">
         <NavLink className="myNavLinksName" to="/">Michael Cote</NavLink>
         <NavLink className="navSpan" to="/">web developer in 2020</NavLink>
