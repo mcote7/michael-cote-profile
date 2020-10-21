@@ -32,8 +32,10 @@ const SpeachNavigation = (props) => {
     
     <div className="speachInfo">
 
+      {/*  */}
       <span style={{fontSize: 'x-small'}}>{`( under construction )`}</span>
       <h5><span role="img" aria-label="under-construction">&#128679; &#128679; &#128679;</span></h5>
+      {/*  */}
 
       <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation!</h5>
       
