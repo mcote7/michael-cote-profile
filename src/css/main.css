@@ -26,6 +26,11 @@
 .socialWraps:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
+@media only screen and (max-width: 650px) {
+  .socialWraps {
+    margin-bottom: 0rem!important;
+  }
+}
 .socialIcons {
   cursor: none;
   color: white;
@@ -204,6 +209,7 @@ svg {
 /* --- < Bio /> ------ */
 .bioWrap {
   cursor: none;
+  margin-top: 1.5rem;
   margin-left: 1rem;
   animation: 6s bio-fade-in;
 }
@@ -222,7 +228,7 @@ svg {
   border: outset;
   border-color: rgb(97, 218, 251);
   border-width: 0.35vw;
-  max-width: 8.5vw;
+  max-width: 8vw;
 }
 .quote {
   cursor: none;
@@ -239,22 +245,26 @@ svg {
 }
 @media only screen and (max-width: 905px) {
   .quote {
-    letter-spacing: 1vw;
+    letter-spacing: 0.4vw;
     font-size: 2.3vw;
   }
   .mySelf {
-    max-width: 11vw;
+    max-width: 10vw;
     border-width: 0.6vw;
   }
 }
 @media only screen and (max-width: 650px) {
   .quote {
-    letter-spacing: 0vw;
+    letter-spacing: 0.2vw;
     font-size: 4.5vw;
   }
   .mySelf {
-    max-width: 20vw;
+    max-width: 19vw;
     border-width: 0.8vw;
+  }
+  .bioWrap {
+    margin-top: 0.5rem;
+    margin-left: 0rem;
   }
 }
 /* ------------------- */
