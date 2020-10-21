@@ -5,6 +5,14 @@
 }
 /* ------------------- */
 /* --- < Social /> --- */
+.socialRow {
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 705px) {
+  .socialRow {
+    padding-left: 0rem;
+  }
+}
 .socialWraps {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -133,7 +141,7 @@ svg {
 .titleName {
   border-top: 0.2rem solid;
   line-height: 0.9!important;
-  font-size: 8.5rem;
+  font-size: 10vw;
   font-weight: 800;
 }
 .titleNameSpec {
@@ -167,22 +175,29 @@ svg {
   80% {color: #ffee58;}
   100% {color: cornsilk;}
 }
-
 .titleSub {
   cursor: help;
   margin-left: 1rem;
   color: rgb(97, 218, 251);
-  letter-spacing: 1.9rem;
-  font-size: 1.7rem;
-  font-weight: 600;
-  padding-bottom: 1rem;
-  line-height: 0!important;
+  letter-spacing: 2.1vw;
+  font-size: 2.75vw;
+  font-weight: 500;
+  line-height: 0.2!important;
   animation: 4s color-fade-in3;
 }
 @keyframes color-fade-in3 {
   0% {color: rgba(97, 218, 251, 0);}
   50% {color: rgba(97, 218, 251, 0);}
   100% {color: rgba(97, 218, 251, 1);}
+}
+@media only screen and (max-width: 705px) {
+  .titleName {
+    font-size: 10vw;
+  }
+  .titleSub {
+    margin-left: 0.25rem;
+    font-size: 2.75vw;
+  }
 }
 /* ------------------- */
 /* --- < Bio /> ------ */

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Social = ({message, contact}) => {
 
   return (
-    <div className="row my-1 pl-3">
+    <div className="row my-1 socialRow">
 
       <div className="col-sm-6 col-lg-4 col-xl-3">
         <p className="socialWraps"><span className="socialIcons mr-1"><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
