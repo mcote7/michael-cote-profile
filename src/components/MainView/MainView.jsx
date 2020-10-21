@@ -73,6 +73,7 @@ const MainView = ({message}) => {
     <div className="mainViewContainer col-12">
       <Social message={message} contact={contact}/>
       <Title light={light} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}/>
+      <Bio self={self} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}/>
     </div>
   );
 };

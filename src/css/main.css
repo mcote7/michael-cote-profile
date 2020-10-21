@@ -8,7 +8,7 @@
 .socialRow {
   padding-left: 1rem;
 }
-@media only screen and (max-width: 705px) {
+@media only screen and (max-width: 905px) {
   .socialRow {
     padding-left: 0rem;
   }
@@ -183,14 +183,14 @@ svg {
   font-size: 2.75vw;
   font-weight: 500;
   line-height: 0.2!important;
-  animation: 8s color-fade-in3;
+  animation: 6s color-fade-in3;
 }
 @keyframes color-fade-in3 {
   0% {color: rgba(97, 218, 251, 0);}
   50% {color: rgba(97, 218, 251, 0);}
   100% {color: rgba(97, 218, 251, 1);}
 }
-@media only screen and (max-width: 705px) {
+@media only screen and (max-width: 905px) {
   .titleName {
     font-size: 12vw;
   }
@@ -202,179 +202,63 @@ svg {
 }
 /* ------------------- */
 /* --- < Bio /> ------ */
-
-/* ------------------- */
-
-/* ***************************************************************************** */
-
-
-.titleQuote {
+.bioWrap {
   cursor: none;
-  margin-left: 3rem !important;
-  margin-top: -12rem!important;
-  transition: ease 1.5s;
-  animation: 8s fade-in;
+  margin-left: 1rem;
+  animation: 6s bio-fade-in;
 }
-@keyframes fade-in {
+@keyframes bio-fade-in {
   0% {opacity: 0;}
-  25% {opacity: 0.2;}
-  50% {opacity: 0.45;}
+  50% {opacity: 0;}
   100% {opacity: 1;}
 }
-.quote {
-  font-size: 1.7rem;
-  letter-spacing: 0.5rem;
-  font-weight: 300;
-  text-align: left;
-  animation: spread 2s ease-out;
-}
-@keyframes spread {
-  from {line-height: 0;}
-  to {line-height: 1.2;}
-}
-.quote:hover {
-  cursor: none;
+@keyframes color-fade-in3 {
+  0% {color: rgba(97, 218, 251, 0);}
+  50% {color: rgba(97, 218, 251, 0);}
+  100% {color: rgba(97, 218, 251, 1);}
 }
 .mySelf {
-  margin-left: 3rem;
+  margin-left: 2rem;
   border: outset;
   border-color: rgb(97, 218, 251);
-  border-width: 5px;
-  max-width: 111px;
+  border-width: 0.35vw;
+  max-width: 8.5vw;
 }
-
-
-
-
-/* --------------------------------------------- */
-/* @media only screen and (max-width: 1295px) {
-  .titleName {
-    line-height: 0.9!important;
-    font-size: 7.5rem;
-    font-weight: 500;
-  }
-  .titleNameSpec {
-    line-height: 0.9!important;
-    font-size: 7.5rem;
-    font-weight: 500;
-  }
-  .titleSub {
-    color: rgb(97, 218, 251);
-    letter-spacing: 1.4rem!important;
-    font-size: 1.9rem;
-    font-weight: 400;
-    line-height: 0!important;
-  }
+.quote {
+  cursor: none;
+  letter-spacing: 0.6vw;
+  font-size: 2vw;
+  font-weight: 300;
+  text-align: left;
+  animation: spread 4s ease-out;
+}
+@keyframes spread {
+  0% {line-height: 0;}
+  85% {line-height: 0;}
+  100% {line-height: 1.2;}
+}
+@media only screen and (max-width: 905px) {
   .quote {
-  font-size: 1.5rem;
-  letter-spacing: 0.4rem;
-  font-weight: 200;
-  transition: 5.5s;
-  }
-} */
-/* ------------------------------------------- */
-/* @media only screen and (max-width: 920px) {
-  .titleName {
-    line-height: 0.9!important;
-    font-size: 6rem;
-    font-weight: 500;
-  }
-  .titleNameSpec {
-    line-height: 0.9!important;
-    font-size: 6rem;
-    font-weight: 500;
-  }
-  .titleSub {
-    color: rgb(97, 218, 251);
-    letter-spacing: 1rem!important;
-    font-size: 1.7rem;
-    font-weight: 400;
-  }
-  .quote {
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  font-weight: 100;
-  transition: 5.5s;
-  }
-} */
-/* ------------------------------------------ */
-/* @media only screen and (max-width: 732px) {
-  .titleName {
-    line-height: 0.9!important;
-    font-size: 5.2rem;
-    font-weight: 400;
-  }
-  .titleNameSpec {
-    line-height: 0.9!important;
-    font-size: 5.2rem;
-    font-weight: 400;
-  }
-  .titleSub {
-    color: rgb(97, 218, 251);
-    letter-spacing: 1rem!important;
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
-  .contactLink {
-    margin-left: 0rem!important;
-  }
-} */
-/* ------------------------------------------- */
-/* @media only screen and (max-width: 635px) {
-  .titleName {
-    line-height: 0.9!important;
-    font-size: 4.5rem;
-    font-weight: 400;
-  }
-  .titleNameSpec {
-    line-height: 0.9!important;
-    font-size: 4.5rem;
-    font-weight: 400;
-  }
-  .titleSub {
-    color: rgb(97, 218, 251);
-    letter-spacing: 0.6rem!important;
-    font-size: 1.4rem;
-    font-weight: 300;
-  }
-} */
-
-/* -----------phone--------------------------- */
-/* @media only screen and (max-width: 550px) {
-
-  .titleName {
-    font-size: 2.6rem;
-    font-weight: 600;
-  }
-  .titleNameSpec {
-    font-size: 2.8rem;
-    font-weight: 400;
-  }
-  .titleSub {
-    margin-left: 0rem;
-    color: rgb(97, 218, 251);
-    letter-spacing: 0.1rem!important;
-    font-size: 1.3rem;
-    font-weight: 100;
-  }
-  .quote {
-    margin-left: 0rem!important;
-    margin-top: 4.5rem!important;
-    font-size: 1rem!important;
-    font-weight: bolder!important;
-    letter-spacing: 0rem!important;
-    transition: 5.5s;
+    letter-spacing: 1vw;
+    font-size: 2.3vw;
   }
   .mySelf {
-    margin-left: 1rem;
-    margin-top: 4.5rem;
-    border-width: 4px;
-    max-width: 80px;
+    max-width: 11vw;
+    border-width: 0.6vw;
   }
-  .titleQuote {
-    margin-left: 0rem !important;
+}
+@media only screen and (max-width: 650px) {
+  .quote {
+    letter-spacing: 0vw;
+    font-size: 4.5vw;
   }
-} */
+  .mySelf {
+    max-width: 20vw;
+    border-width: 0.8vw;
+  }
+}
+/* ------------------- */
+/* ***************************************************************************** */
 /* for phone orientation side view */
 @media only screen and (max-height: 420px) {
   .mySelf {

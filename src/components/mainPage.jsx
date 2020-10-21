@@ -106,14 +106,14 @@
       {/* </div> */}
       
       
-      <div onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="titleQuote col-xl-7">
+      {/* <div onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} className="titleQuote col-xl-7">
       <img src={self} className="mySelf float-right rounded-circle" alt="self"/>
         <h4 className="quote"> <span role="img" aria-label="cool">&#10024;</span> 
           Dedicated and motivated professional seeking an opportunity to showcase my creative and 
           technical proficiency. My goal is to attain a position which will provide an opportunity 
           for growth and personal development, as well as the opportunity to expand my knowledge.
         </h4>
-      </div>
+      </div> */}
       
       <div id="mouseGhost" style={myMoveStyle}></div>
     

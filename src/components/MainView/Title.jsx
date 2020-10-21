@@ -2,8 +2,6 @@ import React from 'react';
 
 const Title = ({light, handleMouseMove, handleMouseOut}) => {
 
-
-
   return (
     <div className="row my-1">
       <div className="col-12">
