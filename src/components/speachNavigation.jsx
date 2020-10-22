@@ -32,7 +32,6 @@ const SpeachNavigation = () => {
     stop();
     setMicIcon("microphone-slash");
     console.log("stopped listening")
-
   };
   useEffect(()=>{
     console.log("result", value)
