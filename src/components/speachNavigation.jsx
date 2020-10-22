@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import '../css/navbar.css';
 
+import { useSpeechRecognition } from 'react-speech-kit';
 
-
-const SpeachNavigation = (props) => {
-  // console.log("speach props",props);
+const SpeachNavigation = () => {
 
   const [showSpeachInfo, setShowSpeachInfo] = useState(false);
   const handleMouseEnter = () => {
@@ -15,14 +14,29 @@ const SpeachNavigation = (props) => {
     setShowSpeachInfo(false);
   };
 
+
+  const [value, setValue] = useState('');
+  const { listen, listening, stop } = useSpeechRecognition({
+    onResult: (result) => {
+      setValue(result);
+    },
+  });
+
   const [micIcon, setMicIcon] = useState("microphone-slash");
   const handleMouseDown = () => {
+    listen();
     setMicIcon("microphone");
+    console.log("listening")
   };
   const handleMouseUp = () => {
+    stop();
     setMicIcon("microphone-slash");
-  };
+    console.log("stopped listening")
 
+  };
+  useEffect(()=>{
+    console.log("result", value)
+  },[value]);
 
   return (<>
     <div className="speach" 
@@ -31,14 +45,9 @@ const SpeachNavigation = (props) => {
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
 
-    {showSpeachInfo ?
+    {showSpeachInfo && !listening ?
     
     <div className="speachInfo">
-
-      {/*  */}
-      <span style={{fontSize: 'x-small'}}>{`( under construction )`}</span>
-      <h5><span role="img" aria-label="under-construction">&#128679; &#128679; &#128679;</span></h5>
-      {/*  */}
 
       <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation!</h5>
       
@@ -49,7 +58,8 @@ const SpeachNavigation = (props) => {
         <div>"Education"</div>
         <div>"Projects"</div>
         <div>"Resume"</div>
-        <div>"Contact"</div>
+        <p>"Contact"</p>
+        <p>3. Release Button</p>
         
     </div>:''}
 
