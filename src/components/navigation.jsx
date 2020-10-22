@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
+
 import '../css/navbar.css';
 
 import SpeachNavigation from '../components/speachNavigation';
@@ -13,16 +14,21 @@ const NavBar = () => {
     }, 9000)
   },[])
   if(loading) return null;
+
   return (
     <nav id="myNavbar" className="navbar fixed-bottom navbar-expand-xl myNavBar">
+
       <div className="nameGroup">
         <NavLink className="myNavLinksName" to="/">Michael Cote</NavLink>
         <NavLink className="navSpan" to="/">web developer in 2020</NavLink>
       </div>
+
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span><i className="fa fa-bars barsIcon" aria-hidden="true"></i></span>
       </button>
+
       <div className="collapse navbar-collapse" id="navbarText">
+
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
@@ -41,10 +47,13 @@ const NavBar = () => {
             <span><i className="fa fa-file-text-o" aria-hidden="true"></i></span>&nbsp;Resume</NavLink>
           </li>
         </ul>
+
         <span className="navbar-text">
           <SpeachNavigation/>
         </span>
+
       </div>
+
     </nav>
   );
 };
