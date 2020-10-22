@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import '../css/navbar.css';
 
+
+
 const SpeachNavigation = (props) => {
   // console.log("speach props",props);
 
