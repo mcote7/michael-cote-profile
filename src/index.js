@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 
+import { createBrowserHistory } from "history";
+const history = createBrowserHistory();
+
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter history={history}>
     <App />
   </BrowserRouter>,
   document.getElementById('root')

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { withRouter } from "react-router-dom";
 
 import '../css/navbar.css';
 
 import { useSpeechRecognition } from 'react-speech-kit';
 
-const SpeachNavigation = () => {
+
+const SpeachNavigation = ({history}) => {
 
   const [showSpeachInfo, setShowSpeachInfo] = useState(false);
   const handleMouseEnter = () => {
@@ -32,11 +34,13 @@ const SpeachNavigation = () => {
     setMicIcon("microphone-slash");
     console.log("stopped listening")
   };
+
   useEffect(()=>{
     const ROUTES = ["contact", "technical", "education", "projects", "resume"];
     console.log("result", value);
     if(ROUTES.includes(value)) {
-      alert(`Success, route = /${value}`)
+      // alert(`Success, route = /${value}`);
+      history.replace(`/${value}`);
     }
   },[value]);
 

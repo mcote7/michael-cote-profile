@@ -5,6 +5,7 @@ import '../css/navbar.css';
 
 import SpeachNavigation from '../components/speachNavigation';
 
+
 const NavBar = () => {
 
   const [loading, setLoading] = useState(true);
