@@ -19,7 +19,7 @@ const Social = ({message, contact}) => {
         <p className="socialWraps">
           <a onMouseOver={(e)=>handleMouseOver(e)} onMouseLeave={(e)=>handleMouseLeave(e)}
           className="socialLinks" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7">
-          <span className="socialIcons mr-1"><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
+          <span className="socialIcons mx-1"><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;www.github.com/cote</a>
         </p>
       </div>
@@ -28,7 +28,7 @@ const Social = ({message, contact}) => {
         <p className="socialWraps">
           <a onMouseOver={(e)=>handleMouseOver(e)} onMouseLeave={(e)=>handleMouseLeave(e)}
           className="socialLinks" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/michael-cote-wa">
-          <span className="socialIcons mr-1"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
+          <span className="socialIcons mx-1"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;www.linkedin.com/in/cote</a>
         </p>
       </div>
@@ -37,7 +37,7 @@ const Social = ({message, contact}) => {
         <p className="socialWraps">
           <a onMouseOver={(e)=>handleMouseOver(e)} onMouseLeave={(e)=>handleMouseLeave(e)}
           className="socialLinks" target="_blank" rel="noopener noreferrer" href="https://facebook.com/profile.php?id=100012957396194">
-          <span className="socialIcons mr-1"><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+          <span className="socialIcons mx-1"><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
           &nbsp;www.facebook.com/cote</a>
         </p>
       </div>
