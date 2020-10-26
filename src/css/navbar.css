@@ -213,7 +213,7 @@
   content: '';
   display: flex;
   position: relative;
-  top: 300px;
+  top: 260px;
   left: 200px;
   height: 38px;
   width: 38px;
@@ -223,6 +223,6 @@
   animation: speach-info-before 1.5s ease-in;
 }
 @keyframes speach-info-before {
-  from {opacity: 0; background-color: rgb(97, 218, 251); top: 240px;}
-  to {opacity: 1; background-color: #C2185B; top: 300px;}
+  from {opacity: 0; background-color: rgb(97, 218, 251); top: 200px;}
+  to {opacity: 1; background-color: #C2185B; top: 260px;}
 }

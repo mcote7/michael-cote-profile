@@ -58,7 +58,6 @@ const SpeachNavigation = () => {
         <div>"Projects"</div>
         <div>"Resume"</div>
         <p>"Contact"</p>
-        <p>3. Release Button</p>
         
     </div>:''}
 
