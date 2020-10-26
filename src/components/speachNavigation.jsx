@@ -33,18 +33,27 @@ const SpeachNavigation = ({history}) => {
     setMicIcon("microphone-slash");
     console.log("stopped listening")
   };
+  const [thumbsUp, setThumbsUp] = useState(false);
 
   useEffect(()=>{
     const ROUTES = ["contact", "technical", "education", "projects", "resume"];
     console.log("result", value);
     if(ROUTES.includes(value)) {
       history.push(`/${value}`);
+      setThumbsUp(true);
+      setTimeout(() => {
+        setThumbsUp(false);
+      }, 4000);
       setTimeout(() => {
         setValue('');
       }, 5000);
     }
     if(value === "home") {
       history.push('/');
+      setThumbsUp(true);
+      setTimeout(() => {
+        setThumbsUp(false);
+      }, 4000);
       setTimeout(() => {
         setValue('');
       }, 5000);
@@ -70,6 +79,11 @@ const SpeachNavigation = ({history}) => {
           <div>"Resume"</div>
           <p>"Home"</p>
       </div>:''}
+
+    {thumbsUp ? <>
+      <div className="thumbsUp"><span role="img" aria-label="good-job">&#128077;</span></div>
+      <p className="goodJob">"Great Job!"</p></>
+    :''}
 
   </>);
 };

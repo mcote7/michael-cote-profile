@@ -203,7 +203,7 @@
   padding: 0rem 0.5rem 1rem 0.5rem;
   border-radius: 0.25rem;
   background-color: #C2185B;
-  animation: speach-info 1s ease-in;
+  animation: speach-info 0.5s ease-in;
 }
 @keyframes speach-info {
   from {opacity: 0; background-color: rgb(97, 218, 251)}
@@ -220,9 +220,35 @@
   border-radius: 0.25rem;
   background-color: #C2185B;
   transform: rotate(45deg);
-  animation: speach-info-before 1s ease-in;
+  animation: speach-info-before 0.5s ease-in;
 }
 @keyframes speach-info-before {
-  from {opacity: 0; background-color: rgb(97, 218, 251); top: 240px;}
+  from {opacity: 0; background-color: rgb(97, 218, 251); top: 270px;}
   to {opacity: 1; background-color: #C2185B; top: 285px;}
+}
+.thumbsUp {
+  display: flex;
+  position: absolute;
+  z-index: 1099;
+  bottom: 20vh;
+  right: 5vw;
+  font-size: 5rem;
+  animation: thumbs-up 2s ease-in-out forwards;
+}
+@keyframes thumbs-up {
+  from {opacity: 0; transform: scale(0);}
+  50% {opacity: 1; transform: scale(1.5);}
+  to {opacity: 0; transform: scale(0);}
+}
+.goodJob {
+  display: flex;
+  position: absolute;
+  bottom: 20vh;
+  right: 5vw;
+  opacity: 0;
+  animation: good-job 2s;
+}
+@keyframes good-job {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
