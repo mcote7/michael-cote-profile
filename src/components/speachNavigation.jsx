@@ -21,7 +21,6 @@ const SpeachNavigation = () => {
       setValue(result);
     },
   });
-
   const [micIcon, setMicIcon] = useState("microphone-slash");
   const handleMouseDown = () => {
     listen();
@@ -34,7 +33,11 @@ const SpeachNavigation = () => {
     console.log("stopped listening")
   };
   useEffect(()=>{
-    console.log("result", value)
+    const ROUTES = ["contact", "technical", "education", "projects", "resume"];
+    console.log("result", value);
+    if(ROUTES.includes(value)) {
+      alert(`Success, route = /${value}`)
+    }
   },[value]);
 
   return (<>
@@ -48,7 +51,7 @@ const SpeachNavigation = () => {
     
     <div className="speachInfo">
 
-      <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation!</h5>
+      <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
       
         <div>1. Hold down <span><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
         <p>2. Try Saying :</p>
