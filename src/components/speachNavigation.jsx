@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { withRouter } from "react-router-dom";
 
 import '../css/navbar.css';
 
@@ -39,10 +38,18 @@ const SpeachNavigation = ({history}) => {
     const ROUTES = ["contact", "technical", "education", "projects", "resume"];
     console.log("result", value);
     if(ROUTES.includes(value)) {
-      // alert(`Success, route = /${value}`);
-      history.replace(`/${value}`);
+      history.push(`/${value}`);
+      setTimeout(() => {
+        setValue('');
+      }, 5000);
     }
-  },[value]);
+    if(value === "home") {
+      history.push('/');
+      setTimeout(() => {
+        setValue('');
+      }, 5000);
+    }
+  },[value, history]);
 
   return (<>
     <div className="speach" 
@@ -51,22 +58,18 @@ const SpeachNavigation = ({history}) => {
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
 
-    {showSpeachInfo && !listening ?
-    
-    <div className="speachInfo">
-
-      <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
-      
-        <div>1. Hold down <span><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
-        <p>2. Try Saying :</p>
-        
-        <div>"Technical"</div>
-        <div>"Education"</div>
-        <div>"Projects"</div>
-        <div>"Resume"</div>
-        <p>"Contact"</p>
-        
-    </div>:''}
+    {showSpeachInfo && !listening && value === '' ?
+      <div className="speachInfo">
+        <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
+          <div>1. Hold down <span><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
+          <p>2. Try Saying :</p>
+          <div>"Contact"</div>
+          <div>"Technical"</div>
+          <div>"Education"</div>
+          <div>"Projects"</div>
+          <div>"Resume"</div>
+          <p>"Home"</p>
+      </div>:''}
 
   </>);
 };

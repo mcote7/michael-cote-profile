@@ -165,7 +165,7 @@
   color: white;
   box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px, rgba(255, 255, 255, 1) 0px 0px 3px 1px;
   transition: 0.2s ease-in-out;
-  animation: heartbeat 0.5s ease-in-out 12s 12;
+  animation: heartbeat 0.5s ease-in-out 10s 8;
 }
 @keyframes heartbeat {
   0% {background-color: hsl(54, 100%, 57%);}
@@ -203,7 +203,7 @@
   padding: 0rem 0.5rem 1rem 0.5rem;
   border-radius: 0.25rem;
   background-color: #C2185B;
-  animation: speach-info 1.5s ease-in;
+  animation: speach-info 1s ease-in;
 }
 @keyframes speach-info {
   from {opacity: 0; background-color: rgb(97, 218, 251)}
@@ -213,16 +213,16 @@
   content: '';
   display: flex;
   position: relative;
-  top: 260px;
+  top: 285px;
   left: 190px;
   height: 38px;
   width: 38px;
   border-radius: 0.25rem;
   background-color: #C2185B;
   transform: rotate(45deg);
-  animation: speach-info-before 1.5s ease-in;
+  animation: speach-info-before 1s ease-in;
 }
 @keyframes speach-info-before {
-  from {opacity: 0; background-color: rgb(97, 218, 251); top: 200px;}
-  to {opacity: 1; background-color: #C2185B; top: 260px;}
+  from {opacity: 0; background-color: rgb(97, 218, 251); top: 240px;}
+  to {opacity: 1; background-color: #C2185B; top: 285px;}
 }

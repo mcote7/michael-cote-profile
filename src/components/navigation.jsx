@@ -6,7 +6,7 @@ import '../css/navbar.css';
 import SpeachNavigation from '../components/speachNavigation';
 
 
-const NavBar = () => {
+const NavBar = ({history}) => {
 
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -50,7 +50,7 @@ const NavBar = () => {
         </ul>
 
         <span className="navbar-text">
-          <SpeachNavigation/>
+          <SpeachNavigation history={history}/>
         </span>
 
       </div>
