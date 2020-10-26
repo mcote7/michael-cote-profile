@@ -43,7 +43,7 @@
 }
 @keyframes color-fade-in2 {
   0% {color: rgba(97, 218, 251, 0);}
-  50% {color: rgba(97, 218, 251, 0);}
+  60% {color: rgba(97, 218, 251, 0);}
   100% {color: rgba(97, 218, 251, 1);}
 }
 .socialLinks:hover {
