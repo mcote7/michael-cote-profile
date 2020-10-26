@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import '../css/navbar.css';
 
 import { useSpeechRecognition } from 'react-speech-kit';
+import { useSpeechSynthesis } from 'react-speech-kit';
 
 
 const SpeachNavigation = ({history}) => {
@@ -35,12 +36,17 @@ const SpeachNavigation = ({history}) => {
   };
   const [thumbsUp, setThumbsUp] = useState(false);
 
+  const { speak } = useSpeechSynthesis();
+
   useEffect(()=>{
     const ROUTES = ["contact", "technical", "education", "projects", "resume"];
     console.log("result", value);
     if(ROUTES.includes(value)) {
       history.push(`/${value}`);
       setThumbsUp(true);
+      setTimeout(() => {
+        speak({text: `Michael's ${value} page`});
+      }, 2000);
       setTimeout(() => {
         setThumbsUp(false);
       }, 4000);
