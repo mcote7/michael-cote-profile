@@ -34,9 +34,10 @@ const SpeachNavigation = ({history}) => {
     setMicIcon("microphone-slash");
     console.log("stopped listening")
   };
+  
   const [thumbsUp, setThumbsUp] = useState(false);
-
-  const { speak } = useSpeechSynthesis();
+  const { speak, voices } = useSpeechSynthesis();
+  const voice = voices[9];
 
   useEffect(()=>{
     const ROUTES = ["contact", "technical", "education", "projects", "resume"];
@@ -45,7 +46,7 @@ const SpeachNavigation = ({history}) => {
       history.push(`/${value}`);
       setThumbsUp(true);
       setTimeout(() => {
-        speak({text: `Michael's ${value} page`});
+        speak({text: `Michael's ${value} page`, voice});
       }, 2000);
       setTimeout(() => {
         setThumbsUp(false);
