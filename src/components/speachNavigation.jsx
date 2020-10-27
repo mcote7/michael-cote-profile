@@ -16,56 +16,69 @@ const SpeachNavigation = ({history}) => {
     setShowSpeachInfo(false);
   };
 
-
   const [value, setValue] = useState('');
+  const { speak, voices } = useSpeechSynthesis();
+  const voice = voices[9];
   const { listen, listening, stop } = useSpeechRecognition({
     onResult: (result) => {
       setValue(result);
     },
   });
   const [micIcon, setMicIcon] = useState("microphone-slash");
+  
   const handleMouseDown = () => {
     listen();
     setMicIcon("microphone");
     console.log("listening")
   };
+  
   const handleMouseUp = () => {
     stop();
     setMicIcon("microphone-slash");
     console.log("stopped listening")
   };
-  
   const [thumbsUp, setThumbsUp] = useState(false);
-  const { speak, voices } = useSpeechSynthesis();
-  const voice = voices[9];
 
   useEffect(()=>{
+    
     const ROUTES = ["contact", "technical", "education", "projects", "resume"];
+    
     console.log("result", value);
+    
     if(ROUTES.includes(value)) {
+      
       history.push(`/${value}`);
+      
       setThumbsUp(true);
+      
       setTimeout(() => {
         speak({text: `Michael's ${value} page`, voice});
       }, 2000);
+      
       setTimeout(() => {
         setThumbsUp(false);
       }, 4000);
+      
       setTimeout(() => {
         setValue('');
       }, 5000);
     }
+    
     if(value === "home") {
+      
       history.push('/');
+      
       setThumbsUp(true);
+      
       setTimeout(() => {
         setThumbsUp(false);
       }, 4000);
+      
       setTimeout(() => {
         setValue('');
       }, 5000);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[value]);
 
   return (<>
@@ -75,7 +88,7 @@ const SpeachNavigation = ({history}) => {
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
 
-    {showSpeachInfo && !listening && value === '' ?
+    {showSpeachInfo && !listening && value === '' && !thumbsUp ? 
       <div className="speachInfo">
         <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
           <div>1. Hold down <span><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
