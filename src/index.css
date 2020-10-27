@@ -22,22 +22,26 @@ body {
   color: black;
   background-color: black;
 }
-/* ---------------------- */
-.dummy {
-  height: 0vh;
-  animation: go-home 2s ease-out;
+/* --- top scroll bar --- */
+.myScrollBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  animation: 14s fade-in;
 }
-@keyframes go-home {
-  from {height: 200vh;}
-  to {height: 0vh;}
+@keyframes fade-in {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
 }
 /* ---Main-App-Component--- */
-
-.fullScreen {
-  height: max-content!important;
-  margin-bottom: 20vh!important;
+.mainScreen {
+  height: auto;
+  margin-bottom: 20vh;
 }
-.fullScreen::before {
+.mainScreen::before {
   height: auto;
   content: "";
   background-image: url('./images/city-1.jpg');
@@ -61,20 +65,12 @@ body {
   50% {opacity: 1;}
   100% {opacity: 0.3;}
 }
-
-
-
-/* ---------react top scroll bar----------- */
-.myScrollBar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  animation: 14s fade-in;
+/* --- goHome --- */
+.dummy {
+  height: 0vh;
+  animation: go-home 2s ease-out;
 }
-@keyframes fade-in {
-  0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
+@keyframes go-home {
+  from {height: 200vh;}
+  to {height: 0vh;}
 }

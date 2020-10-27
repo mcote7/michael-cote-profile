@@ -27,10 +27,10 @@ const App = ({history}) => {
         <div className="myScrollBar">
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
-        <div id="cote" className="row fullScreen">
+        <div className="row mainScreen">
           <MainView  message={message} />
         </div>
-        <div className="row">
+        <div id="routes" className="row">
           <Switch>
             <Route exact path="/technical" component={TechnicalSkills}/>
             <Route exact path="/education" component={Education}/>
