@@ -218,7 +218,7 @@
   height: 38px;
   width: 38px;
   border-radius: 0.25rem;
-  background-color: #C2185B;
+  background-color: rgb(194, 24, 91);
   transform: rotate(45deg);
   animation: speach-info-before 0.5s ease-in;
 }
