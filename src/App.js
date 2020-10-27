@@ -4,14 +4,16 @@ import {Route, Redirect, Switch} from 'react-router-dom';
 
 import ScrollProgressRead from 'react-scroll-progress-read';
 
-import scrollTop from './components/scrollTop';
+import GoHome from './utilities/goHome';
+
+import MainView from './components/MainView/MainView';
+// optimize navbar next ...
 import NavBar from './components/navigation';
 import TechnicalSkills from './components/technicalSkills';
 import Education from './components/education/education';
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
 import Message from './components/message/message';
-import MainView from './components/MainView/MainView';
 
 
 const App = ({history}) => {
@@ -35,7 +37,7 @@ const App = ({history}) => {
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/resume" component={Resume}/>
             <Route exact path="/contact" render={props=> <Message {...props} handleMessage={handleMessage}/>}/>
-            <Route exact path="/michael-cote-profile-2020" component={scrollTop}/>
+            <Route exact path="/michael-cote-profile-2020" component={GoHome}/>
             <Redirect from="/" exact to="/michael-cote-profile-2020"/>
             <Redirect to="/michael-cote-profile-2020"/>
           </Switch>

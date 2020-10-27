@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 import '../css/navbar.css';
 
-import SpeachNavigation from '../components/speachNavigation';
+import SpeachNavigation from './SpeachNavigation';
 
 
 const NavBar = ({history}) => {

@@ -24,10 +24,13 @@ body {
 }
 /* ---------------------- */
 .dummy {
-  height: 0vh!important;
-  display: none!important;
+  height: 0vh;
+  animation: go-home 2s ease-out;
 }
-
+@keyframes go-home {
+  from {height: 200vh;}
+  to {height: 0vh;}
+}
 /* ---Main-App-Component--- */
 
 .fullScreen {
