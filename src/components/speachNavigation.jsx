@@ -71,6 +71,10 @@ const SpeachNavigation = ({history}) => {
       setThumbsUp(true);
       
       setTimeout(() => {
+        speak({text: `Welcome home`, voice});
+      }, 2000);
+      
+      setTimeout(() => {
         setThumbsUp(false);
       }, 4000);
       
