@@ -8,7 +8,9 @@ import GoHome from './utilities/goHome';
 
 import MainView from './components/MainView/MainView';
 // optimize navbar next ...
-import NavBar from './components/navigation';
+// import NavBar from './components/navigation';
+import NavBar from './components/NavBar/NavBar';
+
 import TechnicalSkills from './components/technicalSkills';
 import Education from './components/education/education';
 import Projects from './components/projects/projects';

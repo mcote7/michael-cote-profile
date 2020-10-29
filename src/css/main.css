@@ -258,7 +258,7 @@ svg {
   }
 }
 /* ------------------- */
-/*  -------loader----- */
+/* ---main loader----- */
 .loaderWrapper {
   position: absolute;
   top: calc(50% - 200px);
@@ -284,4 +284,4 @@ svg {
   50% {opacity: 1;}
   to {opacity: 0.5;}
 }
-/* ------------------ */
+/* ------------------- */
