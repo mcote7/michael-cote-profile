@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import '../css/navbar.css';
-
 import { useSpeechRecognition } from 'react-speech-kit';
 import { useSpeechSynthesis } from 'react-speech-kit';
 

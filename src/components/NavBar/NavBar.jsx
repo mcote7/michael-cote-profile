@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 
-import '../css/navbar.css';
+import '../../css/navbar.css';
 
 import SpeachNavigation from './SpeachNavigation';
 
