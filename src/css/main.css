@@ -214,11 +214,16 @@ svg {
   100% {opacity: 1;}
 }
 .mySelf {
+  cursor: pointer!important;
   margin-left: 2rem;
-  border: outset;
-  border-color: rgb(97, 218, 251);
-  border-width: 0.35vw;
   max-width: 8vw;
+  transition: clip-path 0.2s;
+  /* HEXAGON w/ last 3 values doubled for transition */
+  clip-path: polygon(22% 0, 78% 0, 100% 50%, 78% 100%, 22% 100%, 0% 50%, 78% 100%, 22% 100%, 0% 50%);
+}
+.mySelf:hover {
+  /* NONAGON */
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 .quote {
   cursor: none;
@@ -240,7 +245,6 @@ svg {
   }
   .mySelf {
     max-width: 10vw;
-    border-width: 0.6vw;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -250,7 +254,6 @@ svg {
   }
   .mySelf {
     max-width: 19vw;
-    border-width: 0.8vw;
   }
   .bioWrap {
     margin-top: 0.5rem;
