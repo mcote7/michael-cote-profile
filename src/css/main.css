@@ -11,8 +11,11 @@
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   opacity: 1;
-  transition: 0.5s;
   animation: 2.75s ease-out slide-up-main;
+  transition: 0.2s;
+}
+.socialWraps:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
 @keyframes slide-up-main {
   from {margin-top: 100vh; background-color: rgba(255, 255, 255, 1); opacity: 0;}
@@ -29,7 +32,6 @@
   cursor: pointer;
   pointer-events: none;
   color: white;
-  transition: 0.2s;
   animation: 5s color-fade-in1;
 }
 @keyframes color-fade-in1 {
@@ -40,6 +42,7 @@
 .socialLinks {
   text-decoration: none;
   color: rgb(97, 218, 251);
+  transition: 0.35s;
   animation: 6s color-fade-in2;
 }
 @keyframes color-fade-in2 {
@@ -95,18 +98,29 @@
 }
 .contactBtn {
   display: inline-block;
-  border-radius: 0.25rem;
-  font-size: 1.5rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  font-size: 1.25rem;
   width: 290px;
-  height: 40px;
+  height: 35px;
   color: cornsilk;
   cursor: pointer;
-  background: transparent;
-  transition: 0.1s ease-in-out;
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.15s;
 }
 .contactBtn:hover {
   text-decoration: none;
-  color: rgb(97, 218, 251);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.contactBtn:hover::after {
+  content: '\2192';
+  color: cornsilk!important;
+  animation: contact-arrow 0.35s ease-out forwards;
+}
+@keyframes contact-arrow {
+  from {margin-left: 0rem; font-size: 1.25rem;}
+  50% {font-size: 1.75rem;}
+  to {margin-left: 3rem; font-size: 0rem;}
 }
 svg {
   position: absolute;
@@ -132,7 +146,6 @@ svg {
 .contactBtn:focus,.contactBtn:active {
   outline: none !important;
   box-shadow: none!important;
-  color: cornsilk;
   transition-duration: 0.55s;
   transform: scale(0);
 }
@@ -217,9 +230,9 @@ svg {
   cursor: pointer!important;
   margin-left: 2rem;
   max-width: 8vw;
-  transition: clip-path 0.2s;
-  /* HEXAGON w/ last 3 values doubled for transition */
-  clip-path: polygon(22% 0, 78% 0, 100% 50%, 78% 100%, 22% 100%, 0% 50%, 78% 100%, 22% 100%, 0% 50%);
+  transition: clip-path 0.5s;
+  /* HEXAGON w/ first 3 values doubled for transition to 9 side */
+  clip-path: polygon(25% 5%, 25% 5%, 75% 5%, 75% 5%, 100% 50%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
 .mySelf:hover {
   /* NONAGON */

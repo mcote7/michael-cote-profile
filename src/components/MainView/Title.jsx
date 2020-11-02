@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Title = ({light, handleMouseMove, handleMouseOut}) => {
+const Title = ({light}) => {
 
   return (
     <div className="row my-1">
@@ -10,8 +10,7 @@ const Title = ({light, handleMouseMove, handleMouseOut}) => {
         
         {light?
         
-        <span onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)}
-        className="yellowWar blinky">i</span>
+        <span className="yellowWar blinky">i</span>
         
         :<span className="titleNameSpec">i</span>}
         
