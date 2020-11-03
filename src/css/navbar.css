@@ -163,29 +163,33 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: hsl(54, 100%, 57%);
+  height: 60px;
+  width: 60px;
   color: white;
-  box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px, rgba(255, 255, 255, 1) 0px 0px 3px 1px;
-  transition: 0.2s ease-in-out;
+  background-color: hsl(54, 100%, 57%);
+  border-radius: 40%;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  transition: 0.5s ease-in-out;
   animation: heartbeat 0.5s ease-in-out 10s 8;
 }
 @keyframes heartbeat {
-  0% {background-color: hsl(54, 100%, 57%);}
-  50% {box-shadow: none; background-color: hsl(54, 100%, 67%); transform: scale(1.4);}
-  100% {background-color: hsl(54, 100%, 57%);}
+  0% { background-color: hsl(54, 100%, 57%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
+  50% { background-color: hsl(54, 100%, 67%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);}
+  100% { background-color: hsl(54, 100%, 57%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
 }
 .speach:hover {
-  box-shadow: none;
-  background-color: #ffee58;
-  transform: scale(1.2);
+  background-color: hsl(54, 100%, 67%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 .speach:active {
   cursor: none;
-  transform: scale(1);
+  clip-path: none;
+  border-radius: 50%;
   color: hsl(54, 100%, 67%);
+  transform: scale(0.8);
   background-color: rgba(255, 255, 255, 0.2);
   animation: cd-pulse 0.75s 0.1s infinite;
 }
