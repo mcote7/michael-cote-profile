@@ -113,7 +113,7 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 .contactBtn:hover::after {
-  content: '\2192';
+  content: '\2728';
   color: cornsilk!important;
   animation: contact-arrow 0.35s ease-out forwards;
 }
@@ -165,11 +165,14 @@ svg {
 .yellowWar {
   display: inline-block!important;
   border-top: 0.1rem solid!important;
-  color: #ffee58;
   cursor: none!important;
 }
 .blinky {
   animation: blink 8s ease 2s infinite;
+}
+.blinky:hover {
+  animation: none;
+  color: black;
 }
 @keyframes blink {
   0% {color: cornsilk;}
@@ -227,16 +230,26 @@ svg {
   100% {opacity: 1;}
 }
 .mySelf {
-  cursor: pointer!important;
-  margin-left: 2rem;
-  max-width: 8vw;
-  transition: clip-path 0.5s;
+  width: 10vw;
   /* HEXAGON w/ first 3 values doubled for transition to 9 side */
   clip-path: polygon(25% 5%, 25% 5%, 75% 5%, 75% 5%, 100% 50%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
-.mySelf:hover {
-  /* NONAGON */
+/* .mySelf:hover {
+  NONAGON
   clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+} */
+.selfWrap {
+  filter: drop-shadow(0px 0px 14px rgba(255, 255, 255, 0.75));
+  transition: 0.5s;
+  animation: light-bright 14s;
+}
+.selfWrap:hover {
+  filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.75));
+}
+@keyframes light-bright {
+  from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.75));}
+  80% {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.75));}
+  to {filter: drop-shadow(0px 0px 14px rgba(255, 255, 255, 0.75));}
 }
 .quote {
   cursor: none;
@@ -257,7 +270,7 @@ svg {
     font-size: 2.3vw;
   }
   .mySelf {
-    max-width: 10vw;
+    width: 12vw;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -266,7 +279,7 @@ svg {
     font-size: 4.5vw;
   }
   .mySelf {
-    max-width: 19vw;
+    width: 20vw;
   }
   .bioWrap {
     margin-top: 0.5rem;

@@ -6,7 +6,9 @@ const Bio = ({self, handleMouseMove, handleMouseOut}) => {
     <div className="row">
       <div className="bioWrap col-md-9">
 
+      <span className="selfWrap">
         <img src={self} className="mySelf float-right" alt="self"/>
+      </span>
           
           <h4 className="quote" onMouseMove={(e)=>handleMouseMove(e)} onMouseOut={(e)=>handleMouseOut(e)} >
             <span role="img" aria-label="cool">&#10024;</span> 

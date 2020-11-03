@@ -147,6 +147,11 @@
 
 
 /* ---------------- */
+@media only screen and (max-width: 650px) {
+  .speach {
+    display: none;
+  }
+}
 /* ---speach div--- */
 .speach {
   cursor: pointer;
@@ -169,13 +174,8 @@
 }
 @keyframes heartbeat {
   0% {background-color: hsl(54, 100%, 57%);}
-  50% {box-shadow: none; background-color: #ffee58; color: rgb(97, 218, 251); transform: scale(1.4);}
+  50% {box-shadow: none; background-color: hsl(54, 100%, 67%); transform: scale(1.4);}
   100% {background-color: hsl(54, 100%, 57%);}
-}
-@media only screen and (max-width: 650px) {
-  .speach {
-    display: none;
-  }
 }
 .speach:hover {
   box-shadow: none;
@@ -185,7 +185,7 @@
 .speach:active {
   cursor: none;
   transform: scale(1);
-  color: rgb(97, 218, 251);
+  color: hsl(54, 100%, 67%);
   background-color: rgba(255, 255, 255, 0.2);
   animation: cd-pulse 0.75s 0.1s infinite;
 }
@@ -202,13 +202,15 @@
   right: 10px;
   padding: 0rem 0.5rem 1rem 0.5rem;
   border-radius: 0.25rem;
+  border: 2px  solid white;
   color: rgb(97, 218, 251);
   background-color: rgba(255, 255, 255, 0.25);
   animation: speach-info 0.5s ease-in;
 }
 @keyframes speach-info {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {opacity: 0; border: 2px  solid rgba(255, 255, 255, 0);}
+  50% {border: 2px  solid rgb(255, 255, 255, 0);}
+  to {opacity: 1; border: 2px  solid rgba(255, 255, 255, 1);}
 }
 .speachInfo::before {
   content: '';
@@ -220,9 +222,9 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid rgba(255, 255, 255, 0.25);
+  border-top: 20px solid rgba(255, 255, 255, 1);
   clear: both;
-  animation: speach-info-before 0.6s ease-in;
+  animation: speach-info-before 0.5s ease-in;
 }
 @keyframes speach-info-before {
   from {  border-left: 0px solid transparent;
