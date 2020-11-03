@@ -11,7 +11,18 @@ const SpeachNavigation = ({history}) => {
     setShowSpeachInfo(true);
   };
   const handleMouseLeave = () => {
-    setShowSpeachInfo(false);
+    const info = document.getElementById('speachInfo');
+    if(info !== null) {
+      info.animate([
+        {opacity: 1},
+        {opacity: 0}
+      ], {
+        duration: 500
+      });
+      setTimeout(() => {
+        setShowSpeachInfo(false);
+      }, 501);
+    }
   };
 
   const [value, setValue] = useState('');
@@ -91,16 +102,16 @@ const SpeachNavigation = ({history}) => {
     </div>
 
     {showSpeachInfo && !listening && value === '' && !thumbsUp ? 
-      <div className="speachInfo">
+      <div id="speachInfo" className="speachInfo">
         <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
-          <div>1. Hold down <span><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
+          <div>1. Hold down <span style={{color: 'white'}}><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
           <p>2. Try Saying :</p>
-          <div>"Contact"</div>
-          <div>"Technical"</div>
-          <div>"Education"</div>
-          <div>"Projects"</div>
-          <div>"Resume"</div>
-          <p>"Home"</p>
+          <div style={{color: 'white'}}>" Contact "</div>
+          <div style={{color: 'white'}}>" Technical "</div>
+          <div style={{color: 'white'}}>" Education "</div>
+          <div style={{color: 'white'}}>" Projects "</div>
+          <div style={{color: 'white'}}>" Resume "</div>
+          <p style={{color: 'white'}}>" Home "</p>
       </div>:''}
 
     {thumbsUp ? <>

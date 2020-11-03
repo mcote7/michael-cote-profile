@@ -203,30 +203,54 @@
   padding: 0rem 0.5rem 1rem 0.5rem;
   border-radius: 0.25rem;
   color: rgb(97, 218, 251);
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.25);
   animation: speach-info 0.5s ease-in;
 }
 @keyframes speach-info {
-  from {opacity: 0; background-color: rgb(97, 218, 251)}
-  to {opacity: 1; background-color: rgba(255, 255, 255, 0.85);}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 .speachInfo::before {
   content: '';
   display: flex;
   position: relative;
-  top: 285px;
+  top: 294px;
   left: 190px;
-  height: 38px;
-  width: 38px;
-  border-radius: 0.25rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  transform: rotate(45deg);
-  animation: speach-info-before 0.5s ease-in;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(255, 255, 255, 0.25);
+  clear: both;
+  animation: speach-info-before 0.6s ease-in;
 }
 @keyframes speach-info-before {
-  from {opacity: 0; background-color: rgb(97, 218, 251); top: 270px;}
-  to {opacity: 1; background-color: rgba(255, 255, 255, 0.85); top: 285px;}
+  from {  border-left: 0px solid transparent;
+    border-right: 0px solid transparent;}
+  30% {  border-left: 0px solid transparent;
+    border-right: 0px solid transparent;}
+  to {  border-left: 20px solid transparent;
+    border-right: 20px solid transparent;}
 }
+/* --- ROUNDED TRIANGLE POINTER --- */
+/* .speachInfo::before {
+  content: '';
+  display: flex;
+  position: relative;
+  top: 290px;
+  left: 185px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.25);
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  transform: rotate(-45deg);
+  border-radius: 0 0 0 0.5rem;
+  animation: speach-info-before 0.6s ease-in;
+}
+@keyframes speach-info-before {
+  from {clip-path: polygon(0% 0%, 0% 0%, 0% 0%);}
+  to {clip-path: polygon(0% 0%, 100% 100%, 0% 100%);}
+} */
 .thumbsUp {
   display: flex;
   position: absolute;
