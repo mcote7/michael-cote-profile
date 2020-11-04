@@ -147,13 +147,13 @@
 
 
 /* ---------------- */
-@media only screen and (max-width: 650px) {
-  .speach {
+@media only screen and (max-width: 750px) {
+  .speech .speechInfo {
     display: none;
   }
 }
-/* ---speach div--- */
-.speach {
+/* ---speech div--- */
+.speech {
   cursor: pointer;
   display: flex;
   position: absolute;
@@ -180,11 +180,11 @@
   100% { background-color: hsl(54, 100%, 57%);
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
 }
-.speach:hover {
+.speech:hover {
   background-color: hsl(54, 100%, 67%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
-.speach:active {
+.speech:active {
   cursor: none;
   clip-path: none;
   border-radius: 50%;
@@ -197,7 +197,7 @@
   0% {box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
   100% {box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: rgba(255, 255, 255, 0.2);}
 }
-.speachInfo {
+.speechInfo {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -209,14 +209,14 @@
   border: 2px  solid white;
   color: rgb(97, 218, 251);
   background-color: rgba(255, 255, 255, 0.25);
-  animation: speach-info 0.5s ease-in;
+  animation: speech-info 0.5s ease-in;
 }
-@keyframes speach-info {
+@keyframes speech-info {
   from {opacity: 0; border: 2px  solid rgba(255, 255, 255, 0);}
   50% {border: 2px  solid rgb(255, 255, 255, 0);}
   to {opacity: 1; border: 2px  solid rgba(255, 255, 255, 1);}
 }
-.speachInfo::before {
+.speechInfo::before {
   content: '';
   display: flex;
   position: relative;
@@ -228,9 +228,9 @@
   border-right: 20px solid transparent;
   border-top: 20px solid rgba(255, 255, 255, 1);
   clear: both;
-  animation: speach-info-before 0.5s ease-in;
+  animation: speech-info-before 0.5s ease-in;
 }
-@keyframes speach-info-before {
+@keyframes speech-info-before {
   from {  border-left: 0px solid transparent;
     border-right: 0px solid transparent;}
   30% {  border-left: 0px solid transparent;
@@ -239,7 +239,7 @@
     border-right: 20px solid transparent;}
 }
 /* --- ROUNDED TRIANGLE POINTER --- */
-/* .speachInfo::before {
+/* .speechInfo::before {
   content: '';
   display: flex;
   position: relative;
@@ -251,9 +251,9 @@
   clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
   transform: rotate(-45deg);
   border-radius: 0 0 0 0.5rem;
-  animation: speach-info-before 0.6s ease-in;
+  animation: speech-info-before 0.6s ease-in;
 }
-@keyframes speach-info-before {
+@keyframes speech-info-before {
   from {clip-path: polygon(0% 0%, 0% 0%, 0% 0%);}
   to {clip-path: polygon(0% 0%, 100% 100%, 0% 100%);}
 } */

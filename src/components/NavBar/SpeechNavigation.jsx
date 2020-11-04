@@ -4,14 +4,15 @@ import { useSpeechRecognition } from 'react-speech-kit';
 import { useSpeechSynthesis } from 'react-speech-kit';
 
 
-const SpeachNavigation = ({history}) => {
+const SpeechNavigation = ({history}) => {
 
-  const [showSpeachInfo, setShowSpeachInfo] = useState(false);
+  // Speech tool tip
+  const [showSpeechInfo, setShowSpeechInfo] = useState(false);
   const handleMouseEnter = () => {
-    setShowSpeachInfo(true);
+    setShowSpeechInfo(true);
   };
   const handleMouseLeave = () => {
-    const info = document.getElementById('speachInfo');
+    const info = document.getElementById('speechInfo');
     if(info !== null) {
       info.animate([
         {opacity: 1},
@@ -20,11 +21,12 @@ const SpeachNavigation = ({history}) => {
         duration: 500
       });
       setTimeout(() => {
-        setShowSpeachInfo(false);
+        setShowSpeechInfo(false);
       }, 501);
     }
   };
 
+  // speech 
   const [value, setValue] = useState('');
   const { speak, voices } = useSpeechSynthesis();
   const voice = voices[9];
@@ -36,9 +38,13 @@ const SpeachNavigation = ({history}) => {
   const [micIcon, setMicIcon] = useState("microphone-slash");
   
   const handleMouseDown = () => {
-    listen();
-    setMicIcon("microphone");
-    console.log("listening")
+    if(!listening) {
+      listen();
+      setMicIcon("microphone");
+      console.log("listening")
+    };
+    stop();
+    alert('PRESS AND HOLD BUTTON, speak clearly ... repeat');
   };
   
   const handleMouseUp = () => {
@@ -46,6 +52,7 @@ const SpeachNavigation = ({history}) => {
     setMicIcon("microphone-slash");
     console.log("stopped listening")
   };
+
   const [thumbsUp, setThumbsUp] = useState(false);
 
   useEffect(()=>{
@@ -95,14 +102,14 @@ const SpeachNavigation = ({history}) => {
   },[value]);
 
   return (<>
-    <div className="speach" 
+    <div className="speech" 
       onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}
       onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
 
-    {showSpeachInfo && !listening && value === '' && !thumbsUp ? 
-      <div id="speachInfo" className="speachInfo">
+    {!showSpeechInfo && !listening && value === '' && !thumbsUp ? 
+      <div id="speechInfo" className="speechInfo">
         <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
           <div>1. Hold down <span style={{color: 'white'}}><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
           <p>2. Try Saying :</p>
@@ -121,4 +128,4 @@ const SpeachNavigation = ({history}) => {
 
   </>);
 };
-export default SpeachNavigation;
+export default SpeechNavigation;

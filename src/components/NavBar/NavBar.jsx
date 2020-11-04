@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 import '../../css/navbar.css';
 
-import SpeachNavigation from './SpeachNavigation';
+import SpeechNavigation from './SpeechNavigation';
 
 
 const NavBar = ({history}) => {
@@ -50,7 +50,7 @@ const NavBar = ({history}) => {
         </ul>
 
         <span className="navbar-text">
-          <SpeachNavigation history={history}/>
+          <SpeechNavigation history={history}/>
         </span>
 
       </div>
