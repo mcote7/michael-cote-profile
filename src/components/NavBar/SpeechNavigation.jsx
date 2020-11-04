@@ -6,7 +6,7 @@ import { useSpeechSynthesis } from 'react-speech-kit';
 
 const SpeechNavigation = ({history}) => {
 
-  // Speech tool tip
+  // Speech tool tip 
   const [showSpeechInfo, setShowSpeechInfo] = useState(false);
   const handleMouseEnter = () => {
     setShowSpeechInfo(true);
@@ -38,21 +38,16 @@ const SpeechNavigation = ({history}) => {
   const [micIcon, setMicIcon] = useState("microphone-slash");
   
   const handleMouseDown = () => {
-    if(!listening) {
-      listen();
-      setMicIcon("microphone");
-      console.log("listening")
-    };
-    stop();
-    alert('PRESS AND HOLD BUTTON, speak clearly ... repeat');
+    listen();
+    setMicIcon("microphone");
+    console.log("listening")
   };
-  
   const handleMouseUp = () => {
     stop();
     setMicIcon("microphone-slash");
     console.log("stopped listening")
   };
-
+  
   const [thumbsUp, setThumbsUp] = useState(false);
 
   useEffect(()=>{
@@ -108,10 +103,10 @@ const SpeechNavigation = ({history}) => {
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
 
-    {!showSpeechInfo && !listening && value === '' && !thumbsUp ? 
+    {showSpeechInfo && !listening && value === '' && !thumbsUp ? 
       <div id="speechInfo" className="speechInfo">
         <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
-          <div>1. Hold down <span style={{color: 'white'}}><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
+          <div>1. HOLD DOWN <span style={{color: 'white'}}><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
           <p>2. Try Saying :</p>
           <div style={{color: 'white'}}>" Contact "</div>
           <div style={{color: 'white'}}>" Technical "</div>
