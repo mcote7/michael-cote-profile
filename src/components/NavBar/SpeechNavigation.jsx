@@ -103,7 +103,7 @@ const SpeechNavigation = ({history}) => {
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
     </div>
 
-    {showSpeechInfo && !listening && value === '' && !thumbsUp ? 
+    {!showSpeechInfo && !listening && value === '' && !thumbsUp ? 
       <div id="speechInfo" className="speechInfo">
         <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
           <div>1. HOLD DOWN <span style={{color: 'white'}}><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
