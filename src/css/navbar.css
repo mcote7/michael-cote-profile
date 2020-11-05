@@ -147,11 +147,11 @@
 
 
 /* ---------------- */
-@media only screen and (max-width: 750px) {
+/* @media only screen and (max-width: 750px) {
   .speech, .speechInfo {
     display: none!important;
   }
-}
+} */
 /* ---speech div--- */
 .speech {
   cursor: pointer;
@@ -208,20 +208,20 @@
   border-radius: 0.25rem;
   border: 1px  solid white;
   color: rgb(97, 218, 251);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.85);
   animation: speech-info 0.5s ease-in;
 }
 @keyframes speech-info {
-  from {opacity: 0; border: 2px  solid rgba(255, 255, 255, 0);}
-  50% {border: 2px  solid rgb(255, 255, 255, 0);}
-  to {opacity: 1; border: 2px  solid rgba(255, 255, 255, 1);}
+  from {opacity: 0; border: 1px  solid rgba(255, 255, 255, 0);}
+  50% {border: 1px  solid rgb(255, 255, 255, 0);}
+  to {opacity: 1; border: 1px  solid rgba(255, 255, 255, 1);}
 }
 .speechInfo::before {
   content: '';
   display: flex;
   position: relative;
   top: 294px;
-  left: 190px;
+  left: 186px;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -232,31 +232,12 @@
 }
 @keyframes speech-info-before {
   from {  border-left: 0px solid transparent;
-    border-right: 0px solid transparent;}
+    border-right: 0px solid transparent; left: 160px;}
   30% {  border-left: 0px solid transparent;
     border-right: 0px solid transparent;}
   to {  border-left: 20px solid transparent;
-    border-right: 20px solid transparent;}
+    border-right: 20px solid transparent; left: 186px;}
 }
-/* --- ROUNDED TRIANGLE POINTER --- */
-/* .speechInfo::before {
-  content: '';
-  display: flex;
-  position: relative;
-  top: 290px;
-  left: 185px;
-  width: 32px;
-  height: 32px;
-  background-color: rgba(255, 255, 255, 0.25);
-  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-  transform: rotate(-45deg);
-  border-radius: 0 0 0 0.5rem;
-  animation: speech-info-before 0.6s ease-in;
-}
-@keyframes speech-info-before {
-  from {clip-path: polygon(0% 0%, 0% 0%, 0% 0%);}
-  to {clip-path: polygon(0% 0%, 100% 100%, 0% 100%);}
-} */
 .thumbsUp {
   display: flex;
   position: absolute;
