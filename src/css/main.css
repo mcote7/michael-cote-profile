@@ -106,7 +106,6 @@
   color: cornsilk;
   cursor: pointer;
   transition: 0.75s;
-  /* transition-delay: 0.1s; */
 }
 .contactBtn:hover {
   text-decoration: none;
