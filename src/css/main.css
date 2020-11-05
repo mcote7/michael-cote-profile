@@ -12,7 +12,7 @@
   border-top-right-radius: 0.25rem;
   opacity: 1;
   animation: 2.75s ease-out slide-up-main;
-  transition: 0.2s;
+  transition: 0.75s;
 }
 .socialWraps:hover {
   background-color: rgba(255, 255, 255, 0);
@@ -74,7 +74,7 @@
 }
 .placeholder{
   width: 290px;
-  height: 40px;
+  height: 35px;
 }
 .contactLink {
   animation: neon 8s ease 2s infinite;
@@ -105,8 +105,8 @@
   height: 35px;
   color: cornsilk;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
-  transition-delay: 0.15s;
+  transition: 0.75s;
+  /* transition-delay: 0.1s; */
 }
 .contactBtn:hover {
   text-decoration: none;
@@ -221,7 +221,6 @@ svg {
 .bioWrap {
   cursor: none;
   margin-top: 1.5rem;
-  margin-left: 1rem;
   animation: 6s bio-fade-in;
 }
 @keyframes bio-fade-in {
@@ -231,6 +230,7 @@ svg {
 }
 .mySelf {
   width: 10vw;
+  margin: 1rem;
   /* HEXAGON w/ first 3 values doubled for transition to 9 side */
   clip-path: polygon(25% 5%, 25% 5%, 75% 5%, 75% 5%, 100% 50%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
@@ -257,12 +257,15 @@ svg {
   font-size: 2vw;
   font-weight: 300;
   text-align: left;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  padding: 1rem;
   animation: spread 4s ease-out;
 }
 @keyframes spread {
-  0% {line-height: 0;}
-  80% {line-height: 0;}
-  100% {line-height: 1.2;}
+  0% {line-height: 0; background-color: rgba(255, 255, 255, 1);}
+  80% {line-height: 0; background-color: rgba(255, 255, 255, 1);}
+  100% {line-height: 1.2; background-color: rgba(255, 255, 255, 0.1);}
 }
 @media only screen and (max-width: 905px) {
   .quote {
@@ -283,7 +286,6 @@ svg {
   }
   .bioWrap {
     margin-top: 0.5rem;
-    margin-left: 0rem;
   }
 }
 /* ------------------- */
