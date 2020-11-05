@@ -76,22 +76,22 @@ const SpeechNavigation = ({history}) => {
     }
     
     if(value === "home") {
-      
       history.push('/');
-      
       setThumbsUp(true);
-      
       setTimeout(() => {
         speak({text: `Welcome home`, voice});
       }, 2000);
-      
       setTimeout(() => {
         setThumbsUp(false);
       }, 4000);
-      
       setTimeout(() => {
         setValue('');
       }, 5000);
+    }
+    if(value === "computer") {
+      setTimeout(() => {
+        speak({text: `Yes Captain, how can I help you?`, voice});
+      }, 1000);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[value]);
