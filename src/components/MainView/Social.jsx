@@ -30,7 +30,7 @@ const Social = ({message, contact}) => {
         </p>
       </div>
 
-      <div className="col-sm-6 col-lg-4 col-xl-3">
+      <div className="col-sm-6 col-lg-12 col-xl-3 order-xl-last order-lg-first order-md-first order-sm-first order-first">
         
         {contact ? <Link to="/contact" className="contactBtn contactLink">
         <svg width="290px" height="35px" viewBox="0 0 290 35" className="contactBtn">

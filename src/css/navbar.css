@@ -168,6 +168,7 @@
   color: white;
   background-color: hsl(54, 100%, 57%);
   border-radius: 40%;
+  /* polygon-X */
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   transition: 0.5s ease-in-out;
   animation: heartbeat 0.5s ease-in-out 10s 8;
@@ -182,6 +183,7 @@
 }
 .speech:hover {
   background-color: hsl(54, 100%, 67%);
+  /* polygon-Y */
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 .speech:active {

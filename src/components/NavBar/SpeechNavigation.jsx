@@ -90,14 +90,14 @@ const SpeechNavigation = ({history}) => {
     }
     if(value === "computer") {
       setTimeout(() => {
-        speak({text: `Yes Captain, how can I help you?`, voice});
+        speak({text: `Yes Captain, voice activated navigation initialized, awaiting your commands`, voice});
       }, 1000);
       setTimeout(() => {
         setValue('');
       }, 1050);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[value]);
+
+  },[value, history, speak, voice]);
 
   return (<>
     <div className="speech" 

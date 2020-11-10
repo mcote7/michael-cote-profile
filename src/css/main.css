@@ -1,11 +1,12 @@
 /* --- < MainView /> - */
 .mainViewContainer {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   text-align: left;
 }
 /* ------------------- */
 /* --- < Social /> --- */
 .socialWraps {
+  margin-bottom: 0.5rem;
   padding-top: 0.1rem;
   background-color: rgba(255, 255, 255, 0.15);
   border-top-left-radius: 0.25rem;
@@ -98,6 +99,7 @@
 }
 .contactBtn {
   display: inline-block;
+  margin-bottom: 0.5rem;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   font-size: 1.25rem;
@@ -230,25 +232,27 @@ svg {
 .mySelf {
   width: 10vw;
   margin: 1rem;
-  /* HEXAGON w/ first 3 values doubled for transition to 9 side */
-  clip-path: polygon(25% 5%, 25% 5%, 75% 5%, 75% 5%, 100% 50%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  animation: mySelf-morph 2s 3.25s;
 }
-/* .mySelf:hover {
-  NONAGON
-  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-} */
+@keyframes mySelf-morph {
+  from {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
+  50% {clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);}
+  to {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
+}
 .selfWrap {
-  filter: drop-shadow(0px 0px 14px rgba(255, 255, 255, 0.75));
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
   transition: 0.5s;
-  animation: light-bright 14s;
+  animation: light-bright 14s ease-out;
 }
 .selfWrap:hover {
-  filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.75));
+  filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));
 }
 @keyframes light-bright {
-  from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.75));}
-  80% {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.75));}
-  to {filter: drop-shadow(0px 0px 14px rgba(255, 255, 255, 0.75));}
+  from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}
+  60% {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}
+  80% {filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 1));}
+  to {filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));}
 }
 .quote {
   cursor: none;
