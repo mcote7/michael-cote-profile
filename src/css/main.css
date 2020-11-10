@@ -9,8 +9,7 @@
   margin-bottom: 0.5rem;
   padding-top: 0.1rem;
   background-color: rgba(255, 255, 255, 0.15);
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-radius: 00.25rem;
   opacity: 1;
   animation: 2.75s ease-out slide-up-main;
   transition: 0.75s;
@@ -30,8 +29,6 @@
   }
 }
 .socialIcons {
-  cursor: pointer;
-  pointer-events: none;
   color: white;
   animation: 5s color-fade-in1;
 }
@@ -77,7 +74,15 @@
   width: 290px;
   height: 35px;
 }
-.contactLink {
+.contactBtn {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  width: 290px;
+  height: 35px;
+  color: cornsilk;
+  transition: 0.75s;
   animation: neon 8s ease 2s infinite;
 }
 @keyframes neon {
@@ -96,18 +101,6 @@
   40% {color: cornsilk;}
   80% {color: cornsilk;}
   100% {color: cornsilk;}
-}
-.contactBtn {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  font-size: 1.25rem;
-  width: 290px;
-  height: 35px;
-  color: cornsilk;
-  cursor: pointer;
-  transition: 0.75s;
 }
 .contactBtn:hover {
   text-decoration: none;
@@ -147,8 +140,6 @@ svg {
 .contactBtn:focus,.contactBtn:active {
   outline: none !important;
   box-shadow: none!important;
-  transition-duration: 0.55s;
-  transform: scale(0);
 }
 /* ------------------- */
 /* --- < Title /> ---- */
@@ -233,7 +224,7 @@ svg {
   width: 10vw;
   margin: 1rem;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  animation: mySelf-morph 2s 3.25s;
+  animation: mySelf-morph 2s ease-in-out 3.25s;
 }
 @keyframes mySelf-morph {
   from {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
@@ -243,7 +234,7 @@ svg {
 .selfWrap {
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
   transition: 0.5s;
-  animation: light-bright 14s ease-out;
+  animation: light-bright 14s ease-in-out;
 }
 .selfWrap:hover {
   filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));

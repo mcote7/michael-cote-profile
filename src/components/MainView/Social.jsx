@@ -32,8 +32,8 @@ const Social = ({message, contact}) => {
 
       <div className="col-sm-6 col-lg-12 col-xl-3 order-xl-last order-lg-first order-md-first order-sm-first order-first">
         
-        {contact ? <Link to="/contact" className="contactBtn contactLink">
-        <svg width="290px" height="35px" viewBox="0 0 290 35" className="contactBtn">
+        {contact ? <Link to="/contact" className="contactBtn">
+        <svg width="290px" height="35px" viewBox="0 0 290 35" className="">
           <polyline points="289,1 289,34 1,34 1,1 289,1" className="bg-line" />
           <polyline points="289,1 289,34 1,34 1,1 289,1" className="hl-line" />
         </svg>
