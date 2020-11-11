@@ -193,7 +193,7 @@
   color: hsl(54, 100%, 67%);
   transform: scale(0.8);
   background-color: rgba(255, 255, 255, 0.2);
-  animation: cd-pulse 0.75s 0.1s infinite;
+  animation: cd-pulse 0.75s 0.25s infinite;
 }
 @keyframes cd-pulse {
   0% {box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
