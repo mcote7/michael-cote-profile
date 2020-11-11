@@ -5,11 +5,14 @@
 }
 /* ------------------- */
 /* --- < Social /> --- */
+.socialRow {
+  margin-bottom: 1rem;
+}
 .socialWraps {
   margin-bottom: 0.5rem;
   padding-top: 0.1rem;
   background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 00.25rem;
+  border-radius: 0.25rem;
   opacity: 1;
   animation: 2.75s ease-out slide-up-main;
   transition: 0.75s;
