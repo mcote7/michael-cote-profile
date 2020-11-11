@@ -96,8 +96,8 @@ const SpeechNavigation = ({history}) => {
         setValue('');
       }, 1050);
     }
-
-  },[value, history, speak, voice]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[value]);
 
   return (<>
     <div className="speech" 
