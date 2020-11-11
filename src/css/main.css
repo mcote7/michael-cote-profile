@@ -73,9 +73,10 @@
   50% {transform: scaleX(1);border-color: cornsilk;}
   100% {transform: scaleX(0);}
 }
-.placeholder{
+.contactBtnPlaceholder{
   width: 290px;
   height: 35px;
+  margin-bottom: 0.5rem;
 }
 .contactBtn {
   display: inline-block;

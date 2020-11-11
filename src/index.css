@@ -68,6 +68,7 @@ body {
 /* --- goHome --- */
 .dummy {
   height: 0vh;
+  will-change: height;
   animation: go-home 2s ease-out;
 }
 @keyframes go-home {

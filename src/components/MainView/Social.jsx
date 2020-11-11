@@ -40,7 +40,7 @@ const Social = ({message, contact}) => {
         
         {message ? <span style={{color: 'white', fontSize: 'medium'}}>&nbsp;&hearts;&nbsp;message sent, thank you</span> : 
         <span><i className="fa fa-envelope-o mailIcon mr-1 ml-2" aria-hidden="true"></i>&nbsp;Contact me&nbsp;&nbsp;</span>}</Link>
-        : <div className="placeholder"></div>}
+        : <div className="contactBtnPlaceholder"></div>}
       </div>
     </div>
   );
