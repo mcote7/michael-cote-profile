@@ -147,11 +147,11 @@
 
 
 /* ---------------- */
-/* @media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .speech, .speechInfo {
     display: none!important;
   }
-} */
+}
 /* ---speech div--- */
 .speech {
   cursor: pointer;
@@ -208,9 +208,9 @@
   right: 10px;
   padding: 0rem 0.5rem 1rem 0.5rem;
   border-radius: 0.25rem;
-  border: 1px  solid white;
+  border: 1px  solid rgb(255, 255, 255);
   color: rgb(97, 218, 251);
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.15);
   animation: speech-info 0.5s ease-in;
 }
 @keyframes speech-info {
