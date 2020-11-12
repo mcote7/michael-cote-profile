@@ -57,13 +57,13 @@ body {
   rgba(0,0,0,0.5),
   rgba(0,0,0,0));
   animation: 16s fade-in-bg;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 @keyframes fade-in-bg {
   0% {opacity: 0;}
   35% {opacity: 1;}
   50% {opacity: 1;}
-  100% {opacity: 0.3;}
+  100% {opacity: 0.4;}
 }
 /* --- goHome --- */
 .dummy {
