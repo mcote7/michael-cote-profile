@@ -4,7 +4,8 @@
   text-align: left;
 }
 .messageCont::before {
-  height: 99vh;
+  height: 100vh;
+  width: 100vw;
   content: "";
   background-image: url('../images/seattle.jpg');
   background-size: cover;

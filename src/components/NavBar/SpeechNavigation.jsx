@@ -26,10 +26,13 @@ const SpeechNavigation = ({history}) => {
     }
   };
 
-  // speech 
-  const [value, setValue] = useState('');
+  // speech synth
   const { speak, voices } = useSpeechSynthesis();
   const voice = voices[9];
+  const rate = 0.9;
+  const volume = 0.15;
+  // speech recog
+  const [value, setValue] = useState('');
   const { listen, listening, stop, supported} = useSpeechRecognition({
     onResult: (result) => {
       setValue(result);
@@ -67,7 +70,7 @@ const SpeechNavigation = ({history}) => {
       setThumbsUp(true);
       
       setTimeout(() => {
-        speak({text: `Michael's ${value} page`, voice});
+        speak({text: `Michael's ${value} page`, voice, volume});
       }, 2000);
       
       setTimeout(() => {
@@ -83,7 +86,7 @@ const SpeechNavigation = ({history}) => {
       history.push('/');
       setThumbsUp(true);
       setTimeout(() => {
-        speak({text: `Welcome home`, voice});
+        speak({text: `Welcome home`, voice, rate, volume});
       }, 2000);
       setTimeout(() => {
         setThumbsUp(false);
@@ -94,7 +97,7 @@ const SpeechNavigation = ({history}) => {
     }
     if(value === "computer") {
       setTimeout(() => {
-        speak({text: `Yes Captain, voice activated navigation initialized, awaiting your commands`, voice});
+        speak({text: `Yes Captain, voice activated navigation initialized, awaiting your commands, Sir.`, voice, rate, volume});
       }, 1000);
       setTimeout(() => {
         setValue('');

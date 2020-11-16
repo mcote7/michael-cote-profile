@@ -1,6 +1,6 @@
 .myBgImage::before {
-  height: 99vh;
-  width: 99vw;
+  height: 100vh;
+  width: 100vw;
   content: "";
   background-image: url('../images/tech.jpg');
   background-size: cover;
