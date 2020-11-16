@@ -30,9 +30,13 @@ const SpeechNavigation = ({history}) => {
   const [value, setValue] = useState('');
   const { speak, voices } = useSpeechSynthesis();
   const voice = voices[9];
-  const { listen, listening, stop } = useSpeechRecognition({
+  const { listen, listening, stop, supported} = useSpeechRecognition({
     onResult: (result) => {
       setValue(result);
+    },
+    onError: () => {
+      stop();
+      console.log('something went wrong with speech');
     },
   });
   const [micIcon, setMicIcon] = useState("microphone-slash");
@@ -56,7 +60,7 @@ const SpeechNavigation = ({history}) => {
     
     console.log("result", value);
     
-    if(ROUTES.includes(value)) {
+    if(ROUTES.includes(value) && history.location.pathname !== `/${value}`) {
       
       history.push(`/${value}`);
       
@@ -100,13 +104,14 @@ const SpeechNavigation = ({history}) => {
   },[value]);
 
   return (<>
+    {supported &&
     <div className="speech" 
       onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}
       onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
-    </div>
+    </div>}
 
-    {showSpeechInfo && !listening && value === '' && !thumbsUp ? 
+    {supported && showSpeechInfo && !listening && value === '' && !thumbsUp ? 
       <div id="speechInfo" className="speechInfo">
         <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
           <div>1. HOLD DOWN <span style={{color: 'white'}}><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
