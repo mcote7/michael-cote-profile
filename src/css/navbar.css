@@ -86,13 +86,7 @@
   .show{
     padding-top: 2rem!important;
   }
-  .navbar-toggler {
-    background-color: black!important;
-    border: 3px solid rgb(97, 218, 251)!important;
-  }
-  .barsIcon {
-    color: white!important;
-  }
+
   .myNavLinks {
     margin: 1rem;
     padding: 1rem;
@@ -140,13 +134,34 @@
   }
 }
 
+/* --- NEW POLYGONS --- */
 
-
-
-
-
-
-
+/* --- NAVBAR TOGGLE SWITCH --- */
+.navbar-toggler {
+  display: flex!important;
+  height: 45px!important;
+  width: 45px!important;
+  justify-content: center!important;
+  align-items: center!important;
+  text-align: center!important;
+  border: none!important;
+  line-height: inherit!important;
+  font-size: 1.5rem!important;
+  border-radius: 40%!important;
+}
+.navbar-toggler:active, .navbar-toggler:focus {
+  outline: none!important;
+  box-shadow: none!important;
+}
+.barsIcon {
+  color: white!important;
+}
+@media only screen and (min-width: 1200px) {
+  .navbar-toggler, .barsIcon {
+    display: none!important;
+  }
+}
+/* ------------------ */
 /* ----SPEECH-------- */
 @media only screen and (max-width: 650px) {
   .speech, .speechInfo {
@@ -167,7 +182,7 @@
   height: 60px;
   width: 60px;
   color: white;
-  background-color: hsl(54, 100%, 57%);
+  background-color: hsl(54, 100%, 47%);
   border-radius: 40%;
   /* polygon-X */
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
@@ -175,11 +190,11 @@
   animation: heartbeat 0.5s ease-in-out 10s 8;
 }
 @keyframes heartbeat {
-  0% { background-color: hsl(54, 100%, 57%);
+  0% { background-color: hsl(54, 100%, 47%);
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
   50% { background-color: hsl(54, 100%, 67%);
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);}
-  100% { background-color: hsl(54, 100%, 57%);
+  100% { background-color: hsl(54, 100%, 47%);
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
 }
 .speech:hover {
@@ -218,6 +233,11 @@
   from {opacity: 0; border: 1px  solid rgba(255, 255, 255, 0);}
   50% {border: 1px  solid rgb(255, 255, 255, 0);}
   to {opacity: 1; border: 1px  solid rgba(255, 255, 255, 1);}
+}
+@media only screen and (max-width: 1200px) {
+  .speechInfo {
+    background-color: rgba(0, 0, 0, 1);
+  }
 }
 .speechInfo::before {
   content: '';
@@ -267,3 +287,4 @@
   from {opacity: 1;}
   to {opacity: 0;}
 }
+/* --- end speech --- */

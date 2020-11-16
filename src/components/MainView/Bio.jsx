@@ -4,7 +4,7 @@ const Bio = ({self, handleMouseMove, handleMouseOut}) => {
 
   return (
     <div className="row">
-      <div className="bioWrap col-md-9">
+      <div className="bioWrap col-lg-9">
 
       <span className="selfWrap">
         <img src={self} className="mySelf float-right" alt="self"/>
