@@ -9,9 +9,11 @@ import SpeechNavigation from './SpeechNavigation';
 const NavBar = ({history}) => {
 
   const [loading, setLoading] = useState(true);
+  const [showHomeButton, setShowHomeButton] = useState(false);
   useEffect(() => {
     setTimeout(()=> {
       setLoading(false);
+      setShowHomeButton(false);
     }, 9000)
   },[]);
 
@@ -31,12 +33,6 @@ const NavBar = ({history}) => {
       setNavtoggleClippath("polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)");
     }
   },[navtoggle]);
-
-  const [showHomeButton, setShowHomeButton] = useState(false);
-  useEffect(() => {
-    console.log('?');
-    setShowHomeButton(false);
-  },[]);
 
   useEffect(() => {
     const targetnavbar = document.getElementById("navbarText");
