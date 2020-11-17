@@ -33,6 +33,7 @@ const NavBar = ({history}) => {
   },[navtoggle]);
 
   const [showHomeButton, setShowHomeButton] = useState(false);
+  useEffect(() => {setShowHomeButton(false)},[]);
 
   useEffect(() => {
     const targetnavbar = document.getElementById("navbarText");
