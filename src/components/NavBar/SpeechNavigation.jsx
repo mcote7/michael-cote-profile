@@ -15,14 +15,14 @@ const SpeechNavigation = ({history}) => {
     const info = document.getElementById('speechInfo');
     if(info !== null) {
       info.animate([
-        {opacity: 1},
-        {opacity: 0}
+        {opacity: 1, filter: 'blur(0px)'},
+        {opacity: 0, filter: 'blur(12px)'}
       ], {
         duration: 500
       });
       setTimeout(() => {
         setShowSpeechInfo(false);
-      }, 501);
+      }, 500);
     }
   };
 

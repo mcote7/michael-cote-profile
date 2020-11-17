@@ -231,9 +231,9 @@ svg {
   animation: mySelf-morph 2s ease-in-out 3.25s;
 }
 @keyframes mySelf-morph {
-  from {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
+  from {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); filter: blur(12px);}
   50% {clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);}
-  to {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
+  to {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); filter: blur(0px);}
 }
 .selfWrap {
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
