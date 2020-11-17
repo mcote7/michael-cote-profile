@@ -32,6 +32,8 @@ const NavBar = ({history}) => {
     }
   },[navtoggle]);
 
+  const [showHomeButton, setShowHomeButton] = useState(true);
+
   useEffect(() => {
     const targetnavbar = document.getElementById("navbarText");
     setTimeout(() => {
@@ -41,13 +43,25 @@ const NavBar = ({history}) => {
     }, 1500);
   },[history.location]);
 
+  useEffect(() => {
+    if(history.location.pathname === '/michael-cote-profile-2020') {
+      setShowHomeButton(false);
+    }
+    else {
+      setShowHomeButton(true);
+    }
+  },[history.location.pathname]);
+
   if(loading) return null;
   return (
     <nav id="myNavbar" className="navbar fixed-bottom navbar-expand-xl myNavBar">
 
-      <div className="nameGroup">
-        <NavLink className="myNavLinksName" to="/">Michael Cote</NavLink>
-        <NavLink className="navSpan" to="/">web developer in 2020</NavLink>
+      <div className="homeButtonWrap">
+        {showHomeButton ?
+        <NavLink className="homeButton" to="/">
+          <span><i className="fa fa-home fa-2x" aria-hidden="true"></i></span>
+        </NavLink> :
+        <div className="homeButtonActivePlaceholder"></div>}
       </div>
 
       <button 

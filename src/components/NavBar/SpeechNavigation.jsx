@@ -30,7 +30,7 @@ const SpeechNavigation = ({history}) => {
   const { speak, voices } = useSpeechSynthesis();
   const voice = voices[9];
   const rate = 0.9;
-  const volume = 0.15;
+  const volume = 0.2;
   // speech recog
   const [value, setValue] = useState('');
   const { listen, listening, stop, supported} = useSpeechRecognition({
@@ -82,8 +82,11 @@ const SpeechNavigation = ({history}) => {
         setValue('');
       }, 5000);
     }
+    else {
+      setValue('');
+    }
     
-    if(value === "home") {
+    if(value === "home" && history.location.pathname !== '/michael-cote-profile-2020') {
       history.push('/');
       setThumbsUp(true);
       setTimeout(() => {
@@ -95,6 +98,9 @@ const SpeechNavigation = ({history}) => {
       setTimeout(() => {
         setValue('');
       }, 5000);
+    }
+    else {
+      setValue('');
     }
     if(value === "computer") {
       setCaptain_AUTH(true);

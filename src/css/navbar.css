@@ -52,17 +52,7 @@
   text-decoration: none;
 }
 /* ------ name grid ----------------------- */
-.nameGroup {
-  display: grid!important;
-  line-height: 0.8!important;
-  cursor: pointer;
-  padding-bottom: 2rem!important;
-}
-@media only screen and (min-width: 1200px) {
-  .nameGroup {
-    padding-bottom: 0rem!important;
-  }
-}
+
 
 .navSpan {
   color: white!important;
@@ -156,7 +146,8 @@
 
 
 
-/* --- NEW POLYGONS --- */
+/* --- NEW POLYGONS ----------- */
+
 
 /* --- NAVBAR TOGGLE SWITCH --- */
 .navbar-toggler {
@@ -183,7 +174,52 @@
     display: none!important;
   }
 }
-/* ------------------ */
+/* ------------------- */
+/* --- HOME BUTTON --- */
+.homeButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: hsl(193, 95%, 48%);
+  border-radius: 40%;
+  transition: 0.5s ease-in-out;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  animation: home-button-reveal 0.75s ease-in;
+}
+@keyframes home-button-reveal {
+  from {opacity: 0; filter: blur(12px);}
+  to {opacity: 1; filter: blur(0px);}
+}
+.homeButton:hover {
+  color: white!important;
+  text-decoration: none!important;
+  background-color: hsl(193, 95%, 68%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+.homeButtonActivePlaceholder {
+  cursor: pointer;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  opacity: 0;
+  background-color: hsl(193, 95%, 68%);
+  border-radius: 40%;
+  animation: home-button-exit 0.75s ease-out;
+}
+@keyframes home-button-exit {
+  from {opacity: 1; filter: blur(0px); box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
+  to {opacity: 0; filter: blur(12px); box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: rgba(255, 255, 255, 0.2);}
+}
+/* ------------------- */
 /* ----SPEECH-------- */
 @media only screen and (max-width: 750px) {
   .speech, .speechInfo {
