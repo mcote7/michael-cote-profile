@@ -18,7 +18,7 @@ const SpeechNavigation = ({history}) => {
         {opacity: 1, filter: 'blur(0px)'},
         {opacity: 0, filter: 'blur(12px)'}
       ], {
-        duration: 500
+        duration: 510
       });
       setTimeout(() => {
         setShowSpeechInfo(false);
