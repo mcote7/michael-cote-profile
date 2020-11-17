@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react';
 
+import { navBarCollapseTransition } from './navBarCollapseTransition';
+
 const GoHome = () => {
+
   useEffect(() => {
+
     window.scrollTo({top: 0, behavior: 'smooth'});
-    const navbar = document.getElementById("navbarText");
-    setTimeout(() => {
-      if(navbar !== null && navbar.classList.contains("show")) {
-        navbar.classList.remove("show");
-      }
-    }, 1000);
+
+    navBarCollapseTransition();
+
   },[]);
+  
   return (
     <div className="dummy"></div>
   );

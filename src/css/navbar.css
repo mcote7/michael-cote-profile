@@ -56,7 +56,14 @@
   display: grid!important;
   line-height: 0.8!important;
   cursor: pointer;
+  padding-bottom: 2rem!important;
 }
+@media only screen and (min-width: 1200px) {
+  .nameGroup {
+    padding-bottom: 0rem!important;
+  }
+}
+
 .navSpan {
   color: white!important;
   margin-bottom: 2.75rem!important;
@@ -82,9 +89,6 @@
     padding-top: 2rem!important;
     background-color: rgba(0, 0, 0, 0.85)!important;
     color: white!important;
-  }
-  .show{
-    padding-top: 2rem!important;
   }
 
   .myNavLinks {
@@ -133,6 +137,9 @@
     display: none!important;
   }
 }
+
+
+
 
 /* --- NEW POLYGONS --- */
 

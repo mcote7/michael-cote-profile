@@ -38,7 +38,7 @@ const NavBar = ({history}) => {
       if(targetnavbar !== null && !targetnavbar.classList.contains("show")) {
         setNavtoggle(false);
       }
-    }, 1100);
+    }, 1500);
   },[history.location]);
 
   if(loading) return null;

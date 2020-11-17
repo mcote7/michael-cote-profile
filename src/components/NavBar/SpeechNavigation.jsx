@@ -56,6 +56,7 @@ const SpeechNavigation = ({history}) => {
   };
   
   const [thumbsUp, setThumbsUp] = useState(false);
+  const [captain_AUTH, setCaptain_AUTH] = useState(false);
 
   useEffect(()=>{
     
@@ -96,12 +97,16 @@ const SpeechNavigation = ({history}) => {
       }, 5000);
     }
     if(value === "computer") {
+      setCaptain_AUTH(true);
       setTimeout(() => {
         speak({text: `Yes Captain, voice activated navigation initialized, awaiting your commands, Sir.`, voice, rate, volume});
       }, 1000);
       setTimeout(() => {
         setValue('');
       }, 1050);
+      setTimeout(() => {
+        setCaptain_AUTH(false);
+      }, 4000);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[value]);
@@ -130,6 +135,11 @@ const SpeechNavigation = ({history}) => {
     {thumbsUp ? <>
       <div className="thumbsUp"><span role="img" aria-label="good-job">&#128077;</span></div>
       <p className="goodJob">"Great Job!"</p></>
+    :''}
+
+    {captain_AUTH ? <>
+      <div className="thumbsUp"><span role="img" aria-label="good-job">&#128406;</span></div>
+      <p className="goodJob">"Hello Captain"</p></>
     :''}
 
   </>);
