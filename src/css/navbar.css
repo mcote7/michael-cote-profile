@@ -141,6 +141,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --- NEW POLYGONS --- */
 
 /* --- NAVBAR TOGGLE SWITCH --- */
@@ -170,7 +185,7 @@
 }
 /* ------------------ */
 /* ----SPEECH-------- */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .speech, .speechInfo {
     display: none!important;
   }
