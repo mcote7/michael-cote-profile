@@ -281,6 +281,7 @@ svg {
   }
   .mySelf {
     width: 20vw;
+    animation: none;
   }
   .bioWrap {
     margin-top: 0.5rem;
