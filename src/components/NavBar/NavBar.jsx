@@ -73,7 +73,7 @@ const NavBar = ({history}) => {
 
       <div className="collapse navbar-collapse" id="navbarText">
 
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav m-auto">
           <li className="nav-item">
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
             <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink>
@@ -92,9 +92,9 @@ const NavBar = ({history}) => {
           </li>
         </ul>
 
-        <span className="navbar-text">
+        <div className="speechNavigationWrap">
           <SpeechNavigation history={history}/>
-        </span>
+        </div>
 
       </div>
 

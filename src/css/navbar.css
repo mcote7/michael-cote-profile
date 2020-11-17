@@ -210,14 +210,15 @@
   text-align: center;
   height: 60px;
   width: 60px;
-  opacity: 0;
-  background-color: hsl(193, 95%, 68%);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 40%;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   animation: home-button-exit 0.75s ease-out;
 }
 @keyframes home-button-exit {
-  from {opacity: 1; filter: blur(0px); box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
-  to {opacity: 0; filter: blur(12px); box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: rgba(255, 255, 255, 0.2);}
+  from {clip-path: none; border-radius: 50%; opacity: 1; filter: blur(0px); box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
+  to {clip-path: none; border-radius: 50%; opacity: 0; filter: blur(12px); box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: rgba(255, 255, 255, 0.1);}
 }
 /* ------------------- */
 /* ----SPEECH-------- */
@@ -230,9 +231,7 @@
 .speech {
   cursor: pointer;
   display: flex;
-  position: absolute;
-  bottom: 5vh;
-  right: 20px;
+
   z-index: 9999;
   justify-content: center;
   align-items: center;

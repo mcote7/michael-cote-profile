@@ -108,7 +108,7 @@
 }
 .contactBtn:hover {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .contactBtn:hover::after {
   content: '\2728';
@@ -255,7 +255,7 @@ svg {
   font-size: 2vw;
   font-weight: 300;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 0.25rem;
   padding: 1rem;
   animation: spread 4s ease-out;
@@ -263,7 +263,7 @@ svg {
 @keyframes spread {
   0% {line-height: 0; background-color: rgba(255, 255, 255, 1);}
   80% {line-height: 0; background-color: rgba(255, 255, 255, 1);}
-  100% {line-height: 1.2; background-color: rgba(255, 255, 255, 0.1);}
+  100% {line-height: 1.2; background-color: rgba(255, 255, 255, 0.15);}
 }
 @media only screen and (max-width: 905px) {
   .quote {

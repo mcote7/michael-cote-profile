@@ -119,7 +119,7 @@ const SpeechNavigation = ({history}) => {
 
   return (<>
     {supported &&
-    <div className="speech" 
+    <div className="speech ml-auto" 
       onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}
       onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <span><i className={`fa fa-${micIcon} fa-2x`} aria-hidden="true"></i></span>
