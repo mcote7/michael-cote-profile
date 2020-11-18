@@ -30,7 +30,7 @@ const SpeechNavigation = ({history}) => {
   const { speak, voices } = useSpeechSynthesis();
   const voice = voices[9];
   const rate = 0.9;
-  const volume = 0.2;
+  const volume = 0.3;
   // speech recog
   const [value, setValue] = useState('');
   const { listen, listening, stop, supported} = useSpeechRecognition({
@@ -71,7 +71,7 @@ const SpeechNavigation = ({history}) => {
       setThumbsUp(true);
       
       setTimeout(() => {
-        speak({text: `Michael's ${value} page`, voice, volume});
+        speak({text: `Michael's ${value} page`, voice, rate, volume});
       }, 2000);
       
       setTimeout(() => {
