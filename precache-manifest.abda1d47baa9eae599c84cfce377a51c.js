@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ba5fcf32f25345949284627059ebe0c",
+    "revision": "8510e0b71dc7bd40baf3efe8fa7ef669",
     "url": "/michael-cote-profile-2020/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/michael-cote-profile-2020/static/css/2.3d09bf3b.chunk.css"
   },
   {
-    "revision": "d32f6519c6e6379c7f06",
-    "url": "/michael-cote-profile-2020/static/css/main.b7a1e212.chunk.css"
+    "revision": "ad01584cfb66ca9e17e0",
+    "url": "/michael-cote-profile-2020/static/css/main.505980ef.chunk.css"
   },
   {
     "revision": "0f5c45dd6c30ddc5e11b",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/michael-cote-profile-2020/static/js/2.ac8eab9c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d32f6519c6e6379c7f06",
+    "revision": "ad01584cfb66ca9e17e0",
     "url": "/michael-cote-profile-2020/static/js/main.5ee450a6.chunk.js"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/michael-cote-profile-2020/static/media/bugImg2.24d9160a.jpg"
   },
   {
-    "revision": "ccda2b25372f13d7bab818a9779f9319",
-    "url": "/michael-cote-profile-2020/static/media/city-1.ccda2b25.jpg"
+    "revision": "b480b9171dc7d1478118f2f8abc13c15",
+    "url": "/michael-cote-profile-2020/static/media/city-1.b480b917.jpg"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -104,7 +104,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/michael-cote-profile-2020/static/media/self1_edited.58739e43.jpg"
   },
   {
-    "revision": "a9b425a229c56ff3c62d6c1cb995bf71",
-    "url": "/michael-cote-profile-2020/static/media/tech.a9b425a2.jpg"
+    "revision": "28e93e159c749813a1d6ef1371373aeb",
+    "url": "/michael-cote-profile-2020/static/media/tech.28e93e15.jpg"
   }
 ]);
