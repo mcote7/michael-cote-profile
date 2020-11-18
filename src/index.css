@@ -39,14 +39,14 @@ body {
 /* ---Main-App-Component--- */
 .mainScreen {
   height: auto;
-  margin-bottom: 20vh;
+  margin-bottom: 50vh;
 }
 .mainScreen::before {
   height: auto;
   content: "";
   background-image: url('./images/city-1.jpg');
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;

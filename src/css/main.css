@@ -236,7 +236,7 @@ svg {
   to {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); filter: blur(0px);}
 }
 .selfWrap {
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));
   transition: 0.5s;
   animation: light-bright 14s ease-in-out;
 }
@@ -247,15 +247,32 @@ svg {
   from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}
   60% {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}
   80% {filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 1));}
-  to {filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));}
+  to {filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));}
+}
+.magic {
+  color: hsl(275, 100%, 48%);
+  transform: rotate(24deg);
+  animation: magic 0.25s ease-in;
+}
+@keyframes magic {
+  from {color: white; transform: rotate(0deg);}
+  to {color: hsl(275, 100%, 48%); transform: rotate(24deg);}
+}
+.magic-out {
+  color: white;
+  transform: rotate(0deg);
+  animation: magic-out 0.25s ease-out;
+}
+@keyframes magic-out {
+  from {color: hsl(275, 100%, 48%); transform: rotate(24deg);}
+  to {color: white; transform: rotate(0deg);}
 }
 .quote {
   cursor: none;
   letter-spacing: 0.6vw;
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 300;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 0.25rem;
   padding: 1rem;
   animation: spread 4s ease-out;
@@ -276,8 +293,8 @@ svg {
 }
 @media only screen and (max-width: 650px) {
   .quote {
-    letter-spacing: 0.2vw;
-    font-size: 4.5vw;
+    letter-spacing: 0.3vw;
+    font-size: 4vw;
   }
   .mySelf {
     width: 20vw;
@@ -307,11 +324,13 @@ svg {
   background-image: url('../images/mouse-ghost.gif');
   background-size: cover;
   opacity: 0.5;
-  animation: ghost 2.4s ease-out forwards;
+  filter: blur(0px);
+  transform: scale(1);
+  animation: ghost 1.25s ease-in-out;
 }
 @keyframes ghost {
-  from {opacity: 0;}
-  50% {opacity: 1;}
-  to {opacity: 0.5;}
+  from {opacity: 0; filter: blur(12px); transform: scale(0.4);}
+  50% {opacity: 1; filter: blur(0px); transform: scale(1.6);}
+  to {opacity: 0.5; transform: scale(1);}
 }
 /* ------------------- */
