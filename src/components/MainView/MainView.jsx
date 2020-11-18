@@ -53,6 +53,23 @@ const MainView = ({message}) => {
 
   const magic_BG_el = document.getElementsByClassName('quote')[0];
 
+  const handleClick = () => {
+    if(magic_BG_el !== undefined) {
+      setMagic("magic-out")
+      magic_BG_el.animate([
+        {backgroundColor: `rgba(143,0,245,${magic_BG_ALPHA})`},
+        {backgroundColor: 'rgba(96, 217, 251,0.85)'},
+        {backgroundColor: 'rgba(143,0,245,0.3)'}
+      ],{
+        duration: 255
+      });
+      setTimeout(() => {
+        setMagic("magic")
+        setMagic_BG_ALPHA(0.300);
+      }, 250);
+    }
+  };
+
   const handleMouseEnter = (e) => {
     if(magic_BG_el !== undefined) {
       setMagic("magic");
@@ -129,7 +146,8 @@ const MainView = ({message}) => {
     <div className="mainViewContainer col-12">
       <Social message={message} contact={contact}/>
       <Title light={light}/>
-      <Bio self={self} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut} handleMouseEnter={handleMouseEnter}
+      <Bio self={self} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut} 
+          handleMouseEnter={handleMouseEnter} handleClick={handleClick}
           magic={magic} magic_BG_MAIN={magic_BG_MAIN} magic_BG_ALPHA={magic_BG_ALPHA}/>
     </div>
 
