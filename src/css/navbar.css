@@ -231,7 +231,6 @@
 .speech {
   cursor: pointer;
   display: flex;
-
   z-index: 9999;
   justify-content: center;
   align-items: center;

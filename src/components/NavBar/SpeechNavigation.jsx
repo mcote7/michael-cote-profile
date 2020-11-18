@@ -37,9 +37,9 @@ const SpeechNavigation = ({history}) => {
     onResult: (result) => {
       setValue(result);
     },
-    onError: () => {
+    onError: (err) => {
       stop();
-      console.log('something went wrong with speech');
+      console.log('something went wrong with speech', err);
     },
   });
   const [micIcon, setMicIcon] = useState("microphone-slash");
@@ -47,12 +47,12 @@ const SpeechNavigation = ({history}) => {
   const handleMouseDown = () => {
     listen();
     setMicIcon("microphone");
-    console.log("listening")
+    console.log("listening?", listening)
   };
   const handleMouseUp = () => {
     stop();
     setMicIcon("microphone-slash");
-    console.log("stopped listening")
+    console.log("listening?", listening)
   };
   
   const [thumbsUp, setThumbsUp] = useState(false);
@@ -103,10 +103,12 @@ const SpeechNavigation = ({history}) => {
       setValue('');
     }
     if(value === "computer") {
+      stop();
+      setMicIcon("check-circle");
       setCaptain_AUTH(true);
       setTimeout(() => {
         speak({text: `Yes Captain, voice activated navigation initialized, awaiting your commands, Sir.`, voice, rate, volume});
-      }, 1000);
+      }, 2000);
       setTimeout(() => {
         setCaptain_AUTH(false);
       }, 4000);
@@ -140,7 +142,7 @@ const SpeechNavigation = ({history}) => {
 
     {thumbsUp ? <>
       <div className="thumbsUp"><span role="img" aria-label="good-job">&#128077;</span></div>
-      <p className="goodJob">"Great Job!"</p></>
+      <p className="goodJob">"Good Job!"</p></>
     :''}
 
     {captain_AUTH ? <>
