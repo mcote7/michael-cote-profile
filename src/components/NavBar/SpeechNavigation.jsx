@@ -66,6 +66,9 @@ const SpeechNavigation = ({history}) => {
     
     if(ROUTES.includes(value) && history.location.pathname !== `/${value}`) {
       
+      stop();
+      setMicIcon("check-circle");
+      
       history.push(`/${value}`);
       
       setThumbsUp(true);
@@ -87,6 +90,8 @@ const SpeechNavigation = ({history}) => {
     }
     
     if(value === "home" && history.location.pathname !== '/michael-cote-profile-2020') {
+      stop();
+      setMicIcon("check-circle");
       history.push('/');
       setThumbsUp(true);
       setTimeout(() => {
