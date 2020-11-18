@@ -26,7 +26,7 @@ const MainView = ({message}) => {
     //contact btn
     setTimeout(()=> {
       setContact(true);
-    }, 9100)
+    }, 9000)
   },[]);
 
   //mouse ghost

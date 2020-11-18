@@ -275,6 +275,7 @@ svg {
   text-align: left;
   border-radius: 0.25rem;
   padding: 1rem;
+  line-height: 1.2;
   animation: spread 4s ease-out;
 }
 @keyframes spread {

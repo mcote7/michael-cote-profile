@@ -6,13 +6,13 @@ const Bio = ({self, handleClick, handleMouseEnter, handleMouseMove, handleMouseO
     <div className="row">
       <div className="bioWrap col-lg-9">
 
-      <span className="selfWrap">
-        <img src={self} className="mySelf float-right" alt="self"/>
-      </span>
+        <span className="selfWrap">
+          <img src={self} className="mySelf float-right" alt="self"/>
+        </span>
           
           <h4 className="quote" style={{backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`}}
           onMouseEnter={(e)=>handleMouseEnter(e)} onMouseMove={(e)=>handleMouseMove(e)}
-          onClick={(e)=>handleClick(e)} onMouseOut={(e)=>handleMouseOut(e)} > 
+          onClick={(e)=>handleClick(e)} onMouseOut={(e)=>handleMouseOut(e)}>
             <span className="mr-1"><i className={`fa fa-magic ${magic}`} aria-hidden="true"></i></span> 
             Dedicated and motivated professional seeking an opportunity to showcase my creative and 
             technical proficiency. My goal is to attain a position which will provide an opportunity 
