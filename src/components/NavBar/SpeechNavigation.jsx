@@ -108,11 +108,11 @@ const SpeechNavigation = ({history}) => {
         speak({text: `Yes Captain, voice activated navigation initialized, awaiting your commands, Sir.`, voice, rate, volume});
       }, 1000);
       setTimeout(() => {
-        setValue('');
-      }, 1050);
-      setTimeout(() => {
         setCaptain_AUTH(false);
       }, 4000);
+      setTimeout(() => {
+        setValue('');
+      }, 5000);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[value]);
