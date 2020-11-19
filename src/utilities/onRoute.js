@@ -15,6 +15,6 @@ export const onRoute = () => {
   console.log("main_BG", main_BG);
   TweenLite.to(main_BG, 2, {cssRule:{opacity: 0.9}});
   setTimeout(() => {
-    TweenLite.to(main_BG, 8, {cssRule:{filter: "blur(12px)"}});
+    TweenLite.to(main_BG, 2, {cssRule:{filter: "blur(12px)"}});
   }, 1500);
 };
