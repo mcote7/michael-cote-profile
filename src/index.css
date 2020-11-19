@@ -41,7 +41,7 @@ body {
   height: auto;
   margin-bottom: 50vh;
 }
-.mainScreen::before {
+.mainScreen:before {
   height: auto;
   content: "";
   background-image: url('./images/city-1.jpg');
@@ -56,8 +56,9 @@ body {
   rgba(0,0,0,1),
   rgba(0,0,0,0.5),
   rgba(0,0,0,0));
-  animation: 16s fade-in-bg;
   opacity: 0.4;
+  filter: blur(0px);
+  animation: 16s fade-in-bg;
 }
 @keyframes fade-in-bg {
   0% {opacity: 0;}

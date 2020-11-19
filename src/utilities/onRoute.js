@@ -1,5 +1,7 @@
 import { navBarCollapseTransition } from './navBarCollapseTransition';
 
+import { CSSRulePlugin, TweenLite } from "gsap/all";
+
 export const onRoute = () => {
   
   const position = document.getElementById("routes");
@@ -7,4 +9,12 @@ export const onRoute = () => {
 
   navBarCollapseTransition();
 
+  //background image transition
+  
+  const main_BG = CSSRulePlugin.getRule(".mainScreen:before");
+  console.log("main_BG", main_BG);
+  TweenLite.to(main_BG, 2, {cssRule:{opacity: 0.9}});
+  setTimeout(() => {
+    TweenLite.to(main_BG, 8, {cssRule:{filter: "blur(12px)"}});
+  }, 1500);
 };

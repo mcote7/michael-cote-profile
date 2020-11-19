@@ -228,7 +228,7 @@ svg {
   width: 10vw;
   margin: 1rem;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  animation: mySelf-morph 2s ease-in-out 3.25s;
+  /* animation: mySelf-morph 2s ease-in-out 3.25s; */
 }
 @keyframes mySelf-morph {
   from {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); filter: blur(12px);}
@@ -276,7 +276,7 @@ svg {
   border-radius: 0.25rem;
   padding: 1rem;
   line-height: 1.2;
-  animation: spread 4s ease-out;
+  animation: spread 4s ease-in-out;
 }
 @keyframes spread {
   0% {line-height: 0; background-color: rgba(255, 255, 255, 1);}

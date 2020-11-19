@@ -15,8 +15,8 @@ const SpeechNavigation = ({history}) => {
     const info = document.getElementById('speechInfo');
     if(info !== null) {
       info.animate([
-        {opacity: 1, filter: 'blur(0px)'},
-        {opacity: 0, filter: 'blur(12px)'}
+        {opacity: 1, filter: 'blur(0px)', transform: 'scale(1)'},
+        {opacity: 0, filter: 'blur(12px)', transform: 'scale(0.9)'}
       ], {
         duration: 510
       });

@@ -286,10 +286,10 @@
   animation: speech-info 0.5s ease-in;
 }
 @keyframes speech-info {
-  from {opacity: 0; border: 1px solid rgba(255, 255, 255, 0); filter: blur(12px);}
+  from {opacity: 0; border: 1px solid rgba(255, 255, 255, 0); filter: blur(12px); transform: scale(0.9);}
   35% {opacity: 0.5; border: 1px solid rgb(255, 255, 255, 1);}
   85% {opacity: 1;}
-  to {opacity: 1; border: 1px solid rgba(255, 255, 255, 1); filter: blur(0px);}
+  to {opacity: 1; border: 1px solid rgba(255, 255, 255, 1); filter: blur(0px); transform: scale(1);}
 }
 @media only screen and (max-width: 1200px) {
   .speechInfo {

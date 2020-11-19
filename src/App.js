@@ -28,7 +28,7 @@ const App = ({history}) => {
         <div className="myScrollBar">
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
-        <div className="row mainScreen">
+        <div id="mainView" className="row mainScreen">
           <MainView message={message}/>
         </div>
         <div id="routes" className="row">
