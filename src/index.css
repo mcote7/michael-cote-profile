@@ -68,7 +68,8 @@ body {
 }
 /* --- goHome --- */
 .dummy {
-  height: 0vh;
+  height: 1vh;
+  background-color: rgba(0,0,0,0);
   will-change: height;
   animation: go-home 2s ease-out;
 }
