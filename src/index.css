@@ -75,5 +75,5 @@ body {
 }
 @keyframes go-home {
   from {height: 200vh;}
-  to {height: 0vh;}
+  to {height: 1vh;}
 }
