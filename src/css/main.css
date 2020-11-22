@@ -221,27 +221,24 @@ svg {
 }
 @keyframes bio-fade-in {
   0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
+  50% {opacity: 0; transform: scaleX(0);}
+  100% {opacity: 1; transform: scaleX(1);}
 }
 .mySelf {
+  pointer-events: none;
   width: 10vw;
   margin: 1rem;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  /* animation: mySelf-morph 2s ease-in-out 3.25s; */
+  animation: mySelf-morph 8s ease-in-out;
 }
 @keyframes mySelf-morph {
-  from {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); filter: blur(12px);}
-  50% {clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);}
-  to {clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); filter: blur(0px);}
+  from {opacity: 0; filter: blur(12px);}
+  40% {opacity: 0; filter: blur(12px);}
+  to {opacity: 1; filter: blur(0px);}
 }
 .selfWrap {
   filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));
-  transition: 0.5s;
   animation: light-bright 14s ease-in-out;
-}
-.selfWrap:hover {
-  filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));
 }
 @keyframes light-bright {
   from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}

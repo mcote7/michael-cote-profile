@@ -312,9 +312,9 @@
 }
 @keyframes speech-info-before {
   from {  border-left: 0px solid transparent;
-    border-right: 0px solid transparent; left: 160px;}
+    border-right: 0px solid transparent; left: 46px;}
   35% {  border-left: 0px solid transparent;
-    border-right: 0px solid transparent; left: 160px;}
+    border-right: 0px solid transparent; left: 46px;}
   to {  border-left: 20px solid transparent;
     border-right: 20px solid transparent; left: 186px;}
 }

@@ -146,7 +146,8 @@ const MainView = ({message}) => {
     <div className="mainViewContainer col-12">
       <Social message={message} contact={contact}/>
       <Title light={light}/>
-      <Bio self={self} handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut} 
+      <Bio self={self}
+          handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}
           handleMouseEnter={handleMouseEnter} handleClick={handleClick}
           magic={magic} magic_BG_MAIN={magic_BG_MAIN} magic_BG_ALPHA={magic_BG_ALPHA}/>
     </div>

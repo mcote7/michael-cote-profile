@@ -74,10 +74,15 @@ const NavBar = ({history}) => {
       <div className="collapse navbar-collapse" id="navbarText">
 
         <ul className="navbar-nav m-auto">
+
           <li className="nav-item">
+
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
             <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink>
+            
           </li>
+
+
           <li className="nav-item">
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/education">
             <span><i className="fa fa-graduation-cap" aria-hidden="true"></i></span>&nbsp;Education</NavLink>
@@ -90,6 +95,7 @@ const NavBar = ({history}) => {
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/resume">
             <span><i className="fa fa-file-text-o" aria-hidden="true"></i></span>&nbsp;Resume</NavLink>
           </li>
+
         </ul>
 
         <div className="speechNavigationWrap">
