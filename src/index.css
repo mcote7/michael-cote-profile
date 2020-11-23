@@ -43,7 +43,8 @@ body {
 }
 @media only screen and (max-width: 450px) {
   .mainScreen:before {
-    top: 1rem!important;
+    /*  */
+    transition: height 250ms 600s;
   }
 }
 .mainScreen:before {
