@@ -152,9 +152,6 @@
     height: auto!important;
     margin-bottom: 32vh!important;
   }
-  .techContainer::before {
-    display: none!important;
-  }
   .techList {
     font-size: 1.5rem;
     margin-left: 12%;

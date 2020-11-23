@@ -92,9 +92,6 @@
     padding-right: 0rem;
     list-style: none;
   }
-  .myBgImage::before {
-    display: none;
-  }
   .carouselContainer {
     transform: scale(1);
   }

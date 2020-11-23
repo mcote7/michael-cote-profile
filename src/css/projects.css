@@ -98,9 +98,6 @@
   }
 }
 @media only screen and (max-width: 420px) {
-  .projectContainer::before {
-    display: none!important;
-  }
   .movieImg {
     height: auto!important;
     max-width: 85vw!important;

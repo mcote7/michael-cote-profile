@@ -22,9 +22,6 @@
 
 /* ---------------------------------- */
 @media only screen and (max-width: 420px) {
-  .resumeContainer::before {
-    display: none;
-  }
   .resumeImg {
     max-width: 90vw;
     height: auto;
