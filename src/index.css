@@ -8,6 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media only screen and (max-width: 450px) {
+  body {
+    background-color: rgba(0,0,0,0.9)!important;
+  }
+}
 /* ScrollBar */
 ::-webkit-scrollbar {
   display: none!important;
@@ -38,13 +43,9 @@ body {
 }
 /* ---Main-App-Component--- */
 .mainView {
-  /* height: auto; */
   margin-bottom: 50vh;
 }
-@media only screen and (max-width: 450px) {
-}
 .mainScreen:before {
-  /* height: auto; */
   content: "";
   background-image: url('./images/city-1.jpg');
   background-size: cover;
