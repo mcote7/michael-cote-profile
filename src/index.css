@@ -73,6 +73,11 @@ body {
   100% {opacity: 0.4;}
 }
 /* --- Routes Screen --- */
+@media only screen and (max-width: 450px) {
+  .routesBackground::before {
+    display: none!important;
+  }
+}
 .routesBackground::before {
   height: 100vh;
   width: 100%;
