@@ -11,7 +11,7 @@ const Projects = () => {
   },[])
   return (
     <React.Fragment>
-    <div className="projectContainer container-fluid">
+    <div className="projectContainer container-fluid routesBackground">
       <div className="col-xl-4 mt-5 projectLeft">
         <RecipieApp/>
       </div>

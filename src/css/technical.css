@@ -1,4 +1,4 @@
-/* ---bg image----- */
+/* --- container --- */
 .techContainer {
   height: 100vh!important;
   width: 100vw!important;
@@ -8,33 +8,6 @@
   flex-wrap: wrap!important;
   margin: 0%!important;
   padding: 0%!important;
-}
-.techContainer::before {
-  height: 100vh;
-  width: 100vw;
-  content: "";
-  background-image: url('../images/tech.jpg');
-  background-size: cover;
-  position: absolute;
-  top: 80vh;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  mask-image: linear-gradient(to bottom,
-  rgba(0,0,0,0),
-  rgba(0,0,0,1),
-  rgba(0,0,0,1),
-  rgba(0,0,0,0));
-  opacity: 0.4;
-  animation: fade-in-techbg 5s ease-in-out ;
-}
-@keyframes fade-in-techbg {
-  0% {opacity: 0; transform: rotate(200deg);}
-  40% {opacity: 0.1;}
-  50% {opacity: 0.25;}
-  60% {opacity: 0.2;}
-  90% {opacity: 1;}
-  100% {opacity: 0.4; transform: rotate(360deg);}
 }
 /* --- opening animation of columns---------------------------*/
 .techTop {

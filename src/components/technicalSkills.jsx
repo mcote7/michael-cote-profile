@@ -24,7 +24,7 @@ const TechnicalSkills = () => {
   },[]);
   return (
     <React.Fragment>
-    <div className="techContainer container-fluid">
+    <div className="techContainer container-fluid routesBackground">
       {view0 ? <>
       <div className="col-md-6 col-xl-3 techTop">
         <div className="techTitleWrap">
