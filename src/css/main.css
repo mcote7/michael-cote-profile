@@ -233,7 +233,7 @@ svg {
 }
 @keyframes mySelf-morph {
   from {opacity: 0; filter: blur(12px);}
-  40% {opacity: 0; filter: blur(12px);}
+  80% {opacity: 0; filter: blur(12px);}
   to {opacity: 1; filter: blur(0px);}
 }
 .selfWrap {
@@ -296,7 +296,6 @@ svg {
   }
   .mySelf {
     width: 20vw;
-    animation: none;
   }
   .bioWrap {
     margin-top: 0.5rem;

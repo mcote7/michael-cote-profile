@@ -23,12 +23,12 @@ const App = ({history}) => {
     setMessage(true);
   };
     return(
-    <div className="App">
+    <div className="App mainScreen">
       <div className="container-fluid">
         <div className="myScrollBar">
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
-        <div id="mainView" className="row mainScreen">
+        <div id="mainView" className="row mainView">
           <MainView message={message}/>
         </div>
         <div id="routes" className="row">
