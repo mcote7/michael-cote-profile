@@ -3,14 +3,14 @@
   padding-top: 2rem!important;
   background-color: rgba(0, 0, 0, 0.95);
   box-shadow: 7px -5px 20px 10px rgba(0, 0, 0, 1);
-  /* color: white; */
   animation: 4s fade-in-nav;
 }
 @keyframes fade-in-nav {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-/* -------------------------------------------- */
+
+/* -------- OLD NavLinks !!!!! ---------- */
 .myNavLinks {
   margin: 1rem;
   padding: 1rem;
@@ -49,26 +49,7 @@
   filter: blur(0px)!important;
   text-decoration: none;
 }
-/* ------ name grid ----------------------- */
-
-
-.navSpan {
-  color: white!important;
-  margin-bottom: 2.75rem!important;
-}
-.myNavLinksName {
-  margin: 1.5rem 1.5rem 0rem 1.5rem;
-  padding: 1rem 1rem 0rem 1rem;
-  font-size: 1.75rem;
-  text-decoration: none;
-  color: rgb(97, 218, 251);
-  transition: ease-in 1s;
-}
-.myNavLinksName:hover {
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-}
+/*  */
 /* ------------- device < xxl ------------------------ */
 @media only screen and (max-width: 1395px) {
 
@@ -77,15 +58,6 @@
     padding: 1rem;
     font-size: 2rem;
     line-height: 2.5;
-  }
-  .myNavLinksName {
-    margin: 1rem 1rem 0rem 1rem;
-    padding: 1rem 1rem 0rem 1rem;
-    font-size: 1.75rem;
-    color: rgb(97, 218, 251);
-  }
-  .navSpan {
-    margin-bottom: 0rem!important;
   }
 }
 /* -------- phone ----------------------------------- */
@@ -97,9 +69,6 @@
     background-color: black;
     padding-bottom: 1rem!important;
     padding-top: 1rem!important;
-  }
-  .myNavLinksName {
-    margin: 0rem 1rem 0rem 1rem;
   }
 }
 /* orientation phone sideways */

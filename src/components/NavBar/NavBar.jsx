@@ -57,7 +57,7 @@ const NavBar = ({history}) => {
     <nav id="myNavbar" className="navbar fixed-bottom navbar-expand-xl myNavBar">
 
       <div className="homeButtonWrap">
-        {showHomeButton ?
+      {showHomeButton ?
         <NavLink className="homeButton" to="/">
           <span><i className="fa fa-home fa-2x" aria-hidden="true"></i></span>
         </NavLink> :
@@ -77,9 +77,12 @@ const NavBar = ({history}) => {
 
           <li className="nav-item">
 
+            {/* --- test new NavLink HERE --- */}
+            
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
             <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink>
             
+            {/*  */}
           </li>
 
 
