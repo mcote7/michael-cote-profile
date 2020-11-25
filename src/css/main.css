@@ -267,6 +267,9 @@ svg {
   to {color: white; transform: rotate(0deg);}
 }
 .quote {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
   cursor: none;
   letter-spacing: 0.6vw;
   font-size: 1.8vw;
