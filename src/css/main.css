@@ -148,12 +148,18 @@ svg {
 /* ------------------- */
 /* --- < Title /> ---- */
 .titleName {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
   border-top: 0.2rem solid;
   line-height: 0.9!important;
   font-size: 10vw;
   font-weight: 800;
 }
 .titleNameSpec {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
   display: inline-block!important;
   border-top: 0.1rem solid!important;
   border-color: rgba(255, 255, 255, 0)!important;
@@ -188,7 +194,9 @@ svg {
   100% {color: cornsilk;}
 }
 .titleSub {
-  cursor: help;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
   margin-left: 1rem;
   color: rgb(97, 218, 251);
   letter-spacing: 2.1vw;
@@ -225,6 +233,9 @@ svg {
   100% {opacity: 1; transform: scaleX(1);}
 }
 .mySelf {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
   pointer-events: none;
   width: 10vw;
   margin: 1rem;
@@ -276,7 +287,7 @@ svg {
   font-weight: 300;
   text-align: left;
   border-radius: 0.25rem;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   line-height: 1.2;
   background-color: rgba(255, 255, 255, 0.15);
   animation: spread 4s ease-out;
@@ -306,6 +317,69 @@ svg {
   .bioWrap {
     margin-top: 0.5rem;
   }
+}
+/* BIO NEW ROLE */
+.newRole {
+  cursor: default!important;
+  transition: 0.255s;
+}
+.newRole:hover {
+  background-color: rgba(124, 255, 92, 0.3)!important;
+}
+.laptop {
+  transition: 0.255s;
+}
+.newRole:hover > .laptop {
+  color: hsl(108, 100%, 68%);
+  font-weight: bold;
+}
+.angular8 {
+  border-radius: 0%!important;
+  clip-path: none!important;
+}
+.via3 {
+  color: cornsilk;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 0.25rem;
+  transition: 0.255s;
+}
+.via3:hover {
+  text-decoration: none!important;
+  background-color: rgba(255, 255, 255, 0);
+  color:hsl(108, 100%, 68%);
+  font-weight: bold!important;
+}
+/*  BIO THE CUBE */
+.theCube {
+  cursor: default!important;
+  transition: 0.255s;
+}
+.theCube:hover {
+  background-color: rgba(255, 111, 71, 0.3)!important;
+}
+.cube {
+  transition: 0.255s;
+}
+.theCube:hover > .cube {
+  color: hsl(13, 100%, 64%);
+}
+.theCube:hover > .enterCube {
+  border: 5px solid white;
+}
+.enterCube {
+  color: white;
+  transition: 0.255s;
+  font-size: small!important;
+  font-weight: bold!important;
+  border-radius: 0.25rem;
+  border: 5px solid rgba(255, 255, 255, 0.15);
+  transition: 0.255s;
+}
+.enterCube:hover {
+  text-decoration: none!important;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 5px solid hsl(13, 100%, 64%)!important;
 }
 /* ------------------- */
 /* ---main loader----- */

@@ -6,6 +6,8 @@ import Title from '../MainView/Title';
 import Bio from '../MainView/Bio';
 
 import self from '../../images/self1_edited.jpg';
+import angular8 from '../../images/angular8.png';
+
 import '../../css/main.css';
 
 const MainView = ({message}) => {
@@ -146,7 +148,7 @@ const MainView = ({message}) => {
     <div className="mainViewContainer col-12">
       <Social message={message} contact={contact}/>
       <Title light={light}/>
-      <Bio self={self}
+      <Bio self={self} angular8={angular8}
           handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}
           handleMouseEnter={handleMouseEnter} handleClick={handleClick}
           magic={magic} magic_BG_MAIN={magic_BG_MAIN} magic_BG_ALPHA={magic_BG_ALPHA}/>

@@ -16,7 +16,7 @@ const Title = ({light}) => {
         
         chael P Cote</h1>
 
-        <p className="titleSub">web developer in 2020</p>
+        <p className="titleSub">Web Developer in 2021</p>
       </div>
     </div>
   );

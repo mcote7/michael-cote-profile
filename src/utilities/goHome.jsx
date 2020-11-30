@@ -13,7 +13,7 @@ const GoHome = () => {
     navBarCollapseTransition();
 
     const main_BG = CSSRulePlugin.getRule(".mainScreen:before");
-    console.log("main_BG", main_BG);
+    // console.log("main_BG", main_BG);
     TweenLite.to(main_BG, 2, {cssRule:{filter: "blur(0px)"}});
     setTimeout(() => {
       TweenLite.to(main_BG, 2.5, {cssRule:{opacity: 0.4}});

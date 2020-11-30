@@ -79,8 +79,6 @@ const NavBar = ({history}) => {
 
             {/* --- test new NavLink HERE --- */}
 
-            {/* make new sub-component: " PolyLink " */}
-            
             <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
             <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink>
             
