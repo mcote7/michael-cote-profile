@@ -9,62 +9,8 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
-/* -------- OLD NavLinks !!!!! ---------- */
-.myNavLinks {
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 2.5rem;
-  color: rgb(255, 255, 255);
-  border-top: solid 2px rgba(255, 255, 255, 0);
-  border-bottom: solid 2px rgba(255, 255, 255, 0);
-  filter: blur(1.75px)!important;
-  transition: ease 0.4s;
-}
-.myNavLinks:hover {
-  cursor: pointer;
-  color: rgb(97, 218, 251);
-  border-top: solid 2px rgb(255, 255, 255, 0);
-  border-bottom: solid 2px rgb(255, 255, 255, 0);
-  filter: blur(0px)!important;
-  text-decoration: none;
-}
-.myNavLinks-on {
-  cursor: pointer;
-  color: white;
-  background-color: black!important;
-  filter: blur(0px)!important;
-  text-decoration: none;
-  border-top: solid 2px rgb(97, 218, 251);
-  border-bottom: solid 2px rgb(97, 218, 251);
-  border-top-right-radius: 24%;
-  border-bottom-left-radius: 24%;
-  transition: ease-in-out 0.8s;
-}
-.myNavLinks-on:hover {
-  cursor: pointer;
-  color: white;
-  border-top: solid 2px rgb(97, 218, 251);
-  border-bottom: solid 2px rgb(97, 218, 251);
-  filter: blur(0px)!important;
-  text-decoration: none;
-}
-/*  */
-/* ------------- device < xxl ------------------------ */
-@media only screen and (max-width: 1395px) {
-
-  .myNavLinks {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 2rem;
-    line-height: 2.5;
-  }
-}
 /* -------- phone ----------------------------------- */
 @media only screen and (max-width: 450px) {
-  .myNavLinks {
-    filter: blur(0px)!important;
-  }
   .myNavBar {
     background-color: black;
     padding-bottom: 1rem!important;
@@ -81,25 +27,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- NEW POLYGONS ----------- */
-
 /* --- NAVBAR ROUTE LINKS --- */
-
 /* normal state */
 .polyLink {
   display: inline-flex;
@@ -138,7 +67,6 @@
   transform-origin: 0px;
   transition: 0.5s ease-in-out;
 }
-
 /* hover state */
 .polyLink:hover {
   text-decoration: none;
@@ -151,7 +79,6 @@
   background-color: hsl(193, 95%, 68%);
   transform: scaleX(1);
 }
-
 /* active state */
 .polyLink-active {
   display: inline-flex;

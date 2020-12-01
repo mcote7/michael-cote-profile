@@ -72,46 +72,36 @@ const NavBar = ({history}) => {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarText">
-
         <ul className="navbar-nav m-auto">
-
           <li className="nav-item">
-
-            {/* --- test new NavLink HERE --- */}
-
-            {/* <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
-            <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink> */}
-
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/technical">
               <span className="polyLink-icon"><i className="fa fa-cog fa-2x" aria-hidden="true"></i></span>
               <span className="polyLink-text">Technical</span>
             </NavLink>
-            
-            {/*  */}
-          </li>
-
-
-          <li className="nav-item">
-            <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/education">
-            <span><i className="fa fa-graduation-cap" aria-hidden="true"></i></span>&nbsp;Education</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/projects">
-            <span><i className="fa fa-th-list" aria-hidden="true"></i></span>&nbsp;Projects</NavLink>
+            <NavLink className="polyLink" activeClassName="polyLink-active" to="/education">
+              <span className="polyLink-icon"><i className="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></span>
+              <span className="polyLink-text">Education</span>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/resume">
-            <span><i className="fa fa-file-text-o" aria-hidden="true"></i></span>&nbsp;Resume</NavLink>
+            <NavLink className="polyLink" activeClassName="polyLink-active" to="/projects">
+              <span className="polyLink-icon"><i className="fa fa-th-list fa-2x" aria-hidden="true"></i></span>
+              <span className="polyLink-text">Projects</span>
+            </NavLink>
           </li>
-
+          <li className="nav-item">
+            <NavLink className="polyLink" activeClassName="polyLink-active" to="/resume">
+              <span className="polyLink-icon"><i className="fa fa-file-text-o fa-2x" aria-hidden="true"></i></span>
+              <span className="polyLink-text">Resume</span>
+            </NavLink>
+          </li>
         </ul>
-
         <div className="speechNavigationWrap">
           <SpeechNavigation history={history}/>
         </div>
-
       </div>
-
     </nav>
   );
 };
