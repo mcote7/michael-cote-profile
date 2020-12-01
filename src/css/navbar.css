@@ -134,8 +134,6 @@
   background-color: hsl(193, 95%, 48%);
   border-radius: 2rem;
   padding: 0rem 2rem;
-  filter: blur(12px);
-  opacity: 0;
   transform: scaleX(0);
   transform-origin: 0px;
   transition: 0.5s ease-in-out;
@@ -151,8 +149,6 @@
 }
 .polyLink:hover > .polyLink-text {
   background-color: hsl(193, 95%, 68%);
-  filter: blur(0px);
-  opacity: 1;
   transform: scaleX(1);
 }
 
