@@ -79,8 +79,13 @@ const NavBar = ({history}) => {
 
             {/* --- test new NavLink HERE --- */}
 
-            <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
-            <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink>
+            {/* <NavLink activeClassName="myNavLinks-on" className="myNavLinks" to="/technical">
+            <span><i className="fa fa-cog" aria-hidden="true"></i></span>&nbsp;Technical</NavLink> */}
+
+            <NavLink className="polyLink" activeClassName="polyLink-active" to="/technical">
+              <span className="polyLink-icon"><i className="fa fa-cog fa-2x" aria-hidden="true"></i></span>
+              <span className="polyLink-text">Technical</span>
+            </NavLink>
             
             {/*  */}
           </li>

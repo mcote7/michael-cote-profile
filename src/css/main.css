@@ -321,13 +321,13 @@ svg {
   transition: 0.255s;
 }
 .newRole:hover {
-  background-color: rgba(124, 255, 92, 0.3)!important;
+  background-color:  hsla(13, 100%, 64%, 0.2)!important;
 }
 .laptop {
   transition: 0.255s;
 }
 .newRole:hover > .laptop {
-  color: hsl(108, 100%, 68%);
+  color:  hsl(13, 100%, 64%);
   font-weight: bold;
 }
 .angular8 {
@@ -343,7 +343,7 @@ svg {
 .via3:hover {
   text-decoration: none!important;
   background-color: rgba(255, 255, 255, 0);
-  color:hsl(108, 100%, 68%);
+  color: hsl(13, 100%, 64%);
   font-weight: bold!important;
 }
 /*  BIO THE CUBE */
@@ -352,7 +352,7 @@ svg {
   transition: 0.255s;
 }
 .theCube:hover {
-  background-color: rgba(255, 111, 71, 0.3)!important;
+  background-color: hsl(108, 100%, 68%, 0.2)!important;
 }
 .cube {
   transition: 0.255s;
@@ -373,7 +373,7 @@ svg {
   75% {content: ' . . .';}
 }
 .theCube:hover > .cube {
-  color: hsl(13, 100%, 64%);
+  color:  hsl(108, 100%, 68%);
 }
 .theCube:hover > .enterCube {
   border: 5px solid white;
@@ -391,7 +391,7 @@ svg {
   text-decoration: none!important;
   color: white;
   background-color: rgba(255, 255, 255, 0.15);
-  border: 5px solid hsl(13, 100%, 64%)!important;
+  border: 5px solid  hsl(108, 100%, 68%)!important;
 }
 /* BIO FREELANCE */
 .freelance {
@@ -399,13 +399,13 @@ svg {
   transition: 0.255s;
 }
 .freelance:hover {
-  background-color: rgba(209, 26, 99, 0.3)!important;
+  background-color:  hsla(336, 78%, 46%, 0.2)!important;
 }
 .freelanceIcon {
   transition: 0.255s;
 }
 .freelance:hover > .freelanceIcon {
-  color: hsl(336, 78%, 46%);
+  color: hsl(336, 78%, 46%);;
 }
 .leisure {
   font-size: 1rem;
