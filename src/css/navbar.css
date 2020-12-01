@@ -28,8 +28,8 @@
 
 }
 /* phone orientation sideways */
-@media only screen and (max-height: 420px) {
-  .fixed-bottom {
+@media only screen and (max-height: 500px) {
+  .myNavBar {
     display: none!important;
   }
 }
@@ -102,7 +102,7 @@
 .polyLink-active > .polyLink-icon {
   border-radius: 50%;
   clip-path: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   color: hsl(193, 95%, 48%);
   left: 80%;
   transform: scale(0.6);
