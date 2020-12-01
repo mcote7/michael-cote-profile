@@ -14,7 +14,7 @@ const NavBar = ({history}) => {
     setTimeout(()=> {
       setLoading(false);
       setShowHomeButton(false);
-    }, 9000)
+    }, 12000)
   },[]);
 
   const [navtoggle, setNavtoggle] = useState(false);
@@ -54,7 +54,7 @@ const NavBar = ({history}) => {
 
   if(loading) return null;
   return (
-    <nav id="myNavbar" className="navbar fixed-bottom navbar-expand-lg myNavBar">
+    <nav id="myNavbar" className="navbar navbar-expand-lg myNavBar">
 
       <div className="homeButtonWrap">
       {showHomeButton ?

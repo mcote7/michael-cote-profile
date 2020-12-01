@@ -6,8 +6,10 @@ import ScrollProgressRead from 'react-scroll-progress-read';
 
 import GoHome from './utilities/goHome';
 
-import MainView from './components/MainView/MainView';
 import NavBar from './components/NavBar/NavBar';
+
+// MAKE REUSEABLE CARD COMPONENT FOR MAIN ITEMS!!!
+import MainView from './components/MainView/MainView';
 
 // optimize technical skills next ...
 import TechnicalSkills from './components/technicalSkills';

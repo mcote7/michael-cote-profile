@@ -1,18 +1,18 @@
 .myNavBar {
+  padding: 0.5rem 1rem 1rem 1rem!important;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 0.4rem solid rgb(255, 255, 255, 0.15);
+  border-top: 0.2rem solid rgb(97, 218, 251, 0.8);
   border-radius: 0.25rem;
-  animation: 4s fade-in-nav;
+  position: fixed!important;
+  right: 15px;
+  bottom: 0px;
+  left: 15px;
+  animation: pop-up-nav 2s ease-out;
 }
-@keyframes fade-in-nav {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-.fixed-bottom {
-  position: fixed;
-  right: 15px!important;
-  bottom: 7.5px!important;
-  left: 15px!important;
+@keyframes pop-up-nav {
+  from {bottom: -88px; opacity: 0; filter: blur(12px); background-color: rgb(97, 218, 251);}
+  50% {bottom: 0px;}
+  to {bottom: 0px; opacity: 1; filter: blur(0px); background-color: rgba(0, 0, 0, 0.8);}
 }
 /* --- collapsed --- */
 @media only screen and (max-width: 992px) {
@@ -33,10 +33,6 @@
     display: none!important;
   }
 }
-
-
-
-
 /* --- NEW POLYGONS ----------- */
 /* --- NAVBAR ROUTE LINKS --- */
 /* normal state */

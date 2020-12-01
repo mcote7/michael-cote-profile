@@ -94,9 +94,10 @@ const MainView = ({message}) => {
       
       setMagic_BG_ALPHA(magic_BG_ALPHA - 0.002);
       
-      console.log("magic-alpha", magic_BG_ALPHA)
+      // console.log("magic-alpha", magic_BG_ALPHA)
       
-      console.log("inBounds", inBounds);
+      // console.log("inBounds", inBounds);
+
       // console.log("e.screenY",e.screenY);
       // console.log("e.screenX",e.screenX);
       let eY = e.screenY - 219;
@@ -135,7 +136,7 @@ const MainView = ({message}) => {
         setMyGhostDisplay("none");
       }, 250);
       
-      console.log("inBounds", inBounds);
+      // console.log("inBounds", inBounds);
     }
   };
 
