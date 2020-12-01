@@ -1,21 +1,22 @@
 .myNavBar {
-  padding-bottom: 2rem!important;
-  padding-top: 2rem!important;
-  background-color: rgba(0, 0, 0, 0.95);
-  box-shadow: 7px -5px 20px 10px rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 0.4rem solid rgb(255, 255, 255, 0.15);
+  border-radius: 0.25rem;
   animation: 4s fade-in-nav;
 }
 @keyframes fade-in-nav {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+.fixed-bottom {
+  position: fixed;
+  right: 15px!important;
+  bottom: 7.5px!important;
+  left: 15px!important;
+}
 /* -------- phone ----------------------------------- */
 @media only screen and (max-width: 450px) {
-  .myNavBar {
-    background-color: black;
-    padding-bottom: 1rem!important;
-    padding-top: 1rem!important;
-  }
+
 }
 /* orientation phone sideways */
 @media only screen and (max-height: 420px) {
@@ -151,7 +152,7 @@
 .barsIcon {
   color: white!important;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .navbar-toggler, .barsIcon {
     display: none!important;
   }
@@ -204,11 +205,11 @@
 }
 /* ------------------- */
 /* ----SPEECH-------- */
-@media only screen and (max-width: 750px) {
+/* @media only screen and (max-width: 750px) {
   .speech, .speechInfo {
     display: none!important;
   }
-}
+} */
 /* ---speech div--- */
 .speechNavigationWrap {
   animation: nav-button-reveal 2.75s ease-in;
@@ -260,7 +261,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  z-index: 1099;
+  z-index: 10999;
   bottom: 20vh;
   right: 10px;
   padding: 0rem 0.5rem 1rem 0.5rem;

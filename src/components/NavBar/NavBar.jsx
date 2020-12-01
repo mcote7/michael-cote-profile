@@ -54,7 +54,7 @@ const NavBar = ({history}) => {
 
   if(loading) return null;
   return (
-    <nav id="myNavbar" className="navbar fixed-bottom navbar-expand-xl myNavBar">
+    <nav id="myNavbar" className="navbar fixed-bottom navbar-expand-lg myNavBar">
 
       <div className="homeButtonWrap">
       {showHomeButton ?

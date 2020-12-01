@@ -10,7 +10,8 @@
   background-image: url('../images/seattle.jpg');
   background-size: cover;
   position: absolute;
-  top: 80vh;
+  z-index: -1999;
+  top: 112.5%;
   right: 0px;
   bottom: 0px;
   left: 0px;
