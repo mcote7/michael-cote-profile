@@ -76,7 +76,7 @@ const NavBar = ({history}) => {
           <li className="nav-item">
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/technical">
               <span className="polyLink-icon"><i className="fa fa-cog fa-2x" aria-hidden="true"></i></span>
-              <span className="polyLink-text">Technical</span>
+              <span className="polyLink-text">Technical&nbsp;</span>
             </NavLink>
           </li>
           <li className="nav-item">
@@ -88,13 +88,13 @@ const NavBar = ({history}) => {
           <li className="nav-item">
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/projects">
               <span className="polyLink-icon"><i className="fa fa-th-list fa-2x" aria-hidden="true"></i></span>
-              <span className="polyLink-text">Projects</span>
+              <span className="polyLink-text">Projects&nbsp;&nbsp;&nbsp;</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/resume">
               <span className="polyLink-icon"><i className="fa fa-file-text-o fa-2x" aria-hidden="true"></i></span>
-              <span className="polyLink-text">Resume</span>
+              <span className="polyLink-text">Resume&nbsp;&nbsp;&nbsp;</span>
             </NavLink>
           </li>
         </ul>
