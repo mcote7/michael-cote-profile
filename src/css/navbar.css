@@ -14,11 +14,20 @@
   bottom: 7.5px!important;
   left: 15px!important;
 }
+/* --- collapsed --- */
+@media only screen and (max-width: 992px) {
+  .myNavBar {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .nav-item {
+    margin: 1rem 3rem 0rem 0rem;
+  }
+}
 /* -------- phone ----------------------------------- */
 @media only screen and (max-width: 450px) {
 
 }
-/* orientation phone sideways */
+/* phone orientation sideways */
 @media only screen and (max-height: 420px) {
   .fixed-bottom {
     display: none!important;
@@ -212,7 +221,7 @@
 } */
 /* ---speech div--- */
 .speechNavigationWrap {
-  animation: nav-button-reveal 2.75s ease-in;
+  animation: nav-button-reveal 1.75s ease-in;
 }
 .speech {
   cursor: pointer;
