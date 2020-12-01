@@ -7,10 +7,11 @@ import ScrollProgressRead from 'react-scroll-progress-read';
 import GoHome from './utilities/goHome';
 
 import MainView from './components/MainView/MainView';
-// optimize navbar next ...
 import NavBar from './components/NavBar/NavBar';
 
+// optimize technical skills next ...
 import TechnicalSkills from './components/technicalSkills';
+
 import Education from './components/education/education';
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
