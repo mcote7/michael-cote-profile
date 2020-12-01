@@ -76,15 +76,14 @@ const MainView = ({message}) => {
     if(magic_BG_el !== undefined) {
       setMagic("magic");
       magic_BG_el.animate([
-        {backgroundColor: 'rgba(255,255,255,0.15)', letterSpacing: '0.6vw'},
-        {backgroundColor: 'rgba(143,0,245,0.3)', letterSpacing: '0.7vw'}
+        {backgroundColor: 'rgba(255,255,255,0.15)'},
+        {backgroundColor: 'rgba(143,0,245,0.3)'}
       ],{
         duration: 255
       });
       setTimeout(() => {
         setMagic_BG_MAIN("143,0,245");
         setMagic_BG_ALPHA(0.300);
-        magic_BG_el.style.letterSpacing = '0.7vw';
       }, 250);
     }
   };
@@ -115,15 +114,14 @@ const MainView = ({message}) => {
       setMagic("magic-out");
       
       magic_BG_el.animate([
-        {backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`, letterSpacing: '0.7vw'},
-        {backgroundColor: 'rgba(255,255,255,0.15)', letterSpacing: '0.6vw'}
+        {backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`},
+        {backgroundColor: 'rgba(255,255,255,0.15)'}
       ],{
         duration: 255
       });
       setTimeout(() => {
         setMagic_BG_MAIN("255,255,255");
         setMagic_BG_ALPHA(0.15);
-        magic_BG_el.style.letterSpacing = '0.6vw';
       }, 250);
       
       const ghost_EXIT = document.getElementById('mouseGhost');

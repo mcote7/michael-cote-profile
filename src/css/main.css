@@ -283,7 +283,7 @@ svg {
   user-select: none;
   cursor: none;
   letter-spacing: 0.6vw;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 300;
   text-align: left;
   border-radius: 0.25rem;
@@ -313,9 +313,6 @@ svg {
   }
   .mySelf {
     width: 20vw;
-  }
-  .bioWrap {
-    margin-top: 0.5rem;
   }
 }
 /* BIO NEW ROLE */
@@ -360,6 +357,21 @@ svg {
 .cube {
   transition: 0.255s;
 }
+.cube::after {
+  content: '';
+  color: white!important;
+
+}
+.theCube:hover > .cube::after {
+  content: '';
+  animation: dots 1.255s infinite;
+}
+@keyframes dots {
+  0% {content: '';}
+  25% {content: ' .';}
+  50% {content: ' . .';}
+  75% {content: ' . . .';}
+}
 .theCube:hover > .cube {
   color: hsl(13, 100%, 64%);
 }
@@ -380,6 +392,37 @@ svg {
   color: white;
   background-color: rgba(255, 255, 255, 0.15);
   border: 5px solid hsl(13, 100%, 64%)!important;
+}
+/* BIO FREELANCE */
+.freelance {
+  cursor: default!important;
+  transition: 0.255s;
+}
+.freelance:hover {
+  background-color: rgba(209, 26, 99, 0.3)!important;
+}
+.freelanceIcon {
+  transition: 0.255s;
+}
+.freelance:hover > .freelanceIcon {
+  color: hsl(336, 78%, 46%);
+}
+.leisure {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.15);
+  transition: 0.255s;
+}
+.freelance:hover > .leisure {
+  color: white;
+}
+.myLeisureFace {
+  opacity: 0.1;
+  transition: 0.255s;
+}
+.freelance:hover > .myLeisureFace {
+  opacity: 1;
 }
 /* ------------------- */
 /* ---main loader----- */
