@@ -11,7 +11,7 @@
   transition: 0.25s;
 }
 .myNavBar:hover {
-  animation: rainbow 2.25s ease-in-out infinite;
+  animation: rainbow 2.5s ease-in-out infinite;
 }
 @keyframes rainbow {
   0% {border-color: rgba(97, 218, 251, 0.8);}
