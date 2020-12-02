@@ -96,7 +96,7 @@ const MainView = ({message}) => {
       
       // console.log("magic-alpha", magic_BG_ALPHA)
       
-      // console.log("inBounds", inBounds);
+      console.log("inBounds", inBounds);
 
       // console.log("e.screenY",e.screenY);
       // console.log("e.screenX",e.screenX);

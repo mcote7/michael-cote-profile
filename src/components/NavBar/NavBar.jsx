@@ -13,9 +13,25 @@ const NavBar = ({history}) => {
   useEffect(() => {
     setTimeout(()=> {
       setLoading(false);
-      setShowHomeButton(false);
     }, 12000)
   },[]);
+
+  useEffect(()=> {
+    if(!loading) {
+      const NAV = document.getElementById('myNavbar');
+      NAV.animate([
+        {bottom: '-88px', opacity: 0, filter: 'blur(12px)', backgroundColor: 'rgb(97, 218, 251)', borderColor: 'black'},
+        {borderColor: 'hsl(275, 100%, 48%)', filter: 'blur(2px)', opacity: 0.8},
+        {borderColor:' hsl(336, 78%, 46%)'},
+        {bottom: '0px', borderColor:  'hsl(13, 100%, 64%)'},
+        {borderColor:  'hsl(108, 100%, 68%)'},
+        {bottom: '0px', opacity: 1, filter: 'blur(0px)', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderColor: 'rgba(97, 218, 251, 0.8)'}
+      ], {
+        duration: 2250,
+        easing: 'ease-out'
+      });
+    }
+  },[loading])
 
   const [navtoggle, setNavtoggle] = useState(false);
   const [navtoggleIcon, setNavtoggleIcon] = useState("bars");
