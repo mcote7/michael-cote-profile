@@ -11,23 +11,20 @@
   transition: 0.25s;
 }
 .myNavBar:hover {
-  animation: rainbow 2.5s ease-in-out infinite;
+  animation: rainbow 4.25s ease-in-out infinite;
 }
 @keyframes rainbow {
   0% {border-color: rgba(97, 218, 251, 0.8);}
-  20% {border-color: hsla(275, 100%, 48%, 0.4);}
-  40% {border-color: hsla(336, 78%, 46%, 0.4);}
-  60% {border-color:  hsla(13, 100%, 64%, 0.4);}
-  80% {border-color:  hsla(108, 100%, 68%, 0.4);}
+  20% {border-color: hsla(275, 100%, 48%, 0.6);}
+  40% {border-color: hsla(336, 78%, 46%, 0.6);}
+  60% {border-color:  hsla(13, 100%, 64%, 0.6);}
+  80% {border-color:  hsla(108, 100%, 68%, 0.6);}
   100% {border-color: rgba(97, 218, 251, 0.8);}
 }
 /* --- collapsed --- */
 @media only screen and (max-width: 992px) {
   .myNavBar {
     background-color: rgba(0, 0, 0, 1);
-  }
-  .nav-item {
-    margin: 1rem 3rem 0rem 0rem;
   }
 }
 /* -------- phone ----------------------------------- */
@@ -103,10 +100,23 @@
   background-color: transparent;
   transition: 0.25s;
 }
+/* collapsed */
+@media only screen and (max-width: 992px) {
+  .polyLink-active {
+    margin-right: 2rem;
+  }
+  .nav-item {
+    margin: 1rem 0rem 0rem -2rem;
+  }
+  .navbar-nav {
+    padding-bottom: 2rem;
+  }
+}
 .polyLink-active:hover {
   text-decoration: none;
 }
 .polyLink-active > .polyLink-icon {
+  padding-right: 1rem;
   border-radius: 50%;
   clip-path: none;
   background-color: rgba(255, 255, 255, 0);
@@ -116,6 +126,7 @@
   animation: polyLink-pulse 1.75s;
 }
 .polyLink-active:hover > .polyLink-icon {
+  padding-right: 1rem;
   border-radius: 50%;
   clip-path: none;
   background-color: white;
@@ -128,7 +139,7 @@
   100% {box-shadow:0 0 10px 50px rgba(255,150,44,0);}
 }
 .polyLink-active > .polyLink-text {
-  padding: 0rem 3rem 0rem 2rem;
+  padding: 0rem 4rem 0rem 2rem;
   background-color: white;
   color: hsl(193, 95%, 48%);
   filter: blur(0px);
@@ -136,7 +147,7 @@
   transform: scaleX(1);
 }
 .polyLink-active:hover > .polyLink-text {
-  padding: 0rem 3rem 0rem 2rem;
+  padding: 0rem 4rem 0rem 2rem;
   background-color: white;
   color: hsl(193, 95%, 48%);
   filter: blur(0px);
