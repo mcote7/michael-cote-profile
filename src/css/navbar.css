@@ -65,7 +65,7 @@
   width: 60px;
   color: white;
   background-color: hsl(193, 95%, 48%);
-  border-radius: 40%;
+  border-radius: 46%;
   transition: 0.5s ease-in-out;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   animation: nav-button-reveal 0.75s ease-in;
@@ -181,7 +181,7 @@
   width: 60px;
   color: white;
   background-color: hsl(193, 95%, 48%);
-  border-radius: 40%;
+  border-radius: 46%;
   transition: 0.5s ease-in-out;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   animation: nav-button-reveal 0.75s ease-in;
@@ -207,7 +207,7 @@
   width: 60px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 40%;
+  border-radius: 46%;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   animation: home-button-exit 0.75s ease-out;
 }
@@ -237,7 +237,7 @@
   width: 60px;
   color: white;
   background-color: hsl(54, 100%, 47%);
-  border-radius: 40%;
+  border-radius: 46%;
   /* polygon-X */
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   transition: 0.5s ease-in-out;
