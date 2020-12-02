@@ -13,8 +13,11 @@ const NavBar = ({history}) => {
   useEffect(() => {
     setTimeout(()=> {
       setLoading(false);
-      setShowHomeButton(false);
+      setShowHomeButton(true);
     }, 12000)
+    setTimeout(() => {
+      setShowHomeButton(false);
+    }, 13500);
   },[]);
 
   useEffect(()=> {
