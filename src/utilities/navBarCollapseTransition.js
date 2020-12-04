@@ -9,18 +9,18 @@ export const navBarCollapseTransition = () => {
       {opacity: 1, filter: 'blur(0px)'},
       {opacity: 0, filter: 'blur(12px)'},
     ], {
-      delay: 500,
+      delay: 750,
       duration: 1000
     });
     setTimeout(() => {
         navbar_Collapse.classList.remove("show");
-    }, 1500);
+    }, 1750);
     navbar_Main.animate([
       {opacity: 0, filter: 'blur(12px)'},
       {opacity: 0.5, filter: 'blur(0px)'},
       {opacity: 1},
     ], {
-      delay: 1500,
+      delay: 1750,
       duration: 1500
     });
   }
