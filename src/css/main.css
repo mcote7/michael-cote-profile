@@ -442,6 +442,7 @@ svg {
   text-decoration: none!important;
 }
 .chromeIcon {
+  transform: scale(1.5);
   color: rgba(97, 218, 251, 0.8);
   animation: chrome-logo-spin infinite 1.75s linear;
 }
