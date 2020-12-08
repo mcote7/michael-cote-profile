@@ -1,6 +1,6 @@
 /* ---container & bg image--- */
 .messageCont {
-  height: 100vh!important;
+  margin-bottom: 100vh;
   text-align: left;
 }
 .messageCont::before {
@@ -59,14 +59,14 @@
 /* -----form margin top----------- */
 .myForm {
   margin-top: 5rem;
-  transform: scale(0.85);
-  animation: pop-in 1s ease-in-out;
+  transform: scale(1);
+  animation: pop-in 1s steps(1000);
 }
 @keyframes pop-in {
   0% {transform: scale(0); opacity: 0;}
   70% {transform: scale(0.8); opacity: 1;}
   85% {transform: scale(0.75);}
-  100% {transform: scale(0.85);}
+  100% {transform: scale(1);}
 }
 
 /* ------------height???------------------------ */
@@ -147,23 +147,9 @@ input:-webkit-autofill:active {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-/* --error message placeholder----------- */
 
-
-/* ---screen size adjustments--- */
-.moreBtmMessage {
-  margin-bottom: 2rem!important;
-}
-@media only screen and (max-width: 1300px) {
-  .moreBtmMessage {
-    margin-bottom: 12rem!important;
-  }
-}
 /* ---phone-------------------------------------- */
 @media only screen and (max-width: 620px) {
-  .moreBtmMessage {
-    margin-bottom: 14rem!important;
-  }
   .formBtn {
     color: rgb(97, 218, 251)!important;
     border-top: 0.25rem solid rgb(97, 218, 251)!important;
@@ -172,9 +158,6 @@ input:-webkit-autofill:active {
     border-bottom: 0.25rem solid rgb(97, 218, 251)!important;
     background-color: rgba(0, 0, 0, 0.85)!important;
     transition: none!important;
-  }
-  .myForm {
-    transform: scale(1);
   }
 }
 /* ---sideways phone view--- */
