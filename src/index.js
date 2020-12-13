@@ -10,12 +10,12 @@ import 'font-awesome/css/font-awesome.css';
 
 import { createBrowserHistory } from "history";
 
-
 import { gsap, CSSPlugin, CSSRulePlugin} from "gsap/all";
+
+gsap.registerPlugin(CSSPlugin, CSSRulePlugin);
 
 const history = createBrowserHistory();
 
-gsap.registerPlugin(CSSPlugin, CSSRulePlugin);
 
 ReactDOM.render(
   <Router history={history}>

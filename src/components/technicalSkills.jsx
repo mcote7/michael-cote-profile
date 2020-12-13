@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { onRoute } from './../utilities/onRoute';
 import '../css/technical.css'
 
+// import {} from '../config/techSkillsLists';
+
 const TechnicalSkills = () => {
   const [view0, setView0] = useState(false);
   const [view1, setView1] = useState(false);

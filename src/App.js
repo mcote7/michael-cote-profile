@@ -8,7 +8,7 @@ import GoHome from './utilities/goHome';
 
 import NavBar from './components/NavBar/NavBar';
 
-// MAKE REUSEABLE CARD COMPONENT FOR MAIN ITEMS!!!
+// MAKE REUSEABLE CARD COMPONENT FOR MAIN ITEMS??
 import MainView from './components/MainView/MainView';
 
 // optimize technical skills next ...
