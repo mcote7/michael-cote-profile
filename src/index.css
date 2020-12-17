@@ -116,3 +116,29 @@ body {
   from {height: 200vh;}
   to {height: 1vh;}
 }
+
+
+/* XMAS ONLY */
+
+#snow {
+  background-image: url('./images/snow.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  bottom: -50px;
+  right: -50px;
+  z-index: 1982;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.25;
+  filter: blur(6px);
+  animation: snow 10000ms;
+}
+@keyframes snow {
+  from {opacity: 0;}
+  50% {opacity: 1;}
+  to {opacity: 0.25;}
+}

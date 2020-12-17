@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom';
 
 import ScrollProgressRead from 'react-scroll-progress-read';
@@ -21,6 +21,14 @@ import Message from './components/message/message';
 
 
 const App = ({history}) => {
+
+  const [letItSnow, setLetItSnow] = useState(false);
+  useEffect(()=>{
+    setTimeout(() => {
+      setLetItSnow(true);
+    }, 16000);
+  },[]);
+
   const [message, setMessage] = useState(false);
   const handleMessage = () => {
     setMessage(true);
@@ -48,6 +56,7 @@ const App = ({history}) => {
         </div>
       </div>
       <NavBar history={history}/>
+      {letItSnow?<div id="snow"></div>:''}
     </div>
     );
   };
