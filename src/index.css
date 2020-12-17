@@ -135,7 +135,7 @@ body {
   pointer-events: none;
   opacity: 0.25;
   filter: blur(6px);
-  animation: snow 10000ms;
+  animation: snow 5000ms;
 }
 @keyframes snow {
   from {opacity: 0;}
