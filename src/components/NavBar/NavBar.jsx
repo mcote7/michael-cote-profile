@@ -59,7 +59,7 @@ const NavBar = ({history}) => {
       if(targetnavbar !== null && !targetnavbar.classList.contains("show")) {
         setNavtoggle(false);
       }
-    }, 1500);
+    }, 1755);
   },[history.location]);
 
   useEffect(() => {
