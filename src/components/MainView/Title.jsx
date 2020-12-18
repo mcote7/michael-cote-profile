@@ -13,12 +13,12 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
       </div>
       <div className="col-lg-2 snow-col">
         {letItSnow?
-        <div className="snow-wrap">
+        <div title={blizzard?`Blizzard`:`Snow`} className="snow-wrap">
           <span className="snow-range">
-            <label htmlFor="snow">
+            <label title={blizzard?`Blizzard`:`Snow`} htmlFor="snow">
               {blizzard?<span><i className="fa fa-snowflake-o fa-2x snow-icon" aria-hidden="true"></i></span>:
               <span><i className="fa fa-snowflake-o fa-2x snow-icon" aria-hidden="true"></i></span>}</label>
-            <input type="range" min="25" max="99" onChange={(e)=>{handleSnowRate(e)}} className="form-control-range snow-input"/>            
+            <input title={blizzard?`Blizzard`:`Snow`} type="range" min="25" max="99" onChange={(e)=>{handleSnowRate(e)}} className="form-control-range snow-input"/>            
           </span>
         </div>:''}
       </div>
