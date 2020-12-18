@@ -22,12 +22,29 @@ import Message from './components/message/message';
 
 const App = ({history}) => {
 
+// XMAS ONLY
   const [letItSnow, setLetItSnow] = useState(false);
   useEffect(()=>{
     setTimeout(() => {
       setLetItSnow(true);
     }, 16000);
   },[]);
+  const [SNOW_RATE, SET_SNOW_RATE] = useState(0.25);
+  const handleSnowRate = (e) => {
+    let prefix = `0.${e.target.value}`;
+    let result = +prefix;
+    console.log("input", result)
+    SET_SNOW_RATE(result);
+  };
+  const [blizzard, setBlizzard] = useState(false);
+  useEffect(()=>{
+    if(SNOW_RATE > 0.8) {
+      setBlizzard(true);
+    } else {
+      setBlizzard(false);
+    }
+  },[SNOW_RATE]);
+// x
 
   const [message, setMessage] = useState(false);
   const handleMessage = () => {
@@ -40,7 +57,7 @@ const App = ({history}) => {
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
         <div id="mainView" className="row mainView">
-          <MainView message={message}/>
+          <MainView message={message} handleSnowRate={handleSnowRate} letItSnow={letItSnow} blizzard={blizzard}/>
         </div>
         <div id="routes" className="row">
           <Switch>
@@ -56,7 +73,8 @@ const App = ({history}) => {
         </div>
       </div>
       <NavBar history={history}/>
-      {letItSnow?<div id="snow"></div>:''}
+      {letItSnow?<div id="snow" style={{opacity: `${SNOW_RATE}`}}></div>:''}
+      {blizzard?<div id="blizzard" style={{opacity: `${SNOW_RATE}`}}></div>:''}
     </div>
     );
   };

@@ -10,7 +10,7 @@ import angular8 from '../../images/angular8.png';
 
 import '../../css/main.css';
 
-const MainView = ({message}) => {
+const MainView = ({message, handleSnowRate, letItSnow, blizzard}) => {
 
   const [light, setLight] = useState(false);
   const [contact, setContact] = useState(false);
@@ -146,7 +146,7 @@ const MainView = ({message}) => {
   return (<>
     <div className="mainViewContainer col-12">
       <Social message={message} contact={contact}/>
-      <Title light={light}/>
+      <Title light={light} handleSnowRate={handleSnowRate} letItSnow={letItSnow} blizzard={blizzard}/>
       <Bio self={self} angular8={angular8}
           handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}
           handleMouseEnter={handleMouseEnter} handleClick={handleClick}

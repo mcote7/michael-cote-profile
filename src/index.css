@@ -119,7 +119,23 @@ body {
 
 
 /* XMAS ONLY */
-
+#blizzard {
+  background-image: url('./images/snow.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  bottom: -50px;
+  right: -50px;
+  z-index: 1982;
+  overflow: hidden;
+  pointer-events: none;
+  filter: blur(3px);
+  transform: rotate(45deg) scale(2);
+  animation: snow 5000ms;
+}
 #snow {
   background-image: url('./images/snow.gif');
   background-size: cover;
@@ -133,7 +149,6 @@ body {
   z-index: 1982;
   overflow: hidden;
   pointer-events: none;
-  opacity: 0.25;
   filter: blur(6px);
   animation: snow 5000ms;
 }
@@ -141,4 +156,59 @@ body {
   from {opacity: 0;}
   50% {opacity: 1;}
   to {opacity: 0.25;}
+}
+/* snow col */
+.snow-col {
+  padding: 0px;
+}
+@media only screen and (max-width: 992px) {
+  .snow-col {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+/* snow wrap */
+.snow-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+/* slider */
+.snow-range {
+  display: inline-flex;
+  align-items: center;
+  animation: snow-man 1250ms;
+}
+@keyframes snow-man {
+  from {opacity: 0; transform: scaleY(0);}
+  50% {}
+  to {opacity: 1; transform: scaleY(1);}
+}
+/* icon */
+.snow-icon {
+  position: relative;
+  top: 4px;
+  left: 0px;
+}
+/* acctual input */
+.snow-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(255, 0, 0);
+  color: red;
+  height: 5px; 
+}
+.snow-input:focus, .snow-input:active {
+  outline: none!important;
+}
+.snow-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(0, 225, 0);
+  color: rgb(0, 225, 0);
 }
