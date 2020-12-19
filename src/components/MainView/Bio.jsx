@@ -23,7 +23,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
   return (
     <div className="row">
       {quote0?
-      <div className="bioWrap col-lg-9 order-xl-1 order-lg-1">
+      <div className="bioWrap col-lg-9 order-lg-1 order-md-1">
         <span className="selfWrap">
           <img src={self} className="mySelf float-right" alt="self"/>
         </span>
@@ -38,7 +38,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       </div>
       :''}
       {quote1?
-      <div className="bioWrap col-xl-3 col-lg-4 order-xl-2 order-lg-3">
+      <div className="bioWrap col-lg-3 col-md-6 order-lg-2 order-md-3">
         <div className="quote freelance">
           <span className="mr-1 freelanceIcon"><i className="fa fa-code-fork fa-2x" aria-hidden="true"></i></span>
           <a style={{color: 'white'}} href="https://mcote7.github.io/jitsi-chat/" target="_blank" rel="noopener noreferrer"><span>Open To Freelance work.</span></a><br></br><br></br>
@@ -47,7 +47,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       </div>
       :''}
       {quote2?
-      <div className="bioWrap col-lg-9 order-xl-3 order-lg-2">
+      <div className="bioWrap col-lg-9 order-lg-3 order-md-2">
         <span className="selfWrap">
           <img src={angular8} className="mySelf angular8 float-right" alt="angular8"/>
         </span>
@@ -60,7 +60,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       </div>
       :''}
       {quote3?
-      <div className="bioWrap col-xl-3 col-lg-4 order-xl-4 order-lg-4 offset-xl-0 offset-lg-1">
+      <div className="bioWrap col-lg-3 col-md-6 order-lg-4 order-md-4">
         <div className="quote theCube">
           <span className="mr-1 cube"><i className="fa fa-cube fa-4x" aria-hidden="true"></i></span><br></br><br></br><br></br>
           <a className="enterCube p-2" href="https://mcote7.github.io/react-menu-cube/" target="_blank" rel="noopener noreferrer">&nbsp;enter the cube</a>

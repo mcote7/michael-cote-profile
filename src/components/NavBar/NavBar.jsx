@@ -13,10 +13,10 @@ const NavBar = ({history}) => {
     setTimeout(()=> {
       setLoading(false);
       setShowHomeButton(true);
-    }, 8500)
+    }, 7500)
     setTimeout(() => {
       setShowHomeButton(false);
-    }, 10000);
+    }, 9000);
   },[]);
 
   useEffect(()=> {
@@ -73,7 +73,7 @@ const NavBar = ({history}) => {
 
   if(loading) return null;
   return (
-    <nav id="myNavbar" className="navbar navbar-expand-lg myNavBar">
+    <nav id="myNavbar" className="navbar navbar-expand-xl myNavBar">
 
       <div className="homeButtonWrap">
       {showHomeButton ?

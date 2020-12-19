@@ -5,14 +5,14 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
 
   return (
     <div className="row my-1" style={{borderTop: '0.2rem solid'}}>
-      <div className="col-xl-10">
+      <div className="col-lg-10">
         <h1 className="titleName">M{light?
           <span className="yellowWar blinky">i</span>:
           <span className="titleNameSpec">i</span>}chael P Cote&nbsp;
         </h1>
         <p className="titleSub">Web Developer in 2021</p>
       </div>
-      <div className="col-xl-2 snow-col">
+      <div className="col-lg-2 snow-col">
         {letItSnow?
         <div className="snow-wrap">
           <span className="snow-range">
