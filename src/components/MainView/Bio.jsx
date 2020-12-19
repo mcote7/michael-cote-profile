@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, handleMouseOut, magic, magic_BG_MAIN, magic_BG_ALPHA}) => {
 
+  const [quote0, setQuote0] = useState(false);
+  const [quote1, setQuote1] = useState(false);
+  const [quote2, setQuote2] = useState(false);
+  const [quote3, setQuote3] = useState(false);
+  useEffect(() => {
+    setTimeout(()=> {
+      setQuote0(true);
+    }, 500);
+    setTimeout(()=> {
+      setQuote1(true);
+    }, 1250);
+    setTimeout(()=> {
+      setQuote2(true);
+    }, 2000);
+    setTimeout(()=> {
+      setQuote3(true);
+    }, 2750);
+  },[]);
   return (
     <div className="row">
-
+      {quote0?
       <div className="bioWrap col-lg-9 order-xl-1 order-lg-1">
         <span className="selfWrap">
           <img src={self} className="mySelf float-right" alt="self"/>
@@ -18,7 +36,8 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
             for growth and personal development, as well as the opportunity to expand my knowledge.
           </div>
       </div>
-
+      :''}
+      {quote1?
       <div className="bioWrap col-xl-3 col-lg-4 order-xl-2 order-lg-3">
         <div className="quote freelance">
           <span className="mr-1 freelanceIcon"><i className="fa fa-code-fork fa-2x" aria-hidden="true"></i></span>
@@ -26,7 +45,8 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
           <span className="leisure">( at my leisure )</span>&nbsp;<span className="myLeisureFace" role="img" aria-label="my-leisure">&#128526;</span>
         </div>
       </div>
-
+      :''}
+      {quote2?
       <div className="bioWrap col-lg-9 order-xl-3 order-lg-2">
         <span className="selfWrap">
           <img src={angular8} className="mySelf angular8 float-right" alt="angular8"/>
@@ -38,14 +58,15 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
             <span><a className="via3 py-2 px-3" href="https://www.via3.com/" target="_blank" rel="noopener noreferrer">VIA3.com</a></span>
           </div>
       </div>
-
+      :''}
+      {quote3?
       <div className="bioWrap col-xl-3 col-lg-4 order-xl-4 order-lg-4 offset-xl-0 offset-lg-1">
         <div className="quote theCube">
           <span className="mr-1 cube"><i className="fa fa-cube fa-4x" aria-hidden="true"></i></span><br></br><br></br><br></br>
           <a className="enterCube p-2" href="https://mcote7.github.io/react-menu-cube/" target="_blank" rel="noopener noreferrer">&nbsp;enter the cube</a>
         </div>
       </div>
-
+      :''}
     </div>
   );
 };

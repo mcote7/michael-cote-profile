@@ -36,7 +36,7 @@ body {
   right: 0;
   left: 0;
   z-index: 1030;
-  animation: 14s fade-in;
+  animation: 12s fade-in;
 }
 @keyframes fade-in {
   0% {opacity: 0;}
@@ -66,7 +66,7 @@ body {
   rgba(0,0,0,0));
   opacity: 0.4;
   filter: blur(0px);
-  animation: 16s fade-in-bg;
+  animation: 14s fade-in-bg;
 }
 @keyframes fade-in-bg {
   0% {opacity: 0;}
@@ -98,7 +98,7 @@ body {
   rgba(0,0,0,1),
   rgba(0,0,0,0));
   opacity: 0.6;
-  animation: come-in-bg 4s;
+  animation: come-in-bg 3s;
 }
 @keyframes come-in-bg {
   0% { opacity: 0; transform: scale(2);}
@@ -110,7 +110,7 @@ body {
 .dummy {
   height: 1vh;
   background-color: rgba(0,0,0,0);
-  animation: go-home 2s ease-out;
+  animation: go-home 1.5s ease-out;
 }
 @keyframes go-home {
   from {height: 200vh;}
@@ -157,16 +157,8 @@ body {
   50% {opacity: 1;}
   to {opacity: 0.25;}
 }
-/* snow col */
-.snow-col {
-  padding: 0px;
-}
-@media only screen and (max-width: 992px) {
-  .snow-col {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
+
+
 /* snow wrap */
 .snow-wrap {
   display: flex;
@@ -197,12 +189,13 @@ body {
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgb(255, 0, 0, 0.4);
+  background-color: rgb(255, 255, 255, 0.45);
   border-radius: 0.2rem;
-  height: 7.5px; 
+  height: 2.75px; 
+  transition: 0.4s;
 }
 .snow-input:hover {
-  background-color: rgb(255, 0, 0, 0.65);
+  background-color: rgb(255, 255, 255, 0.65);
 }
 .snow-input:focus, .snow-input:active {
   outline: none!important;
@@ -210,11 +203,21 @@ body {
 .snow-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: rgb(0, 225, 0, 0.4);
+  height: 20px;
+  width: 20px;
+  border-radius: 46%;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  background-color: rgba(96, 217, 251, 0.85);
+  transition: 0.4s;
+}
+.snow-input::-webkit-slider-thumb:active, .snow-input::-webkit-slider-thumb:focus {
+  animation: cd-pulse 0.75s infinite;
+}
+@keyframes cd-pulse {
+  0% {box-shadow:0 0 0 0 white;}
+  100% {box-shadow:0 0 10px 25px rgba(255,150,44,0);}
 }
 .snow-input::-webkit-slider-thumb:hover {
-  background-color: rgb(0, 225, 0, 0.65);
+  background-color: hsl(193, 95%, 48%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }

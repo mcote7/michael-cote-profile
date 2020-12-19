@@ -14,8 +14,8 @@
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 0.25rem;
   opacity: 1;
-  animation: 2.75s ease-out slide-up-main;
-  transition: 0.75s;
+  animation: 2s ease-out slide-up-main;
+  transition: 0.5s;
 }
 .socialWraps:hover {
   background-color: rgba(255, 255, 255, 0);
@@ -33,7 +33,7 @@
 }
 .socialIcons {
   color: white;
-  animation: 5s color-fade-in1;
+  animation: 3s color-fade-in1;
 }
 @keyframes color-fade-in1 {
   0% {color: rgba(255, 255, 255, 0);}
@@ -44,7 +44,7 @@
   text-decoration: none;
   color: rgb(97, 218, 251);
   transition: 0.35s;
-  animation: 6s color-fade-in2;
+  animation: 4s color-fade-in2;
 }
 @keyframes color-fade-in2 {
   0% {color: rgba(97, 218, 251, 0);}
@@ -61,8 +61,8 @@
   border-bottom: solid 1px rgb(97, 218, 251);
   transform: scaleX(0);
   transition: transform 0.35s ease-in-out;
-  animation: a-tag 1s ease-in-out;
-  animation-delay: 8s;
+  animation: a-tag 0.75s ease-in-out;
+  animation-delay: 6s;
 }
 .socialLinks:hover:after {
   transform: scaleX(1);
@@ -113,7 +113,7 @@
 .contactBtn:hover::after {
   content: '\2728';
   color: cornsilk!important;
-  animation: contact-arrow 0.35s ease-out forwards;
+  animation: contact-arrow 0.25s ease-out forwards;
 }
 @keyframes contact-arrow {
   from {margin-left: 0rem; font-size: 1.25rem;}
@@ -127,7 +127,7 @@ svg {
   stroke-dasharray: 260 7000;
   stroke-dashoffset: 260;
   transition: 2s ease-in-out;
-  animation: svgOutline 3.8s ease-in-out infinite;
+  animation: svgOutline 4s ease-in-out infinite;
 }
 @keyframes svgOutline {
   from {stroke-dashoffset: 260;}
@@ -202,7 +202,7 @@ svg {
   font-size: 2.75vw;
   font-weight: 500;
   line-height: 0.2!important;
-  animation: 6s color-fade-in3;
+  animation: 5s color-fade-in3;
 }
 @keyframes color-fade-in3 {
   0% {color: rgba(97, 218, 251, 0);}
@@ -224,7 +224,7 @@ svg {
 .bioWrap {
   cursor: none;
   margin-top: 1.5rem;
-  animation: 6s bio-fade-in ease-in-out;
+  animation: 2s bio-fade-in ease-in-out;
 }
 @keyframes bio-fade-in {
   0% {opacity: 0; transform: scaleX(1);}
@@ -240,7 +240,7 @@ svg {
   margin: 1rem;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   border-radius: 46%;
-  animation: mySelf-morph 8s ease-in-out;
+  animation: mySelf-morph 7s ease-in-out;
 }
 @keyframes mySelf-morph {
   from {opacity: 0; filter: blur(12px);}
@@ -250,7 +250,7 @@ svg {
 .selfWrap {
   outline: none!important;
   filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));
-  animation: light-bright 14s ease-in-out;
+  animation: light-bright 13s ease-in-out;
 }
 @keyframes light-bright {
   from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}
@@ -289,7 +289,7 @@ svg {
   padding: 1rem 1rem 2rem 1rem;
   line-height: 1.2;
   background-color: rgba(255, 255, 255, 0.15);
-  animation: spread 4s ease-out;
+  animation: spread 1.75s ease-out;
 }
 @keyframes spread {
   0% {line-height: 0; background-color: rgba(255, 255, 255, 1);}
@@ -363,7 +363,7 @@ svg {
 }
 .theCube:hover > .cube::after {
   content: '';
-  animation: dots 1.255s infinite;
+  animation: dots 1.2s infinite;
 }
 @keyframes dots {
   0% {content: '';}
@@ -443,7 +443,7 @@ svg {
 .chromeIcon {
   transform: scale(1.5);
   color: rgba(97, 218, 251, 0.8);
-  animation: chrome-logo-spin infinite 1.75s linear;
+  animation: chrome-logo-spin infinite 1s linear;
 }
 @keyframes chrome-logo-spin {
   0% {color: rgba(97, 218, 251, 0.8); transform: rotate(0deg);}
@@ -461,7 +461,7 @@ svg {
   opacity: 0.5;
   filter: blur(0px);
   transform: scale(1);
-  animation: ghost 1.25s ease-in-out;
+  animation: ghost 1.2s ease-in-out;
 }
 @keyframes ghost {
   from {opacity: 0; filter: blur(12px); transform: scale(0.4);}

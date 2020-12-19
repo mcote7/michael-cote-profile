@@ -13,10 +13,10 @@ const NavBar = ({history}) => {
     setTimeout(()=> {
       setLoading(false);
       setShowHomeButton(true);
-    }, 12000)
+    }, 8500)
     setTimeout(() => {
       setShowHomeButton(false);
-    }, 13500);
+    }, 10000);
   },[]);
 
   useEffect(()=> {
@@ -30,11 +30,11 @@ const NavBar = ({history}) => {
         {borderColor:  'hsl(108, 100%, 68%)'},
         {bottom: '0px', opacity: 1, filter: 'blur(0px)', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderColor: 'rgba(97, 218, 251, 0.8)'}
       ], {
-        duration: 2250,
+        duration: 1750,
         easing: 'ease-out'
       });
     }
-  },[loading])
+  },[loading]);
 
   const [navtoggle, setNavtoggle] = useState(false);
   const [navtoggleIcon, setNavtoggleIcon] = useState("bars");

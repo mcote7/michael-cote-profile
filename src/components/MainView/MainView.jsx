@@ -20,15 +20,15 @@ const MainView = ({message, handleSnowRate, letItSnow, blizzard}) => {
     //loader
     setTimeout(()=> {
       setLoading(false);
-    }, 6000)
+    }, 4000)
     //my i light
     setTimeout(()=> {
       setLight(true);
-    }, 8000)
+    }, 7000)
     //contact btn
     setTimeout(()=> {
       setContact(true);
-    }, 9000)
+    }, 8000)
   },[]);
 
   //mouse ghost
