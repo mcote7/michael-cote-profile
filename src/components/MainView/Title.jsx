@@ -8,9 +8,9 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
       <div className="col-12">
         <h1 className="titleName">M{light?
           <span className="yellowWar blinky">i</span>:
-          <span className="titleNameSpec">i</span>}chael Cote&nbsp;
+          <span className="titleNameSpec">i</span>}chael Cote
         </h1>
-        <p className="titleSub">Web Developer in 2021</p>
+        <p className="titleSub">&nbsp;WEB DEVELOPER IN 2021</p>
       </div>
     </div>
 

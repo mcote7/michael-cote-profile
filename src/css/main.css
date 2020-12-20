@@ -168,8 +168,8 @@ svg {
   -webkit-user-select: none;
   user-select: none;
   line-height: 0.9!important;
-  font-size: 10vw;
-  font-weight: 800;
+  font-size: 12vw;
+  font-weight: 900;
   -webkit-box-reflect: below 5px linear-gradient(
     to bottom,
     transparent,
@@ -179,11 +179,11 @@ svg {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
-  color: rgb(97, 218, 251);
+  color: hsl(193, 95%, 48%);
   letter-spacing: 2vw;
-  font-size: 1.5vw;
-  font-weight: 400;
-  line-height: 0.2!important;
+  font-size: 2vw;
+  font-weight: 600;
+  text-decoration: underline;
   animation: 4s color-fade-in3;
 }
 @keyframes color-fade-in3 {
@@ -191,29 +191,29 @@ svg {
   50% {color: rgba(97, 218, 251, 0);}
   100% {color: rgba(97, 218, 251, 1);}
 }
-@media only screen and (max-width: 1205px) {
+/* title text break */
+/* @media only screen and (max-width: 1205px) {
   .titleName {
-    font-size: 12vw;
+    
   }
   .titleSub {
-    font-size: 2vw;
+    
   }
 }
-@media only screen and (max-width: 905px) {
+@media only screen and (max-width: 420px) {
   .titleName {
-    font-size: 13vw;
+    
   }
   .titleSub {
-    font-size: 3vw;
+    
   }
-}
+} */
 /* blinking " I " */
 .titleNameSpec {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
   display: inline-block!important;
-  border-color: rgba(255, 255, 255, 0)!important;
 }
 .yellowWar {
   display: inline-block!important;
@@ -243,7 +243,6 @@ svg {
   80% {color: #ffee58;}
   100% {color: cornsilk;}
 }
-
 /* ------------------- */
 /* --- < Bio /> ------ */
 .bioWrap {
