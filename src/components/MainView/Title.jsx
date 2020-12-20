@@ -10,7 +10,11 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
           <span className="yellowWar blinky">i</span>:
           <span className="titleNameSpec">i</span>}chael Cote
         </h1>
-        <p className="titleSub">&nbsp;WEB DEVELOPER IN 2021</p>
+        <p className="titleSub">
+          <span style={{color: 'white', letterSpacing: 0}}>&#8943;&#8886;</span>
+          &nbsp;WEB DEVELOPER IN 2021
+          <span style={{color: 'white', letterSpacing: 0}}>&#8887;&#8943;</span>
+        </p>
       </div>
     </div>
 
