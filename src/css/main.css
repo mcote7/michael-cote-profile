@@ -6,7 +6,12 @@
 /* ------------------- */
 /* --- < Social /> --- */
 .socialRow {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 992px) {
+  .socialRow {
+    margin-bottom: 1rem;
+  }
 }
 .socialWraps {
   margin-bottom: 0.5rem;
@@ -176,6 +181,13 @@ svg {
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
+  perspective: 1000px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+.titleName:hover {
+  transform: scaleY(180deg);
 }
 @media only screen and (max-width: 420px) {
   .titleName {
