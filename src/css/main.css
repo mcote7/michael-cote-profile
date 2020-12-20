@@ -179,7 +179,7 @@ svg {
 }
 @media only screen and (max-width: 420px) {
   .titleName {
-    -webkit-box-reflect: below 0px linear-gradient(
+    -webkit-box-reflect: below -5px linear-gradient(
       to bottom,
       transparent,
       rgba(255, 255, 255, 0.4));
