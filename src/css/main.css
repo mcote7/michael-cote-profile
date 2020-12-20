@@ -148,9 +148,25 @@ svg {
 /* ------------------- */
 /* --- < Title /> ---- */
 .title-row {
+  margin-bottom: 5rem;
   padding-bottom: 0.5rem;
   border-top: 0.2rem solid;
   text-align: center;
+}
+@media only screen and (max-width: 905px) {
+  .title-row {
+    margin-bottom: 2.5rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .title-row {
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .title-row {
+    margin-bottom: 0.5rem;
+  }
 }
 .titleName {
   -webkit-touch-callout: none;
