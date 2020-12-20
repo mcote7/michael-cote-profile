@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile-2020/static/css/main.7cba2648.chunk.css",
-    "main.js": "/michael-cote-profile-2020/static/js/main.5b05205f.chunk.js",
-    "main.js.map": "/michael-cote-profile-2020/static/js/main.5b05205f.chunk.js.map",
+    "main.css": "/michael-cote-profile-2020/static/css/main.5535c2b9.chunk.css",
+    "main.js": "/michael-cote-profile-2020/static/js/main.774d871e.chunk.js",
+    "main.js.map": "/michael-cote-profile-2020/static/js/main.774d871e.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js",
     "runtime-main.js.map": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js.map",
     "static/css/2.7339f952.chunk.css": "/michael-cote-profile-2020/static/css/2.7339f952.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.0a6c038f.chunk.js.map": "/michael-cote-profile-2020/static/js/2.0a6c038f.chunk.js.map",
     "index.html": "/michael-cote-profile-2020/index.html",
     "static/css/2.7339f952.chunk.css.map": "/michael-cote-profile-2020/static/css/2.7339f952.chunk.css.map",
-    "static/css/main.7cba2648.chunk.css.map": "/michael-cote-profile-2020/static/css/main.7cba2648.chunk.css.map",
+    "static/css/main.5535c2b9.chunk.css.map": "/michael-cote-profile-2020/static/css/main.5535c2b9.chunk.css.map",
     "static/js/2.0a6c038f.chunk.js.LICENSE.txt": "/michael-cote-profile-2020/static/js/2.0a6c038f.chunk.js.LICENSE.txt",
     "static/media/DojoCert.bcdbb641.png": "/michael-cote-profile-2020/static/media/DojoCert.bcdbb641.png",
     "static/media/MasterReactCert.5f89f4fd.png": "/michael-cote-profile-2020/static/media/MasterReactCert.5f89f4fd.png",
@@ -32,7 +32,7 @@
     "static/js/runtime-main.effd3b37.js",
     "static/css/2.7339f952.chunk.css",
     "static/js/2.0a6c038f.chunk.js",
-    "static/css/main.7cba2648.chunk.css",
-    "static/js/main.5b05205f.chunk.js"
+    "static/css/main.5535c2b9.chunk.css",
+    "static/js/main.774d871e.chunk.js"
   ]
 }
