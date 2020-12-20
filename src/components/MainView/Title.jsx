@@ -5,7 +5,7 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
 
   return (<>
     <div className="row mx-0 mt-1 title-row">
-      <div className="col-12">
+      <div className="col-12 title-col">
         <div className="titleName">M{light?
           <span className="yellowWar blinky">i</span>:
           <span className="titleNameSpec">i</span>}chael Cote

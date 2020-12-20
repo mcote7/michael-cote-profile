@@ -148,20 +148,22 @@ svg {
 /* ------------------- */
 /* --- < Title /> ---- */
 .title-row {
-  margin-bottom: 3rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 4rem;
   border-top: 0.2rem solid;
   text-align: center;
 }
 @media only screen and (max-width: 905px) {
   .title-row {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 550px) {
   .title-row {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
+}
+.title-col {
+  padding: 0px!important;
 }
 .titleName {
   -webkit-touch-callout: none;
@@ -202,21 +204,10 @@ svg {
   }
 }
 @media only screen and (max-width: 550px) {
-  .titleName {
-    font-size: 13vw;
-  }
   .titleSub {
-    font-size: 3vw;
+    font-size: 3.6vw;
   }
 }
-/* @media only screen and (max-width: 450px) {
-  .titleName {
-    font-size: 13.5vw;
-  }
-  .titleSub {
-    font-size: 3.25vw;
-  }
-} */
 /* blinking " I " */
 .titleNameSpec {
   -webkit-touch-callout: none;
