@@ -175,7 +175,7 @@
 .barsIcon {
   color: white!important;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .navbar-toggler, .barsIcon {
     display: none!important;
   }

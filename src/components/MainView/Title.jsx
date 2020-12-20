@@ -19,7 +19,7 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
     </div>
 
     <div className="row snow-row">
-      <div className="col-md-6 mx-auto">
+      <div className="col-lg-6 col-md-10 col-sm-11 mx-auto">
         {letItSnow?
         <div className="snow-wrap">
           <span className="snow-range">

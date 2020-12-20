@@ -27,7 +27,7 @@ const App = ({history}) => {
   useEffect(()=>{
     setTimeout(() => {
       setLetItSnow(true);
-    }, 16000);
+    }, 12500);
   },[]);
   const [SNOW_RATE, SET_SNOW_RATE] = useState(0.25);
   const handleSnowRate = (e) => {

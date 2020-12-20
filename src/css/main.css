@@ -148,7 +148,7 @@ svg {
 /* ------------------- */
 /* --- < Title /> ---- */
 .title-row {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   padding-bottom: 0.5rem;
   border-top: 0.2rem solid;
   text-align: center;
@@ -184,27 +184,37 @@ svg {
   font-size: 2.5vw;
   font-weight: 700;
   text-decoration: underline;
-  animation: 4s title-sub-fade-in;
+  backface-visibility: hidden;
+  animation: 8s title-sub-fade-in;
 }
 @keyframes title-sub-fade-in {
   0% {opacity: 0; transform: scaleX(0);}
+  80% {opacity: 0; transform: scaleX(0);}
   100% {opacity: 1; transform: scaleX(1);}
 }
 /* title text break */
-/* @media only screen and (max-width: 1205px) {
+@media only screen and (max-width: 992px) {
   .titleName {
-    
+    font-size: 14vw;
   }
   .titleSub {
-    
+    font-size: 3vw;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 550px) {
   .titleName {
-    
+    font-size: 13vw;
   }
   .titleSub {
-    
+    font-size: 3vw;
+  }
+}
+/* @media only screen and (max-width: 450px) {
+  .titleName {
+    font-size: 13.5vw;
+  }
+  .titleSub {
+    font-size: 3.25vw;
   }
 } */
 /* blinking " I " */
@@ -247,6 +257,7 @@ svg {
 .bioWrap {
   cursor: none;
   margin-top: 1.5rem;
+  backface-visibility: hidden;
   animation: 2s bio-fade-in ease-in-out;
 }
 @keyframes bio-fade-in {

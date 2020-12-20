@@ -68,6 +68,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       </div>
       :''}
     </div>
+    // START NEW ROW !
   );
 };
 export default Bio;

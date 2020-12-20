@@ -160,6 +160,7 @@ body {
 /*  */
 .snow-row {
   height: 5rem;
+  margin-bottom: -1rem;
 }
 
 /* snow wrap */
@@ -177,7 +178,6 @@ body {
 }
 @keyframes snow-man {
   from {opacity: 0; transform: scaleY(0);}
-  50% {}
   to {opacity: 1; transform: scaleY(1);}
 }
 /* icon */
@@ -212,13 +212,6 @@ body {
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   background-color: rgba(96, 217, 251, 0.85);
   transition: 0.4s;
-}
-.snow-input::-webkit-slider-thumb:active, .snow-input::-webkit-slider-thumb:focus {
-  animation: cd-pulse 0.75s infinite;
-}
-@keyframes cd-pulse {
-  0% {box-shadow:0 0 0 0 white;}
-  100% {box-shadow:0 0 10px 25px rgba(255,150,44,0);}
 }
 .snow-input::-webkit-slider-thumb:hover {
   background-color: hsl(193, 95%, 48%);
