@@ -157,7 +157,10 @@ body {
   50% {opacity: 1;}
   to {opacity: 0.25;}
 }
-
+/*  */
+.snow-row {
+  margin-top: 5rem;
+}
 
 /* snow wrap */
 .snow-wrap {
