@@ -172,7 +172,7 @@ svg {
   line-height: 0.9!important;
   font-size: 12vw;
   font-weight: 900;
-  -webkit-box-reflect: below 5px linear-gradient(
+  -webkit-box-reflect: below 0px linear-gradient(
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
