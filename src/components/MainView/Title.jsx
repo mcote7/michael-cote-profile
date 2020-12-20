@@ -6,15 +6,15 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
   return (<>
     <div className="row mx-0 mt-1 title-row">
       <div className="col-12">
-        <h1 className="titleName">M{light?
+        <div className="titleName">M{light?
           <span className="yellowWar blinky">i</span>:
           <span className="titleNameSpec">i</span>}chael Cote
-        </h1>
-        <p className="titleSub">
+        </div>
+        <div className="titleSub">
           <span style={{color: 'white', letterSpacing: 0}}>&#8943;&#8886;</span>
           &nbsp;WEB DEVELOPER IN 2021
           <span style={{color: 'white', letterSpacing: 0}}>&#8887;&#8943;</span>
-        </p>
+        </div>
       </div>
     </div>
 
