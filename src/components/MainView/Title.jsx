@@ -8,7 +8,7 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
       <div className="col-12">
         <h1 className="titleName">M{light?
           <span className="yellowWar blinky">i</span>:
-          <span className="titleNameSpec">i</span>}chael P Cote&nbsp;
+          <span className="titleNameSpec">i</span>}chael Cote&nbsp;
         </h1>
         <p className="titleSub">Web Developer in 2021</p>
       </div>
@@ -27,7 +27,7 @@ const Title = ({light, handleSnowRate, letItSnow, blizzard}) => {
             <input title={blizzard?`Blizzard`:`Snow`} type="range" min="25" max="99"
             onChange={(e)=>{handleSnowRate(e)}} className="form-control-range snow-input"/>
           </span>
-        </div>:<div style={{height: '2rem'}}></div>}
+        </div>:<div style={{height: '5rem'}}></div>}
       </div>
     </div>
 </>

@@ -163,30 +163,17 @@ svg {
     margin-bottom: 1.5rem;
   }
 }
-@media only screen and (max-width: 420px) {
-  .title-row {
-    margin-bottom: 0.5rem;
-  }
-}
 .titleName {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
   line-height: 0.9!important;
-  font-size: 8vw;
+  font-size: 10vw;
   font-weight: 800;
   -webkit-box-reflect: below 5px linear-gradient(
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
-}
-.titleNameSpec {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-  display: inline-block!important;
-  border-top: 0.1rem solid!important;
-  border-color: rgba(255, 255, 255, 0)!important;
 }
 .titleSub {
   -webkit-touch-callout: none;
@@ -206,24 +193,30 @@ svg {
 }
 @media only screen and (max-width: 1205px) {
   .titleName {
-    font-size: 10vw;
+    font-size: 12vw;
   }
   .titleSub {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 905px) {
   .titleName {
-    font-size: 11vw;
+    font-size: 13vw;
   }
   .titleSub {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
-
+/* blinking " I " */
+.titleNameSpec {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block!important;
+  border-color: rgba(255, 255, 255, 0)!important;
+}
 .yellowWar {
   display: inline-block!important;
-  border-top: 0.1rem solid!important;
   cursor: none!important;
 }
 .blinky {
