@@ -182,13 +182,16 @@ svg {
     transparent,
     rgba(255, 255, 255, 0.4));
   perspective: 1000px;
-  backface-visibility: hidden;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transform-origin: 50% 100%;
+  animation: title-drop 4.75s ease-in-out;
 }
-.titleName:hover {
-  transform: scaleY(180deg);
+@keyframes title-drop {
+  0% {transform: rotateY(180deg)}
+  40% {transform: rotateY(180deg)}
+  100% {transform: rotateY(0deg)}
 }
+
 @media only screen and (max-width: 420px) {
   .titleName {
     -webkit-box-reflect: below -5px linear-gradient(
