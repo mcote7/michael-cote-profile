@@ -44,12 +44,12 @@ const App = ({history}) => {
         {backgroundColor: 'rgba(0,0,0,0.75)'},
         {backgroundColor: 'rgba(0,0,0,1)'}
       ], {
-        duration: 14000,
+        duration: 10000,
         delay: 2000
       });
       setTimeout(() => {
         body.style.backgroundColor = 'rgba(0,0,0,1)';
-      }, 16000);
+      }, 12000);
 
     }, 12500);
   },[]);
