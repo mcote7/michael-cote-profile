@@ -25,8 +25,32 @@ const App = ({history}) => {
 // XMAS ONLY
   const [letItSnow, setLetItSnow] = useState(false);
   useEffect(()=>{
+    const body = document.getElementById('body');
+    body.style.backgroundColor = 'rgba(0,0,0,1)';
+    body.style.color = 'rgba(255,255,255,1)';
     setTimeout(() => {
       setLetItSnow(true);
+
+      body.animate([
+        {backgroundColor: 'rgba(0,0,0,1)'},
+        {backgroundColor: 'rgba(0,0,0,0.75)'},
+        {backgroundColor: 'rgba(255,255,255,0.75)'},
+        {backgroundColor: 'rgba(0,255,0,0.75)'},
+        {backgroundColor: 'rgba(0,255,0,0.75)'},
+        {backgroundColor: 'rgba(0,255,0,0.75)'},
+        {backgroundColor: 'rgba(255,0,0,0.75)'},
+        {backgroundColor: 'rgba(255,0,0,0.75)'},
+        {backgroundColor: 'rgba(255,0,0,0.75)'},
+        {backgroundColor: 'rgba(0,0,0,0.75)'},
+        {backgroundColor: 'rgba(0,0,0,1)'}
+      ], {
+        duration: 14000,
+        delay: 2000
+      });
+      setTimeout(() => {
+        body.style.backgroundColor = 'rgba(0,0,0,1)';
+      }, 16000);
+
     }, 12500);
   },[]);
   const [SNOW_RATE, SET_SNOW_RATE] = useState(0.25);
@@ -44,7 +68,7 @@ const App = ({history}) => {
       setBlizzard(false);
     }
   },[SNOW_RATE]);
-// x
+// x ----------------------------------------------------------------------
 
   const [message, setMessage] = useState(false);
   const handleMessage = () => {
