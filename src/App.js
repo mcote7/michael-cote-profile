@@ -30,7 +30,9 @@ const App = ({history}) => {
     body.style.color = 'rgba(255,255,255,1)';
     setTimeout(() => {
       setLetItSnow(true);
-
+      setTimeout(() => {
+        setBlizzard(true);
+      }, 2000);
       body.animate([
         {backgroundColor: 'rgba(0,0,0,1)'},
         {backgroundColor: 'rgba(0,0,0,0.75)'},
@@ -48,6 +50,7 @@ const App = ({history}) => {
         delay: 2000
       });
       setTimeout(() => {
+        setBlizzard(false);
         body.style.backgroundColor = 'rgba(0,0,0,1)';
       }, 12000);
 
