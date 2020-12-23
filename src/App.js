@@ -46,13 +46,13 @@ const App = ({history}) => {
         {backgroundColor: 'rgba(0,0,0,0.75)'},
         {backgroundColor: 'rgba(0,0,0,1)'}
       ], {
-        duration: 10000,
+        duration: 4000,
         delay: 2000
       });
       setTimeout(() => {
         setBlizzard(false);
         body.style.backgroundColor = 'rgba(0,0,0,1)';
-      }, 12000);
+      }, 6000);
 
     }, 12500);
   },[]);
