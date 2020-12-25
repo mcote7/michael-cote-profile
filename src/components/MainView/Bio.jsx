@@ -8,6 +8,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
   const [quote1, setQuote1] = useState(false);
   const [quote2, setQuote2] = useState(false);
   const [quote3, setQuote3] = useState(false);
+  const [quote4, setQuote4] = useState(false);
   useEffect(() => {
     setTimeout(()=> {
       setQuote0(true);
@@ -21,6 +22,9 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
     setTimeout(()=> {
       setQuote3(true);
     }, 2750);
+    setTimeout(()=> {
+      setQuote4(true);
+    }, 3500);
   },[]);
   return (<>
     <div className="row">
@@ -72,9 +76,11 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
     </div>
     <br></br>
     <div className="row mt-5">
+      {quote4 ? 
         <div className="col-lg-6 mx-auto mt-5">
           <EmojiPicker/>
         </div>
+        :''}
     </div>
     </>
   );

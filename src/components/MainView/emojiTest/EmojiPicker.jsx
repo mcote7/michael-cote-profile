@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import {emoji} from 'node-emoji';
 
@@ -10,6 +10,10 @@ const EmojiPicker = () => {
   const allEmojis = Object.values(emoji);
 
   let message = [];
+
+  // useEffect(()=>{
+  //   console.log('all emojis', allEmojis)
+  // })
 
   const sendMessage = (e) => {
     // console.log('??val', e.target.value)
@@ -37,18 +41,23 @@ const EmojiPicker = () => {
   };
 
   return (
-    <div className="quote emoji-picker-wrap mt-5">
+    <div id="emojiWrap" className="quote emoji-picker-wrap mt-5">
+
       <h4 className="my-1">hello cote emoji picker&nbsp;
         <i className="fa fa-trash trashit" onClick={clearOutput} aria-hidden="true"></i>
       </h4>
+
       <div id="output" className="output my-2">
         {newMessage}
       </div>
+
       <div className="cote-form mb-2">
         <input id="chatInput" type="text" className="input" onClick={(e)=>sendMessage(e)}/>
         <i className="fa fa-paper-plane sendit" aria-hidden="true"></i>
       </div>
+
       <button onClick={openEmojiPicker} className="emoji-button my-1">&#128540;</button>
+
       <br></br>
 
       {emojiPicker ?
@@ -64,7 +73,9 @@ const EmojiPicker = () => {
       </div>
 
       :''}
+
     </div>
+
   );
 }
 

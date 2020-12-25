@@ -20,15 +20,18 @@ import Resume from './components/resume';
 import Message from './components/message/message';
 
 
+
 const App = ({history}) => {
 
 // XMAS ONLY
   const [letItSnow, setLetItSnow] = useState(false);
+  const [snowGauge, setSnowGauge] = useState(false);
   useEffect(()=>{
     const body = document.getElementById('body');
     body.style.backgroundColor = 'rgba(0,0,0,1)';
     body.style.color = 'rgba(255,255,255,1)';
     setTimeout(() => {
+      setSnowGauge(true);
       setLetItSnow(true);
       setTimeout(() => {
         setBlizzard(true);
@@ -65,7 +68,15 @@ const App = ({history}) => {
   };
   const [blizzard, setBlizzard] = useState(false);
   useEffect(()=>{
-    if(SNOW_RATE > 0.8) {
+    if(SNOW_RATE === 0.25) {
+      return;
+    }
+    if(SNOW_RATE < 0.15) {
+      setLetItSnow(false);
+    } else {
+      setLetItSnow(true);
+    }
+    if(SNOW_RATE > 0.85) {
       setBlizzard(true);
     } else {
       setBlizzard(false);
@@ -84,7 +95,7 @@ const App = ({history}) => {
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
         <div id="mainView" className="row mainView">
-          <MainView message={message} handleSnowRate={handleSnowRate} letItSnow={letItSnow} blizzard={blizzard}/>
+          <MainView message={message} handleSnowRate={handleSnowRate} blizzard={blizzard} snowGauge={snowGauge}/>
         </div>
         <div id="routes" className="row">
           <Switch>
