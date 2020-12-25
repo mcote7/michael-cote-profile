@@ -523,9 +523,9 @@ svg {
   cursor: unset;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
+  height: 540px;
 }
 
 .output {
@@ -539,7 +539,7 @@ svg {
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
-
+/*  */
 .cote-form {
   display: flex;
   justify-content: center;
@@ -548,33 +548,38 @@ svg {
   height: 75px;
   border: 1px solid silver;
   border-radius: 0.25rem;
-  padding: 1.5rem;
+  padding: 0rem 1rem 0rem 0.5rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.input {
-  cursor: pointer;
-  width: 90%;
+/*  */
+.chat-input {
+  cursor: text;
+  width: 80%;
   border: 2px solid silver;
   border-radius: 0.25rem;
+  height: 40px;
+  padding-bottom: 0.25rem;
 }
-.input:focus {
+.chat-input:focus {
   outline: none;
   border: 2px solid gold;
 }
-/* input SEND BUTTON */
-.input:hover ~ .sendit {
-  transform: scale(1.2);
-}
-.input:active ~ .sendit {
-  color: gold;
-  transform: scale(0.8);
-}
+/* chat-input SEND BUTTON */
+
 .sendit {
-  pointer-events: none;
+  cursor: pointer;
+  font-size: 1.75rem;
   margin-left: auto;
   transform: scale(1);
   backface-visibility: hidden;
   transition: 0.15s;
+}
+.sendit:hover {
+  transform: scale(1.2);
+}
+.sendit:active {
+  color: gold;
+  transform: scale(0.8);
 }
 
 /* CLEAR OUTPUT */
@@ -587,7 +592,7 @@ svg {
   transition: 0.15s;
 }
 .trashit:hover {
-  color: red;
+  color: black;
   transform: scale(1.1);
 }
 .trashit:active {
@@ -600,14 +605,15 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
   padding: 0rem;
-  font-size: 3.5rem;
+  font-size: 1.75rem;
   background: transparent;
   border: none;
   outline: none;
   transform: scale(1);
   backface-visibility: hidden;
-  transition: 0.2s;
+  transition: 0.15s;
 }
 .emoji-button:hover {
   transform: scale(1.1);
@@ -617,14 +623,14 @@ svg {
 }
 .emoji-button:active {
   outline: none!important;
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 /* --------------------------- */
 .emoji-picker {
   padding-top: 0.5rem;
   width: 100%;
-  height: 125px;
+  height: 200px;
   overflow-y: scroll;
   justify-content: center;
   align-items: center;

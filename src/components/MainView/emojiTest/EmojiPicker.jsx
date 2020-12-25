@@ -4,7 +4,6 @@ import {emoji} from 'node-emoji';
 
 const EmojiPicker = () => {
 
-  const [emojiPicker, setEmojiPicker] = useState(false);
   const [newMessage, setNewMessage] = useState('');
 
   const allEmojis = Object.values(emoji);
@@ -16,12 +15,13 @@ const EmojiPicker = () => {
   // })
 
   const sendMessage = (e) => {
-    // console.log('??val', e.target.value)
-    message.push(e.target.value);
+    const input = document.getElementById('chatInput');
+    console.log('??val', input.value, e)
+    message.push(input.value);
     const result = `${newMessage} ${message}`;
     // console.log("??res", result);
     setNewMessage(result);
-    e.target.value = '';
+    input.value = '';
   };
 
   const addEmoji = (e) => {
@@ -36,8 +36,14 @@ const EmojiPicker = () => {
     message = [];
   };
 
-  const openEmojiPicker = () => {
-    setEmojiPicker(!emojiPicker);
+  const [emojiPicker, setEmojiPicker] = useState(false);
+  const openEmojiPicker = (e) => {
+    console.log("open emoji", e)
+    if(emojiPicker === false) {
+      setEmojiPicker(true);
+    } else {
+      setEmojiPicker(false);
+    }
   };
 
   return (
@@ -52,13 +58,10 @@ const EmojiPicker = () => {
       </div>
 
       <div className="cote-form mb-2">
-        <input id="chatInput" type="text" className="input" onClick={(e)=>sendMessage(e)}/>
-        <i className="fa fa-paper-plane sendit" aria-hidden="true"></i>
+        <input id="chatInput" type="text" className="chat-input"/>
+        <i onClick={(e)=>sendMessage(e)} className="fa fa-paper-plane sendit" aria-hidden="true"></i>
+        <button onClick={(e)=>openEmojiPicker(e)} className="emoji-button my-1">&#128540;</button>
       </div>
-
-      <button onClick={openEmojiPicker} className="emoji-button my-1">&#128540;</button>
-
-      <br></br>
 
       {emojiPicker ?
 
