@@ -517,3 +517,142 @@ svg {
   to {opacity: 0.5; transform: scale(1);}
 }
 /* ------------------- */
+
+/* EMOJI PICKER */
+
+.emoji-picker-wrap {
+  cursor: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.output {
+  padding: .5rem;
+  overflow-y: scroll;
+  width: 100%;
+  height: 125px;
+  background-color: white;
+  border-radius: 0.25rem;
+  color: black;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.cote-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 62.5px;
+  border: 1px solid silver;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.input {
+  cursor: pointer;
+  width: 90%;
+  border: 2px solid silver;
+  border-radius: 0.25rem;
+}
+.input:focus {
+  outline: none;
+  border: 2px solid gold;
+}
+/* input buttons */
+.input:hover ~ .sendit {
+  transform: scale(1.2);
+}
+.input:active ~ .sendit {
+  color: gold;
+  transform: scale(0.8);
+}
+.sendit {
+  pointer-events: none;
+  margin-left: auto;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: 0.15s;
+}
+.trashit {
+  font-size: 2rem!important;
+  color: silver;
+  cursor: pointer;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: 0.15s;
+}
+.trashit:hover {
+  color: red;
+  transform: scale(1.1);
+}
+.trashit:active {
+  color: red;
+  transform: scale(0.9);
+}
+.emoji-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  font-size: 3.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: 0.2s;
+}
+.emoji-button:hover {
+  transform: scale(1.1);
+}
+.emoji-button:focus {
+  outline: none!important;
+}
+.emoji-button:active {
+  outline: none!important;
+  transform: scale(0.9);
+}
+.emoji-picker {
+  padding-top: 0.5rem;
+  width: 100%;
+  height: 125px;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+.emoji-item-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  cursor: pointer;
+  padding: 0px!important;
+  margin: 1px!important;
+}
+.emoji-item-button {
+  font-size: 1rem!important;
+  padding: 0px!important;
+  background: transparent;
+  border: none;
+  outline: none;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: 100ms;
+}
+.emoji-item-button:hover {
+  transform: scale(1.2);
+}
+.emoji-item-button:focus {
+  outline: none!important;
+}
+.emoji-item-button:active {
+  transform: scale(0.9);
+  outline: none!important;
+}
+/*  */

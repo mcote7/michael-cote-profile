@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import EmojiPicker from './emojiTest/EmojiPicker.jsx';
+
 const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, handleMouseOut, magic, magic_BG_MAIN, magic_BG_ALPHA}) => {
 
   const [quote0, setQuote0] = useState(false);
@@ -20,7 +22,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       setQuote3(true);
     }, 2750);
   },[]);
-  return (
+  return (<>
     <div className="row">
       {quote0?
       <div className="bioWrap col-lg-9 order-lg-1 order-md-1">
@@ -68,7 +70,13 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       </div>
       :''}
     </div>
-    // START NEW ROW !
+    <br></br>
+    <div className="row mt-5">
+        <div className="col-lg-6 mx-auto mt-5">
+          <EmojiPicker/>
+        </div>
+    </div>
+    </>
   );
 };
 export default Bio;
