@@ -23,13 +23,13 @@ body {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  color: black;
-  background-color: black;
+  color: black!important;
+  background-color: black!important;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  color: black;
-  background-color: black;
+  color: black!important;
+  background-color: black!important;
 }
 /* --- top scroll bar --- */
 .myScrollBar {
@@ -90,7 +90,7 @@ body {
   background-size: cover;
   position: absolute;
   z-index: -1999;
-  top: 250%;
+  top: 150%;
   right: 0px;
   bottom: 0px;
   left: 0px;

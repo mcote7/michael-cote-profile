@@ -77,7 +77,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
     <br></br>
     <div className="row mt-5">
       {quote4 ? 
-        <div className="col-lg-6 mx-auto mt-5">
+        <div className="col-sm-9 mx-auto mt-5">
           {/* <EmojiPicker/> */}
         </div>
         :''}
