@@ -43,7 +43,7 @@ const NavBar = ({history}) => {
   useEffect(() => {
     if(navtoggle) {
       setNavtoggleIcon("chevron-circle-down");
-      setNavtoggleBackgroundcolor("hsl(193, 95%, 68%)");
+      setNavtoggleBackgroundcolor("hsl(193, 95%, 58%)");
       setNavtoggleClippath("polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)")
     }
     else if(!navtoggle) {

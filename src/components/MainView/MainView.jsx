@@ -8,7 +8,8 @@ import Bio from '../MainView/Bio';
 import self from '../../images/self1_edited.jpg';
 import angular8 from '../../images/angular8.png';
 
-import '../../css/main.css';
+// import '../../css/main.css';
+import '../../SASS/main-view.scss';
 
 const MainView = ({message}) => {
 

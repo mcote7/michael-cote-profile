@@ -82,11 +82,11 @@
   text-decoration: none;
 }
 .polyLink:hover > .polyLink-icon {
-  background-color: hsl(193, 95%, 68%);
+  background-color: hsl(193, 95%, 58%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 .polyLink:hover > .polyLink-text {
-  background-color: hsl(193, 95%, 68%);
+  background-color: hsl(193, 95%, 58%);
   transform: scaleX(1);
 }
 /* active state */
@@ -204,7 +204,7 @@
 .homeButton:hover {
   color: white!important;
   text-decoration: none!important;
-  background-color: hsl(193, 95%, 68%);
+  background-color: hsl(193, 95%, 58%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 .homeButtonActivePlaceholder {
@@ -257,13 +257,13 @@
 @keyframes heartbeat {
   0% { background-color: hsl(54, 100%, 47%);
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
-  50% { background-color: hsl(54, 100%, 67%);
+  50% { background-color: hsl(54, 100%, 57%);
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);}
   100% { background-color: hsl(54, 100%, 47%);
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
 }
 .speech:hover {
-  background-color: hsl(54, 100%, 67%);
+  background-color: hsl(54, 100%, 57%);
   /* polygon-Y */
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
@@ -271,7 +271,7 @@
   cursor: none;
   clip-path: none;
   border-radius: 50%;
-  color: hsl(54, 100%, 67%);
+  color: hsl(54, 100%, 57%);
   transform: scale(0.8);
   background-color: rgba(255, 255, 255, 0.2);
   animation: cd-pulse 0.75s 0.25s infinite;
