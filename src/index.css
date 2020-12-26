@@ -1,8 +1,8 @@
 
 /* ADD ' !IMPORTANT FLAG ON BODY COLORS AFTER X-MAS  */
 body {
-  background-color: black;
-  color: white;
+  background-color: black!important;
+  color: white!important;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -121,7 +121,7 @@ body {
 
 
 /* XMAS ONLY */
-#blizzard {
+/* #blizzard {
   background-image: url('./images/snow.gif');
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,24 +167,25 @@ body {
   to {opacity: 0.25;}
 }
 /*  */
-@media only screen and (max-width: 576px) {
+/* @media only screen and (max-width: 576px) {
   .snow-col {
     width: 90%!important;
   }
-}
-.snow-row {
+} */
+
+/* .snow-row {
   height: 5rem;
   margin-bottom: -2rem;
 }
 /* snow wrap */
-.snow-wrap {
+/* .snow-wrap {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100%;
-}
+} */
 /* slider */
-.snow-range {
+/* .snow-range {
   display: inline-flex;
   align-items: center;
   animation: snow-man 1250ms;
@@ -194,14 +195,15 @@ body {
   to {opacity: 1; transform: scaleY(1);}
 }
 /* icon */
-.snow-icon {
+/* .snow-icon {
   position: relative;
   top: 4px;
   left: 0px;
   margin-right: 4px;
-}
+} */ 
+
 /* acctual input */
-.snow-input {
+/* .snow-input {
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
@@ -212,8 +214,9 @@ body {
 }
 .snow-input:hover {
   background-color: rgb(255, 255, 255, 0.65);
-}
-.snow-input:focus, .snow-input:active {
+}  */
+
+/* .snow-input:focus, .snow-input:active {
   outline: none!important;
 }
 .snow-input::-webkit-slider-thumb {
@@ -229,4 +232,5 @@ body {
 .snow-input::-webkit-slider-thumb:hover {
   background-color: hsl(193, 95%, 48%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-}
+} */
+/* ----------------------------------------------------------------------------- */

@@ -2,17 +2,25 @@ import React, { useEffect, useState } from 'react';
 
 import {emoji} from 'node-emoji';
 
+
+
 const EmojiPicker = () => {
 
   const [newMessage, setNewMessage] = useState('');
-
-  const allEmojis = Object.values(emoji);
-
   let message = [];
 
-  // useEffect(()=>{
-  //   console.log('all emojis', allEmojis)
-  // })
+  const ALL_EMOJI_VALUES = Object.values(emoji).slice(1100, 1200);
+
+  const ALL_EMOJI_KEYS = Object.keys(emoji);
+
+  // const SEARCH_EMOJIS = emoji.search("face")
+
+
+  useEffect(()=>{
+    console.log('all emojis keys', ALL_EMOJI_KEYS)
+    console.log('all emojis values', ALL_EMOJI_VALUES)
+    // console.log('search all emojis', SEARCH_EMOJIS)
+  })
 
   const sendMessage = (e) => {
     const input = document.getElementById('chatInput');
@@ -67,11 +75,13 @@ const EmojiPicker = () => {
 
       <div id="emojiPicker" className="row emoji-picker mt-2">
 
-        {allEmojis.map((emo, idx)=>
+        {ALL_EMOJI_VALUES.map((emo, idx)=>
         <div className="col-1 emoji-item-wrap" key={idx}>
           <button value={emo} onClick={(e)=>addEmoji(e)} className="emoji-item-button">{emo}</button>
         </div>
         )}
+
+          {/* EMOJI SEARCH HERE (input & button) as div.col-12 for full length bottom of row */}
 
       </div>
 

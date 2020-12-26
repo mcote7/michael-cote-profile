@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom';
 
 import ScrollProgressRead from 'react-scroll-progress-read';
@@ -24,64 +24,64 @@ import Message from './components/message/message';
 const App = ({history}) => {
 
 // XMAS ONLY
-  const [letItSnow, setLetItSnow] = useState(false);
-  const [snowGauge, setSnowGauge] = useState(false);
-  useEffect(()=>{
-    const body = document.getElementById('body');
-    body.style.backgroundColor = 'rgba(0,0,0,1)';
-    body.style.color = 'rgba(255,255,255,1)';
-    setTimeout(() => {
-      setSnowGauge(true);
-      setLetItSnow(true);
-      setTimeout(() => {
-        setBlizzard(true);
-      }, 2000);
-      body.animate([
-        {backgroundColor: 'rgba(0,0,0,1)'},
-        {backgroundColor: 'rgba(0,0,0,0.75)'},
-        {backgroundColor: 'rgba(255,255,255,0.75)'},
-        {backgroundColor: 'rgba(0,200,0,0.75)'},
-        {backgroundColor: 'rgba(0,200,0,1)'},
-        {backgroundColor: 'rgba(0,200,0,0.75)'},
-        {backgroundColor: 'rgba(200,0,0,0.75)'},
-        {backgroundColor: 'rgba(200,0,0,1)'},
-        {backgroundColor: 'rgba(200,0,0,0.75)'},
-        {backgroundColor: 'rgba(0,0,0,0.75)'},
-        {backgroundColor: 'rgba(0,0,0,1)'}
-      ], {
-        duration: 4000,
-        delay: 2000
-      });
-      setTimeout(() => {
-        setBlizzard(false);
-        body.style.backgroundColor = 'rgba(0,0,0,1)';
-      }, 6000);
+  // const [letItSnow, setLetItSnow] = useState(false);
+  // const [snowGauge, setSnowGauge] = useState(false);
+  // useEffect(()=>{
+  //   const body = document.getElementById('body');
+  //   body.style.backgroundColor = 'rgba(0,0,0,1)';
+  //   body.style.color = 'rgba(255,255,255,1)';
+  //   setTimeout(() => {
+  //     setSnowGauge(true);
+  //     setLetItSnow(true);
+  //     setTimeout(() => {
+  //       setBlizzard(true);
+  //     }, 2000);
+  //     body.animate([
+  //       {backgroundColor: 'rgba(0,0,0,1)'},
+  //       {backgroundColor: 'rgba(0,0,0,0.75)'},
+  //       {backgroundColor: 'rgba(255,255,255,0.75)'},
+  //       {backgroundColor: 'rgba(0,200,0,0.75)'},
+  //       {backgroundColor: 'rgba(0,200,0,1)'},
+  //       {backgroundColor: 'rgba(0,200,0,0.75)'},
+  //       {backgroundColor: 'rgba(200,0,0,0.75)'},
+  //       {backgroundColor: 'rgba(200,0,0,1)'},
+  //       {backgroundColor: 'rgba(200,0,0,0.75)'},
+  //       {backgroundColor: 'rgba(0,0,0,0.75)'},
+  //       {backgroundColor: 'rgba(0,0,0,1)'}
+  //     ], {
+  //       duration: 4000,
+  //       delay: 2000
+  //     });
+  //     setTimeout(() => {
+  //       setBlizzard(false);
+  //       body.style.backgroundColor = 'rgba(0,0,0,1)';
+  //     }, 6000);
 
-    }, 12500);
-  },[]);
-  const [SNOW_RATE, SET_SNOW_RATE] = useState(0.25);
-  const handleSnowRate = (e) => {
-    let prefix = `0.${e.target.value}`;
-    let result = +prefix;
-    console.log("input", result)
-    SET_SNOW_RATE(result);
-  };
-  const [blizzard, setBlizzard] = useState(false);
-  useEffect(()=>{
-    if(SNOW_RATE === 0.25) {
-      return;
-    }
-    if(SNOW_RATE < 0.15) {
-      setLetItSnow(false);
-    } else {
-      setLetItSnow(true);
-    }
-    if(SNOW_RATE > 0.85) {
-      setBlizzard(true);
-    } else {
-      setBlizzard(false);
-    }
-  },[SNOW_RATE]);
+  //   }, 12500);
+  // },[]);
+  // const [SNOW_RATE, SET_SNOW_RATE] = useState(0.25);
+  // const handleSnowRate = (e) => {
+  //   let prefix = `0.${e.target.value}`;
+  //   let result = +prefix;
+  //   console.log("input", result)
+  //   SET_SNOW_RATE(result);
+  // };
+  // const [blizzard, setBlizzard] = useState(false);
+  // useEffect(()=>{
+  //   if(SNOW_RATE === 0.25) {
+  //     return;
+  //   }
+  //   if(SNOW_RATE < 0.15) {
+  //     setLetItSnow(false);
+  //   } else {
+  //     setLetItSnow(true);
+  //   }
+  //   if(SNOW_RATE > 0.85) {
+  //     setBlizzard(true);
+  //   } else {
+  //     setBlizzard(false);
+  //   }
+  // },[SNOW_RATE]);
 // x ----------------------------------------------------------------------
 
   const [message, setMessage] = useState(false);
@@ -95,7 +95,7 @@ const App = ({history}) => {
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
         <div id="mainView" className="row mainView">
-          <MainView message={message} handleSnowRate={handleSnowRate} blizzard={blizzard} snowGauge={snowGauge}/>
+          <MainView message={message}/>
         </div>
         <div id="routes" className="row">
           <Switch>
@@ -111,8 +111,8 @@ const App = ({history}) => {
         </div>
       </div>
       <NavBar history={history}/>
-      {letItSnow?<div id="snow" style={{opacity: `${SNOW_RATE}`}}></div>:''}
-      {blizzard?<div id="blizzard" style={{opacity: `${SNOW_RATE}`}}></div>:''}
+      {/* {letItSnow?<div id="snow" style={{opacity: `${SNOW_RATE}`}}></div>:''} */}
+      {/* {blizzard?<div id="blizzard" style={{opacity: `${SNOW_RATE}`}}></div>:''} */}
     </div>
     );
   };
