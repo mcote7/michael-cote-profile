@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile-2020/static/css/main.921b2595.chunk.css",
-    "main.js": "/michael-cote-profile-2020/static/js/main.a1bfa9f5.chunk.js",
-    "main.js.map": "/michael-cote-profile-2020/static/js/main.a1bfa9f5.chunk.js.map",
+    "main.css": "/michael-cote-profile-2020/static/css/main.608c8533.chunk.css",
+    "main.js": "/michael-cote-profile-2020/static/js/main.e6fc5319.chunk.js",
+    "main.js.map": "/michael-cote-profile-2020/static/js/main.e6fc5319.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js",
     "runtime-main.js.map": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js.map",
     "static/css/2.7339f952.chunk.css": "/michael-cote-profile-2020/static/css/2.7339f952.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.0a6c038f.chunk.js.map": "/michael-cote-profile-2020/static/js/2.0a6c038f.chunk.js.map",
     "index.html": "/michael-cote-profile-2020/index.html",
     "static/css/2.7339f952.chunk.css.map": "/michael-cote-profile-2020/static/css/2.7339f952.chunk.css.map",
-    "static/css/main.921b2595.chunk.css.map": "/michael-cote-profile-2020/static/css/main.921b2595.chunk.css.map",
+    "static/css/main.608c8533.chunk.css.map": "/michael-cote-profile-2020/static/css/main.608c8533.chunk.css.map",
     "static/js/2.0a6c038f.chunk.js.LICENSE.txt": "/michael-cote-profile-2020/static/js/2.0a6c038f.chunk.js.LICENSE.txt",
     "static/media/DojoCert.bcdbb641.png": "/michael-cote-profile-2020/static/media/DojoCert.bcdbb641.png",
     "static/media/MasterReactCert.5f89f4fd.png": "/michael-cote-profile-2020/static/media/MasterReactCert.5f89f4fd.png",
@@ -20,7 +20,7 @@
     "static/media/font-awesome.css": "/michael-cote-profile-2020/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/fridgeImg.b4e0cd2b.jpg": "/michael-cote-profile-2020/static/media/fridgeImg.b4e0cd2b.jpg",
     "static/media/fridgeImg2.1a406eca.jpg": "/michael-cote-profile-2020/static/media/fridgeImg2.1a406eca.jpg",
-    "static/media/main.css": "/michael-cote-profile-2020/static/media/mouse-ghost.fdc3fd59.gif",
+    "static/media/main-view.scss": "/michael-cote-profile-2020/static/media/mouse-ghost.fdc3fd59.gif",
     "static/media/movieImg1.efc9d139.jpg": "/michael-cote-profile-2020/static/media/movieImg1.efc9d139.jpg",
     "static/media/movieImg2.8a9f40b4.jpg": "/michael-cote-profile-2020/static/media/movieImg2.8a9f40b4.jpg",
     "static/media/resume1.5a0690ba.jpg": "/michael-cote-profile-2020/static/media/resume1.5a0690ba.jpg",
@@ -32,7 +32,7 @@
     "static/js/runtime-main.effd3b37.js",
     "static/css/2.7339f952.chunk.css",
     "static/js/2.0a6c038f.chunk.js",
-    "static/css/main.921b2595.chunk.css",
-    "static/js/main.a1bfa9f5.chunk.js"
+    "static/css/main.608c8533.chunk.css",
+    "static/js/main.e6fc5319.chunk.js"
   ]
 }
