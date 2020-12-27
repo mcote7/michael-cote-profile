@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 
-import '../../css/navbar.css';
+import '../../SASS/navbar.scss';
 
 import SpeechNavigation from './SpeechNavigation';
 
@@ -25,9 +25,9 @@ const NavBar = ({history}) => {
       NAV.animate([
         {bottom: '-88px', opacity: 0, filter: 'blur(12px)', backgroundColor: 'rgb(97, 218, 251)', borderColor: 'black'},
         {borderColor: 'hsl(275, 100%, 48%)', filter: 'blur(2px)', opacity: 0.8},
-        {borderColor:' hsl(336, 78%, 46%)'},
-        {bottom: '0px', borderColor:  'hsl(13, 100%, 64%)'},
-        {borderColor:  'hsl(108, 100%, 68%)'},
+        {borderColor:' hsl(336, 100%, 48%)'},
+        {bottom: '0px', borderColor:  'hsl(13, 100%, 48%)'},
+        {borderColor:  'hsl(108, 100%, 48%)'},
         {bottom: '0px', opacity: 1, filter: 'blur(0px)', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderColor: 'rgba(97, 218, 251, 0.8)'}
       ], {
         duration: 1750,
@@ -38,17 +38,17 @@ const NavBar = ({history}) => {
 
   const [navtoggle, setNavtoggle] = useState(false);
   const [navtoggleIcon, setNavtoggleIcon] = useState("bars");
-  const [navtoggleBackgroundcolor, setNavtoggleBackgroundcolor] = useState("hsl(193, 95%, 48%)");
+  const [navtoggleBackgroundcolor, setNavtoggleBackgroundcolor] = useState("hsl(193, 95%, 38%)");
   const [navtoggleClippath, setNavtoggleClippath] = useState("polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)");
   useEffect(() => {
     if(navtoggle) {
       setNavtoggleIcon("chevron-circle-down");
-      setNavtoggleBackgroundcolor("hsl(193, 95%, 58%)");
+      setNavtoggleBackgroundcolor("hsl(193, 95%, 48%)");
       setNavtoggleClippath("polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)")
     }
     else if(!navtoggle) {
       setNavtoggleIcon("bars");
-      setNavtoggleBackgroundcolor("hsl(193, 95%, 48%)");
+      setNavtoggleBackgroundcolor("hsl(193, 95%, 38%)");
       setNavtoggleClippath("polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)");
     }
   },[navtoggle]);

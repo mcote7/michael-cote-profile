@@ -1,4 +1,4 @@
-@import 'color-pallet.scss';
+@import 'variables.scss';
 
 /* --- < MainView /> - */
 .mainViewContainer {
@@ -19,13 +19,13 @@
   margin-bottom: 0.5rem;
   padding-top: 0.1rem;
   background-color: $myIce;
-  border-radius: 0.25rem;
+  border-radius: $myBorderRadius;
   opacity: 1;
   animation: 2s ease-out slide-up-main;
-  transition: 0.5s;
+  transition: $myTrans;
 }
 .socialWraps:hover {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: $myClear;
 }
 @keyframes slide-up-main {
   from {margin-top: 100vh; background-color: rgba(255, 255, 255, 1); opacity: 0;}
@@ -40,23 +40,17 @@
 }
 .socialIcons {
   color: white;
-  animation: 3s color-fade-in1;
-}
-@keyframes color-fade-in1 {
-  0% {color: rgba(255, 255, 255, 0);}
-  50% {color: rgba(255, 255, 255, 0);}
-  100% {color: rgba(255, 255, 255, 1);}
 }
 .socialLinks {
   text-decoration: none;
-  color: rgb(97, 218, 251);
-  transition: 0.35s;
-  animation: 4s color-fade-in2;
+  color: $myBlue;
+  transition: $myTrans;
+  animation: 8.5s social-link-fade-in;
 }
-@keyframes color-fade-in2 {
-  0% {color: rgba(97, 218, 251, 0);}
-  60% {color: rgba(97, 218, 251, 0);}
-  100% {color: rgba(97, 218, 251, 1);}
+@keyframes social-link-fade-in {
+  0% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
 }
 .socialLinks:hover {
   color: cornsilk;
@@ -65,9 +59,9 @@
 .socialLinks:after {
   display: block;
   content: '';
-  border-bottom: solid 1px rgb(97, 218, 251);
+  border-bottom: solid 1px $myBlueLight;
   transform: scaleX(0);
-  transition: transform 0.35s ease-in-out;
+  transition: transform $myTrans ease-in-out;
   animation: a-tag 0.75s ease-in-out;
   animation-delay: 6s;
 }
@@ -77,7 +71,7 @@
 }
 @keyframes a-tag {
   0% {transform: scaleX(0);}
-  50% {transform: scaleX(1);border-color: cornsilk;}
+  50% {transform: scaleX(1); border-color: cornsilk;}
   100% {transform: scaleX(0);}
 }
 .contactBtnPlaceholder{
@@ -93,7 +87,7 @@
   width: 290px;
   height: 35px;
   color: cornsilk;
-  transition: 0.75s;
+  transition: $myTrans;
   animation: neon 8s ease 2s infinite;
 }
 @keyframes neon {
@@ -105,7 +99,7 @@
   1.25% {color: black;}
   1.5% {color: cornsilk;}
   1.75% {color: black;}
-  20% {color: rgb(97, 218, 251);}
+  20% {color: $myBlue;}
   28.5% {color: black;}
   29.5% {color: white;}
   30% {color: cornsilk;}
@@ -115,12 +109,12 @@
 }
 .contactBtn:hover {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: $myIce;
 }
 .contactBtn:hover::after {
   content: '\2728';
   color: cornsilk!important;
-  animation: contact-arrow 0.25s ease-out forwards;
+  animation: contact-arrow $myTrans ease-out forwards;
 }
 @keyframes contact-arrow {
   from {margin-left: 0rem; font-size: 1.25rem;}
@@ -145,7 +139,7 @@ svg {
 }
 @keyframes mail {
   0% {color: cornsilk;}
-  50% {color: rgb(97, 218, 251);}
+  50% {color: $myBlue;}
   100% {color: cornsilk;}
 }
 .contactBtn:focus,.contactBtn:active {
@@ -193,7 +187,6 @@ svg {
   40% {transform: rotateY(180deg)}
   100% {transform: rotateY(0deg)}
 }
-
 @media only screen and (max-width: 420px) {
   .titleName {
     -webkit-box-reflect: below -5px linear-gradient(
@@ -206,7 +199,7 @@ svg {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
-  color: hsl(193, 95%, 48%);
+  color: $myBlue;
   letter-spacing: 1.5vw;
   font-size: 2.5vw;
   font-weight: 700;
@@ -260,12 +253,12 @@ svg {
   1.25% {color: black;}
   1.5% {color: cornsilk;}
   1.75% {color: black;}
-  20% {color: hsl(193, 95%, 48%);}
+  20% {color: $myBlue;}
   28.5% {color: black;}
   29.5% {color: white;}
   30% {color: cornsilk;}
-  40% {color: #ffee58;}
-  80% {color: #ffee58;}
+  40% {color: $myYellow;}
+  80% {color: $myYellow;}
   100% {color: cornsilk;}
 }
 /* ------------------- */
@@ -288,8 +281,8 @@ svg {
   pointer-events: none;
   width: 10vw;
   margin: 1rem;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  border-radius: 46%;
+  clip-path: $myPloygonX;
+  border-radius: $myPloygonBorderRadius;
   animation: mySelf-morph 7s ease-in-out;
 }
 @keyframes mySelf-morph {
@@ -309,21 +302,21 @@ svg {
   to {filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));}
 }
 .magic {
-  color: hsl(275, 100%, 48%);
+  color: $myPurple;
   transform: rotate(24deg);
-  animation: magic 0.25s ease-in;
+  animation: magic $myTrans ease-in;
 }
 @keyframes magic {
   from {color: white; transform: rotate(0deg);}
-  to {color: hsl(275, 100%, 48%); transform: rotate(24deg);}
+  to {color: $myPurple; transform: rotate(24deg);}
 }
 .magic-out {
   color: white;
   transform: rotate(0deg);
-  animation: magic-out 0.25s ease-out;
+  animation: magic-out $myTrans ease-out;
 }
 @keyframes magic-out {
-  from {color: hsl(275, 100%, 48%); transform: rotate(24deg);}
+  from {color: $myPurple; transform: rotate(24deg);}
   to {color: white; transform: rotate(0deg);}
 }
 .quote {
@@ -335,10 +328,10 @@ svg {
   font-size: 1.5vw;
   font-weight: 300;
   text-align: left;
-  border-radius: 0.25rem;
+  border-radius: $myBorderRadius;
   padding: 1rem 1rem 2rem 1rem;
   line-height: 1.2;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: $myIce;
   animation: spread 1.75s ease-out;
 }
 @keyframes spread {
@@ -367,17 +360,18 @@ svg {
 /* BIO NEW ROLE */
 .newRole {
   cursor: default!important;
-  transition: 0.255s;
+  font-weight: bold;
+  transition: $myTrans;
 }
 .newRole:hover {
-  background-color:  hsla(13, 100%, 64%, 0.2)!important;
+  background-color:  $myOrangeTrans!important;
 }
 .laptop {
-  transition: 0.255s;
+  font-weight: bold;
+  transition: $myTrans;
 }
 .newRole:hover > .laptop {
-  color:  hsl(13, 100%, 64%);
-  font-weight: bold;
+  color:  $myOrange;
 }
 .angular8 {
   border-radius: 0%!important;
@@ -385,26 +379,26 @@ svg {
 }
 .via3 {
   color: cornsilk;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 0.25rem;
-  transition: 0.255s;
+  background-color: $myIce;
+  border-radius: $myBorderRadius;
+  transition: $myTrans;
 }
 .via3:hover {
   text-decoration: none!important;
-  background-color: rgba(255, 255, 255, 0);
-  color: hsl(13, 100%, 64%);
+  background-color: $myClear;
+  color: $myOrange;
   font-weight: bold!important;
 }
 /*  BIO THE CUBE */
 .theCube {
   cursor: default!important;
-  transition: 0.255s;
+  transition: $myTrans;
 }
 .theCube:hover {
-  background-color: hsla(108, 100%, 68%, 0.2)!important;
+  background-color: $myGreenTrans!important;
 }
 .cube {
-  transition: 0.255s;
+  transition: $myTrans;
 }
 .cube::after {
   content: '';
@@ -422,53 +416,52 @@ svg {
   75% {content: ' . . .';}
 }
 .theCube:hover > .cube {
-  color:  hsl(108, 100%, 68%);
+  color:  $myGreen;
 }
 .theCube:hover > .enterCube {
   border: 5px solid white;
 }
 .enterCube {
   color: white;
-  transition: 0.255s;
   font-size: small!important;
   font-weight: bold!important;
-  border-radius: 0.25rem;
-  border: 5px solid rgba(255, 255, 255, 0.15);
-  transition: 0.255s;
+  border-radius: $myBorderRadius;
+  border: 5px solid $myIce;
+  transition: $myTrans;
 }
 .enterCube:hover {
   text-decoration: none!important;
   color: white;
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 5px solid  hsl(108, 100%, 68%)!important;
+  background-color: $myIce;
+  border: 5px solid $myGreen!important;
 }
 /* BIO FREELANCE */
 .freelance {
   cursor: default!important;
-  transition: 0.255s;
+  transition: $myTrans;
 }
 .freelance:hover {
-  background-color:  hsla(336, 78%, 46%, 0.2)!important;
+  background-color:  $myRedTrans!important;
 }
 .freelanceIcon {
-  transition: 0.255s;
+  transition: $myTrans;
 }
 .freelance:hover > .freelanceIcon {
-  color: hsl(336, 78%, 46%);;
+  color: $myRed;
 }
 .leisure {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.15);
-  transition: 0.255s;
+  color: $myIce;
+  transition: $myTrans;
 }
 .freelance:hover > .leisure {
   color: white;
 }
 .myLeisureFace {
   opacity: 0.1;
-  transition: 0.255s;
+  transition: $myTrans;
 }
 .freelance:hover > .myLeisureFace {
   opacity: 1;
@@ -492,16 +485,16 @@ svg {
 }
 .chromeIcon {
   transform: scale(1.5);
-  color: rgba(97, 218, 251, 0.8);
+  color: $myBlueTransHeavy;
   animation: chrome-logo-spin infinite 1s linear;
 }
 @keyframes chrome-logo-spin {
-  0% {color: rgba(97, 218, 251, 0.8); transform: rotate(0deg);}
-  20% {color: hsla(275, 100%, 48%, 0.8);}
-  40% {color: hsla(336, 78%, 46%, 0.8);}
-  60% {color:  hsla(13, 100%, 64%, 0.8);}
-  80% {color:  hsla(108, 100%, 68%, 0.8);}
-  100% {color: rgba(97, 218, 251, 0.8); transform: rotate(360deg);}
+  0% {color: $myBlueTransHeavy; transform: rotate(0deg);}
+  20% {color: $myPurpleTransHeavy}
+  40% {color: $myRedTransHeavy}
+  60% {color:  $myOrangeTransHeavy}
+  80% {color:  $myGreenTransHeavy}
+  100% {color: $myYellowTransHeavy; transform: rotate(360deg);}
 }
 /* ------------------- */
 /* ---mouse ghost----- */

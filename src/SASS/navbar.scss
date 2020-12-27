@@ -1,25 +1,27 @@
+@import '../SASS/variables.scss';
+
 .myNavBar {
   padding: 0.5rem 1rem 1rem 1rem!important;
   background-color: rgba(0, 0, 0, 0.8);
   border-top: 0.2rem solid;
-  border-color: rgba(97, 218, 251, 0.8);
-  border-radius: 0.25rem;
+  border-color: $myBlueTransHeavy;
+  border-radius: $myBorderRadius;
   position: fixed!important;
   right: 15px;
   bottom: 0px;
   left: 15px;
-  transition: 0.25s;
+  transition: $myTrans;
 }
 .myNavBar:hover {
   animation: rainbow 4.25s ease-in-out infinite;
 }
 @keyframes rainbow {
-  0% {border-color: rgba(97, 218, 251, 0.8);}
-  20% {border-color: hsla(275, 100%, 48%, 0.6);}
-  40% {border-color: hsla(336, 78%, 46%, 0.6);}
-  60% {border-color:  hsla(13, 100%, 64%, 0.6);}
-  80% {border-color:  hsla(108, 100%, 68%, 0.6);}
-  100% {border-color: rgba(97, 218, 251, 0.8);}
+  0% {border-color: $myBlueTransHeavy;}
+  20% {border-color: $myPurpleTransHeavy}
+  40% {border-color: $myRedTransHeavy}
+  60% {border-color:  $myOrangeTransHeavy}
+  80% {border-color:  $myGreenTransHeavy}
+  100% {border-color: $myYellowTransHeavy}
 }
 /* --- collapsed --- */
 @media only screen and (max-width: 992px) {
@@ -48,7 +50,7 @@
   width: auto;
   height: auto;
   background-color: transparent;
-  transition: 0.25s;
+  transition: $myTrans;
 }
 .polyLink > .polyLink-icon {
   display: flex;
@@ -61,32 +63,32 @@
   height: 60px;
   width: 60px;
   color: white;
-  background-color: hsl(193, 95%, 48%);
-  border-radius: 46%;
-  transition: 0.5s ease-in-out;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  background-color: $myBlueDark;
+  transition: $myTrans ease-in-out;
+  border-radius: $myPloygonBorderRadius;
+  clip-path: $myPloygonX;
   animation: nav-button-reveal 0.75s ease-in;
 }
 .polyLink > .polyLink-text {
   font-size: 1.5rem;
   color: white;
-  background-color: hsl(193, 95%, 48%);
+  background-color: $myBlueDark;
   border-radius: 2rem;
   padding: 0rem 2rem;
   transform: scaleX(0);
   transform-origin: 0px;
-  transition: 0.5s ease-in-out;
+  transition: $myTrans ease-in-out;
 }
 /* hover state */
 .polyLink:hover {
   text-decoration: none;
 }
 .polyLink:hover > .polyLink-icon {
-  background-color: hsl(193, 95%, 58%);
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: $myBlue;
+  clip-path: $myPloygonY;
 }
 .polyLink:hover > .polyLink-text {
-  background-color: hsl(193, 95%, 58%);
+  background-color: $myBlue;
   transform: scaleX(1);
 }
 /* active state */
@@ -98,7 +100,7 @@
   width: auto;
   height: auto;
   background-color: transparent;
-  transition: 0.25s;
+  transition: $myTrans;
 }
 /* collapsed */
 @media only screen and (max-width: 992px) {
@@ -120,7 +122,7 @@
   border-radius: 50%;
   clip-path: none;
   background-color: rgba(255, 255, 255, 0);
-  color: hsl(193, 95%, 48%);
+  color: $myBlue;
   left: 80%;
   transform: scale(0.6);
   animation: polyLink-pulse 1.75s;
@@ -130,7 +132,7 @@
   border-radius: 50%;
   clip-path: none;
   background-color: white;
-  color: hsl(193, 95%, 48%);
+  color: $myBlue;
   left: 80%;
   transform: scale(0.6);
 }
@@ -141,7 +143,7 @@
 .polyLink-active > .polyLink-text {
   padding: 0rem 4rem 0rem 2rem;
   background-color: white;
-  color: hsl(193, 95%, 48%);
+  color: $myBlue;
   filter: blur(0px);
   opacity: 1;
   transform: scaleX(1);
@@ -149,7 +151,7 @@
 .polyLink-active:hover > .polyLink-text {
   padding: 0rem 4rem 0rem 2rem;
   background-color: white;
-  color: hsl(193, 95%, 48%);
+  color: $myBlue;
   filter: blur(0px);
   opacity: 1;
   transform: scaleX(1);
@@ -167,6 +169,10 @@
   line-height: inherit!important;
   font-size: 1.5rem!important;
   border-radius: 40%!important;
+  transition: $myTrans!important;
+}
+.navbar-toggler:hover {
+  background-color: $myBlueLight!important;
 }
 .navbar-toggler:active, .navbar-toggler:focus {
   outline: none!important;
@@ -191,10 +197,10 @@
   height: 60px;
   width: 60px;
   color: white;
-  background-color: hsl(193, 95%, 48%);
-  border-radius: 46%;
-  transition: 0.5s ease-in-out;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  background-color: $myBlueDark;
+  border-radius: $myPloygonBorderRadius;
+  transition: $myTrans ease-in-out;
+  clip-path: $myPloygonX;
   animation: nav-button-reveal 0.75s ease-in;
 }
 @keyframes nav-button-reveal {
@@ -204,8 +210,8 @@
 .homeButton:hover {
   color: white!important;
   text-decoration: none!important;
-  background-color: hsl(193, 95%, 58%);
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: $myBlue;
+  clip-path: $myPloygonY;
 }
 .homeButtonActivePlaceholder {
   cursor: pointer;
@@ -217,14 +223,14 @@
   height: 60px;
   width: 60px;
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 46%;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  background-color: $myIce;
+  border-radius: $myPloygonBorderRadius;
+  clip-path: $myPloygonX;
   animation: home-button-exit 0.75s ease-out;
 }
 @keyframes home-button-exit {
   from {clip-path: none; border-radius: 50%; opacity: 1; filter: blur(0px); box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
-  to {clip-path: none; border-radius: 50%; opacity: 0; filter: blur(12px); box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: rgba(255, 255, 255, 0.15);}
+  to {clip-path: none; border-radius: 50%; opacity: 0; filter: blur(12px); box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: $myIce;}
 }
 /* ------------------- */
 /* ----SPEECH-------- */
@@ -247,38 +253,37 @@
   height: 60px;
   width: 60px;
   color: white;
-  background-color: hsl(54, 100%, 47%);
-  border-radius: 46%;
-  /* polygon-X */
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  transition: 0.5s ease-in-out;
-  animation: heartbeat 0.5s ease-in-out 10s 8;
+  background-color: $myYellowDark;
+  border-radius: $myPloygonBorderRadius;
+  clip-path: $myPloygonX;
+  transition: $myTrans ease-in-out;
+  animation: heartbeat $myTrans ease-in-out 10s 8;
 }
 @keyframes heartbeat {
-  0% { background-color: hsl(54, 100%, 47%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
-  50% { background-color: hsl(54, 100%, 57%);
-    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);}
-  100% { background-color: hsl(54, 100%, 47%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);}
+  0% { background-color: $myYellowDark;
+    clip-path: $myPloygonX;}
+  50% { background-color: $myYellow;
+    clip-path: $myPloygonY;}
+  100% { background-color: $myYellowDark;
+    clip-path: $myPloygonX;}
 }
 .speech:hover {
-  background-color: hsl(54, 100%, 57%);
+  background-color: $myYellow;
   /* polygon-Y */
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: $myPloygonY;
 }
 .speech:active {
   cursor: none;
   clip-path: none;
   border-radius: 50%;
-  color: hsl(54, 100%, 57%);
+  color: $myYellow;
   transform: scale(0.8);
-  background-color: rgba(255, 255, 255, 0.2);
-  animation: cd-pulse 0.75s 0.25s infinite;
+  background-color: $myIce;
+  animation: cd-pulse 0.75s $myTrans infinite;
 }
 @keyframes cd-pulse {
   0% {box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
-  100% {box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: rgba(255, 255, 255, 0.2);}
+  100% {box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: $myIce;}
 }
 .speechInfo {
   display: flex;
@@ -288,15 +293,15 @@
   bottom: 20vh;
   right: 10px;
   padding: 0rem 0.5rem 1rem 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: $myBorderRadius;
   border: 1px solid rgb(255, 255, 255);
-  color: rgb(97, 218, 251);
+  color: $myBlueLight;
   background-color: rgba(0, 0, 0, 0.85);
-  animation: speech-info 0.5s ease-in;
+  animation: speech-info $myTrans ease-in;
 }
 @keyframes speech-info {
   from {opacity: 0; border: 1px solid rgba(255, 255, 255, 0); filter: blur(12px); transform: scale(0.9);}
-  35% {opacity: 0.5; border: 1px solid rgb(255, 255, 255, 1);}
+  35% {opacity: 0.5; border: 1px solid rgba(255, 255, 255, 1);}
   85% {opacity: 1;}
   to {opacity: 1; border: 1px solid rgba(255, 255, 255, 1); filter: blur(0px); transform: scale(1);}
 }
@@ -317,7 +322,7 @@
   border-right: 20px solid transparent;
   border-top: 20px solid rgba(255, 255, 255, 1);
   clear: both;
-  animation: speech-info-before 0.5s ease-in;
+  animation: speech-info-before $myTrans ease-in;
 }
 @keyframes speech-info-before {
   from {  border-left: 0px solid transparent;

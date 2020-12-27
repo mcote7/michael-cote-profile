@@ -5,7 +5,7 @@ export const LANGUAGES_LIST = [
   'HTML5',
   'CSS3',
   'C#',
-  'Python',
+  'Python'
 ];
 
 export const LIBRARYS_LIST = [];
