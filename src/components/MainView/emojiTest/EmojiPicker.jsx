@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 // import _ from 'lodash';
 
-// import {emoji} from 'node-emoji';
+// import Emoji from 'node-emoji';
 
 import { myEmojis } from '../emojiTest/myEmojis.json';
 

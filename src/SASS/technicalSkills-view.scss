@@ -1,0 +1,20 @@
+@import '../SASS/variables.scss';
+
+.tech-main-wrap {
+  background-color: black;
+  color: $myGreen;
+  height: calc(100vh - 83px);
+  width: 100%;
+  position: relative;
+  bottom: 80px;
+}
+
+.tech-list-item {
+  display: none;
+  justify-content: center;
+}
+
+.code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

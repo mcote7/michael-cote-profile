@@ -12,7 +12,10 @@ import NavBar from './components/NavBar/NavBar';
 import MainView from './components/MainView/MainView';
 
 // optimize technical skills next ...
-import TechnicalSkills from './components/technicalSkills';
+
+// import TechnicalSkills from './components/technicalSkills';
+
+import TechnicalSkillsView from './components/TechnicalSkills/TechnicalSkillsView';
 
 import Education from './components/education/education';
 import Projects from './components/projects/projects';
@@ -99,7 +102,7 @@ const App = ({history}) => {
         </div>
         <div id="routes" className="row">
           <Switch>
-            <Route exact path="/technical" component={TechnicalSkills}/>
+            <Route exact path="/technical" component={TechnicalSkillsView}/>
             <Route exact path="/education" component={Education}/>
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/resume" component={Resume}/>

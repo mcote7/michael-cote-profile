@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 // import EmojiPicker from './emojiTest/EmojiPicker.jsx';
 
+// import IconDisplay from './iconTest/iconDisplay.jsx';
+
 const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, handleMouseOut, magic, magic_BG_MAIN, magic_BG_ALPHA}) => {
 
   const [quote0, setQuote0] = useState(false);
@@ -77,8 +79,9 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
     <br></br>
     <div className="row mt-5">
       {quote4 ? 
-        <div className="col-sm-9 mx-auto mt-5">
+        <div className="col-sm-6 mx-auto mt-5">
           {/* <EmojiPicker/> */}
+          {/* <IconDisplay/> */}
         </div>
         :''}
     </div>
