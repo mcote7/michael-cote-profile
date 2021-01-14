@@ -1,20 +1,121 @@
 @import '../SASS/variables.scss';
 
+@font-face {
+  font-family: 'Ac437 Acer VGA 8x8';
+  src: url('../config/Ac437_Acer_VGA_8x8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// main container 
 .tech-main-wrap {
-  background-color: black;
+
+  font-family: 'Ac437 Acer VGA 8x8';
+  letter-spacing: 0.2rem;
+  text-align: start;
+
   color: $myGreen;
+  background-color: black;
+  padding-top: 0.25rem;
   height: calc(100vh - 83px);
   width: 100%;
   position: relative;
   bottom: 80px;
 }
 
-.tech-list-item {
-  display: none;
-  justify-content: center;
+// main titles 
+.dos-title-wrap {
+  position: relative;
+  left: 0px;
+  margin-bottom: 2rem;
+}
+.dos-title {
+  // width: min-content;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .25rem solid $myGreen; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
 }
 
-.code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+// list titles 
+.tech-list-title {
+  cursor: pointer;
+  color: black;
+  background-color: $myGreenTransHeavy;
+  animation: tech-list-title 1.75s ease-in-out;
+  
+  transition: 0.1s;
+  &:hover {
+    background-color: $myGreen;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+  }
 }
+@keyframes tech-list-title {
+  from {background-color: black;}
+  30% {background-color: black;}
+  96% {background-color: hsl(108, 100%, 68%);}
+  98% {background-color: $myGreenTrans;}
+  to {background-color: $myGreenTransHeavy;}
+}
+
+// for all list items shared styles and animes 
+.tech-list-item-wrap {
+  position: relative;
+  left: 0px;
+}
+.tech-list-item {
+  padding-left: 0.2rem;
+  width: 100%;
+  color: $myGreen;
+  background-color: rgba(49, 245, 0, 0.25);
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .25rem solid $myGreen; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  animation: 
+  typing 1.75s steps(40, end),
+  blink-caret .75s step-end infinite;
+
+  transition: 0.1s;
+  &:hover {
+    cursor: crosshair;
+    color: hsl(108, 100%, 68%);
+    background-color: rgba(49, 245, 0, 0.5);
+    text-shadow: 2px 2px black;
+    border-color: black!important;
+  }
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $myGreen; }
+}
+
+// END all list items ----------------------------------------------------
+
+// to display list items by category 
+.languages-list-item {
+  display: none;
+}
+
+

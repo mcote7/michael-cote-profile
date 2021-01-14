@@ -49,8 +49,8 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       <div className="bioWrap col-lg-3 col-md-6 order-lg-2 order-md-3">
         <div className="quote freelance">
           <span className="mr-1 freelanceIcon"><i className="fa fa-code-fork fa-2x" aria-hidden="true"></i></span>
-          <a style={{color: 'white'}} href="https://mcote7.github.io/jitsi-chat/" target="_blank" rel="noopener noreferrer"><span>Open To Freelance work.</span></a><br></br><br></br>
-          <span className="leisure">( "" )</span>&nbsp;<span className="myLeisureFace" role="img" aria-label="my-leisure">&#128526;</span>
+          <a style={{color: 'white'}} href="https://mcote7.github.io/jitsi-chat/" target="_blank" rel="noopener noreferrer"><span title="Check out my chat app">Open To Freelance work.</span></a><br></br><br></br>
+          <span className="leisure">( "chat with me" )</span>&nbsp;<span className="myLeisureFace" role="img" aria-label="my-leisure">&#128526;</span>
         </div>
       </div>
       :''}
