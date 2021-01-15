@@ -4,6 +4,7 @@ export const LANGUAGES_LIST = [
   'TypeScript',
   'HTML5',
   'CSS3',
+  'SCSS',
   'C#',
   'Python'
 ];

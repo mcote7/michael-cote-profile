@@ -7,40 +7,46 @@
   font-style: normal;
 }
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $myGreen; }
+}
+
 // main container 
 .tech-main-wrap {
-
   font-family: 'Ac437 Acer VGA 8x8';
   letter-spacing: 0.2rem;
-  text-align: start;
-
+  text-align: left;
+  height: 100vh;
   color: $myGreen;
   background-color: black;
   padding-top: 0.25rem;
-  height: calc(100vh - 83px);
-  width: 100%;
-  position: relative;
-  bottom: 80px;
 }
 
-// main titles 
+// main titles * need REL & ABS POS for to make the text grow from left ! <-----<<< {|
 .dos-title-wrap {
   position: relative;
   left: 0px;
   margin-bottom: 2rem;
 }
 .dos-title {
-  // width: min-content;
-
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .25rem solid $myGreen; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-
+  
   position: absolute;
   top: 0px;
   left: 0px;
 
+  // *| ANYTHING WITH THIS ANIMATION NEEDS ALL PROPS IN THIS CLASS |* // <-----------------<<<<< {|
   animation: 
   typing 3.5s steps(40, end),
   blink-caret .75s step-end infinite;
@@ -48,7 +54,7 @@
 
 // list titles 
 .tech-list-title {
-  cursor: pointer;
+  cursor: default;
   color: black;
   background-color: $myGreenTransHeavy;
   animation: tech-list-title 1.75s ease-in-out;
@@ -60,16 +66,28 @@
   }
 }
 @keyframes tech-list-title {
-  from {background-color: black;}
-  30% {background-color: black;}
+  from {background-color: black; color: black;}
+  30% {background-color: black; color: black;}
   96% {background-color: hsl(108, 100%, 68%);}
   98% {background-color: $myGreenTrans;}
   to {background-color: $myGreenTransHeavy;}
 }
 
-// for all list items shared styles and animes 
+.list-toggle {
+  cursor: pointer;
+  float: right;
+  color: $myGreen;
+  background-color: black;
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+  padding: 0rem 0rem 0rem 0.25rem;
+  animation: tech-list-title 2s ease-in-out;
+}
+
+// list items 
 .tech-list-item-wrap {
   position: relative;
+  // top is set with JS 
   left: 0px;
 }
 .tech-list-item {
@@ -100,20 +118,11 @@
     border-color: black!important;
   }
 }
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $myGreen; }
-}
+
 
 // END all list items ----------------------------------------------------
 
-// to display list items by category 
+// to display list items by category include all 4 total 
 .languages-list-item {
   display: none;
 }

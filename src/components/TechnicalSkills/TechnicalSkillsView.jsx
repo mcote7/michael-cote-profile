@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
 import { onRoute } from '../../utilities/onRoute';
-
 import '../../SASS/technicalSkills-view.scss';
 
 import {LANGUAGES_LIST} from '../../config/techSkillsLists.js';
@@ -20,15 +18,18 @@ const TechnicalSkillsView = () => {
   }, []);
 
   useEffect(()=>{
-    presentList(languages, 'languages-list-item');
+    presentList(languages, 'languages-list-item', 'languages-toggle');
   }, [languages]);
 
-  const presentList = (list, className) => {
+  // present also destroys onClick <---<< {|
+  const presentList = (list, className, id) => {
     for(let i = 0; i < list.length; i++) {
       let target = document.getElementsByClassName(className)[i];
+      let toggle = document.getElementById(id);
       setTimeout(() => {
         if(target.style.display !== 'flex') {
           target.style.display = 'flex';
+          toggle.innerHTML = 'x';
         } else {
           let originalText = target.innerHTML;
           target.innerHTML = '********';
@@ -42,6 +43,7 @@ const TechnicalSkillsView = () => {
           setTimeout(() => {
             target.innerHTML = originalText;
             target.style.display = 'none';
+            toggle.innerHTML = '+';
           }, 1000);
         }
       }, i * 1000);
@@ -59,14 +61,25 @@ const TechnicalSkillsView = () => {
       </div>
       
       <div className="row mt-3">
-        <div className="col-3">
-          <div onClick={()=>presentList(languages, 'languages-list-item')} className="tech-list-title">&#8718;LANGUAGES</div>
-            {languages && languages.map((item, idx) => {
+        
+        <div className="col-lg-3 col-md-6 col-sm-6">
+          
+          {languages.length > 0 ?
+            <div className="tech-list-title">&#8718;LANGUAGES
+              <span id="languages-toggle"
+                onClick={()=>{presentList(languages, 'languages-list-item', 'languages-toggle')}}
+                className="list-toggle">+
+              </span>
+            </div>:""}
+            
+            {languages.length > 0 ? languages.map((item, idx) => {
               return<div key={idx} className="tech-list-item-wrap" style={{top: `${idx*24}px`}}>
                       <div className="tech-list-item languages-list-item">{item}</div>
                     </div>
-            })}
+            }): <div className="tech-list-title">Initializing list...</div>}
+            
         </div>
+        
       </div>
     </div>
   );
