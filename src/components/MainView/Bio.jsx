@@ -50,7 +50,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
         <div className="quote freelance">
           <span className="mr-1 freelanceIcon"><i className="fa fa-code-fork fa-2x" aria-hidden="true"></i></span>
           <a style={{color: 'white'}} href="https://mcote7.github.io/jitsi-chat/" target="_blank" rel="noopener noreferrer"><span title="Check out my chat app">Open To Freelance work.</span></a><br></br><br></br>
-          <span className="leisure">( "chat with me" )</span>&nbsp;<span className="myLeisureFace" role="img" aria-label="my-leisure">&#128526;</span>
+          <span className="leisure">("chat with me")</span>&nbsp;<span className="myLeisureFace" role="img" aria-label="my-leisure">&#9743;</span>
         </div>
       </div>
       :''}
@@ -71,7 +71,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
       <div className="bioWrap col-lg-3 col-md-6 order-lg-4 order-md-4">
         <div className="quote theCube">
           <span className="mr-1 cube"><i className="fa fa-cube fa-4x" aria-hidden="true"></i></span><br></br><br></br><br></br>
-          <a className="enterCube p-2" href="https://mcote7.github.io/react-menu-cube/" target="_blank" rel="noopener noreferrer">&nbsp;enter the cube</a>
+          <a className="enterCube p-2" href="https://mcote7.github.io/react-menu-cube/" target="_blank" rel="noopener noreferrer">the cube</a>
         </div>
       </div>
       :''}

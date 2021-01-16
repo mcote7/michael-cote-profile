@@ -93,6 +93,7 @@ const App = ({history}) => {
         <div className="myScrollBar">
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
+          <div id="gravity" className="gravity"><i class="fa fa-grav fa-2x" aria-hidden="true"></i></div>
         <div id="mainView" className="row mainView">
           <MainView message={message}/>
         </div>

@@ -28,7 +28,7 @@
   background-color: $myIce;
   border-radius: $myBorderRadius;
   opacity: 1;
-  animation: 2s ease-out slide-up-main;
+  animation: slide-up-main 2s ease-out;
   transition: $myTrans;
 }
 .socialWraps:hover {
@@ -52,7 +52,7 @@
   text-decoration: none;
   color: $myBlue;
   transition: $myTrans;
-  animation: 8.5s social-link-fade-in;
+  animation: social-link-fade-in 8.5s;
 }
 @keyframes social-link-fade-in {
   0% {opacity: 0;}
@@ -69,8 +69,7 @@
   border-bottom: solid 1px $myBlueLight;
   transform: scaleX(0);
   transition: transform $myTrans ease-in-out;
-  animation: a-tag 0.75s ease-in-out;
-  animation-delay: 6s;
+  animation: a-tag 0.75s ease-in-out 6s;
 }
 .socialLinks:hover:after {
   transform: scaleX(1);
@@ -215,7 +214,7 @@ svg {
   font-weight: 700;
   text-decoration: underline;
   backface-visibility: hidden;
-  animation: 8s title-sub-fade-in;
+  animation: title-sub-fade-in 8s;
 }
 @keyframes title-sub-fade-in {
   0% {opacity: 0; transform: scaleX(0);}
@@ -277,7 +276,7 @@ svg {
   cursor: none;
   margin-top: 1.5rem;
   backface-visibility: hidden;
-  animation: 2s bio-fade-in ease-in-out;
+  animation: bio-fade-in 2s ease-in-out;
 }
 @keyframes bio-fade-in {
   0% {opacity: 0; transform: scaleX(1);}
@@ -520,6 +519,7 @@ svg {
   }
 }
 /* ------------------- */
+
 /* ---mouse ghost----- */
 #mouseGhost {
   background-image: url('../images/mouse-ghost.gif');
