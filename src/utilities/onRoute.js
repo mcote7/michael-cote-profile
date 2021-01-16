@@ -17,4 +17,12 @@ export const onRoute = () => {
   setTimeout(() => {
     TweenLite.to(main_BG, 2.5, {cssRule:{filter: "blur(12px)"}});
   }, 1500);
+
+  // moon trans
+  
+  const moon_BG = CSSRulePlugin.getRule(".mainScreen:after");
+  console.log("main_BG", moon_BG);
+  setTimeout(() => {
+    TweenLite.to(moon_BG, 2.5, {cssRule:{filter: "blur(12px)"}});
+  }, 1500);
 };

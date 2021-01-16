@@ -19,6 +19,10 @@ const GoHome = () => {
       TweenLite.to(main_BG, 2.5, {cssRule:{opacity: 0.4}});
     }, 1500);
 
+    const moon_BG = CSSRulePlugin.getRule(".mainScreen:after");
+    // console.log("main_BG", main_BG);
+    TweenLite.to(moon_BG, 2, {cssRule:{filter: "blur(0px)"}});
+
   },[]);
   
   return (

@@ -1,5 +1,12 @@
 @import 'variables.scss';
 
+@font-face {
+  font-family: 'Ac437 Acer VGA 8x8';
+  src: url('../config/Ac437_Acer_VGA_8x8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* --- < MainView /> - */
 .mainViewContainer {
   margin-top: 1.5rem;
@@ -471,33 +478,38 @@ svg {
 }
 /* ------------------- */
 /* ---main loader----- */
-.loaderWrapper {
+
+/* The typing effect */
+@keyframes typing-loader {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret-loader {
+  from, to { border-color: transparent }
+  50% { border-color: $myBlue; }
+}
+
+// 
+.my-loader {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.5rem solid $myBlue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  
   position: absolute;
-  top: calc(50% - 300px);
-  left: calc(50% - 200px);
-}
-@media only screen and (max-width: 520px) {
-  .loaderWrapper {
-    position: absolute;
-    top: calc(50% - 225px);
-    left: calc(50% - 125px);
-  }
-}
-.chromeLink:hover {
-  text-decoration: none!important;
-}
-.chromeIcon {
-  transform: scale(1.5);
-  color: $myBlueTransHeavy;
-  animation: chrome-logo-spin infinite 1s linear;
-}
-@keyframes chrome-logo-spin {
-  0% {color: $myBlueTransHeavy; transform: rotate(0deg);}
-  20% {color: $myPurpleTransHeavy}
-  40% {color: $myRedTransHeavy}
-  60% {color:  $myOrangeTransHeavy}
-  80% {color:  $myGreenTransHeavy}
-  100% {color: $myYellowTransHeavy; transform: rotate(360deg);}
+  top: 50%;
+  left: 0px;
+
+  display: flex;
+  width: 100%;
+  color: $myBlue;
+  font-size: 2.25rem;
+  font-family: 'Ac437 Acer VGA 8x8';
+  animation: 
+  typing-loader 3s steps(40, end),
+  blink-caret-loader .75s step-end infinite;
 }
 /* ------------------- */
 /* ---mouse ghost----- */

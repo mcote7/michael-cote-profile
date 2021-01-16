@@ -58,9 +58,28 @@ body {
 .mainView {
   margin-bottom: 50vh;
 }
+.mainScreen:after {
+  content: "";
+  height: 102px;
+  width: 102px;
+  background-color: hsl(269.4, 50%, 14%);
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  filter: blur(0px);
+  animation: 14s fade-in-bg-moon;
+}
+@keyframes fade-in-bg-moon {
+  0% {background-color: black;}
+  25% {background-color: hsl(54, 100%, 48%);}
+  50% {background-color: hsl(193, 100%, 48%);}
+  75% {background-color: hsl(269.4, 50%, 36%);}
+  100% {background-color: hsl(269.4, 50%, 14%);}
+}
 .mainScreen:before {
   content: "";
-  background-image: url('./images/city-1.jpg');
+  background-image: url('./images/8bitCity.jpg');
   background-size: cover;
   position: fixed;
   top: 0px;
@@ -86,12 +105,13 @@ body {
   100% {opacity: 0.4;}
 }
 /* --- Routes Screen --- */
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
   .routesBackground::before {
     display: none!important;
   }
-}
-.routesBackground::before {
+} */
+
+/* .routesBackground::before {
   height: 100vh;
   width: 100%;
   content: "";
@@ -115,7 +135,7 @@ body {
   0% { opacity: 0; transform: scale(2);}
   80% { opacity: 1;}
   100% { opacity: 0.6; transform: scale(1);}
-}
+} */
 
 /* --- goHome --- */
 .dummy {
