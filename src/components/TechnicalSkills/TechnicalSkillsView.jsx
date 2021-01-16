@@ -81,7 +81,7 @@ const TechnicalSkillsView = () => {
           <div className="dos-title-wrap">
             <div className="dos-title">
               <span className="dos-title-icon">
-                <i class="fa fa-object-group" aria-hidden="true"></i>
+                <i className="fa fa-object-group" aria-hidden="true"></i>
               </span>_WELCOME_TO_MICHAEL'S_TECH_SKILLS_DOS_MODE_C:/</div>
           </div>
         </div>
@@ -93,7 +93,7 @@ const TechnicalSkillsView = () => {
           {languages.length > 0 ?
             <div className="tech-list-title">
               <span className="ml-1">
-                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+                <i className="fa fa-object-ungroup" aria-hidden="true"></i>
               </span>LANGUAGES
               <span id="languages-toggle"
                 onClick={()=>{presentList(languages, 'languages-list-item', 'languages-toggle')}}
@@ -112,7 +112,7 @@ const TechnicalSkillsView = () => {
           {frameworks.length > 0 ?
             <div className="tech-list-title">
               <span className="ml-1">
-                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+                <i className="fa fa-object-ungroup" aria-hidden="true"></i>
               </span>FRAMEWORKS
               <span id="frameworks-toggle"
                 onClick={()=>{presentList(frameworks, 'frameworks-list-item', 'frameworks-toggle')}}
@@ -131,7 +131,7 @@ const TechnicalSkillsView = () => {
           {database.length > 0 ?
             <div className="tech-list-title">
               <span className="ml-1">
-                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+                <i className="fa fa-object-ungroup" aria-hidden="true"></i>
               </span>DATABASE
               <span id="database-toggle"
                 onClick={()=>{presentList(database, 'database-list-item', 'database-toggle')}}
@@ -150,7 +150,7 @@ const TechnicalSkillsView = () => {
           {tools.length > 0 ?
             <div className="tech-list-title">
               <span className="ml-1">
-                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+                <i className="fa fa-object-ungroup" aria-hidden="true"></i>
               </span>TOOLS
               <span id="tools-toggle"
                 onClick={()=>{presentList(tools, 'tools-list-item', 'tools-toggle')}}
