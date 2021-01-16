@@ -12,16 +12,12 @@ import NavBar from './components/NavBar/NavBar';
 import MainView from './components/MainView/MainView';
 
 // optimize technical skills next ...
-
-// import TechnicalSkills from './components/technicalSkills';
-
 import TechnicalSkillsView from './components/TechnicalSkills/TechnicalSkillsView';
 
 import Education from './components/education/education';
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
 import Message from './components/message/message';
-
 
 
 const App = ({history}) => {
@@ -114,6 +110,7 @@ const App = ({history}) => {
         </div>
       </div>
       <NavBar history={history}/>
+      
       {/* {letItSnow?<div id="snow" style={{opacity: `${SNOW_RATE}`}}></div>:''} */}
       {/* {blizzard?<div id="blizzard" style={{opacity: `${SNOW_RATE}`}}></div>:''} */}
     </div>

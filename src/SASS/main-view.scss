@@ -89,7 +89,7 @@
 .contactBtn {
   display: inline-block;
   margin-bottom: 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: $myBorderRadius;
   font-size: 1.25rem;
   width: 290px;
   height: 35px;
@@ -481,8 +481,8 @@ svg {
 
 /* The typing effect */
 @keyframes typing-loader {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; word-break: initial;}
+  to { width: 100%; word-break: initial;}
 }
 
 /* The typewriter cursor effect */
@@ -495,7 +495,9 @@ svg {
 .my-loader {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.5rem solid $myBlue; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  // white-space: nowrap; /* Keeps the content on a single line */
+  word-break: break-all;
+
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   
   position: absolute;

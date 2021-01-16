@@ -7,19 +7,12 @@
   font-style: normal;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $myGreen; }
-}
-
 // main container 
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+  padding-right: 0.25rem!important;
+  padding-left: 0;
+}
+
 .tech-main-wrap {
   font-family: 'Ac437 Acer VGA 8x8';
   letter-spacing: 0.2rem;
@@ -28,6 +21,8 @@
   color: $myGreen;
   background-color: black;
   padding-top: 0.25rem;
+
+  filter: blur(0.5px);
 }
 
 // main titles * need REL & ABS POS for to make the text grow from left ! <-----<<< {|
@@ -39,17 +34,54 @@
 .dos-title {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .25rem solid $myGreen; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  // white-space: nowrap; /* Keeps the content on a single line */
+  word-break: break-all;
   
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   position: absolute;
   top: 0px;
   left: 0px;
 
   // *| ANYTHING WITH THIS ANIMATION NEEDS ALL PROPS IN THIS CLASS |* // <-----------------<<<<< {|
   animation: 
-  typing 3.5s steps(40, end),
+  typing-title 3.5s steps(40, end),
   blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing-title {
+  from { width: 0; word-break: initial;}
+  to { width: 100%; word-break: initial;}
+}
+
+.dos-title-icon {
+  color: $myGreen;
+  font-size: 1.5rem;
+  animation: dos-appear 4s;
+}
+@keyframes dos-appear {
+  0% {font-size: 0rem;}
+  90% {font-size: 0rem; color: $myGreenLight;}
+  100% {font-size: 1.5rem; color: black;}
+}
+
+// list initializer 
+.list-loader {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.list-loader::after {
+  content: '';
+  animation: bit-dots 0.5s infinite;
+}
+
+@keyframes bit-dots {
+  0% {content: '';}
+  25% {content: '.';}
+  50% {content: '..';}
+  75% {content: '...';}
 }
 
 // list titles 
@@ -68,7 +100,7 @@
 @keyframes tech-list-title {
   from {background-color: black; color: black;}
   30% {background-color: black; color: black;}
-  96% {background-color: hsl(108, 100%, 68%);}
+  96% {background-color:$myGreenLight;}
   98% {background-color: $myGreenTrans;}
   to {background-color: $myGreenTransHeavy;}
 }
@@ -112,19 +144,60 @@
   transition: 0.1s;
   &:hover {
     cursor: crosshair;
-    color: hsl(108, 100%, 68%);
+    color: $myGreenLight;
     background-color: rgba(49, 245, 0, 0.5);
     text-shadow: 2px 2px black;
     border-color: black!important;
   }
 }
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
-// END all list items ----------------------------------------------------
-
-// to display list items by category include all 4 total 
-.languages-list-item {
-  display: none;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $myGreen; }
 }
 
 
+// END all list items ----------------------------------------------------
+
+// to display list items by category include all 4 total here
+.languages-list-item {
+  display: none;
+}
+.frameworks-list-item {
+  display: none;
+}
+.database-list-item {
+  display: none;
+}
+.tools-list-item {
+  display: none;
+}
+// <..>
+// for to align columns cuz of positioning
+
+@media only screen and (max-width: 992px) {
+  .col-database {
+    margin-top: 10.5rem;
+  }
+  .col-tools {
+    margin-top: 12rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .col-database {
+    margin-top: 12rem;
+  }
+  .col-tools {
+    margin-top: 9rem;
+  }
+  .col-frameworks {
+    margin-top: 10.5rem;
+  }
+}

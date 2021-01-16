@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Title = ({light}) => {
-
+  
   // , handleSnowRate, blizzard, snowGauge <-- need these props from app component for x-mas
-
+  
   return (<>
     <div className="row mx-0 mt-1 title-row">
       <div className="col-12 title-col">

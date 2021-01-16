@@ -94,7 +94,7 @@ const NavBar = ({history}) => {
         <ul className="navbar-nav m-auto">
           <li className="nav-item">
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/technical">
-              <span className="polyLink-icon"><i className="fa fa-cog fa-2x" aria-hidden="true"></i></span>
+              <span className="polyLink-icon"><i className="fa fa-floppy-o fa-2x" aria-hidden="true"></i></span>
               <span className="polyLink-text">Technical&nbsp;</span>
             </NavLink>
           </li>

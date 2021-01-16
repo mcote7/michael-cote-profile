@@ -5,12 +5,16 @@ $myBlueDark: hsl(193, 100%, 38%);
 
 // - secondary = 
 $myYellowLight: hsl(54, 100%, 58%);
-$myYellow: hsl(54, 100%, 48%);
+$myYellow: rgb(245, 220, 0);
 $myYellowDark: hsl(54, 100%, 38%);
 
 // - complementary = 
 $myRed: hsl(336, 100%, 48%);
+
+$myGreenDark: hsl(108, 100%, 38%);
 $myGreen: hsl(108, 100%, 48%);
+$myGreenLight: hsl(108, 100%, 68%);
+
 $myPurple: hsl(275, 100%, 48%);
 $myOrange: hsl(13, 100%, 48%);
 
@@ -42,7 +46,7 @@ $myClear: hsla(0, 0%, 100%, 0);
 $myTrans: 0.4s;
 
 //  - border-radius = 
-$myBorderRadius: 0.2rem;
+$myBorderRadius: 0.05rem;
 
 // - polygons = 
 $myPloygonBorderRadius: 46%;

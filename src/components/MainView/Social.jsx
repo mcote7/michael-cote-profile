@@ -9,7 +9,7 @@ const Social = ({message, contact}) => {
       <div className="col-sm-6 col-lg-4 col-xl-3">
         <p className="socialWraps">
           <a className="socialLinks" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7">
-          <span className="socialIcons mx-1"><i className="fa fa-github-square fa-2x" aria-hidden="true"></i></span>
+          <span className="socialIcons mx-1"><i className="fa fa-github-alt fa-2x" aria-hidden="true"></i></span>
           &nbsp;www.github.com/cote</a>
         </p>
       </div>
@@ -17,7 +17,7 @@ const Social = ({message, contact}) => {
       <div className="col-sm-6 col-lg-4 col-xl-3">
         <p className="socialWraps">
           <a className="socialLinks" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/michael-cote-wa">
-          <span className="socialIcons mx-1"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span>
+          <span className="socialIcons mx-1"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
           &nbsp;www.linkedin.com/in/cote</a>
         </p>
       </div>
@@ -25,7 +25,7 @@ const Social = ({message, contact}) => {
       <div className="col-sm-6 col-lg-4 col-xl-3">
         <p className="socialWraps">
           <a className="socialLinks" target="_blank" rel="noopener noreferrer" href="https://facebook.com/profile.php?id=100012957396194">
-          <span className="socialIcons mx-1"><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+          <span className="socialIcons mx-1"><i className="fa fa-facebook-official fa-2x" aria-hidden="true"></i></span>
           &nbsp;www.facebook.com/cote</a>
         </p>
       </div>

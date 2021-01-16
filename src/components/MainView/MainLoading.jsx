@@ -4,7 +4,8 @@ import React from 'react';
 
 const Loading = ({loading}) => {
   return (
-      <div name={loading} className="my-loader">_GREETINGS_EARTHLINGS . . .</div>
+      // <div></div>
+      <div name={loading.toString()} className="my-loader">_GREETINGS_EARTHLING_</div>
   );
 };
 export default Loading;

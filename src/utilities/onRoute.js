@@ -6,7 +6,7 @@ export const onRoute = () => {
   
   const position = document.getElementById("routes");
   position.scrollIntoView({behavior: "smooth"});
-
+  
   navBarCollapseTransition();
 
   //background image transition

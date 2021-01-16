@@ -3,10 +3,16 @@ import { onRoute } from '../../utilities/onRoute';
 import '../../SASS/technicalSkills-view.scss';
 
 import {LANGUAGES_LIST} from '../../config/techSkillsLists.js';
+import {FRAMEWORKS_LIST} from '../../config/techSkillsLists.js';
+import {DATABASE_LIST} from '../../config/techSkillsLists.js';
+import {TOOLS_LIST} from '../../config/techSkillsLists.js';
 
 const TechnicalSkillsView = () => {
 
   const [languages, setLanguages] = useState([]);
+  const [frameworks, setFrameworks] = useState([]);
+  const [database, setDatabase] = useState([]);
+  const [tools, setTools] = useState([]);
 
   useEffect(()=>{
     onRoute();
@@ -14,14 +20,32 @@ const TechnicalSkillsView = () => {
     setTimeout(() => {
       setLanguages(LANGUAGES_LIST);
     }, 1750);
+    setTimeout(() => {
+      setFrameworks(FRAMEWORKS_LIST);
+    }, 2750);
+    setTimeout(() => {
+      setDatabase(DATABASE_LIST);
+    }, 3750);
+    setTimeout(() => {
+      setTools(TOOLS_LIST);
+    }, 4750);
     
   }, []);
 
   useEffect(()=>{
     presentList(languages, 'languages-list-item', 'languages-toggle');
   }, [languages]);
+  useEffect(()=>{
+    presentList(frameworks, 'frameworks-list-item', 'frameworks-toggle');
+  }, [frameworks]);
+  useEffect(()=>{
+    presentList(database, 'database-list-item', 'database-toggle');
+  }, [database]);
+  useEffect(()=>{
+    presentList(tools, 'tools-list-item', 'tools-toggle');
+  }, [tools]);
 
-  // present also destroys onClick <---<< {|
+  // present also destroys onClick <--------------------------------------<<<<< {|
   const presentList = (list, className, id) => {
     for(let i = 0; i < list.length; i++) {
       let target = document.getElementsByClassName(className)[i];
@@ -49,23 +73,28 @@ const TechnicalSkillsView = () => {
       }, i * 1000);
     }
   }
-  
+  // <------------------------------------------------<<<<< {| 
   return (
     <div className="tech-main-wrap container-fluid">
       <div className="row">
         <div className="col">
           <div className="dos-title-wrap">
-            <div className="dos-title">&#8718;WELCOME_TO_MICHAEL'S_TECH_SKILLS_DOS_MODE_C:/&#8883;</div>
+            <div className="dos-title">
+              <span className="dos-title-icon">
+                <i class="fa fa-object-group" aria-hidden="true"></i>
+              </span>_WELCOME_TO_MICHAEL'S_TECH_SKILLS_DOS_MODE_C:/</div>
           </div>
         </div>
       </div>
       
-      <div className="row mt-3">
+      <div className="row mt-5 no-gutters">
         
         <div className="col-lg-3 col-md-6 col-sm-6">
-          
           {languages.length > 0 ?
-            <div className="tech-list-title">&#8718;LANGUAGES
+            <div className="tech-list-title">
+              <span className="ml-1">
+                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+              </span>LANGUAGES
               <span id="languages-toggle"
                 onClick={()=>{presentList(languages, 'languages-list-item', 'languages-toggle')}}
                 className="list-toggle">+
@@ -74,10 +103,66 @@ const TechnicalSkillsView = () => {
             
             {languages.length > 0 ? languages.map((item, idx) => {
               return<div key={idx} className="tech-list-item-wrap" style={{top: `${idx*24}px`}}>
-                      <div className="tech-list-item languages-list-item">{item}</div>
+                      <div className="tech-list-item languages-list-item">&#8718;{item}</div>
                     </div>
-            }): <div className="tech-list-title">Initializing list...</div>}
+            }): <div className="tech-list-title list-loader">Initializing list</div>}
+        </div>
+        
+        <div className="col-lg-3 col-md-6 col-sm-6 col-frameworks">
+          {frameworks.length > 0 ?
+            <div className="tech-list-title">
+              <span className="ml-1">
+                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+              </span>FRAMEWORKS
+              <span id="frameworks-toggle"
+                onClick={()=>{presentList(frameworks, 'frameworks-list-item', 'frameworks-toggle')}}
+                className="list-toggle">+
+              </span>
+            </div>:""}
             
+            {frameworks.length > 0 ? frameworks.map((item, idx) => {
+              return<div key={idx} className="tech-list-item-wrap" style={{top: `${idx*24}px`}}>
+                      <div className="tech-list-item frameworks-list-item">&#8718;{item}</div>
+                    </div>
+            }): <div className="tech-list-title list-loader">Initializing list</div>}
+        </div>
+        
+        <div className="col-lg-3 col-md-6 col-sm-6 col-database">
+          {database.length > 0 ?
+            <div className="tech-list-title">
+              <span className="ml-1">
+                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+              </span>DATABASE
+              <span id="database-toggle"
+                onClick={()=>{presentList(database, 'database-list-item', 'database-toggle')}}
+                className="list-toggle">+
+              </span>
+            </div>:""}
+            
+            {database.length > 0 ? database.map((item, idx) => {
+              return<div key={idx} className="tech-list-item-wrap" style={{top: `${idx*24}px`}}>
+                      <div className="tech-list-item database-list-item">&#8718;{item}</div>
+                    </div>
+            }): <div className="tech-list-title list-loader">Initializing list</div>}
+        </div>
+        
+        <div className="col-lg-3 col-md-6 col-sm-6 col-tools">
+          {tools.length > 0 ?
+            <div className="tech-list-title">
+              <span className="ml-1">
+                <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+              </span>TOOLS
+              <span id="tools-toggle"
+                onClick={()=>{presentList(tools, 'tools-list-item', 'tools-toggle')}}
+                className="list-toggle">+
+              </span>
+            </div>:""}
+            
+            {tools.length > 0 ? tools.map((item, idx) => {
+              return<div key={idx} className="tech-list-item-wrap" style={{top: `${idx*24}px`}}>
+                      <div className="tech-list-item tools-list-item">&#8718;{item}</div>
+                    </div>
+            }): <div className="tech-list-title list-loader">Initializing list</div>}
         </div>
         
       </div>

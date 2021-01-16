@@ -20,12 +20,6 @@ body {
   monospace;
 } */
 
-/* @media only screen and (max-width: 450px) {
-  body {
-    background-color: rgba(2, 1, 24, 0.9)!important;
-  }
-} */
-
 /* ScrollBar */
 ::-webkit-scrollbar {
   display: none!important;
@@ -58,25 +52,38 @@ body {
 .mainView {
   margin-bottom: 50vh;
 }
+/* stars */
+
+/* moon */
 .mainScreen:after {
   content: "";
   height: 102px;
   width: 102px;
-  background-color: hsl(269.4, 50%, 14%);
+  background-color: hsl(268, 50%, 14%);
   position: fixed;
   z-index: -1;
   top: 0px;
   right: 0px;
   filter: blur(0px);
-  animation: 14s fade-in-bg-moon;
+  animation: 6.7s fade-in-bg-moon steps(4, end) forwards;
 }
 @keyframes fade-in-bg-moon {
-  0% {background-color: black;}
-  25% {background-color: hsl(54, 100%, 48%);}
-  50% {background-color: hsl(193, 100%, 48%);}
-  75% {background-color: hsl(269.4, 50%, 36%);}
+  0% {background-color: hsl(269.4, 50%, 14%);}
+  5% {background-color: hsl(269.4, 50%, 36%);}
+  7.5% {background-color: hsl(193, 100%, 48%);}
+  10% {background-color: hsl(54, 100%, 48%);}
+  50% {background-color: hsl(54, 100%, 48%);}
+  80% {background-color: hsl(269.4, 50%, 36%);}
   100% {background-color: hsl(269.4, 50%, 14%);}
 }
+
+@media only screen and (max-width: 650px) {
+  .mainScreen:after {
+    height: 52px;
+    width: 52px;
+  }
+}
+
 .mainScreen:before {
   content: "";
   background-image: url('./images/8bitCity.jpg');
@@ -87,8 +94,7 @@ body {
   bottom: 0px;
   left: 0px;
   z-index: -1;
-  height: 100vh;
-  width: 100%;
+
   mask-image: linear-gradient(to bottom,
   rgba(0,0,0,1),
   rgba(0,0,0,1),
