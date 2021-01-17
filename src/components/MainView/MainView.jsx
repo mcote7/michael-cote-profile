@@ -25,8 +25,6 @@ const MainView = ({message}) => {
     //my i light
     setTimeout(()=> {
       setLight(true);
-      const astro = document.getElementById('gravity');
-      astro.style.display = 'none';
     }, 7000)
     //contact btn
     setTimeout(()=> {

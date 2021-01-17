@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom';
 
 import ScrollProgressRead from 'react-scroll-progress-read';
@@ -82,7 +82,32 @@ const App = ({history}) => {
   //   }
   // },[SNOW_RATE]);
 // x ----------------------------------------------------------------------
+  const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*21));
+  const [starLeft_0, setStarLeft_0] = useState(Math.floor(Math.random()*100));
+  useEffect(()=> {
+    setInterval(() => {
+      setStarTop_0(Math.floor(Math.random()*21));
+      setStarLeft_0(Math.floor(Math.random()*100));
+    }, 1750);
+  },[]);
+  const [starTop_1, setStarTop_1] = useState(Math.floor(Math.random()*21));
+  const [starLeft_1, setStarLeft_1] = useState(Math.floor(Math.random()*100));
+  useEffect(()=> {
+    setInterval(() => {
+      setStarTop_1(Math.floor(Math.random()*21));
+      setStarLeft_1(Math.floor(Math.random()*100));
+    }, 1650);
+  },[]);
+  const [starTop_2, setStarTop_2] = useState(Math.floor(Math.random()*21));
+  const [starLeft_2, setStarLeft_2] = useState(Math.floor(Math.random()*100));
+  useEffect(()=> {
+    setInterval(() => {
+      setStarTop_2(Math.floor(Math.random()*21));
+      setStarLeft_2(Math.floor(Math.random()*100));
+    }, 1550);
+  },[]);
 
+// ---------------------------------------------
   const [message, setMessage] = useState(false);
   const handleMessage = () => {
     setMessage(true);
@@ -93,6 +118,9 @@ const App = ({history}) => {
         <div className="myScrollBar">
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
         </div>
+          <div className="star_0" style={{top: `${starTop_0}%`, left: `${starLeft_0}%`}}></div>
+          <div className="star_1" style={{top: `${starTop_1}%`, left: `${starLeft_1}%`}}></div>
+          <div className="star_2" style={{top: `${starTop_2}%`, left: `${starLeft_2}%`}}></div>
           <div id="gravity" className="gravity"><i class="fa fa-grav fa-2x" aria-hidden="true"></i></div>
         <div id="mainView" className="row mainView">
           <MainView message={message}/>

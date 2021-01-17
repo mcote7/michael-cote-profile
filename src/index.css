@@ -50,10 +50,40 @@ body {
 }
 /* ---Main-App-Component--- */
 .mainView {
-  margin-bottom: 50vh;
+  margin-bottom: 100vh;
 }
 /* stars */
-
+.star_0 {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  height: 7.5px;
+  width: 7.5px;
+  background-color: hsl(54, 100%, 58%);
+  animation: twinkle 2750ms steps(5, end) infinite;
+}
+.star_1 {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  height: 5px;
+  width: 5px;
+  background-color: hsl(54, 100%, 58%);
+  animation: twinkle 2500ms steps(5, end) infinite;
+}
+.star_2 {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  height: 2.5px;
+  width: 2.5px;
+  background-color: hsl(54, 100%, 58%);
+  animation: twinkle 2250ms steps(5, end) infinite;
+}
+@keyframes twinkle {
+  from {background-color: black;}
+  to {background-color: hsl(54, 100%, 68%);}
+}
 /* moon */
 .mainScreen:after {
   content: "";
@@ -122,15 +152,15 @@ body {
   color: hsl(193, 100%, 58%);
   border-radius: 50%;
   position: absolute;
-  top: 120%;
+  top: 210%;
   left: 60%;
   z-index: 999999;
   transform: rotate(0deg) scale(1);
   animation: 
     gravity-kills 4s steps(20, end) 1.25s,
-    pulse-grav 0.75s 1.5s;
+    pulse-grav 0.75s 1.5s,
+    grav-float 3.75s steps(10, end)  6s infinite;
 }
-
 @keyframes gravity-kills {
   from {top: -10%; transform: rotate(0deg) scale(0);}
   to {top: 110%; transform: rotate(360deg) scale(4);}
@@ -139,9 +169,18 @@ body {
   0% {box-shadow:0 0 0 0 rgba(255, 255, 255, 0.9);}
   100% {box-shadow:0 0 15px 75px rgba(255,150,44,0);}
 }
+@keyframes grav-float {
+  0% {top: 210%; transform: rotate(0deg)}
+  50% {top: 215%;transform: rotate(-45deg)}
+  100% {top: 210%;transform: rotate(0deg)}
+}
+/* mobile */
 @media only screen and (max-width: 650px) {
   .gravity {
-    animation: gravity-kills-mobile 4s steps(20, end) 1.25s;
+    animation: 
+      gravity-kills-mobile 4s steps(20, end) 1.25s,
+      pulse-grav 0.75s 1.5s,
+      grav-float 3.75s steps(10, end)  6s infinite;
   }
 }
 @keyframes gravity-kills-mobile {
