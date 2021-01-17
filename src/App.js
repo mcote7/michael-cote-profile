@@ -82,27 +82,27 @@ const App = ({history}) => {
   //   }
   // },[SNOW_RATE]);
 // x ----------------------------------------------------------------------
-  const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*21));
+  const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*41));
   const [starLeft_0, setStarLeft_0] = useState(Math.floor(Math.random()*100));
   useEffect(()=> {
     setInterval(() => {
-      setStarTop_0(Math.floor(Math.random()*21));
+      setStarTop_0(Math.floor(Math.random()*41));
       setStarLeft_0(Math.floor(Math.random()*100));
     }, 1750);
   },[]);
-  const [starTop_1, setStarTop_1] = useState(Math.floor(Math.random()*21));
+  const [starTop_1, setStarTop_1] = useState(Math.floor(Math.random()*41));
   const [starLeft_1, setStarLeft_1] = useState(Math.floor(Math.random()*100));
   useEffect(()=> {
     setInterval(() => {
-      setStarTop_1(Math.floor(Math.random()*21));
+      setStarTop_1(Math.floor(Math.random()*41));
       setStarLeft_1(Math.floor(Math.random()*100));
     }, 1650);
   },[]);
-  const [starTop_2, setStarTop_2] = useState(Math.floor(Math.random()*21));
+  const [starTop_2, setStarTop_2] = useState(Math.floor(Math.random()*41));
   const [starLeft_2, setStarLeft_2] = useState(Math.floor(Math.random()*100));
   useEffect(()=> {
     setInterval(() => {
-      setStarTop_2(Math.floor(Math.random()*21));
+      setStarTop_2(Math.floor(Math.random()*41));
       setStarLeft_2(Math.floor(Math.random()*100));
     }, 1550);
   },[]);
