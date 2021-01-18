@@ -81,6 +81,7 @@ const App = ({history}) => {
   //     setBlizzard(false);
   //   }
   // },[SNOW_RATE]);
+  
 // x ----------------------------------------------------------------------
   const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*41));
   const [starLeft_0, setStarLeft_0] = useState(Math.floor(Math.random()*100));
@@ -106,8 +107,8 @@ const App = ({history}) => {
       setStarLeft_2(Math.floor(Math.random()*100));
     }, 1550);
   },[]);
-
 // ---------------------------------------------
+
   const [message, setMessage] = useState(false);
   const handleMessage = () => {
     setMessage(true);

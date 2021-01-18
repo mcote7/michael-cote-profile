@@ -69,7 +69,7 @@ body {
   height: 5px;
   width: 5px;
   background-color: hsl(54, 100%, 58%);
-  animation: twinkle 2500ms steps(5, end) infinite;
+  animation: twinkle 2650ms steps(5, end) infinite;
 }
 .star_2 {
   display: block;
@@ -78,7 +78,7 @@ body {
   height: 2.5px;
   width: 2.5px;
   background-color: hsl(54, 100%, 58%);
-  animation: twinkle 2250ms steps(5, end) infinite;
+  animation: twinkle 2550ms steps(5, end) infinite;
 }
 @keyframes twinkle {
   from {background-color: black;}

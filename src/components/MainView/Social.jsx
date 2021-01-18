@@ -38,7 +38,7 @@ const Social = ({message, contact}) => {
           <polyline points="289,1 289,34 1,34 1,1 289,1" className="hl-line" />
         </svg>
         
-        {message ? <span style={{color: 'white', fontSize: 'medium'}}>&nbsp;&hearts;&nbsp;message sent, thank you</span> : 
+        {message ? <span style={{color: 'white', fontSize: 'medium'}}>&nbsp;&hearts;&nbsp;message_sent</span> : 
         <span><i className="fa fa-envelope-o mailIcon mr-1 ml-2" aria-hidden="true"></i>&nbsp;Contact me&nbsp;&nbsp;</span>}</Link>
         : <div className="contactBtnPlaceholder"></div>}
       </div>
