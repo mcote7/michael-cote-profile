@@ -5,8 +5,9 @@ const Social = ({message, contact}) => {
 
   return (
     <div className="row socialRow">
+
       <div className="col-sm-6 col-lg-4 col-xl-3">
-        <p id="follow" className="socialWraps">
+        <p className="socialWraps">
           <a className="socialLinks" target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7">
           <span className="socialIcons mx-1"><i className="fa fa-github-alt fa-2x" aria-hidden="true"></i></span>
           &nbsp;www.github.com/cote</a>

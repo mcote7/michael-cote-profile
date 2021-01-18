@@ -21,7 +21,6 @@ const MainView = ({message}) => {
     //loader
     setTimeout(()=> {
       setLoading(false);
-      
     }, 4000)
     //my i light
     setTimeout(()=> {
