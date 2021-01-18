@@ -22,7 +22,7 @@
   color: $myGreen;
   background-color: black;
   padding-top: 0.25rem;
-
+  padding-bottom: 50vh;
   filter: blur(0.5px);
 }
 
@@ -192,11 +192,15 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  .tech-main-wrap {
+    height: auto;
+  }
   .col-database {
     margin-top: 12rem;
   }
   .col-tools {
     margin-top: 9rem;
+
   }
   .col-frameworks {
     margin-top: 10.5rem;
