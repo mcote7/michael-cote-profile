@@ -22,7 +22,6 @@
   color: $myGreen;
   background-color: black;
   padding-top: 0.25rem;
-  padding-bottom: 50vh;
   filter: blur(0.5px);
 }
 
@@ -47,7 +46,7 @@
   // *| ANYTHING WITH THIS ANIMATION NEEDS ALL PROPS IN THIS CLASS |* // <-----------------<<<<< {|
   animation: 
     typing-title 3.5s steps(40, end),
-    blink-caret .75s step-end 8;
+    blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
@@ -193,7 +192,7 @@
 }
 @media only screen and (max-width: 576px) {
   .tech-main-wrap {
-    height: auto;
+    height: 500vh;
   }
   .col-database {
     margin-top: 12rem;
