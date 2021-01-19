@@ -34,7 +34,7 @@
 }
 .dos-title {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .25rem solid $myGreen; /* The typwriter cursor */
+  border-right: .25rem solid transparent; /* The typwriter cursor */
 
   // white-space: nowrap; /* Keeps the content on a single line */
   word-break: break-all;
@@ -47,7 +47,7 @@
   // *| ANYTHING WITH THIS ANIMATION NEEDS ALL PROPS IN THIS CLASS |* // <-----------------<<<<< {|
   animation: 
     typing-title 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    blink-caret .75s step-end 8;
 }
 
 /* The typing effect */

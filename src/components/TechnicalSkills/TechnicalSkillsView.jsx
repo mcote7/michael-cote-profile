@@ -87,7 +87,7 @@ const TechnicalSkillsView = () => {
         </div>
       </div>
       
-      <div className="row mt-5 no-gutters">
+      <div className="row mt-5 no-gutters" style={{height: '216px'}}>
         
         <div className="col-lg-3 col-md-6 col-sm-6">
           {languages.length > 0 ?
@@ -170,3 +170,4 @@ const TechnicalSkillsView = () => {
   );
 };
 export default TechnicalSkillsView;
+// 
