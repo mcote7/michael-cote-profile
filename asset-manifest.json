@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/michael-cote-profile-2020/static/css/main.ea8c4c8a.chunk.css",
-    "main.js": "/michael-cote-profile-2020/static/js/main.91e70632.chunk.js",
-    "main.js.map": "/michael-cote-profile-2020/static/js/main.91e70632.chunk.js.map",
+    "main.js": "/michael-cote-profile-2020/static/js/main.10a28c38.chunk.js",
+    "main.js.map": "/michael-cote-profile-2020/static/js/main.10a28c38.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js",
     "runtime-main.js.map": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js.map",
     "static/css/2.7339f952.chunk.css": "/michael-cote-profile-2020/static/css/2.7339f952.chunk.css",
@@ -33,6 +33,6 @@
     "static/css/2.7339f952.chunk.css",
     "static/js/2.df1100db.chunk.js",
     "static/css/main.ea8c4c8a.chunk.css",
-    "static/js/main.91e70632.chunk.js"
+    "static/js/main.10a28c38.chunk.js"
   ]
 }
