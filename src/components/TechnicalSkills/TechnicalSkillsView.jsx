@@ -82,7 +82,7 @@ const TechnicalSkillsView = () => {
             <div className="dos-title">
               <span className="dos-title-icon">
                 <i className="fa fa-object-group" aria-hidden="true"></i>
-              </span>_WELCOME_TO_MICHAEL'S_TECH_SKILLS_DOS_MODE_C:/</div>
+              </span>_MICHAEL'S_TECHNICAL_SKILLS_MS-DOS_version_1.25_1981,82_Microsoft_inc_C:/</div>
           </div>
         </div>
       </div>
