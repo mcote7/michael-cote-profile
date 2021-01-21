@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+// *** THE LAST QUOTE IS A TESTING SUITE FOR NEW COMPONENTS *** //
+
 // import EmojiPicker from './emojiTest/EmojiPicker.jsx';
 
 // import IconDisplay from './iconTest/iconDisplay.jsx';
