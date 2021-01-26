@@ -7,14 +7,12 @@ import ScrollProgressRead from 'react-scroll-progress-read';
 import GoHome from './utilities/goHome';
 
 import NavBar from './components/NavBar/NavBar';
-
-// MAKE REUSEABLE CARD COMPONENT FOR MAIN ITEMS??
 import MainView from './components/MainView/MainView';
+import TechnicalSkillsView from './components/TechnicalSkillsView/TechnicalSkillsView';
 
-// optimize technical skills next ...
-import TechnicalSkillsView from './components/TechnicalSkills/TechnicalSkillsView';
-
+// optimize Education next ...
 import Education from './components/education/education';
+
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
 import Message from './components/message/message';
