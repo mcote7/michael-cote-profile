@@ -1,9 +1,9 @@
 @import '../SASS/variables.scss';
 
 .myNavBar {
-  padding: 0.5rem 1rem 1rem 1rem!important;
+  padding: 0.5rem!important;
   background-color: rgba(0, 0, 0, 0.8);
-  border-top: 0.2rem solid;
+  border-top: 0.05rem solid;
   border-color: $myBlueTransHeavy;
   border-radius: $myBorderRadius;
   position: fixed!important;
@@ -13,7 +13,7 @@
   transition: $myTrans;
 }
 .myNavBar:hover {
-  animation: rainbow 4.25s ease-in-out infinite;
+  animation: rainbow 8.25s ease-in-out infinite;
 }
 @keyframes rainbow {
   0% {border-color: $myBlueTransHeavy;}

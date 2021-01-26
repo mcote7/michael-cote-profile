@@ -61,7 +61,7 @@
 .socialLinks:after {
   display: block;
   content: '';
-  border-bottom: solid 1px $myBlueLight;
+  border-bottom: solid 0.05rem $myBlueLight;
   transform: scaleX(0);
   transition: transform $myTrans ease-in-out;
   animation: a-tag 0.75s ease-in-out 6s;
@@ -152,7 +152,7 @@ svg {
 .title-row {
   padding-top: 1.5rem;
   margin-bottom: 7rem;
-  border-top: 0.2rem solid;
+  // border-top: 0.2rem solid;
   text-align: center;
 }
 @media only screen and (max-width: 905px) {
@@ -179,7 +179,7 @@ svg {
   line-height: 0.9!important;
   font-size: 12vw;
   font-weight: 900;
-  -webkit-box-reflect: below 0px linear-gradient(
+  -webkit-box-reflect: below -7px linear-gradient(
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
@@ -195,7 +195,7 @@ svg {
 }
 @media only screen and (max-width: 420px) {
   .titleName {
-    -webkit-box-reflect: below -5px linear-gradient(
+    -webkit-box-reflect: below -10px linear-gradient(
       to bottom,
       transparent,
       rgba(255, 255, 255, 0.4));
@@ -209,7 +209,6 @@ svg {
   letter-spacing: 1.5vw;
   font-size: 2.5vw;
   font-weight: 700;
-  text-decoration: underline;
   backface-visibility: hidden;
   animation: title-sub-fade-in 8s;
 }
