@@ -168,7 +168,7 @@ const TechnicalSkillsView = () => {
       </div>
       <div className="row">
         <div className="col">
-          more soon...
+          more...
         </div>
       </div>
     </div>
