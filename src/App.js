@@ -117,7 +117,7 @@ const App = ({history}) => {
     <div className="App mainScreen">
       <div className="container-fluid">
         <div className="myScrollBar">
-          <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.5)" barColor="cornsilk" height="0.2rem"/>
+          <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.25)" barColor="rgba(255, 234, 41, 0.5)" height="0.05rem"/>
         </div>
           <div className="star_0" style={{top: `${starTop_0}%`, left: `${starLeft_0}%`}}></div>
           <div className="star_1" style={{top: `${starTop_1}%`, left: `${starLeft_1}%`}}></div>
