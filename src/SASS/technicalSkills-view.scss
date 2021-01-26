@@ -66,6 +66,10 @@
   100% {font-size: 1.5rem; color: black;}
 }
 
+.tech-list-wrap {
+  height: 216px;
+}
+
 // list initializer 
 .list-loader {
   font-size: 0.75rem;
@@ -183,24 +187,30 @@
 // for to align columns cuz of positioning
 
 @media only screen and (max-width: 992px) {
+  .tech-list-wrap {
+    height: 438px;
+  }
   .col-database {
-    margin-top: 10.5rem;
+    margin-top: -24px;
   }
   .col-tools {
-    margin-top: 12rem;
+    margin-top: 0rem;
   }
 }
 @media only screen and (max-width: 576px) {
   .tech-main-wrap {
-    height: 500vh;
+    height: 180vh;
+  }
+  .tech-list-wrap {
+    height: 838px;
   }
   .col-database {
-    margin-top: 12rem;
+    margin-top: -1rem;
   }
   .col-tools {
-    margin-top: 9rem;
+    margin-top: -3.5rem;
   }
   .col-frameworks {
-    margin-top: 10.5rem;
+    margin-top: -2rem;
   }
 }

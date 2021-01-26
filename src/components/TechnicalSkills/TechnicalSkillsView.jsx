@@ -87,7 +87,7 @@ const TechnicalSkillsView = () => {
         </div>
       </div>
       
-      <div className="row mt-5 no-gutters" style={{height: '216px'}}>
+      <div className="row mt-5 no-gutters tech-list-wrap">
         
         <div className="col-lg-3 col-md-6 col-sm-6">
           {languages.length > 0 ?
@@ -165,6 +165,11 @@ const TechnicalSkillsView = () => {
             }): <div className="tech-list-title list-loader">Initializing list</div>}
         </div>
         
+      </div>
+      <div className="row">
+        <div className="col">
+          more soon...
+        </div>
       </div>
     </div>
   );
