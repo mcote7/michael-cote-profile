@@ -191,7 +191,7 @@ svg {
 @keyframes title-drop {
   0% {transform: rotateY(180deg); opacity: 1;}
   40% {transform: rotateY(180deg); opacity: 1;}
-  50% {opacity: 0.05;}
+  50% {opacity: 0.1;}
   100% {transform: rotateY(0deg); opacity: 1;}
 }
 @media only screen and (max-width: 420px) {
