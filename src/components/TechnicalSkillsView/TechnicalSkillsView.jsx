@@ -14,6 +14,8 @@ const TechnicalSkillsView = () => {
   const [database, setDatabase] = useState([]);
   const [tools, setTools] = useState([]);
 
+  const [info, setInfo] = useState(false);
+
   useEffect(()=>{
     onRoute();
     
@@ -28,8 +30,8 @@ const TechnicalSkillsView = () => {
     }, 3750);
     setTimeout(() => {
       setTools(TOOLS_LIST);
+      setInfo(true);
     }, 4750);
-    
   }, []);
 
   useEffect(()=>{
@@ -72,7 +74,8 @@ const TechnicalSkillsView = () => {
         }
       }, i * 1000);
     }
-  }
+  };
+
   // <------------------------------------------------<<<<< {| 
   return (
     <div className="tech-main-wrap container-fluid">
@@ -82,7 +85,7 @@ const TechnicalSkillsView = () => {
             <div className="dos-title">
               <span className="dos-title-icon">
                 <i className="fa fa-object-group" aria-hidden="true"></i>
-              </span>_TECHNICAL_SKILLS_MS-DOS_version_1.25_1981,82_C:/</div>
+              </span>_TECHNICAL_SKILLS_C:/</div>
           </div>
         </div>
       </div>
@@ -166,10 +169,23 @@ const TechnicalSkillsView = () => {
         </div>
         
       </div>
-      <div className="row">
+      <div className="row mt-2">
         <div className="col">
-          more...
+          <div className="dos-title-wrap">
+            <div className="dos-title">
+              &diams;_MS-DOS_version_1.25_1981,82_&#9638;
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="row">
+        {info?
+        <div>
+          <p className="info-col" style={{color: 'hsl(108, 100%, 38%)', border: '0.2rem dashed hsla(108, 100%, 38%, 0.8)', padding: '0.5rem', margin: '0.5rem'}}>
+            <span><i style={{backgroundColor:'rgba(49, 245, 0, 0.25)',color:'hsl(108, 100%, 48%)',padding: '0rem 0.5rem', textAlign: 'center'}} className="mr-2 fa fa-info fa-2x" aria-hidden="true"></i></span> 
+            MS-DOS was a renamed form of 86-DOS – owned by Seattle Computer Products, written by Tim Paterson. Development of 86-DOS took only six weeks, as it was basically a clone of Digital Research's CP/M (for 8080/Z80 processors), ported to run on 8086 processors and with two notable differences compared to CP/M: an improved disk sector buffering logic, and the introduction of FAT12 instead of the CP/M filesystem. This first version was shipped in August 1980. Microsoft, which needed an operating system for the IBM Personal Computer, hired Tim Paterson in May 1981 and bought 86-DOS 1.10 for US$75,000 in July of the same year. Microsoft kept the version number, but renamed it MS-DOS. They also licensed MS-DOS 1.10/1.14 to IBM, which, in August 1981, offered it as PC DOS 1.0 as one of three operating systems for the IBM 5150, or the IBM PC.
+          </p>
+        </div>:<div style={{height: '100vh'}}></div>}
       </div>
     </div>
   );

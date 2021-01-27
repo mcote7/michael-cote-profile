@@ -18,10 +18,10 @@
   font-family: 'Ac437 Acer VGA 8x8';
   letter-spacing: 0.2rem;
   text-align: left;
-  height: 100vh;
   color: $myGreen;
   background-color: black;
   padding-top: 0.25rem;
+  padding-bottom: 20vh;
   filter: blur(0.5px);
 }
 
@@ -46,7 +46,7 @@
   // *| ANYTHING WITH THIS ANIMATION NEEDS ALL PROPS IN THIS CLASS |* // <-----------------<<<<< {|
   animation: 
     typing-title 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    blink-caret .75s step-end 8;
 }
 
 /* The typing effect */
@@ -155,6 +155,19 @@
   }
 }
 
+// bottom info 
+.info-col {
+  animation: fade-in-info 4s steps(40, end);
+}
+@keyframes fade-in-info {
+  from {opacity: 0; filter: blur(12px); border: 0.2rem dashed transparent; background-color: black;}
+  50% {filter: blur(0px);}
+  55% {filter: invert(100%);}
+  85% {filter: none; background-color: black;}
+  95% {background-color: $myGreen; border: 0.2rem dashed transparent}
+  to {opacity: 1; background-color: black; border: 0.2rem dashed hsla(108, 100%, 38%, 0.8)}
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -198,9 +211,6 @@
   }
 }
 @media only screen and (max-width: 576px) {
-  .tech-main-wrap {
-    height: 180vh;
-  }
   .tech-list-wrap {
     height: 838px;
   }
