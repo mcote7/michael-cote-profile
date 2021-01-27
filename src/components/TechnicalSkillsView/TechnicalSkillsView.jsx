@@ -181,7 +181,7 @@ const TechnicalSkillsView = () => {
       <div className="row">
         {info?
         <div>
-          <p className="info-col" style={{color: 'hsl(108, 100%, 38%)', border: '0.2rem dashed hsla(108, 100%, 38%, 0.8)', padding: '0.5rem', margin: '0.5rem'}}>
+          <p className="info-col" style={{color: 'hsl(108, 100%, 68%)', textShadow: '2px 2px black', border: '0.2rem dashed hsla(108, 100%, 48%, 0.8)', padding: '0.5rem 0.5rem 3rem 0.5rem', margin: '0.5rem'}}>
             <span><i style={{backgroundColor:'rgba(49, 245, 0, 0.25)',color:'hsl(108, 100%, 48%)',padding: '0rem 0.5rem', textAlign: 'center'}} className="mr-2 fa fa-info fa-2x" aria-hidden="true"></i></span> 
             MS-DOS was a renamed form of 86-DOS – owned by Seattle Computer Products, written by Tim Paterson. Development of 86-DOS took only six weeks, as it was basically a clone of Digital Research's CP/M (for 8080/Z80 processors), ported to run on 8086 processors and with two notable differences compared to CP/M: an improved disk sector buffering logic, and the introduction of FAT12 instead of the CP/M filesystem. This first version was shipped in August 1980. Microsoft, which needed an operating system for the IBM Personal Computer, hired Tim Paterson in May 1981 and bought 86-DOS 1.10 for US$75,000 in July of the same year. Microsoft kept the version number, but renamed it MS-DOS. They also licensed MS-DOS 1.10/1.14 to IBM, which, in August 1981, offered it as PC DOS 1.0 as one of three operating systems for the IBM 5150, or the IBM PC.
           </p>
