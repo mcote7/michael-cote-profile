@@ -186,7 +186,7 @@ svg {
   perspective: 1000px;
   transform-style: preserve-3d;
   transform-origin: 50% 100%;
-  animation: title-drop 4.75s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: title-drop 6s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 @keyframes title-drop {
   0% {transform: rotateY(180deg); opacity: 1;}
@@ -289,10 +289,10 @@ svg {
   margin: 1rem;
   clip-path: $myPloygonX;
   border-radius: $myPloygonBorderRadius;
-  animation: mySelf-morph 7s ease-in-out;
+  animation: mySelf-morph 7s ease-out;
 }
 @keyframes mySelf-morph {
-  from {opacity: 0; filter: blur(12px);}
+  from {opacity: 0;}
   80% {opacity: 0; filter: blur(12px);}
   to {opacity: 1; filter: blur(0px);}
 }
