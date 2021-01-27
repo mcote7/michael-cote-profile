@@ -184,7 +184,9 @@
   background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
   
   transition: 0.2s;
-  animation: fade-in-info 2.25s steps(40, end);
+}
+.intro-info {
+  animation: fade-in-info 4.75s steps(40, end);
 }
 @keyframes fade-in-info {
   from {opacity: 0.3; filter: blur(12px); border: 0.2rem dashed transparent; background-color: black;}
@@ -199,6 +201,7 @@
   text-shadow: 2px 2px black;
   color: $myGreenLight;
   background-color: black;
+  transition: 0.2s;
   animation: zoom 8s infinite;
 }
 @keyframes zoom {
