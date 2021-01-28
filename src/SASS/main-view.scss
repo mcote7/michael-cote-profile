@@ -152,7 +152,6 @@ svg {
 .title-row {
   padding-top: 1.5rem;
   margin-bottom: 7rem;
-  // border-top: 0.2rem solid;
   text-align: center;
 }
 @media only screen and (max-width: 905px) {
@@ -194,7 +193,11 @@ svg {
   50% {opacity: 0.1;}
   100% {transform: rotateY(0deg); opacity: 1;}
 }
-
+@media only screen and (max-width: 420px) {
+  .titleName {
+    -webkit-box-reflect: unset;
+  }
+}
 .titleSub {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -314,7 +317,7 @@ svg {
 .selfWrap {
   outline: none!important;
   filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));
-  animation: light-bright 13s ease-in-out;
+  animation: light-bright 8s ease-in-out;
 }
 @keyframes light-bright {
   from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}
