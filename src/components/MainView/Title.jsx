@@ -5,7 +5,7 @@ const Title = ({light}) => {
   // , handleSnowRate, blizzard, snowGauge <-- need these props from app component for x-mas
   
   return (<>
-    <div className="row mx-0 mt-1 title-row">
+    <div className="row mt-1 title-row">
       <div className="col-12 title-col">
         <div className="titleName">M{light?
           <span className="yellowWar blinky">i</span>:
