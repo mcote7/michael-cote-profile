@@ -229,42 +229,47 @@
   to {clip-path: none; border-radius: 50%; opacity: 0; filter: blur(12px); box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: $myIce;}
 }
 // the eye 
-
+.fa-eye{ 
+  text-shadow: 0px 0px 10px white!important;
+}
 .the-eye {
   display: block;
   position: relative;
   font-size: 2.25rem;
   top: 5%;
   left: 0%;
-  color: red;
+  color: rgb(0, 0, 0);
   backface-visibility: hidden;
-  animation: the-eye-dry 12s cubic-bezier(0.86, 0, 0.07, 1) infinite forwards;
-}
-.the-eye::before {
-  display: flex;
-  content: '';
-  height: 16px;
-  width: 16px;
-  position: absolute;
-  top: 31%;
-  left: 36%;
-  border-radius: 50%;
-  background-color: chartreuse;
-  animation: lazer-eyes 1.75s cubic-bezier(1, 0, 0, 1) infinite forwards;
+  animation: the-eye-dry 12s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite forwards;
 }
 @keyframes the-eye-dry {
   0% {transform: scaleY(0.1); opacity: 0;}
   20% {transform: scaleY(0.1); opacity: 0;}
-  60% {transform: scaleY(1); opacity: 1;}
-  80% {transform: scaleY(1); opacity: 1;}
-  85% {opacity: 1;}
+  60% {transform: scaleY(1); opacity: 0.15;}
+  80% {transform: scaleY(1); opacity: 0.15;}
   100% {transform: scaleY(0.1); opacity: 0;}
 }
-@keyframes lazer-eyes {
-  from {left: 44%;}
-  50% {left: 28%;}
-  to {left: 44%;}
+
+.the-eye::before {
+  display: flex;
+  content: '';
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  top: 31%;
+  left: 33%;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url('../images/eyeball-3105587-2587541.png');
+  background-size: contain;
+  animation: lazer-eyes 1.75s cubic-bezier(1, 0, 0, 1) infinite forwards;
 }
+@keyframes lazer-eyes {
+  from {left: 28%;}
+  50% {left: 38%;}
+  to {left: 28%;}
+}
+
 /* ------------------- */
 /* ----SPEECH-------- */
 /* @media only screen and (max-width: 750px) {
