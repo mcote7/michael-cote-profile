@@ -179,7 +179,7 @@ svg {
   line-height: 0.9!important;
   font-size: 12vw;
   font-weight: 900;
-  -webkit-box-reflect: below -7px linear-gradient(
+  -webkit-box-reflect: below 0px linear-gradient(
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
@@ -194,14 +194,7 @@ svg {
   50% {opacity: 0.1;}
   100% {transform: rotateY(0deg); opacity: 1;}
 }
-@media only screen and (max-width: 420px) {
-  .titleName {
-    -webkit-box-reflect: below -10px linear-gradient(
-      to bottom,
-      transparent,
-      rgba(255, 255, 255, 0.4));
-  }
-}
+
 .titleSub {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -269,6 +262,28 @@ svg {
 }
 /* ------------------- */
 /* --- < Bio /> ------ */
+
+.open-base-border-tops::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 38%;
+  width: 11%;
+  height: 1px;
+  background: rgb(17, 236, 229);
+  box-shadow: rgb(17, 236, 229) 0px 0px 6px 0.7px;
+}
+.open-base-border-tops::after {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 8%;
+  width: 5%;
+  height: 1px;
+  background: rgb(17, 236, 229);
+  box-shadow: rgb(17, 236, 229) 0px 0px 6px 0.7px;
+}
+
 .bioWrap {
   cursor: none;
   margin-top: 1.5rem;

@@ -33,11 +33,11 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
   return (<>
     <div className="row mt-5">
       {quote0?
-      <div className="bioWrap col-lg-9 order-lg-1 order-md-1">
+      <div className="bioWrap open-base-border-tops col-lg-9 order-lg-1 order-md-1">
         <span className="selfWrap">
           <img src={self} className="mySelf float-right" alt="self"/>
         </span>
-          <div className="quote" style={{backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`}}
+          <div className="quote open-base-border-bottoms" style={{backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`}}
           onMouseEnter={(e)=>handleMouseEnter(e)} onMouseMove={(e)=>handleMouseMove(e)}
           onClick={(e)=>handleClick(e)} onMouseOut={(e)=>handleMouseOut(e)}>
             <span className="mr-1"><i className={`fa fa-magic ${magic}`} aria-hidden="true"></i></span> 
