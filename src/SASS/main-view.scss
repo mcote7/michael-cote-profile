@@ -179,14 +179,14 @@ svg {
   line-height: 0.9!important;
   font-size: 12vw;
   font-weight: 900;
-  -webkit-box-reflect: below 0px linear-gradient(
+  -webkit-box-reflect: below -7px linear-gradient(
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
   perspective: 1000px;
   transform-style: preserve-3d;
   transform-origin: 50% 100%;
-  animation: title-drop 4.75s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: title-drop 4s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 @keyframes title-drop {
   0% {transform: rotateY(180deg); opacity: 1;}
