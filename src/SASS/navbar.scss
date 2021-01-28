@@ -214,12 +214,8 @@
   clip-path: $myPloygonY;
 }
 .homeButtonActivePlaceholder {
-  cursor: pointer;
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  cursor: none;
+  user-select: none;
   height: 60px;
   width: 60px;
   opacity: 1;
@@ -231,6 +227,43 @@
 @keyframes home-button-exit {
   from {clip-path: none; border-radius: 50%; opacity: 1; filter: blur(0px); box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
   to {clip-path: none; border-radius: 50%; opacity: 0; filter: blur(12px); box-shadow:0 0 10px 25px rgba(255,150,44,0); background-color: $myIce;}
+}
+// the eye 
+
+.the-eye {
+  display: block;
+  position: relative;
+  font-size: 2.25rem;
+  top: 5%;
+  left: 0%;
+  color: red;
+  backface-visibility: hidden;
+  animation: the-eye-dry 12s cubic-bezier(0.86, 0, 0.07, 1) infinite forwards;
+}
+.the-eye::before {
+  display: flex;
+  content: '';
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 31%;
+  left: 36%;
+  border-radius: 50%;
+  background-color: chartreuse;
+  animation: lazer-eyes 1.75s cubic-bezier(1, 0, 0, 1) infinite forwards;
+}
+@keyframes the-eye-dry {
+  0% {transform: scaleY(0.1); opacity: 0;}
+  20% {transform: scaleY(0.1); opacity: 0;}
+  60% {transform: scaleY(1); opacity: 1;}
+  80% {transform: scaleY(1); opacity: 1;}
+  85% {opacity: 1;}
+  100% {transform: scaleY(0.1); opacity: 0;}
+}
+@keyframes lazer-eyes {
+  from {left: 44%;}
+  50% {left: 28%;}
+  to {left: 44%;}
 }
 /* ------------------- */
 /* ----SPEECH-------- */

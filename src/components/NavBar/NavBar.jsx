@@ -77,7 +77,9 @@ const NavBar = ({history}) => {
         <NavLink className="homeButton" to="/">
           <span><i className="fa fa-home fa-2x" aria-hidden="true"></i></span>
         </NavLink> :
-        <div className="homeButtonActivePlaceholder"></div>}
+        <div className="homeButtonActivePlaceholder">
+          <span className="the-eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
+        </div>}
       </div>
 
       <button 
