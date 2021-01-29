@@ -47,6 +47,15 @@
   text-decoration: none;
   color: $myBlue;
   transition: $myTrans;
+
+}
+.social-stagg-0 {
+  animation: social-link-fade-in 2.5s;
+}
+.social-stagg-1 {
+  animation: social-link-fade-in 2.75s;
+}
+.social-stagg-2 {
   animation: social-link-fade-in 3s;
 }
 @keyframes social-link-fade-in {
