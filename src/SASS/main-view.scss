@@ -276,6 +276,7 @@ svg {
   border-radius: 38%;
   background: $myBlue;
   box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+  animation: social-link-fade-in 2.5s;
 }
 .open-base-border-tops::after {
   content: '';
@@ -288,6 +289,7 @@ svg {
   border-radius: 38%;
   background: $myBlue;
   box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+  animation: social-link-fade-in 2.7s;
 }
 
 .open-base-border-bottoms::before {
@@ -301,18 +303,20 @@ svg {
   border-radius: 38%;
   background: $myBlue;
   box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+  animation: social-link-fade-in 3.1s;
 }
 .open-base-border-bottoms::after {
   content: '';
   display: block;
   position: absolute;
   bottom: 0px;
-  left: 29%;
-  width: 18%;
+  left: 24%;
+  width: 27%;
   height: 0.05rem;
   border-radius: 38%;
   background: $myBlue;
   box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+  animation: social-link-fade-in 2.9s;
 }
 .bioWrap {
   cursor: none;
