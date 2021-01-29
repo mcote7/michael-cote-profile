@@ -266,26 +266,54 @@ svg {
 /* --- < Bio /> ------ */
 
 .open-base-border-tops::before {
+  content: '';
   display: block;
   position: absolute;
   top: 0px;
-  left: 38%;
-  width: 11%;
-  height: 1px;
-  background: rgb(17, 236, 229);
-  box-shadow: rgb(17, 236, 229) 0px 0px 6px 0.7px;
+  left: 52%;
+  width: 4%;
+  height: 0.05rem;
+  border-radius: 38%;
+  background: $myBlue;
+  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
 }
 .open-base-border-tops::after {
+  content: '';
   display: block;
   position: absolute;
   top: 0px;
-  left: 8%;
-  width: 5%;
-  height: 1px;
-  background: rgb(17, 236, 229);
-  box-shadow: rgb(17, 236, 229) 0px 0px 6px 0.7px;
+  left: 5%;
+  width: 24%;
+  height: 0.05rem;
+  border-radius: 38%;
+  background: $myBlue;
+  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
 }
 
+.open-base-border-bottoms::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 84%;
+  width: 8%;
+  height: 0.05rem;
+  border-radius: 38%;
+  background: $myBlue;
+  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+}
+.open-base-border-bottoms::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 29%;
+  width: 17%;
+  height: 0.05rem;
+  border-radius: 38%;
+  background: $myBlue;
+  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+}
 .bioWrap {
   cursor: none;
   margin-top: 1.5rem;
