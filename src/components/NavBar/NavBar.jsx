@@ -12,18 +12,17 @@ const NavBar = ({history}) => {
   useEffect(() => {
     setTimeout(()=> {
       setLoading(false);
-      setShowHomeButton(false);
-    }, 7500)
+    }, 7000)
   },[]);
 
   useEffect(()=> {
     if(!loading) {
       const NAV = document.getElementById('myNavbar');
       NAV.animate([
-        {bottom: '-88px', opacity: 0, filter: 'blur(12px)'},
-        {bottom: '0px', opacity: 1, filter: 'blur(0px)'}
+        {transform: 'scaleY(0)'},
+        {transform: 'scaleY(1)'}
       ], {
-        duration: 1000,
+        duration: 550,
         easing: 'ease-out'
       });
     }
@@ -52,7 +51,7 @@ const NavBar = ({history}) => {
       if(targetnavbar !== null && !targetnavbar.classList.contains("show")) {
         setNavtoggle(false);
       }
-    }, 1755);
+    }, 1500);
   },[history.location]);
 
   useEffect(() => {

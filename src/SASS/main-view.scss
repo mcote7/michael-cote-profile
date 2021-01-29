@@ -206,7 +206,7 @@ svg {
   font-weight: 700;
   backface-visibility: hidden;
   transform: scaleX(1);
-  animation: title-sub-fade-in 3.15s;
+  animation: title-sub-fade-in 3.1s;
 }
 @keyframes title-sub-fade-in {
   0% {opacity: 0; transform: scaleX(0);}
@@ -345,7 +345,7 @@ svg {
   margin: 1rem;
   clip-path: $myPloygonX;
   border-radius: $myPloygonBorderRadius;
-  animation: mySelf-morph 3.3s ease-out;
+  animation: mySelf-morph 2.8s ease-out;
 }
 @keyframes mySelf-morph {
   from {opacity: 0;}

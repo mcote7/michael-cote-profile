@@ -9,8 +9,8 @@ export const navBarCollapseTransition = () => {
       {opacity: 1, filter: 'blur(0px)'},
       {opacity: 0, filter: 'blur(12px)'},
     ], {
-      delay: 750,
-      duration: 1000
+      delay: 500,
+      duration: 750
     });
     setTimeout(() => {
         navbar_Collapse.classList.remove("show");
@@ -20,8 +20,8 @@ export const navBarCollapseTransition = () => {
       {opacity: 0.5, filter: 'blur(0px)'},
       {opacity: 1},
     ], {
-      delay: 1750,
-      duration: 1500
+      delay: 1250,
+      duration: 1000
     });
   }
 };
