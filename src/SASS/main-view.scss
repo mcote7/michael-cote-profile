@@ -264,60 +264,67 @@ svg {
 }
 /* ------------------- */
 /* --- < Bio /> ------ */
+.open-base-border-tops {
+  &:hover {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 66%;
+      width: 8%;
+      height: 0.05rem;
+      border-radius: 38%;
+      background: $myBlue;
+      box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+      animation: social-link-fade-in 0.2s;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 10%;
+      width: 29%;
+      height: 0.05rem;
+      border-radius: 38%;
+      background: $myBlue;
+      box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+      animation: social-link-fade-in 0.4s;
+    }
+  }
+}
+.open-base-border-bottoms {
+  &:hover {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 79%;
+      width: 12%;
+      height: 0.05rem;
+      border-radius: 38%;
+      background: $myBlue;
+      box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+      animation: social-link-fade-in 0.8s;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 24%;
+      width: 27%;
+      height: 0.05rem;
+      border-radius: 38%;
+      background: $myBlue;
+      box-shadow: 0px 0px 5px 0.5px $myBlueLight;
+      animation: social-link-fade-in 0.6s;
+    }
+  }
+}
 
-.open-base-border-tops::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 66%;
-  width: 8%;
-  height: 0.05rem;
-  border-radius: 38%;
-  background: $myBlue;
-  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
-  animation: social-link-fade-in 2.5s;
-}
-.open-base-border-tops::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 10%;
-  width: 29%;
-  height: 0.05rem;
-  border-radius: 38%;
-  background: $myBlue;
-  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
-  animation: social-link-fade-in 2.7s;
-}
-
-.open-base-border-bottoms::before {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 79%;
-  width: 12%;
-  height: 0.05rem;
-  border-radius: 38%;
-  background: $myBlue;
-  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
-  animation: social-link-fade-in 3.1s;
-}
-.open-base-border-bottoms::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 24%;
-  width: 27%;
-  height: 0.05rem;
-  border-radius: 38%;
-  background: $myBlue;
-  box-shadow: 0px 0px 5px 0.5px $myBlueLight;
-  animation: social-link-fade-in 2.9s;
-}
 .bioWrap {
   cursor: none;
   margin-top: 1.5rem;

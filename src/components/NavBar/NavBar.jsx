@@ -20,14 +20,10 @@ const NavBar = ({history}) => {
     if(!loading) {
       const NAV = document.getElementById('myNavbar');
       NAV.animate([
-        {bottom: '-88px', opacity: 0, filter: 'blur(12px)', backgroundColor: 'rgb(97, 218, 251)', borderColor: 'black'},
-        {borderColor: 'hsl(275, 100%, 48%)', filter: 'blur(2px)', opacity: 0.8},
-        {borderColor:' hsl(336, 100%, 48%)'},
-        {bottom: '0px', borderColor:  'hsl(13, 100%, 48%)'},
-        {borderColor:  'hsl(108, 100%, 48%)'},
-        {bottom: '0px', opacity: 1, filter: 'blur(0px)', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderColor: 'rgba(97, 218, 251, 0.8)'}
+        {bottom: '-88px', opacity: 0, filter: 'blur(12px)'},
+        {bottom: '0px', opacity: 1, filter: 'blur(0px)'}
       ], {
-        duration: 1250,
+        duration: 1000,
         easing: 'ease-out'
       });
     }

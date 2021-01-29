@@ -3,9 +3,7 @@
 .myNavBar {
   padding: 0.5rem!important;
   background-color: rgba(0, 0, 0, 0.8);
-  border-top: 0.05rem solid;
-  border-color: $myBlueTransHeavy;
-  border-radius: $myBorderRadius;
+  border-radius: $myBorderRadius $myBorderRadius 0rem 0rem;
   position: fixed!important;
   right: 15px;
   bottom: 0px;
@@ -13,16 +11,9 @@
   transition: $myTrans;
 }
 .myNavBar:hover {
-  animation: rainbow 12s ease-in-out infinite;
+  background-color: rgba(0, 0, 0, 0.85);
 }
-@keyframes rainbow {
-  0% {border-color: $myBlueTransHeavy;}
-  20% {border-color: $myPurpleTransHeavy}
-  40% {border-color: $myRedTransHeavy}
-  60% {border-color:  $myOrangeTransHeavy}
-  80% {border-color:  $myGreenTransHeavy}
-  100% {border-color: $myYellowTransHeavy}
-}
+
 /* --- collapsed --- */
 @media only screen and (max-width: 992px) {
   .myNavBar {
