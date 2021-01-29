@@ -47,11 +47,11 @@
   text-decoration: none;
   color: $myBlue;
   transition: $myTrans;
-  animation: social-link-fade-in 8.5s;
+  animation: social-link-fade-in 3s;
 }
 @keyframes social-link-fade-in {
   0% {opacity: 0;}
-  75% {opacity: 0;}
+  80% {opacity: 0;}
   100% {opacity: 1;}
 }
 .socialLinks:hover {
@@ -64,16 +64,10 @@
   border-bottom: solid 0.05rem $myBlueLight;
   transform: scaleX(0);
   transition: transform $myTrans ease-in-out;
-  animation: a-tag 0.75s ease-in-out 6s;
 }
 .socialLinks:hover:after {
   transform: scaleX(1);
   transform-origin:  100% 50%;
-}
-@keyframes a-tag {
-  0% {transform: scaleX(0);}
-  50% {transform: scaleX(1); border-color: cornsilk;}
-  100% {transform: scaleX(0);}
 }
 .contactBtnPlaceholder{
   width: 290px;
@@ -136,12 +130,7 @@ svg {
   to {stroke-dashoffset: -7000;}
 }
 .mailIcon {
-  animation: mail 2.4s infinite ease-in-out;
-}
-@keyframes mail {
-  0% {color: cornsilk;}
-  50% {color: $myBlue;}
-  100% {color: cornsilk;}
+  animation: neon 8s ease 2s infinite;
 }
 .contactBtn:focus,.contactBtn:active {
   outline: none !important;
@@ -185,7 +174,7 @@ svg {
   perspective: 1000px;
   transform-style: preserve-3d;
   transform-origin: 50% 100%;
-  animation: title-drop 4.75s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: title-drop 3.85s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 @keyframes title-drop {
   0% {transform: rotateY(180deg); opacity: 1;}
@@ -207,7 +196,8 @@ svg {
   font-size: 2.5vw;
   font-weight: 700;
   backface-visibility: hidden;
-  animation: title-sub-fade-in 8s;
+  transform: scaleX(1);
+  animation: title-sub-fade-in 3.15s;
 }
 @keyframes title-sub-fade-in {
   0% {opacity: 0; transform: scaleX(0);}
@@ -307,7 +297,7 @@ svg {
   margin: 1rem;
   clip-path: $myPloygonX;
   border-radius: $myPloygonBorderRadius;
-  animation: mySelf-morph 7s ease-out;
+  animation: mySelf-morph 3.3s ease-out;
 }
 @keyframes mySelf-morph {
   from {opacity: 0;}
@@ -317,7 +307,7 @@ svg {
 .selfWrap {
   outline: none!important;
   filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));
-  animation: light-bright 8s ease-in-out;
+  animation: light-bright 3.4s ease-in-out;
 }
 @keyframes light-bright {
   from {filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));}

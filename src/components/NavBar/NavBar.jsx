@@ -13,7 +13,7 @@ const NavBar = ({history}) => {
     setTimeout(()=> {
       setLoading(false);
       setShowHomeButton(false);
-    }, 8000)
+    }, 7500)
   },[]);
 
   useEffect(()=> {
@@ -27,7 +27,7 @@ const NavBar = ({history}) => {
         {borderColor:  'hsl(108, 100%, 48%)'},
         {bottom: '0px', opacity: 1, filter: 'blur(0px)', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderColor: 'rgba(97, 218, 251, 0.8)'}
       ], {
-        duration: 1750,
+        duration: 1250,
         easing: 'ease-out'
       });
     }
