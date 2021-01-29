@@ -19,12 +19,13 @@ const NavBar = ({history}) => {
     if(!loading) {
       const NAV = document.getElementById('myNavbar');
       NAV.animate([
-        {transform: 'scaleY(0)'},
-        {transform: 'scaleY(1)'}
+        {bottom: '-80px'},
+        {bottom: '0px'}
       ], {
-        duration: 550,
+        duration: 500,
         easing: 'ease-out'
       });
+      setShowHomeButton(false);
     }
   },[loading]);
 
