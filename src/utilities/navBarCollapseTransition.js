@@ -9,17 +9,21 @@ export const navBarCollapseTransition = () => {
       {opacity: 0, filter: 'blur(12px)', bottom: '-420px'},
     ], {
       delay: 750,
-      duration: 760
+      duration: 750
     });
     setTimeout(() => {
-        navbar_Collapse.classList.remove("show");
+      navbar_Main.style.opacity = 0;
+      navbar_Collapse.classList.remove("show");
     }, 1500);
     navbar_Main.animate([
       {opacity: 0, filter: 'blur(12px)', bottom: '-80px'},
       {opacity: 1, filter: 'blur(0px)', bottom: '0px'},
     ], {
-      delay: 1510,
+      delay: 1750,
       duration: 500
     });
+    setTimeout(() => {
+      navbar_Main.style.opacity = 1;
+    }, 2250);
   }
 };
