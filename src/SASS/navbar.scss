@@ -217,7 +217,7 @@
   background-color: $myIce;
   border-radius: $myPloygonBorderRadius;
   clip-path: $myPloygonX;
-  animation: home-button-exit 0.25s ease-out;
+  animation: home-button-exit 0.5s ease-out;
 }
 @keyframes home-button-exit {
   from {clip-path: none; border-radius: 50%; opacity: 1; filter: blur(0px); box-shadow:0 0 0 0 white;}

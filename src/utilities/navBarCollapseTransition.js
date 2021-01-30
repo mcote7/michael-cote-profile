@@ -5,23 +5,21 @@ export const navBarCollapseTransition = () => {
   
   if(navbar_Main !== null && navbar_Collapse !== null && [...navbar_Collapse.classList].includes("show")) {
     navbar_Main.animate([
-      {opacity: 1},
-      {opacity: 1, filter: 'blur(0px)'},
-      {opacity: 0, filter: 'blur(12px)'},
+      {opacity: 1, filter: 'blur(0px)', bottom: '0px'},
+      {opacity: 0, filter: 'blur(12px)', bottom: '-420px'},
     ], {
       delay: 500,
-      duration: 750
+      duration: 510
     });
     setTimeout(() => {
         navbar_Collapse.classList.remove("show");
-    }, 1750);
+    }, 1000);
     navbar_Main.animate([
-      {opacity: 0, filter: 'blur(12px)'},
-      {opacity: 0.5, filter: 'blur(0px)'},
-      {opacity: 1},
+      {opacity: 0, filter: 'blur(12px)', bottom: '-80px'},
+      {opacity: 1, filter: 'blur(0px)', bottom: '0px'},
     ], {
-      delay: 1250,
-      duration: 1000
+      delay: 1010,
+      duration: 500
     });
   }
 };
