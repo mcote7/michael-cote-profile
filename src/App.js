@@ -80,7 +80,7 @@ const App = ({history}) => {
   //   }
   // },[SNOW_RATE]);
   
-// x ----------------------------------------------------------------------
+// x ------- STARS --------------------------------------------------------
   const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*41));
   const [starLeft_0, setStarLeft_0] = useState(Math.floor(Math.random()*100));
   useEffect(()=> {

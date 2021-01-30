@@ -23,7 +23,8 @@
     "react-scripts": "^4.0.1",
     "react-scroll-progress-read": "0.0.13",
     "react-speech-kit": "^3.0.1",
-    "react-spinners": "^0.9.0"
+    "react-spinners": "^0.9.0",
+    "uifx": "^2.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -18,6 +18,8 @@ const MainView = ({message}) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // OPENING AUDIO len=7s
+    
     //loader
     setTimeout(()=> {
       setLoading(false);
@@ -29,7 +31,9 @@ const MainView = ({message}) => {
     //contact btn
     setTimeout(()=> {
       setContact(true);
-    }, 8000)
+      // ROBOT BEEP at end
+      
+    }, 7500)
   },[]);
 
   //mouse ghost
