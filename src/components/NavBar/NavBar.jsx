@@ -96,19 +96,19 @@ const NavBar = ({history}) => {
           <li className="nav-item">
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/education">
               <span className="polyLink-icon"><i className="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></span>
-              <span className="polyLink-text">Education</span>
+              <span className="polyLink-text">Education&nbsp;</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/projects">
               <span className="polyLink-icon"><i className="fa fa-th-list fa-2x" aria-hidden="true"></i></span>
-              <span className="polyLink-text">Projects&nbsp;&nbsp;&nbsp;</span>
+              <span className="polyLink-text">Projects&nbsp;&nbsp;</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="polyLink" activeClassName="polyLink-active" to="/resume">
               <span className="polyLink-icon"><i className="fa fa-file-text-o fa-2x" aria-hidden="true"></i></span>
-              <span className="polyLink-text">Resume&nbsp;&nbsp;&nbsp;</span>
+              <span className="polyLink-text">Resume&nbsp;&nbsp;&nbsp;&nbsp;</span>
             </NavLink>
           </li>
         </ul>
