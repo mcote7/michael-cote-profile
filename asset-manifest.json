@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/michael-cote-profile-2020/static/css/main.8743b062.chunk.css",
-    "main.js": "/michael-cote-profile-2020/static/js/main.6c2c7abe.chunk.js",
-    "main.js.map": "/michael-cote-profile-2020/static/js/main.6c2c7abe.chunk.js.map",
+    "main.js": "/michael-cote-profile-2020/static/js/main.29d8cb05.chunk.js",
+    "main.js.map": "/michael-cote-profile-2020/static/js/main.29d8cb05.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js",
     "runtime-main.js.map": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js.map",
     "static/css/2.7339f952.chunk.css": "/michael-cote-profile-2020/static/css/2.7339f952.chunk.css",
@@ -17,6 +17,7 @@
     "static/media/DojoCert.bcdbb641.png": "/michael-cote-profile-2020/static/media/DojoCert.bcdbb641.png",
     "static/media/MasterReactCert.5f89f4fd.png": "/michael-cote-profile-2020/static/media/MasterReactCert.5f89f4fd.png",
     "static/media/ReduxCert.a87c4ee9.png": "/michael-cote-profile-2020/static/media/ReduxCert.a87c4ee9.png",
+    "static/media/blobLong.3cabf8c8.mp3": "/michael-cote-profile-2020/static/media/blobLong.3cabf8c8.mp3",
     "static/media/blobShort.65ba2840.mp3": "/michael-cote-profile-2020/static/media/blobShort.65ba2840.mp3",
     "static/media/bugImg2.99050e5b.jpg": "/michael-cote-profile-2020/static/media/bugImg2.99050e5b.jpg",
     "static/media/navbar.scss": "/michael-cote-profile-2020/static/media/eyeball-3105587-2587541.51290b60.png",
@@ -36,6 +37,6 @@
     "static/css/2.7339f952.chunk.css",
     "static/js/2.df1100db.chunk.js",
     "static/css/main.8743b062.chunk.css",
-    "static/js/main.6c2c7abe.chunk.js"
+    "static/js/main.29d8cb05.chunk.js"
   ]
 }
