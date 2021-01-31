@@ -72,8 +72,9 @@ const NavBar = ({history}) => {
   hSound.playbackRate = 8;
   hSound.volume = 0.3;
 
-  const playHomeSound = () => {
+  const playHomeSound = (e) => {
     hSound.play();
+    console.log("sound home?", hSound, e)
   };
 
   if(loading) return null;
@@ -82,7 +83,7 @@ const NavBar = ({history}) => {
 
       <div className="homeButtonWrap">
       {showHomeButton ?
-        <NavLink className="homeButton" to="/" onClick={playHomeSound}>
+        <NavLink className="homeButton" to="/" onMouseDown={(e)=>playHomeSound(e)}>
           <span><i className="fa fa-home fa-2x" aria-hidden="true"></i></span>
         </NavLink> :
         <div className="homeButtonActivePlaceholder">

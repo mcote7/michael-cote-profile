@@ -63,9 +63,11 @@ const MainView = ({message}) => {
 
   const magic_BG_el = document.getElementsByClassName('quote')[0];
 
-  const handleClick = () => {
+  const handleMouseDown = (e) => {
     blob.play();
-    console.log("audio?", blob)
+    console.log("audio?", blob, e)
+  };
+  const handleClick = () => {
     if(magic_BG_el !== undefined) {
       setMagic("magic-out")
       magic_BG_el.animate([
@@ -106,7 +108,7 @@ const MainView = ({message}) => {
       
       // console.log("magic-alpha", magic_BG_ALPHA)
       
-      console.log("inBounds", inBounds);
+      // console.log("inBounds", inBounds);
 
       // console.log("e.screenY",e.screenY);
       // console.log("e.screenX",e.screenX);
@@ -158,6 +160,7 @@ const MainView = ({message}) => {
       <Social message={message} contact={contact}/>
       <Title light={light}/>
       <Bio self={self} angular8={angular8}
+          handleMouseDown={handleMouseDown}
           handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}
           handleMouseEnter={handleMouseEnter} handleClick={handleClick}
           magic={magic} magic_BG_MAIN={magic_BG_MAIN} magic_BG_ALPHA={magic_BG_ALPHA}/>

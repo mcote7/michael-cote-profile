@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 
 // import IconDisplay from './iconTest/iconDisplay.jsx';
 
-const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, handleMouseOut, magic, magic_BG_MAIN, magic_BG_ALPHA}) => {
+const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, handleMouseMove, handleMouseOut, magic, magic_BG_MAIN, magic_BG_ALPHA}) => {
 
   const [quote0, setQuote0] = useState(false);
   const [quote1, setQuote1] = useState(false);
@@ -39,7 +39,7 @@ const Bio = ({self, angular8, handleClick, handleMouseEnter, handleMouseMove, ha
         </span>
           <div className="quote open-base-border-bottoms" style={{backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`}}
           onMouseEnter={(e)=>handleMouseEnter(e)} onMouseMove={(e)=>handleMouseMove(e)}
-          onClick={(e)=>handleClick(e)} onMouseOut={(e)=>handleMouseOut(e)}>
+          onClick={(e)=>handleClick(e)} onMouseOut={(e)=>handleMouseOut(e)} onMouseDown={(e)=>handleMouseDown(e)}>
             <span className="mr-1"><i className={`fa fa-magic ${magic}`} aria-hidden="true"></i></span> 
             Dedicated and motivated professional seeking an opportunity to showcase my creative and 
             technical proficiency. My goal is to attain a position which will provide an opportunity 
