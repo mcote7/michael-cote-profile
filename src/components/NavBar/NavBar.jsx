@@ -7,7 +7,32 @@ import SpeechNavigation from './SpeechNavigation';
 
 import homeSound from '../../audio/MainAudio/blobLong.mp3';
 
+import navToggleUpSound from '../../audio/NavBarAudio/navtogglegoup.wav';
+import navToggleDownSound from '../../audio/NavBarAudio/navtogglegodown.wav';
+
 const NavBar = ({history}) => {
+
+    // navbar sounds 
+    const hSound = new Audio(homeSound);
+    hSound.preload = true;
+    hSound.playbackRate = 8;
+    hSound.volume = 0.3;
+  
+    const navtogUpSound = new Audio(navToggleUpSound);
+    navtogUpSound.preload = true;
+    navtogUpSound.playbackRate = 2;
+    navtogUpSound.volume = 0.2;
+  
+    const navtogDownSound = new Audio(navToggleDownSound);
+    navtogDownSound.preload = true;
+    navtogDownSound.playbackRate = 2;
+    navtogDownSound.volume = 0.2;
+  
+    const playHomeSound = (e) => {
+      hSound.play();
+      console.log("sound home?", hSound, e)
+    };
+    // end sounds 
 
   const [loading, setLoading] = useState(true);
   const [showHomeButton, setShowHomeButton] = useState(false);
@@ -37,15 +62,18 @@ const NavBar = ({history}) => {
   const [navtoggleClippath, setNavtoggleClippath] = useState("polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)");
   useEffect(() => {
     if(navtoggle) {
+      navtogUpSound.play();
       setNavtoggleIcon("chevron-circle-down");
       setNavtoggleBackgroundcolor("hsl(193, 95%, 48%)");
       setNavtoggleClippath("polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)")
     }
     else if(!navtoggle) {
+      navtogDownSound.play();
       setNavtoggleIcon("bars");
       setNavtoggleBackgroundcolor("hsl(193, 95%, 38%)");
       setNavtoggleClippath("polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)");
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[navtoggle]);
 
   useEffect(() => {
@@ -66,16 +94,6 @@ const NavBar = ({history}) => {
     }
   },[history.location.pathname]);
 
-  // navbar sounds 
-  const hSound = new Audio(homeSound);
-  hSound.preload = true;
-  hSound.playbackRate = 8;
-  hSound.volume = 0.3;
-
-  const playHomeSound = (e) => {
-    hSound.play();
-    console.log("sound home?", hSound, e)
-  };
 
   if(loading) return null;
   return (
