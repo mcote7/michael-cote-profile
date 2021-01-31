@@ -4,9 +4,18 @@ import { navBarCollapseTransition } from './navBarCollapseTransition';
 
 import { CSSRulePlugin, TweenLite } from "gsap/all";
 
+import homeSound from '../audio/MainAudio/blobLong.mp3';
+
 const GoHome = () => {
 
+  const hSound = new Audio(homeSound);
+  hSound.preload = true;
+  hSound.playbackRate = 8;
+  hSound.volume = 0.5;
+
   useEffect(() => {
+
+    hSound.play();
 
     window.scrollTo({top: 0, behavior: 'smooth'});
 
