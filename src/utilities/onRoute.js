@@ -9,7 +9,7 @@ export const onRoute = () => {
   const rSound = new Audio(routeSound);
   rSound.preload = true;
   rSound.playbackRate = 3.2;
-  rSound.volume = 0.5;
+  rSound.volume = 0.3;
   rSound.play();
   
   const position = document.getElementById("routes");

@@ -5,6 +5,8 @@ import '../../SASS/navbar.scss';
 
 import SpeechNavigation from './SpeechNavigation';
 
+import homeSound from '../../audio/MainAudio/blobLong.mp3';
+
 const NavBar = ({history}) => {
 
   const [loading, setLoading] = useState(true);
@@ -64,13 +66,23 @@ const NavBar = ({history}) => {
     }
   },[history.location.pathname]);
 
+  // navbar sounds 
+  const hSound = new Audio(homeSound);
+  hSound.preload = true;
+  hSound.playbackRate = 8;
+  hSound.volume = 0.3;
+
+  const playHomeSound = () => {
+    hSound.play();
+  };
+
   if(loading) return null;
   return (
     <nav id="myNavbar" className="navbar navbar-expand-xl myNavBar">
 
       <div className="homeButtonWrap">
       {showHomeButton ?
-        <NavLink className="homeButton" to="/">
+        <NavLink className="homeButton" to="/" onClick={playHomeSound}>
           <span><i className="fa fa-home fa-2x" aria-hidden="true"></i></span>
         </NavLink> :
         <div className="homeButtonActivePlaceholder">
