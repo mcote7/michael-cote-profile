@@ -120,7 +120,7 @@ const App = ({history}) => {
           <div className="star_0" style={{top: `${starTop_0}%`, left: `${starLeft_0}%`}}></div>
           <div className="star_1" style={{top: `${starTop_1}%`, left: `${starLeft_1}%`}}></div>
           <div className="star_2" style={{top: `${starTop_2}%`, left: `${starLeft_2}%`}}></div>
-          <div id="gravity" className="gravity"><i class="fa fa-grav fa-2x" aria-hidden="true"></i></div>
+          <div id="gravity" className="gravity"><i className="fa fa-grav fa-2x" aria-hidden="true"></i></div>
         <div id="mainView" className="row mainView">
           <MainView message={message}/>
         </div>

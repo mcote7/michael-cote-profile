@@ -8,8 +8,10 @@ import Bio from '../MainView/Bio';
 import self from '../../images/self1_edited.jpg';
 import angular8 from '../../images/angular8.png';
 
-// import '../../css/main.css';
 import '../../SASS/main-view.scss';
+
+//*new audio pkg.
+import blobSound from '../../audio/MainAudio/blobShort.mp3';
 
 const MainView = ({message}) => {
 
@@ -17,9 +19,12 @@ const MainView = ({message}) => {
   const [contact, setContact] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  // audio
+  const blob = new Audio(blobSound);
+  blob.preload = true;
+  blob.volume = 0.5;
+
   useEffect(() => {
-    // OPENING AUDIO len=7s
-    
     //loader
     setTimeout(()=> {
       setLoading(false);
@@ -31,9 +36,7 @@ const MainView = ({message}) => {
     //contact btn
     setTimeout(()=> {
       setContact(true);
-      // ROBOT BEEP at end
-      
-    }, 7500)
+    }, 7750)
   },[]);
 
   //mouse ghost
@@ -61,6 +64,8 @@ const MainView = ({message}) => {
   const magic_BG_el = document.getElementsByClassName('quote')[0];
 
   const handleClick = () => {
+    blob.play();
+    console.log("audio?", blob)
     if(magic_BG_el !== undefined) {
       setMagic("magic-out")
       magic_BG_el.animate([
