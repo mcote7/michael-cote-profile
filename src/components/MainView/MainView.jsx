@@ -67,6 +67,7 @@ const MainView = ({message}) => {
     blob.play();
     console.log("audio?", blob, e)
   };
+
   const handleClick = () => {
     if(magic_BG_el !== undefined) {
       setMagic("magic-out")
@@ -85,6 +86,8 @@ const MainView = ({message}) => {
   };
 
   const handleMouseEnter = (e) => {
+    blob.play();
+    console.log("audio?", blob, e)
     if(magic_BG_el !== undefined) {
       setMagic("magic");
       magic_BG_el.animate([
@@ -108,7 +111,7 @@ const MainView = ({message}) => {
       
       // console.log("magic-alpha", magic_BG_ALPHA)
       
-      // console.log("inBounds", inBounds);
+      console.log("inBounds", inBounds);
 
       // console.log("e.screenY",e.screenY);
       // console.log("e.screenX",e.screenX);
@@ -148,7 +151,7 @@ const MainView = ({message}) => {
         setMyGhostDisplay("none");
       }, 250);
       
-      // console.log("inBounds", inBounds);
+      console.log("inBounds", inBounds);
     }
   };
 

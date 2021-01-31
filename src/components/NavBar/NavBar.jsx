@@ -10,6 +10,10 @@ import homeSound from '../../audio/MainAudio/blobLong.mp3';
 import navToggleUpSound from '../../audio/NavBarAudio/navtogglegoup.wav';
 import navToggleDownSound from '../../audio/NavBarAudio/navtogglegodown.wav';
 
+import navLinkHover from '../../audio/NavBarAudio/navLinkHover.wav';
+import navLinkClick from '../../audio/NavBarAudio/navLinkClick.wav';
+
+
 const NavBar = ({history}) => {
 
     // navbar sounds 
@@ -17,20 +21,39 @@ const NavBar = ({history}) => {
     hSound.preload = true;
     hSound.playbackRate = 8;
     hSound.volume = 0.3;
-  
+
     const navtogUpSound = new Audio(navToggleUpSound);
     navtogUpSound.preload = true;
     navtogUpSound.playbackRate = 2;
-    navtogUpSound.volume = 0.2;
-  
+    navtogUpSound.volume = 0.1;
+
     const navtogDownSound = new Audio(navToggleDownSound);
     navtogDownSound.preload = true;
     navtogDownSound.playbackRate = 2;
-    navtogDownSound.volume = 0.2;
+    navtogDownSound.volume = 0.1;
+
+    const navLinkHov = new Audio(navLinkHover);
+    navLinkHov.preload = true;
+    navLinkHov.playbackRate = 4;
+    navLinkHov.volume = 0.1;
+
+    const navLinkClk = new Audio(navLinkClick);
+    navLinkClk.preload = true;
+    navLinkClk.playbackRate = 2.5;
+    navLinkClk.volume = 0.1;
   
     const playHomeSound = (e) => {
+      navLinkClk.play();
       hSound.play();
       console.log("sound home?", hSound, e)
+    };
+    const playNavLinkHover = (e) => {
+      navLinkHov.play();
+      console.log("hov sound?", navLinkHov, e)
+    };
+    const playNavLinkClick = (e) => {
+      navLinkClk.play();
+      console.log("link clicked?", navLinkClk)
     };
     // end sounds 
 
@@ -101,7 +124,9 @@ const NavBar = ({history}) => {
 
       <div className="homeButtonWrap">
       {showHomeButton ?
-        <NavLink className="homeButton" to="/" onMouseDown={(e)=>playHomeSound(e)}>
+        <NavLink 
+          onMouseEnter={(e)=>playNavLinkHover(e)}
+          className="homeButton" to="/" onMouseDown={(e)=>playHomeSound(e)}>
           <span><i className="fa fa-home fa-2x" aria-hidden="true"></i></span>
         </NavLink> :
         <div className="homeButtonActivePlaceholder">
@@ -119,25 +144,37 @@ const NavBar = ({history}) => {
       <div className="collapse navbar-collapse" id="navbarText">
         <ul className="navbar-nav m-auto">
           <li className="nav-item">
-            <NavLink className="polyLink" activeClassName="polyLink-active" to="/technical">
+            <NavLink 
+              onMouseEnter={(e)=>playNavLinkHover(e)}
+              onMouseDown={(e)=>playNavLinkClick(e)}
+              className="polyLink" activeClassName="polyLink-active" to="/technical">
               <span className="polyLink-icon"><i className="fa fa-floppy-o fa-2x" aria-hidden="true"></i></span>
               <span className="polyLink-text">Technical&nbsp;</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="polyLink" activeClassName="polyLink-active" to="/education">
+            <NavLink 
+              onMouseEnter={(e)=>playNavLinkHover(e)}
+              onMouseDown={(e)=>playNavLinkClick(e)}
+              className="polyLink" activeClassName="polyLink-active" to="/education">
               <span className="polyLink-icon"><i className="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></span>
               <span className="polyLink-text">Education&nbsp;</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="polyLink" activeClassName="polyLink-active" to="/projects">
+            <NavLink 
+              onMouseEnter={(e)=>playNavLinkHover(e)}
+              onMouseDown={(e)=>playNavLinkClick(e)}
+              className="polyLink" activeClassName="polyLink-active" to="/projects">
               <span className="polyLink-icon"><i className="fa fa-th-list fa-2x" aria-hidden="true"></i></span>
               <span className="polyLink-text">Projects&nbsp;&nbsp;</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="polyLink" activeClassName="polyLink-active" to="/resume">
+            <NavLink 
+              onMouseEnter={(e)=>playNavLinkHover(e)}
+              onMouseDown={(e)=>playNavLinkClick(e)}
+              className="polyLink" activeClassName="polyLink-active" to="/resume">
               <span className="polyLink-icon"><i className="fa fa-file-text-o fa-2x" aria-hidden="true"></i></span>
               <span className="polyLink-text">Resume&nbsp;&nbsp;&nbsp;&nbsp;</span>
             </NavLink>
