@@ -177,8 +177,8 @@ const TechnicalSkillsView = () => {
         </div>
         
       </div>
-      <div className="row mt-2">
-        <div className="col">
+      <div className="row mt-5 mb-4">
+        <div className="col mt-2">
           <div className="dos-title-wrap">
             <div className="dos-title">
               &diams;_MS-DOS_version_1.25_1981,82_&#9638;
