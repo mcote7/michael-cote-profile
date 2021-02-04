@@ -4,10 +4,22 @@ import { navBarCollapseTransition } from './navBarCollapseTransition';
 
 import { CSSRulePlugin, TweenLite } from "gsap/all";
 
+import homeSound from '../audio/MainAudio/blobLong.mp3';
+
 
 const GoHome = () => {
 
+  const consoleCSS = 'background:#000000;color:#f5dc00;border:0.5rem solid #00c0f5;padding:0.5rem;margin:0.5rem';
+
   useEffect(() => {
+
+    
+    const hSound = new Audio(homeSound);
+    hSound.preload = true;
+    hSound.playbackRate = 8;
+    hSound.volume = 0.3;
+
+    hSound.play().catch(err => console.log("%ci know google damn...", consoleCSS, err));
 
     window.scrollTo({top: 0, behavior: 'smooth'});
 

@@ -2,6 +2,8 @@ import './App.css';
 import React, {useEffect, useState} from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom';
 
+import {rainbowConsole} from './config/rainbow';
+
 import ScrollProgressRead from 'react-scroll-progress-read';
 
 import GoHome from './utilities/goHome';
@@ -19,6 +21,10 @@ import Message from './components/message/message';
 
 
 const App = ({history}) => {
+
+  useEffect(()=> {
+    console.log("%cHello World", rainbowConsole)
+  },[]);
 
 // XMAS ONLY
   // const [letItSnow, setLetItSnow] = useState(false);

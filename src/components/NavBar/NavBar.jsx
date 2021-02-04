@@ -5,8 +5,6 @@ import '../../SASS/navbar.scss';
 
 import SpeechNavigation from './SpeechNavigation';
 
-import homeSound from '../../audio/MainAudio/blobLong.mp3';
-
 import navToggleUpSound from '../../audio/NavBarAudio/navtogglegoup.wav';
 import navToggleDownSound from '../../audio/NavBarAudio/navtogglegodown.wav';
 
@@ -17,10 +15,6 @@ import navLinkClick from '../../audio/NavBarAudio/navLinkClick.wav';
 const NavBar = ({history}) => {
 
     // navbar sounds 
-    const hSound = new Audio(homeSound);
-    hSound.preload = true;
-    hSound.playbackRate = 8;
-    hSound.volume = 0.3;
 
     const navtogUpSound = new Audio(navToggleUpSound);
     navtogUpSound.preload = true;
@@ -44,8 +38,7 @@ const NavBar = ({history}) => {
   
     const playHomeSound = (e) => {
       navLinkClk.play();
-      hSound.play();
-      console.log("sound home?", hSound, e)
+      console.log("sound home?", navLinkClick, e)
     };
     const playNavLinkHover = (e) => {
       navLinkHov.play();
@@ -53,7 +46,7 @@ const NavBar = ({history}) => {
     };
     const playNavLinkClick = (e) => {
       navLinkClk.play();
-      console.log("link clicked?", navLinkClk)
+      console.log("link clicked?", navLinkClk, e)
     };
     // end sounds 
 

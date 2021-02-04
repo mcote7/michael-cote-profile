@@ -9,25 +9,22 @@ $myYellow: hsl(54, 100%, 48%);
 $myYellowDark: hsl(54, 100%, 38%);
 
 // - complementary = 
-$myRed: hsl(336, 100%, 48%);
-
 $myGreenDark: hsl(108, 100%, 38%);
-$myGreen: hsl(108, 100%, 48%);
+$myGreen: #31f500;
 $myGreenLight: hsl(108, 100%, 68%);
 
+$myRed: hsl(336, 100%, 48%);
 $myPurple: hsl(275, 100%, 48%);
 $myOrange: hsl(13, 100%, 48%);
 
-// - trans  =
-$myBlueTrans: hsla(193, 100%, 48%, 0.15);
+// - transparents =
+$myBlueTrans: hsla(193, 100%, 48%, 0.149);
 $myYellowTrans: hsla(54, 100%, 48%, 0.15);
 
 $myRedTrans: hsla(336, 100%, 48%, 0.15);
 $myGreenTrans: hsla(108, 100%, 48%, 0.15);
 $myPurpleTrans: hsla(275, 100%, 48%, 0.15);
 $myOrangeTrans: hsla(13, 100%, 48%, 0.15);
-
-// - heavy trans = 
 
 $myBlueTransHeavy: hsla(193, 100%, 48%, 0.8);
 $myYellowTransHeavy: hsla(54, 100%, 48%, 0.8);
@@ -37,10 +34,8 @@ $myGreenTransHeavy: hsla(108, 100%, 48%, 0.8);
 $myPurpleTransHeavy: hsla(275, 100%, 48%, 0.8);
 $myOrangeTransHeavy: hsla(13, 100%, 48%, 0.8);
 
-
-$myIce: hsla(0, 0%, 100%, 0.15);
+$myIce: hsla(0, 0%, 100%, 0.149);
 $myClear: hsla(0, 0%, 100%, 0);
-
 
 // - transitions = 
 $myTrans: 0.4s;
@@ -52,4 +47,3 @@ $myBorderRadius: 0.05rem;
 $myPloygonBorderRadius: 46%;
 $myPloygonX: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 $myPloygonY: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)
-
