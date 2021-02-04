@@ -1,1 +1,1 @@
-export const rainbowConsole = "background:#000000;margin:1rem;padding:0rem 2rem 2.5rem 4rem;color:#fff;font-size: 100px; text-shadow:-4px 4px #00c0f5,-8px 8px #8f00f5,-12px 12px #f50062,-16px 16px #f53500,-20px 20px #f5dc00,-24px 24px #31f500,-28px 28px #ffffff26";
+export const rainbowConsole = "background:#000000;margin:1rem;padding:0rem 2rem 1.75rem 4rem;color:rgba(255,255,255,0.7);font-size:100px;text-shadow:-4px 4px #00c0f5,-8px 8px #8f00f5,-12px 12px #f50062,-16px 16px #f53500,-20px 20px #f5dc00,-24px 24px #31f500,-28px 28px rgba(255,255,255,0.7)";
