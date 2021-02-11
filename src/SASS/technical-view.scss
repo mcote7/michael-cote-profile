@@ -46,8 +46,8 @@
 
   // *| ANYTHING WITH THIS ANIMATION NEEDS ALL PROPS IN THIS CLASS |* // <-----------------<<<<< {|
   animation: 
-    typing-title 3.5s steps(40, end),
-    blink-caret .75s step-end 8;
+    typing-title 3s steps(40, end),
+    blink-caret .75s step-end 3;
 }
 
 /* The typing effect */
@@ -94,7 +94,7 @@
   cursor: default;
   color: black;
   background-color: $myGreenTransHeavy;
-  animation: tech-list-title 1.75s ease-in-out;
+  animation: tech-list-title 1.25s ease-in-out;
   
   transition: 0.1s;
   &:hover {
@@ -118,7 +118,7 @@
   font-size: 0.75rem;
   margin-right: 0.25rem;
   padding: 0rem 0rem 0rem 0.25rem;
-  animation: tech-list-title 2s ease-in-out;
+  animation: tech-list-title 1.25s ease-in-out;
 }
 
 // list items 
@@ -131,7 +131,7 @@
   padding-left: 0.2rem;
   width: 100%;
   color: $myGreen;
-  background-color: rgba(49, 245, 0, 0.25);
+  background-color: rgba(49, 245, 0, 0.15);
 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .25rem solid $myGreen; /* The typwriter cursor */
@@ -159,7 +159,6 @@
 // bottom info 
 .info-col {
   padding: 1rem 1rem 3rem 1rem;
-  margin: 0.5rem;
   border: 0.2rem dashed hsla(108, 100%, 48%, 0.8);
   
   color: $myGreen;
@@ -203,7 +202,7 @@
   color: $myGreenLight;
   background-color: black;
   transition: 0.2s;
-  animation: zoom 8s infinite;
+  animation: zoom 4s infinite;
 }
 @keyframes zoom {
   0% { background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px; }
