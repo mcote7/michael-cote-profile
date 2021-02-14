@@ -202,7 +202,7 @@
   color: $myGreenLight;
   background-color: black;
   transition: 0.2s;
-  animation: zoom 4s infinite;
+  animation: zoom 7s infinite;
 }
 @keyframes zoom {
   0% { background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px; }

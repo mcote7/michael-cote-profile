@@ -1,6 +1,7 @@
 @import '../SASS/variables.scss';
 
 .myNavBar {
+  user-select: none;
   padding: 0.5rem!important;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: $myBorderRadius $myBorderRadius 0rem 0rem;

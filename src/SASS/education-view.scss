@@ -1,3 +1,207 @@
 @import '../SASS/variables.scss';
 
 // lcars v1.0 ...
+
+@font-face {
+  font-family: 'lcars';
+  src: url('../config/lcars.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lcars-cont {
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'lcars';
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 0;
+  padding: 0.5rem 0.5rem 5rem 0.5rem;
+  box-shadow: 0px 0px 10px 10px black;
+}
+
+// add mobile view later 
+@media only screen and (max-width: 576px) {
+  .lcars-cont {
+    display: none;
+  }
+}
+
+// side bar 
+.lcars-side-col {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px dashed red; */
+  height: 100%;
+  width: calc(20vw - 2rem);
+  justify-content: space-evenly;
+}
+
+.lcars-top-left-elbow {
+  background-color: tan;
+  border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+  width: 100%;
+  height: 5rem;
+}
+
+.lcars-bottom-left-elbow {
+  background-color: tan;
+  border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%;
+  width: 100%;
+  height: 5rem;
+}
+
+.lcars-left-side-base-fill-top {
+  background-color: tan;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: auto;
+}
+
+.lcars-left-side-base-fill-bottom {
+  background-color: tan;
+  width: 100%;
+  height: 5rem;
+  margin-top: auto;
+}
+
+.lcars-left-side-decor-fill {
+  background-color: dodgerblue;
+  width: 100%;
+  height: 2.25rem;
+  margin: 0.5rem 0rem;
+}
+
+.lcars-left-side-base-fill-sm {
+  background-color: tan;
+  width: 100%;
+  height: 1.25rem;
+}
+
+.lcars-left-side-buttons {
+  background-color: tomato;
+  width: 100%;
+  height: 3rem;
+  text-align: end;
+  padding-right: 2rem;
+}
+
+// main column 
+.lcars-main-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(80vw - 2rem);
+}
+
+// top frame 
+.lcars-main-row-top {
+  width: 100%;
+  height: 6rem;
+  background-color: tan;
+}
+
+.lcars-top-bar {
+  background-color: tan;
+  height: 2.5rem;
+  width: 100%;
+}
+.lcars-top-bar::after {
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: tan;
+  display: flex;
+  float: right;
+  margin-right: -1.25rem;
+}
+
+.lcars-top-title-wrap {
+  display: inline;
+  position: relative;
+  left: calc(100% - 42rem);
+  height: 2.5rem;
+  width: 100%;
+}
+
+.lcars-top-title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  font-size: 2.5rem;
+  user-select: none;
+  width: min-content;
+  background-color: black;
+  padding: 0rem 1rem 0.5rem 1rem;
+}
+
+// end caps 
+.lcars-end-cap {
+  display: inline-flex;
+  height: 2.5rem;
+  width: 1.25rem;
+  background-color: black;
+  float: right;
+}
+
+// bottom frame
+.lcars-main-row-bottom {
+  width: 100%;
+  height: 6rem;
+  background-color: tan;
+  margin-top: auto;
+}
+
+.lcars-bottom-bar {
+  padding-top: 3.5rem;
+  background-color: tan;
+  height: 2.5rem;
+  width: 100%;
+}
+.lcars-bottom-bar::after {
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: tan;
+  display: flex;
+  float: right;
+  margin-right: -1.25rem;
+}
+
+// display 
+.lcars-display-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 2.5rem;
+  height: calc(100% - 10.4rem);
+  width: calc(80vw - 2rem);
+  background-color: black;
+  padding: 1.5rem;
+  border-radius: 3rem 0rem 0rem 3rem;
+}
+
+.lcars-display-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lcars-carousel {
+  height: 200px;
+  width: 200px;
+  border: 1px dashed red;
+}
+.lcars-display-text {
+  height: 200px;
+  width: 200px;
+  border: 1px dashed red;
+}
+// 
