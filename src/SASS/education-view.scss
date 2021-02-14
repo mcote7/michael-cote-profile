@@ -123,7 +123,7 @@
 .lcars-top-title-wrap {
   display: inline;
   position: relative;
-  left: calc(100% - 42rem);
+  left: calc(100% - 44rem);
   height: 2.5rem;
   width: 100%;
 }
@@ -138,6 +138,8 @@
   width: min-content;
   background-color: black;
   padding: 0rem 0.5rem 0.75rem 0.5rem;
+  transform: scaleX(0.85);
+  backface-visibility: hidden;
 }
 
 // end caps 

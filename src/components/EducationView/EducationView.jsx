@@ -30,7 +30,7 @@ const EducationView = () => {
           <div className="lcars-top-bar">
             <div className="lcars-top-title-wrap">
               <div className="lcars-top-title">
-                LCARS
+                EDUCATION
               </div>
             </div>
             <div className="lcars-end-cap"></div>
@@ -40,12 +40,12 @@ const EducationView = () => {
         <div className="lcars-display-row">
           <div className="col-md-6 lcars-display-col">
             <div className="lcars-carousel">
-              carousel
+              CAROUSEL
             </div>
           </div>
           <div className="col-md-6 lcars-display-col">
             <div className="lcars-display-text">
-              text
+              INFO TEXT
             </div>
           </div>
         </div>
