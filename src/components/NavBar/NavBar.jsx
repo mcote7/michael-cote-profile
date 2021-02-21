@@ -55,7 +55,7 @@ const NavBar = ({history}) => {
   useEffect(() => {
     setTimeout(()=> {
       setLoading(false);
-    }, 7000)
+    }, 6500)
   },[]);
 
   useEffect(()=> {

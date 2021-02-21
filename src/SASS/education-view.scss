@@ -88,6 +88,7 @@
   text-align: end;
   padding-right: 2rem;
 }
+// end side bar 
 
 // main column 
 .lcars-main-col {
@@ -121,11 +122,8 @@
 }
 
 .lcars-top-title-wrap {
-  display: inline;
-  position: relative;
-  left: calc(100% - 44rem);
+  display: inline-flex;
   height: 2.5rem;
-  width: 100%;
 }
 
 .lcars-top-title {
@@ -140,6 +138,10 @@
   padding: 0rem 0.5rem 0.75rem 0.5rem;
   transform: scaleX(0.85);
   backface-visibility: hidden;
+}
+
+.lcars-top-title-buff {
+  border: 1px dashed red;
 }
 
 // end caps 

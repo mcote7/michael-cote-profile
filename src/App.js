@@ -26,68 +26,8 @@ const App = ({history}) => {
   useEffect(()=> {
     console.log("%cHello World", rainbowConsole)
   },[]);
-
-// XMAS ONLY
-  // const [letItSnow, setLetItSnow] = useState(false);
-  // const [snowGauge, setSnowGauge] = useState(false);
-  // useEffect(()=>{
-  //   const body = document.getElementById('body');
-  //   body.style.backgroundColor = 'rgba(0,0,0,1)';
-  //   body.style.color = 'rgba(255,255,255,1)';
-  //   setTimeout(() => {
-  //     setSnowGauge(true);
-  //     setLetItSnow(true);
-  //     setTimeout(() => {
-  //       setBlizzard(true);
-  //     }, 2000);
-  //     body.animate([
-  //       {backgroundColor: 'rgba(0,0,0,1)'},
-  //       {backgroundColor: 'rgba(0,0,0,0.75)'},
-  //       {backgroundColor: 'rgba(255,255,255,0.75)'},
-  //       {backgroundColor: 'rgba(0,200,0,0.75)'},
-  //       {backgroundColor: 'rgba(0,200,0,1)'},
-  //       {backgroundColor: 'rgba(0,200,0,0.75)'},
-  //       {backgroundColor: 'rgba(200,0,0,0.75)'},
-  //       {backgroundColor: 'rgba(200,0,0,1)'},
-  //       {backgroundColor: 'rgba(200,0,0,0.75)'},
-  //       {backgroundColor: 'rgba(0,0,0,0.75)'},
-  //       {backgroundColor: 'rgba(0,0,0,1)'}
-  //     ], {
-  //       duration: 4000,
-  //       delay: 2000
-  //     });
-  //     setTimeout(() => {
-  //       setBlizzard(false);
-  //       body.style.backgroundColor = 'rgba(0,0,0,1)';
-  //     }, 6000);
-
-  //   }, 12500);
-  // },[]);
-  // const [SNOW_RATE, SET_SNOW_RATE] = useState(0.25);
-  // const handleSnowRate = (e) => {
-  //   let prefix = `0.${e.target.value}`;
-  //   let result = +prefix;
-  //   console.log("input", result)
-  //   SET_SNOW_RATE(result);
-  // };
-  // const [blizzard, setBlizzard] = useState(false);
-  // useEffect(()=>{
-  //   if(SNOW_RATE === 0.25) {
-  //     return;
-  //   }
-  //   if(SNOW_RATE < 0.15) {
-  //     setLetItSnow(false);
-  //   } else {
-  //     setLetItSnow(true);
-  //   }
-  //   if(SNOW_RATE > 0.85) {
-  //     setBlizzard(true);
-  //   } else {
-  //     setBlizzard(false);
-  //   }
-  // },[SNOW_RATE]);
   
-// x ------- STARS --------------------------------------------------------
+// --- STARS --------------------------------------------------------
   const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*41));
   const [starLeft_0, setStarLeft_0] = useState(Math.floor(Math.random()*100));
   useEffect(()=> {
@@ -112,12 +52,13 @@ const App = ({history}) => {
       setStarLeft_2(Math.floor(Math.random()*100));
     }, 1550);
   },[]);
-// ---------------------------------------------
+// -----------
 
   const [message, setMessage] = useState(false);
   const handleMessage = () => {
     setMessage(true);
   };
+  
     return(
     <div className="App mainScreen">
       <div className="container-fluid">
@@ -145,9 +86,6 @@ const App = ({history}) => {
         </div>
       </div>
       <NavBar history={history}/>
-      
-      {/* {letItSnow?<div id="snow" style={{opacity: `${SNOW_RATE}`}}></div>:''} */}
-      {/* {blizzard?<div id="blizzard" style={{opacity: `${SNOW_RATE}`}}></div>:''} */}
     </div>
     );
   };

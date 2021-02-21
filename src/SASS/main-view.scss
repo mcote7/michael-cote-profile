@@ -6,6 +6,67 @@
   font-weight: normal;
   font-style: normal;
 }
+// new keyframes 
+
+@keyframes myDelay {
+  from {opacity: 0;}
+  to {opacity: 0;}
+}
+
+@keyframes myFade {
+  from {opacity: 0;}
+  33% {opacity: 0.1;}
+  to {opacity: 1;}
+}
+
+@keyframes mySlideUpLong {
+  from {transform: translateY(20vh);}
+  to {transform: translateY(0vh);}
+}
+
+@keyframes mySlideUpShort {
+  from {transform: translateY(5vh);}
+  to {transform: translateY(0vh);}
+}
+
+@keyframes mySlideDownLong {
+  from {transform: translateY(-20vh);}
+  to {transform: translateY(0vh);}
+}
+
+@keyframes mySlideDownShort {
+  from {transform: translateY(-5vh);}
+  to {transform: translateY(0vh);}
+}
+
+// test keyframes -
+
+// animation: noise-anim 2s infinite linear alternate-reverse;
+@keyframes noise {
+  0%{clip:rect(89px,9999px,100px,0)}
+  5%{clip:rect(4px,9999px,62px,0)}
+  10%{clip:rect(43px,9999px,16px,0)}
+  15%{clip:rect(2px,9999px,68px,0)}
+  20%{clip:rect(12px,9999px,6px,0)}
+  25%{clip:rect(89px,9999px,25px,0)}
+  30%{clip:rect(15px,9999px,38px,0)}
+  35%{clip:rect(57px,9999px,97px,0)}
+  40%{clip:rect(24px,9999px,72px,0)}
+  45%{clip:rect(81px,9999px,3px,0)}
+  50%{clip:rect(93px,9999px,26px,0)}
+  55%{clip:rect(68px,9999px,85px,0)}
+  60%{clip:rect(43px,9999px,28px,0)}
+  65%{clip:rect(44px,9999px,11px,0)}
+  70%{clip:rect(17px,9999px,33px,0)}
+  75%{clip:rect(74px,9999px,66px,0)}
+  80%{clip:rect(100px,9999px,4px,0)}
+  85%{clip:rect(92px,9999px,31px,0)}
+  90%{clip:rect(93px,9999px,98px,0)}
+  95%{clip:rect(23px,9999px,77px,0)}
+  100%{clip:rect(92px,9999px,8px,0)}
+}
+
+// -
 
 /* --- < MainView /> - */
 .mainViewContainer {
@@ -22,19 +83,15 @@
   padding-top: 0.1rem;
   background-color: $myIce;
   border-radius: $myBorderRadius;
-  opacity: 1;
-  animation: slide-up-main 2s ease-out;
+  animation: 
+    mySlideUpLong 1.5s ease-out,
+    myFade 1.75s ease-in;
   transition: $myTrans;
 }
 .socialWraps:hover {
   background-color: $myClear;
 }
-@keyframes slide-up-main {
-  from {margin-top: 100vh; background-color: rgba(255, 255, 255, 1); opacity: 0;}
-  25% {opacity: 0;}
-  75% {background-color: rgba(255, 255, 255, 1)}
-  to {margin-top: 0%; background-color: rgba(255, 255, 255, 0.15); opacity: 1;}
-}
+
 @media only screen and (max-width: 650px) {
   .socialWraps {
     margin-bottom: 0.25rem!important;
@@ -47,22 +104,23 @@
   text-decoration: none;
   color: $myBlue;
   transition: $myTrans;
-
 }
 .social-stagg-0 {
-  animation: social-link-fade-in 2.5s;
+  animation: 
+    myDelay 0.5s,
+    myFade 1.5s ease-in 0.5s;
 }
 .social-stagg-1 {
-  animation: social-link-fade-in 2.75s;
+  animation: 
+    myDelay 1s,
+    myFade 1.5s ease-in 1s;
 }
 .social-stagg-2 {
-  animation: social-link-fade-in 3s;
+  animation: 
+    myDelay 1.5s,
+    myFade 1.5s ease-in 1.5s;
 }
-@keyframes social-link-fade-in {
-  0% {opacity: 0;}
-  80% {opacity: 0;}
-  100% {opacity: 1;}
-}
+
 .socialLinks:hover {
   color: cornsilk;
   text-decoration: none;
@@ -180,17 +238,11 @@ svg {
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  transform-origin: 50% 100%;
-  animation: title-drop 3.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: 
+    mySlideDownShort 1.5s ease-out,
+    myFade 1.75s ease-in;
 }
-@keyframes title-drop {
-  0% {transform: rotateY(180deg); opacity: 1;}
-  40% {transform: rotateY(180deg); opacity: 1;}
-  50% {opacity: 0.1;}
-  100% {transform: rotateY(0deg); opacity: 1;}
-}
+
 @media only screen and (max-width: 420px) {
   .titleName {
     -webkit-box-reflect: unset;
@@ -204,15 +256,12 @@ svg {
   letter-spacing: 1.5vw;
   font-size: 2.5vw;
   font-weight: 700;
-  backface-visibility: hidden;
-  transform: scaleX(1);
-  animation: title-sub-fade-in 3.1s;
+  animation: 
+    myDelay 0.25s,
+    mySlideUpShort 1.5s ease-out 0.25s,
+    myFade 1.75s ease-in 0.25s;
 }
-@keyframes title-sub-fade-in {
-  0% {opacity: 0; transform: scaleX(0);}
-  80% {opacity: 0; transform: scaleX(0);}
-  100% {opacity: 1; transform: scaleX(1);}
-}
+
 /* title text break */
 @media only screen and (max-width: 992px) {
   .titleName {
@@ -277,7 +326,7 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: social-link-fade-in 0.2s;
+      animation: myFade 0.2s ease-in;
     }
     &::after {
       content: '';
@@ -290,7 +339,7 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: social-link-fade-in 0.4s;
+      animation: myFade 0.6s ease-in;
     }
   }
 }
@@ -307,7 +356,7 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: social-link-fade-in 0.8s;
+      animation: myFade 1.4s ease-in;
     }
     &::after {
       content: '';
@@ -320,7 +369,7 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: social-link-fade-in 0.6s;
+      animation: myFade 1.0s ease-in;
     }
   }
 }
@@ -329,12 +378,14 @@ svg {
   cursor: none;
   margin-top: 1.5rem;
   backface-visibility: hidden;
-  animation: bio-fade-in 2s ease-in-out;
+  animation: 
+    myFade 1.25s ease-in,
+    bio-expand 1.75s ease-in-out reverse;
 }
-@keyframes bio-fade-in {
-  0% {opacity: 0; transform: scaleX(1);}
+@keyframes bio-expand {
+  0% {transform: scaleX(1);}
   50% {transform: scaleX(0);}
-  100% {opacity: 1; transform: scaleX(1);}
+  100% {transform: scaleX(1);}
 }
 .mySelf {
   -webkit-touch-callout: none;
@@ -345,13 +396,11 @@ svg {
   margin: 1rem;
   clip-path: $myPloygonX;
   border-radius: $myPloygonBorderRadius;
-  animation: mySelf-morph 2.8s ease-out;
+  animation: 
+    myDelay 1.75s,
+    myFade 1.75s ease-in 1.75s;
 }
-@keyframes mySelf-morph {
-  from {opacity: 0;}
-  80% {opacity: 0; filter: blur(12px);}
-  to {opacity: 1; filter: blur(0px);}
-}
+
 .selfWrap {
   outline: none!important;
   filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.65));
@@ -394,12 +443,13 @@ svg {
   padding: 1rem 1rem 2rem 1rem;
   line-height: 1.2;
   background-color: $myIce;
-  animation: spread 1.75s ease-out;
+  transform-origin: 50% 0%;
+  animation: spread 1.5s ease-out;
 }
 @keyframes spread {
-  0% {line-height: 0; background-color: rgba(255, 255, 255, 1);}
-  80% {line-height: 0; background-color: rgba(255, 255, 255, 1);}
-  100% {line-height: 1.2; background-color: rgba(255, 255, 255, 0.15);}
+  0% {transform: scaleY(0.2); background-color: rgba(255, 255, 255, 1);}
+  80% {transform: scaleY(0.2); background-color: rgba(255, 255, 255, 1);}
+  100% {transform: scaleY(1); background-color: rgba(255, 255, 255, 0.15);}
 }
 @media only screen and (max-width: 905px) {
   .quote {
@@ -588,265 +638,3 @@ svg {
   to {opacity: 0.5; transform: scale(1);}
 }
 /* --------------------------------------------------------------- */
-
-// * ICON LIGHTS *
-
-.icons-main-wrap {
-  padding: 3rem 0rem 1rem 0rem;
-  border-radius: 0.2rem;
-  background-color: #131313;
-}
-.icon-row {
-  display: flex;
-  width: 100%;
-}
-.test-icon {
-  font-size: 2rem!important;
-  color: rgba(255, 255, 255, 0.25);
-  transition: 0.25s;
-}
-.test-icon-span {
-  cursor: none;
-  display: inline-block;
-}
-.test-icon-span:hover > .test-icon {
-  color: white;
-}
-.test-icon-span:hover:before {
-  content: '';
-  display: inline-flex;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 50%;
-  background-color: white;
-  position: relative;
-  top: -65px;
-  left: 20px;
-  z-index: 1982;
-  transition: 0.25s;
-}
-.test-icon-span::before {
-  content: '';
-  display: inline-flex;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 50%;
-  background-color: transparent;
-  position: relative;
-  top: -65px;
-  left: 20px;
-  z-index: 1982;
-  transition: 0.25s;
-}
-// ------------------------------
-
-
-
-
-/* EMOJI PICKER */
-
-
-// .emoji-chat-wrap {
-//   cursor: unset;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-//   height: 560px;
-// }
-// .output {
-//   padding: .5rem;
-//   overflow-y: scroll;
-//   width: 100%;
-//   height: 120px;
-//   background-color: white;
-//   border-radius: 0.25rem;
-//   color: black;
-//   font-size: 1.5rem;
-//   font-weight: 700;
-// }
-
-
-// .cote-form {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 80px;
-//   border: 1px solid silver;
-//   border-radius: 0.25rem;
-//   padding: 0rem 1rem 0rem 0.5rem;
-//   background-color: rgba(0, 0, 0, 0.5);
-// }
-
-
-// .chat-input {
-//   cursor: text;
-//   font-size: 1.5rem;
-//   width: 80%;
-//   border: 2px solid silver;
-//   border-radius: 0.25rem;
-//   height: 45px;
-//   padding-bottom: 0.25rem;
-// }
-// .chat-input:focus {
-//   outline: none;
-//   border: 2px solid gold;
-// }
-
-
-// .sendit {
-//   cursor: pointer;
-//   font-size: 1.5rem!important;
-//   margin-left: auto;
-//   transform: scale(1);
-//   backface-visibility: hidden;
-//   transition: 0.15s;
-// }
-// .sendit:hover {
-//   transform: scale(1.2);
-// }
-// .sendit:active {
-//   color: gold;
-//   transform: scale(0.8);
-// }
-
-
-// .trashit {
-//   font-size: 1.5rem!important;
-//   color: silver;
-//   cursor: pointer;
-//   transform: scale(1);
-//   backface-visibility: hidden;
-//   transition: 0.15s;
-// }
-// .trashit:hover {
-//   color: black;
-//   transform: scale(1.1);
-// }
-// .trashit:active {
-//   color: red;
-//   transform: scale(0.9);
-// }
-
-
-// .emoji-button-open {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-left: auto;
-//   padding: 0rem;
-//   font-size: 1.5rem;
-//   background: transparent;
-//   border: none;
-//   outline: none;
-//   transform: scale(1);
-//   backface-visibility: hidden;
-//   transition: 0.15s;
-// }
-// .emoji-button-open:hover {
-//   transform: scale(1.1);
-// }
-// .emoji-button-open:focus {
-//   outline: none!important;
-// }
-// .emoji-button-open:active {
-//   outline: none!important;
-//   transform: scale(0.95);
-// }
-
-
-// .emoji-picker-main-wrap {
-//   padding-top: 0.5rem;
-//   width: 100%;
-//   height: 240px;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   border: 2px solid gold;
-//   border-radius: 0.25rem;
-//   background-color: white;
-//   backface-visibility: hidden;
-//   transform: scaleY(1);
-//   opacity: 1;
-//   filter: blur(0px);
-//   transform-origin: 0% 0%;
-//   animation: show-picker 250ms;
-// }
-// @keyframes show-picker {
-//   from {transform: scaleY(0);opacity: 0;filter: blur(4px);}
-//   to {transform: scaleY(1);opacity: 1;filter: blur(0px);}
-// }
-// .emoji-display {
-//   height: 180px;
-//   overflow-y: scroll;
-// }
-// .emoji-item-wrap {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 3rem;
-//   cursor: pointer;
-//   padding: 0px!important;
-//   margin: 5px!important;
-// }
-
-// .emoji-item-button {
-//   font-size: 1.75rem!important;
-//   padding: 0px!important;
-//   background: transparent;
-//   border: none;
-//   outline: none;
-//   border-radius: 50%;
-//   border: 2px solid transparent;
-//   transform: scale(1);
-//   backface-visibility: hidden;
-//   transition: 100ms;
-// }
-// .emoji-item-button:hover {
-//   background-color: gold;
-//   transform: scale(1.1);
-// }
-// .emoji-item-button:focus {
-//   outline: none!important;
-// }
-// .emoji-item-button:active {
-//   border: 2px solid gold;
-//   background-color: hsl(51, 100%, 85%);
-//   transform: scale(0.9);
-//   outline: none!important;
-// }
-
-// .emoji-cats-row {
-//   background-color: rgba(0, 0, 0, 0);
-//   display: flex;
-//   height: 45px;
-//   justify-content: center;
-//   align-items: center;
-//   height: 40px;
-// }
-// .emoji-cats-button {
-//   height: 100%;
-//   color: black;
-//   background-color: white;
-//   border-top: 2px solid gold;
-//   border-bottom: 2px solid gold;
-//   border-right: none;
-//   border-left: none;
-//   border-radius: 0px;
-// }
-// .emoji-cats-button:hover {
-//   background-color: gold;
-// }
-// .emoji-cats-button:focus {
-//   color: white;
-//   background-color: gold;
-//   outline: none!important;
-// } 
-// .emoji-cats-button:active {
-//   color: white;
-//   background-color: gold;
-//   outline: none!important;
-// }
-
-/*  */

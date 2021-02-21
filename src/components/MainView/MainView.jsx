@@ -15,9 +15,12 @@ import blobSound from '../../audio/MainAudio/blobShort.mp3';
 
 const MainView = ({message}) => {
 
+  const [loading, setLoading] = useState(true);
+  const [social, setSocial] = useState(false);
+  const [title, setTitle] = useState(false);
+  const [bio, setBio] = useState(false);
   const [light, setLight] = useState(false);
   const [contact, setContact] = useState(false);
-  const [loading, setLoading] = useState(true);
 
   // audio
   const blob = new Audio(blobSound);
@@ -29,14 +32,23 @@ const MainView = ({message}) => {
     setTimeout(()=> {
       setLoading(false);
     }, 4000)
+    setTimeout(()=> {
+      setSocial(true);
+    }, 4200)
+    setTimeout(()=> {
+      setTitle(true);
+    }, 4800)
+    setTimeout(()=> {
+      setBio(true);
+    }, 5000)
     //my i light
     setTimeout(()=> {
       setLight(true);
-    }, 7000)
+    }, 5500)
     //contact btn
     setTimeout(()=> {
       setContact(true);
-    }, 7750)
+    }, 7500)
   },[]);
 
   //mouse ghost
@@ -160,15 +172,17 @@ const MainView = ({message}) => {
 
   return (<>
     <div className="mainViewContainer col-12">
-      <Social message={message} contact={contact}/>
-      <Title light={light}/>
+      {social &&
+      <Social message={message} contact={contact}/>}
+      {title &&
+      <Title light={light}/>}
+      {bio &&
       <Bio self={self} angular8={angular8}
           handleMouseDown={handleMouseDown}
           handleMouseMove={handleMouseMove} handleMouseOut={handleMouseOut}
           handleMouseEnter={handleMouseEnter} handleClick={handleClick}
-          magic={magic} magic_BG_MAIN={magic_BG_MAIN} magic_BG_ALPHA={magic_BG_ALPHA}/>
+          magic={magic} magic_BG_MAIN={magic_BG_MAIN} magic_BG_ALPHA={magic_BG_ALPHA}/>}
     </div>
-
     <div id="mouseGhost" style={myMoveStyle}></div>
   </>);
 };

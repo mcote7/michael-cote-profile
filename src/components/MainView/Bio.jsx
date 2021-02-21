@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 // *** THE LAST QUOTE IS A TESTING SUITE FOR NEW COMPONENTS *** //
 
-// import EmojiPicker from './emojiTest/EmojiPicker.jsx';
-
-// import IconDisplay from './iconTest/iconDisplay.jsx';
-
 const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, handleMouseMove, handleMouseOut, magic, magic_BG_MAIN, magic_BG_ALPHA}) => {
 
   const [quote0, setQuote0] = useState(false);
@@ -63,7 +59,7 @@ const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, ha
         </span>
           <div className="quote newRole">
             <span className="laptop mr-1"><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;Current Role:</span><br></br><br></br>
-            <span>Software Developer @ VIA3 corperation. We are using Angular 8 to develop video chat and video conferencing applications.</span><br></br><br></br>
+            <span>Software Developer @ VIA3 corperation. We are using Angular to develop video chat and video conferencing applications.</span><br></br><br></br>
             <span>Check out our Unity platform:</span><br></br><br></br>
             <span><a className="via3 py-2 px-3" href="https://www.via3.com/" target="_blank" rel="noopener noreferrer">VIA3.com</a></span>
           </div>
@@ -82,8 +78,7 @@ const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, ha
     <div className="row mt-5">
       {quote4 ? 
         <div className="col-sm-6 mx-auto mt-5">
-          {/* <EmojiPicker/> */}
-          {/* <IconDisplay/> */}
+          {/* test here */}
         </div>
         :''}
     </div>

@@ -293,7 +293,7 @@
   border-radius: $myPloygonBorderRadius;
   clip-path: $myPloygonX;
   transition: $myTrans ease-in-out;
-  animation: heartbeat $myTrans ease-in-out 10s 8;
+  animation: heartbeat $myTrans ease-in-out 8s 8;
 }
 @keyframes heartbeat {
   0% { background-color: $myYellowDark;

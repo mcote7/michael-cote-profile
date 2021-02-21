@@ -33,6 +33,7 @@ const EducationView = () => {
                 EDUCATION
               </div>
             </div>
+            {/* <div className="lcars-top-title-buff"></div> */}
             <div className="lcars-end-cap"></div>
           </div>
         </div>
