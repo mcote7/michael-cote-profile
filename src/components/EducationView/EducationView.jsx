@@ -11,49 +11,42 @@ const EducationView = () => {
 
   return (
     <div className="lcars-cont">
-      {/* Lcars side bar frame */}
-      <div className="lcars-side-col">
-        <div className="lcars-top-left-elbow"></div>
-          <div className="lcars-left-side-base-fill-top"></div>
-            <div className="lcars-left-side-decor-fill"></div>
-              <div className="lcars-left-side-base-fill-sm"></div>
-                <div style={{paddingTop: '1.25rem'}} className="lcars-left-side-buttons">&#x25B2;</div>
-                <div style={{marginTop: '0.5rem'}} className="lcars-left-side-buttons">&#x25BC;</div>
-              <div className="lcars-left-side-base-fill-sm"></div>
-            <div className="lcars-left-side-decor-fill"></div>
-          <div className="lcars-left-side-base-fill-bottom"></div>
-        <div className="lcars-bottom-left-elbow"></div>
-      </div>
-      {/* Lcars main container frame */}
-      <div className="lcars-main-col">
-        <div className="lcars-main-row-top">
-          <div className="lcars-top-bar">
-            <div className="lcars-top-title-wrap">
-              <div className="lcars-top-title">
-                EDUCATION
+      {/* Lcars left bar frame */}
+      <div className="lcars-left-col">
+        <div className="lcars-left-top-elbow"></div>
+          <div className="lcars-left-elbow-extender"></div>
+            <div className="lcars-left-side-fill"></div>
+              <div className="lcars-left-controls">
+                <div className="lcars-left-side-fill-sm"></div>
+                  <div className="lcars-left-side-button-top">&#x25B2;</div>
+                  <div className="lcars-left-side-button-bottom">&#x25BC;</div>
+                <div className="lcars-left-side-fill-sm"></div>
               </div>
-            </div>
-            {/* <div className="lcars-top-title-buff"></div> */}
-            <div className="lcars-end-cap"></div>
+            <div className="lcars-left-side-fill"></div>
+          <div className="lcars-left-elbow-extender"></div>
+        <div className="lcars-left-bottom-elbow"></div>
+      </div>
+      {/* Lcars main container top frame */}
+      <div className="lcars-main-col">
+        <div className="lcars-top-frame">
+          <div className="lcars-top-bar">
+            <div className="lcars-title">EDUCATION</div>
+          </div>
+          <div className="lcars-top-buffer">
+            <div className="lcars-top-elbow-buffer"></div>
           </div>
         </div>
-        {/* Lcars main display */}
-        <div className="lcars-display-row">
-          <div className="col-md-6 lcars-display-col">
-            <div className="lcars-carousel">
-              CAROUSEL
-            </div>
-          </div>
-          <div className="col-md-6 lcars-display-col">
-            <div className="lcars-display-text">
-              INFO TEXT
-            </div>
-          </div>
+        {/* display row */}
+        <div className="lcars-display-main">
+          {/*  */}
         </div>
-        {/* end main display */}
-        <div className="lcars-main-row-bottom">
+        {/* bottom frame */}
+        <div className="lcars-bottom-frame">
+          <div className="lcars-bottom-buffer">
+            <div className="lcars-bottom-elbow-buffer"></div>
+          </div>
           <div className="lcars-bottom-bar">
-            <div className="lcars-end-cap"></div>
+            {/*  */}
           </div>
         </div>
       </div>
