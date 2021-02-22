@@ -39,34 +39,6 @@
   to {transform: translateY(0vh);}
 }
 
-// test keyframes -
-
-// animation: noise-anim 2s infinite linear alternate-reverse;
-@keyframes noise {
-  0%{clip:rect(89px,9999px,100px,0)}
-  5%{clip:rect(4px,9999px,62px,0)}
-  10%{clip:rect(43px,9999px,16px,0)}
-  15%{clip:rect(2px,9999px,68px,0)}
-  20%{clip:rect(12px,9999px,6px,0)}
-  25%{clip:rect(89px,9999px,25px,0)}
-  30%{clip:rect(15px,9999px,38px,0)}
-  35%{clip:rect(57px,9999px,97px,0)}
-  40%{clip:rect(24px,9999px,72px,0)}
-  45%{clip:rect(81px,9999px,3px,0)}
-  50%{clip:rect(93px,9999px,26px,0)}
-  55%{clip:rect(68px,9999px,85px,0)}
-  60%{clip:rect(43px,9999px,28px,0)}
-  65%{clip:rect(44px,9999px,11px,0)}
-  70%{clip:rect(17px,9999px,33px,0)}
-  75%{clip:rect(74px,9999px,66px,0)}
-  80%{clip:rect(100px,9999px,4px,0)}
-  85%{clip:rect(92px,9999px,31px,0)}
-  90%{clip:rect(93px,9999px,98px,0)}
-  95%{clip:rect(23px,9999px,77px,0)}
-  100%{clip:rect(92px,9999px,8px,0)}
-}
-
-// -
 
 /* --- < MainView /> - */
 .mainViewContainer {
@@ -107,18 +79,18 @@
 }
 .social-stagg-0 {
   animation: 
-    myDelay 0.5s,
-    myFade 1.5s ease-in 0.5s;
+    myDelay 1s,
+    myFade 0.75s ease-in 1s;
 }
 .social-stagg-1 {
   animation: 
-    myDelay 1s,
-    myFade 1.5s ease-in 1s;
+    myDelay 1.75s,
+    myFade 0.75s ease-in 1.75s;
 }
 .social-stagg-2 {
   animation: 
-    myDelay 1.5s,
-    myFade 1.5s ease-in 1.5s;
+    myDelay 2.5s,
+    myFade 0.75s ease-in 2.5s;
 }
 
 .socialLinks:hover {
@@ -248,6 +220,7 @@ svg {
     -webkit-box-reflect: unset;
   }
 }
+
 .titleSub {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -256,10 +229,27 @@ svg {
   letter-spacing: 1.5vw;
   font-size: 2.5vw;
   font-weight: 700;
+  
+  // for shimmer keyframes 
+  overflow: hidden;
+  background: linear-gradient(90deg, transparent, $myBlue, transparent);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  // 
+  transform: scaleY(1.1);
+
   animation: 
     myDelay 0.25s,
-    mySlideUpShort 1.5s ease-out 0.25s,
-    myFade 1.75s ease-in 0.25s;
+    shimmerText 5.75s linear infinite 0.25s,
+    myFade 0.25s ease-in 0.25s;
+}
+
+@keyframes shimmerText {
+  0% {background-position: -500%;}
+  100% {background-position: 500%;}
 }
 
 /* title text break */
@@ -274,6 +264,7 @@ svg {
 @media only screen and (max-width: 550px) {
   .titleSub {
     font-size: 3.25vw;
+    transform: scaleY(1.5);
   }
 }
 /* blinking " I " */
@@ -326,7 +317,9 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: myFade 0.2s ease-in;
+      animation: 
+        myDelay 0.25s,
+        myFade 0.25s ease-in 0.25s;
     }
     &::after {
       content: '';
@@ -339,7 +332,9 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: myFade 0.6s ease-in;
+      animation: 
+        myDelay 0.5s,
+        myFade 0.25s ease-in 0.5s;
     }
   }
 }
@@ -356,7 +351,9 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: myFade 1.4s ease-in;
+      animation: 
+        myDelay 1s,
+        myFade 0.25s ease-in 1s;
     }
     &::after {
       content: '';
@@ -369,7 +366,9 @@ svg {
       border-radius: 10%;
       background: $myBlue;
       box-shadow: 0px 0px 8px 2px #29d1ff;
-      animation: myFade 1.0s ease-in;
+      animation: 
+        myDelay 0.75s,
+        myFade 0.25s ease-in 0.75s;
     }
   }
 }
