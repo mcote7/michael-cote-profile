@@ -379,8 +379,8 @@ svg {
   backface-visibility: hidden;
   transform-origin: 50% 0%;
   animation: 
-    mySlideDownShort 1.25s ease-out,
-    myFade 1.5s ease-in;
+    mySlideDownShort 1.5s ease-out,
+    myFade 1.75s ease-in;
 }
 
 .mySelf {
@@ -394,7 +394,7 @@ svg {
   border-radius: $myPloygonBorderRadius;
   animation: 
     myDelay 1.75s,
-    myFade 1.75s ease-in 1.75s;
+    myFade 0.75s ease-in 1.75s;
 }
 
 .selfWrap {
