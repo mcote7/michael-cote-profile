@@ -39,6 +39,10 @@
   to {transform: translateY(0vh);}
 }
 
+@keyframes myGrowY {
+  from {transform: scaleY(0);}
+  to {transform: scaleY(1);}
+}
 
 /* --- < MainView /> - */
 .mainViewContainer {
@@ -377,15 +381,12 @@ svg {
   cursor: none;
   margin-top: 1.5rem;
   backface-visibility: hidden;
+  transform-origin: 50% 0%;
   animation: 
-    myFade 1.25s ease-in,
-    bio-expand 1.75s ease-in-out reverse;
+    mySlideDownShort 1.25s ease-out,
+    myFade 1.5s ease-in;
 }
-@keyframes bio-expand {
-  0% {transform: scaleX(1);}
-  50% {transform: scaleX(0);}
-  100% {transform: scaleX(1);}
-}
+
 .mySelf {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -442,14 +443,8 @@ svg {
   padding: 1rem 1rem 2rem 1rem;
   line-height: 1.2;
   background-color: $myIce;
-  transform-origin: 50% 0%;
-  animation: spread 1.5s ease-out;
 }
-@keyframes spread {
-  0% {transform: scaleY(0.2); background-color: rgba(255, 255, 255, 1);}
-  80% {transform: scaleY(0.2); background-color: rgba(255, 255, 255, 1);}
-  100% {transform: scaleY(1); background-color: rgba(255, 255, 255, 0.15);}
-}
+
 @media only screen and (max-width: 905px) {
   .quote {
     letter-spacing: 0.4vw;
