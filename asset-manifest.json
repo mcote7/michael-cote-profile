@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile-2020/static/css/main.25c9505a.chunk.css",
+    "main.css": "/michael-cote-profile-2020/static/css/main.c7a61157.chunk.css",
     "main.js": "/michael-cote-profile-2020/static/js/main.bf7346e8.chunk.js",
     "main.js.map": "/michael-cote-profile-2020/static/js/main.bf7346e8.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile-2020/static/js/runtime-main.effd3b37.js",
@@ -10,7 +10,7 @@
     "static/js/2.df1100db.chunk.js.map": "/michael-cote-profile-2020/static/js/2.df1100db.chunk.js.map",
     "index.html": "/michael-cote-profile-2020/index.html",
     "static/css/2.7339f952.chunk.css.map": "/michael-cote-profile-2020/static/css/2.7339f952.chunk.css.map",
-    "static/css/main.25c9505a.chunk.css.map": "/michael-cote-profile-2020/static/css/main.25c9505a.chunk.css.map",
+    "static/css/main.c7a61157.chunk.css.map": "/michael-cote-profile-2020/static/css/main.c7a61157.chunk.css.map",
     "static/js/2.df1100db.chunk.js.LICENSE.txt": "/michael-cote-profile-2020/static/js/2.df1100db.chunk.js.LICENSE.txt",
     "static/media/index.css": "/michael-cote-profile-2020/static/media/8bitCity.733fb383.jpg",
     "static/media/technical-view.scss": "/michael-cote-profile-2020/static/media/Ac437_Acer_VGA_8x8.01936f5e.ttf",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.effd3b37.js",
     "static/css/2.7339f952.chunk.css",
     "static/js/2.df1100db.chunk.js",
-    "static/css/main.25c9505a.chunk.css",
+    "static/css/main.c7a61157.chunk.css",
     "static/js/main.bf7346e8.chunk.js"
   ]
 }
