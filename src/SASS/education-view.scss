@@ -11,6 +11,18 @@
 
 // COLORS - 
 
+$lcarsMain: #FFCC99;
+
+$lcarsYellow: #ffcc66;
+
+$lcarsOrange: #ff8833;
+
+$lcarsBlue: #7788ff;
+
+$lcarsPurple: #cc33ff;
+
+$lcarsGreen: #33cccc;
+
 // -
 
 .lcars-cont {
@@ -45,7 +57,7 @@
 }
 // elbows 
 .lcars-left-top-elbow {
-  background-color: tan;
+  background-color: $lcarsMain;
   border-radius: 5rem 0rem 0rem 0rem;
   // border-radius: 50% 0% 0% 100% / 50% 0% 100% 0%;
   // border-radius: 75% 0% 0% 100% / 75% 0% 100% 0%;
@@ -53,7 +65,7 @@
   height: 5rem;
 }
 .lcars-left-bottom-elbow {
-  background-color: tan;
+  background-color: $lcarsMain;
   border-radius: 0rem 0rem 0rem 5rem;
   // border-radius: 0% 100% 0% 50% / 0% 0% 100% 50%;
   // border-radius: 0% 100% 0% 75% / 0% 0% 100% 75%;
@@ -62,13 +74,13 @@
 }
 // elbow extentions (2) 
 .lcars-left-elbow-extender {
-  background-color: tan;
+  background-color: $lcarsMain;
   width: 100%;
   height: 3rem;
 }
 // filler (2) 
 .lcars-left-side-fill {
-  background-color: tan;
+  background-color: $lcarsYellow;
   width: 100%;
   height: 6rem;
   margin: 0.5rem 0rem;
@@ -79,21 +91,23 @@
 }
 // filler sm (2) 
 .lcars-left-side-fill-sm {
-  background-color: tan;
+  background-color: $lcarsOrange;
   width: 100%;
   height: 1.25rem;
   margin: 0.25rem 0rem;
 }
 // buttons side
 .lcars-left-side-button-top {
-  background-color: dodgerblue;
+  background-color: $lcarsBlue;
+  color: $lcarsGreen;
   width: 100%;
   height: 2rem;
   text-align: end;
   padding-right: 2rem;
 }
 .lcars-left-side-button-bottom {
-  background-color: dodgerblue;
+  background-color: $lcarsPurple;
+  color: $lcarsGreen;
   width: 100%;
   height: 2rem;
   text-align: end;
@@ -122,7 +136,7 @@
       padding-right: 3rem;
       height: 2rem;
       width: 100%;
-      background-color: tan;
+      background-color: $lcarsMain;
       border-radius: 0rem 2rem 2rem 0rem;
       
       .lcars-title {
@@ -142,7 +156,7 @@
       display: flex;
       height: 2rem;
       width: 100%;
-      background-color: tan;
+      background-color: $lcarsMain;
       // border: 0.25px dashed red;
       
       .lcars-top-elbow-buffer {
@@ -176,7 +190,7 @@
       display: flex;
       height: 2rem;
       width: 100%;
-      background-color: tan;
+      background-color: $lcarsMain;
       // border: 0.25px dashed red;
       
       .lcars-bottom-elbow-buffer {
@@ -194,7 +208,7 @@
       padding-right: 3rem;
       height: 2rem;
       width: 100%;
-      background-color: tan;
+      background-color: $lcarsMain;
       border-radius: 0rem 2rem 2rem 0rem;
     }
   }
