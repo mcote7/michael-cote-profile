@@ -33,7 +33,7 @@ class Message extends Form {
     e.preventDefault();
     emailjs.sendForm('gmail', 'mytemp', e.target, 'user_KRJPD3NhrsH0tdT0veU9v')
     .then((result) => {
-      console.log(result.text);
+      console.log(`${result.text} email sent`);
       this.props.handleMessage();
       this.props.history.push("/");
     }, (error) => {
