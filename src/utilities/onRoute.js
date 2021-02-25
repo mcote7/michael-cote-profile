@@ -7,7 +7,6 @@ import routeSound from '../audio/MainAudio/on_route.mp3';
 export const onRoute = () => {
   
   const rSound = new Audio(routeSound);
-  rSound.preload = true;
   rSound.playbackRate = 3.2;
   rSound.volume = 0.5;
   rSound.play();

@@ -10,10 +10,9 @@ import angular8 from '../../images/angular8.png';
 
 import '../../SASS/main-view.scss';
 
-//*new audio pkg.
 import blobSound from '../../audio/MainAudio/blobShort.mp3';
 
-const MainView = ({message}) => {
+const MainView = ({message, canPlayAudio}) => {
 
   const [loading, setLoading] = useState(true);
   const [social, setSocial] = useState(false);
@@ -22,10 +21,16 @@ const MainView = ({message}) => {
   const [light, setLight] = useState(false);
   const [contact, setContact] = useState(false);
 
-  // audio
   const blob = new Audio(blobSound);
-  blob.preload = true;
   blob.volume = 0.5;
+
+  const playBlobSound = () => {
+    if (canPlayAudio) {
+      blob.play();
+    } else {
+      console.log("can not play audio must click first")
+    }
+  };
 
   useEffect(() => {
     //loader
@@ -72,12 +77,11 @@ const MainView = ({message}) => {
   const [magic, setMagic] = useState("magic-out");
   const [magic_BG_ALPHA, setMagic_BG_ALPHA] = useState(0.150);
   const [magic_BG_MAIN, setMagic_BG_MAIN] = useState("255,255,255");
-
   const magic_BG_el = document.getElementsByClassName('quote')[0];
 
-  const handleMouseDown = (e) => {
-    blob.play();
-    console.log("audio?", blob, e)
+  const handleMouseDown = () => {
+    playBlobSound();
+    // console.log("audio?", blob)
   };
 
   const handleClick = () => {
@@ -97,9 +101,9 @@ const MainView = ({message}) => {
     }
   };
 
-  const handleMouseEnter = (e) => {
-    blob.play();
-    console.log("audio?", blob, e)
+  const handleMouseEnter = () => {
+    playBlobSound();
+    // console.log("audio?", blob)
     if(magic_BG_el !== undefined) {
       setMagic("magic");
       magic_BG_el.animate([
@@ -118,29 +122,23 @@ const MainView = ({message}) => {
   const handleMouseMove = (e) => {
     if(magic_BG_el !== undefined) {
       setInbounds(true);
-      
       setMagic_BG_ALPHA(magic_BG_ALPHA - 0.002);
-      
       // console.log("magic-alpha", magic_BG_ALPHA)
-      
       console.log("inBounds", inBounds);
-
       // console.log("e.screenY",e.screenY);
       // console.log("e.screenX",e.screenX);
       let eY = e.screenY - 219;
       let eX = e.screenX - 139;
-      
       setMyGhostDisplay("block");
       setMyGhostMoveTop(`${eY}px`);
       setMyGhostMoveLeft(`${eX}px`);
     }
   };
 
-  const handleMouseOut = (e) => {
+  const handleMouseOut = () => {
     if(magic_BG_el !== undefined) {
       setInbounds(false);
       setMagic("magic-out");
-      
       magic_BG_el.animate([
         {backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`},
         {backgroundColor: 'rgba(255,255,255,0.15)'}
@@ -151,7 +149,6 @@ const MainView = ({message}) => {
         setMagic_BG_MAIN("255,255,255");
         setMagic_BG_ALPHA(0.15);
       }, 250);
-      
       const ghost_EXIT = document.getElementById('mouseGhost');
       ghost_EXIT.animate([
         {opacity: 0.5, transform: 'scale(1)', filter: 'blur(0px)'},
@@ -162,12 +159,10 @@ const MainView = ({message}) => {
       setTimeout(() => {
         setMyGhostDisplay("none");
       }, 250);
-      
       console.log("inBounds", inBounds);
     }
   };
 
-  //
   if(loading) return <Loading loading={loading}/>;
 
   return (<>

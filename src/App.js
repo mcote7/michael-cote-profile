@@ -13,8 +13,8 @@ import MainView from './components/MainView/MainView';
 import TechnicalSkillsView from './components/TechnicalSkillsView/TechnicalSkillsView';
 
 // optimize Education next ...
-// import Education from './components/education/education';
-import EducationView from './components/EducationView/EducationView';
+import Education from './components/education/education';
+// import EducationView from './components/EducationView/EducationView';
 
 import Projects from './components/projects/projects';
 import Resume from './components/resume';
@@ -23,10 +23,23 @@ import Message from './components/message/message';
 
 const App = ({history}) => {
 
-  useEffect(()=> {
+  const [canPlayAudio, setCanPlayAudio] = useState(false);
+
+  useEffect( () => {
     console.log("%cHello World", rainbowConsole)
+    document.addEventListener('click', playAudio );
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
   },[]);
-  
+
+  const playAudio = () => {
+    setCanPlayAudio(true);
+    document.removeEventListener('click', playAudio );
+  };
+
+  useEffect( () => {
+    console.log("audio can play?", canPlayAudio)
+  }, [canPlayAudio]);
+
 // --- STARS --------------------------------------------------------
   const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*41));
   const [starLeft_0, setStarLeft_0] = useState(Math.floor(Math.random()*100));
@@ -70,22 +83,22 @@ const App = ({history}) => {
           <div className="star_2" style={{top: `${starTop_2}%`, left: `${starLeft_2}%`}}></div>
           <div id="gravity" className="gravity"><i className="fa fa-grav fa-2x" aria-hidden="true"></i></div>
         <div id="mainView" className="row mainView">
-          <MainView message={message}/>
+          <MainView message={message} canPlayAudio={canPlayAudio}/>
         </div>
         <div id="routes" className="row">
           <Switch>
             <Route exact path="/technical" component={TechnicalSkillsView}/>
-            <Route exact path="/education" component={EducationView}/>
+            <Route exact path="/education" component={Education}/>
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/resume" component={Resume}/>
-            <Route exact path="/contact" render={props=> <Message {...props} handleMessage={handleMessage}/>}/>
-            <Route exact path="/michael-cote-profile-2020" component={GoHome}/>
+            <Route exact path="/contact" render={ props => <Message {...props} handleMessage={handleMessage}/>}/>
+            <Route exact path="/michael-cote-profile-2020" render={(props) => ( <GoHome {...props} canPlayAudio={canPlayAudio} /> )}/>
             <Redirect from="/" exact to="/michael-cote-profile-2020"/>
             <Redirect to="/michael-cote-profile-2020"/>
           </Switch>
         </div>
       </div>
-      <NavBar history={history}/>
+      <NavBar history={history} canPlayAudio={canPlayAudio}/>
     </div>
     );
   };

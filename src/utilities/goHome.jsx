@@ -7,19 +7,21 @@ import { CSSRulePlugin, TweenLite } from "gsap/all";
 import homeSound from '../audio/MainAudio/blobLong.mp3';
 
 
-const GoHome = () => {
+const GoHome = ({canPlayAudio}) => {
 
-  const consoleCSS = 'background:#000000;color:#f5dc00;border:0.5rem solid #00c0f5;padding:0.5rem;margin:0.5rem';
+  // const consoleCSS = 'background:#000000;color:#f5dc00;border:0.5rem solid #00c0f5;padding:0.5rem;margin:0.5rem';
 
   useEffect(() => {
-
     
     const hSound = new Audio(homeSound);
-    hSound.preload = true;
-    hSound.playbackRate = 8;
+    hSound.playbackRate = 6;
     hSound.volume = 0.3;
-
-    hSound.play().catch(err => console.log("%ci know google will fix it later...", consoleCSS, err));
+    
+    if (canPlayAudio) {
+      hSound.play();
+    } else {
+      console.log("can not play audio must click page first")
+    }
 
     window.scrollTo({top: 0, behavior: 'smooth'});
 
@@ -36,6 +38,7 @@ const GoHome = () => {
     // console.log("main_BG", main_BG);
     TweenLite.to(moon_BG, 2, {cssRule:{filter: "blur(0px)"}});
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
   
   return (

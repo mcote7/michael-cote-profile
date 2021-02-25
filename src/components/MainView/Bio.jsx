@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// *** THE LAST QUOTE IS A TESTING SUITE FOR NEW COMPONENTS *** //
-
 const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, handleMouseMove, handleMouseOut, magic, magic_BG_MAIN, magic_BG_ALPHA}) => {
 
   const [quote0, setQuote0] = useState(false);
@@ -9,6 +7,7 @@ const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, ha
   const [quote2, setQuote2] = useState(false);
   const [quote3, setQuote3] = useState(false);
   const [quote4, setQuote4] = useState(false);
+  
   useEffect(() => {
     setTimeout(()=> {
       setQuote0(true);
@@ -26,6 +25,7 @@ const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, ha
       setQuote4(true);
     }, 3500);
   },[]);
+  
   return (<>
     <div className="row mt-5">
       {quote0?
@@ -34,8 +34,8 @@ const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, ha
           <img src={self} className="mySelf float-right" alt="self"/>
         </span>
           <div className="quote open-base-border-bottoms" style={{backgroundColor: `rgba(${magic_BG_MAIN}, ${magic_BG_ALPHA})`}}
-          onMouseEnter={(e)=>handleMouseEnter(e)} onMouseMove={(e)=>handleMouseMove(e)}
-          onClick={(e)=>handleClick(e)} onMouseOut={(e)=>handleMouseOut(e)} onMouseDown={(e)=>handleMouseDown(e)}>
+          onMouseEnter={()=>handleMouseEnter()} onMouseMove={(e)=>handleMouseMove(e)}
+          onClick={()=>handleClick()} onMouseOut={()=>handleMouseOut()} onMouseDown={()=>handleMouseDown()}>
             <span className="mr-1"><i className={`fa fa-magic ${magic}`} aria-hidden="true"></i></span> 
             Dedicated and motivated professional seeking an opportunity to showcase my creative and 
             technical proficiency. My goal is to attain a position which will provide an opportunity 
@@ -59,7 +59,7 @@ const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, ha
         </span>
           <div className="quote newRole">
             <span className="laptop mr-1"><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;Current Role:</span><br></br><br></br>
-            <span>Software Developer @ VIA3 corperation. We are using Angular to develop video chat and video conferencing applications.</span><br></br><br></br>
+            <span>Software Developer @ VIA3 corperation. We are using Angular ( and many other technologies ) to develop video conferencing applications.</span><br></br><br></br>
             <span>Check out our Unity platform:</span><br></br><br></br>
             <span><a className="via3 py-2 px-3" href="https://www.via3.com/" target="_blank" rel="noopener noreferrer">VIA3.com</a></span>
           </div>

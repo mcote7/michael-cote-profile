@@ -21,7 +21,8 @@ class Message extends Form {
     email: Joi.string().required().regex(/(.+)@(.+){2,}\.(.+){2,}/).label('Email'),
     message: Joi.string().min(10).label('Message'),
   };
-  componentDidMount() {
+
+  UNSAFE_componentDidMount() {
     onRoute();
     setTimeout(()=> {
       this.setState({render: true});
@@ -32,13 +33,15 @@ class Message extends Form {
     e.preventDefault();
     emailjs.sendForm('gmail', 'mytemp', e.target, 'user_KRJPD3NhrsH0tdT0veU9v')
     .then((result) => {
-      // console.log(result.text);
+      console.log(result.text);
       this.props.handleMessage();
       this.props.history.push("/");
     }, (error) => {
-      // console.log(error.text);
+      alert("Sorry, there was an error sending message", error);
+      console.log(error.text);
     });
   };
+
   render() {
     const {render} = this.state;
     return (
