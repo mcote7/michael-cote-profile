@@ -77,10 +77,11 @@ const NavBar = ({history, canPlayAudio}) => {
     if(!loading) {
       const NAV = document.getElementById('myNavbar');
       NAV.animate([
-        {bottom: '-80px'},
-        {bottom: '0px'}
+        {opacity: 0, transform: 'translateY(80px)'},
+        {transform: 'translateY(-20px)'},
+        {opacity: 1, transform: 'translateY(0px)'}
       ], {
-        duration: 500,
+        duration: 1500,
         easing: 'ease-out'
       });
       setShowHomeButton(false);

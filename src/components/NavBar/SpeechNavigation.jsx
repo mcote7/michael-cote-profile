@@ -42,6 +42,7 @@ const SpeechNavigation = ({history}) => {
       console.log('something went wrong with speech', err);
     },
   });
+  
   const [micIcon, setMicIcon] = useState("microphone-slash");
   
   const handleMouseDown = () => {
@@ -138,11 +139,12 @@ const SpeechNavigation = ({history}) => {
         <h5 style={{borderBottom: '2px solid'}}>Voice activated navigation</h5>
           <div>1. HOLD DOWN <span style={{color: 'white'}}><i className="fa fa-microphone" aria-hidden="true"></i></span> button</div>
           <p>2. Try Saying :</p>
-          <div style={{color: 'white'}}>" Contact "</div>
+          <div style={{color: 'white'}}>" Computer "</div>
           <div style={{color: 'white'}}>" Technical "</div>
           <div style={{color: 'white'}}>" Education "</div>
           <div style={{color: 'white'}}>" Projects "</div>
           <div style={{color: 'white'}}>" Resume "</div>
+          <div style={{color: 'white'}}>" Contact "</div>
           <p style={{color: 'white'}}>" Home "</p>
       </div>:''}
 

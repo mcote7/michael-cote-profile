@@ -64,7 +64,7 @@
   transition: $myTrans ease-in-out;
   border-radius: $myPloygonBorderRadius;
   clip-path: $myPloygonX;
-  animation: nav-button-reveal 0.75s ease-in;
+  animation: nav-button-reveal 0.5s ease-in;
 }
 .polyLink > .polyLink-text {
   font-size: 1.5rem;
@@ -134,8 +134,8 @@
   transform: scale(0.6);
 }
 @keyframes polyLink-pulse {
-  0% {box-shadow:0 0 0 0 white;}
-  100% {box-shadow:0 0 10px 50px rgba(255,150,44,0);}
+  0% {box-shadow: 0 0 0 0 white;}
+  100% {box-shadow: 0 0 10px 50px rgba(255,150,44,0);}
 }
 .polyLink-active > .polyLink-text {
   padding: 0rem 4rem 0rem 2rem;
@@ -198,7 +198,7 @@
   border-radius: $myPloygonBorderRadius;
   transition: $myTrans ease-in-out;
   clip-path: $myPloygonX;
-  animation: nav-button-reveal 1s ease-in;
+  animation: nav-button-reveal 0.75s ease-in;
 }
 @keyframes nav-button-reveal {
   from {opacity: 0; filter: blur(12px);}
@@ -277,7 +277,7 @@
 } */
 /* ---speech div--- */
 .speechNavigationWrap {
-  animation: nav-button-reveal 1.75s ease-in;
+  animation: nav-button-reveal 0.75s ease-in;
 }
 .speech {
   cursor: pointer;
@@ -315,7 +315,7 @@
   color: $myYellow;
   transform: scale(0.8);
   background-color: $myIce;
-  animation: cd-pulse 0.75s $myTrans infinite;
+  animation: cd-pulse 0.75s infinite;
 }
 @keyframes cd-pulse {
   0% {box-shadow:0 0 0 0 white; background-color: rgba(255, 255, 255, 1);}
@@ -337,8 +337,6 @@
 }
 @keyframes speech-info {
   from {opacity: 0; border: 1px solid rgba(255, 255, 255, 0); filter: blur(12px); transform: scale(0.9);}
-  35% {opacity: 0.5; border: 1px solid rgba(255, 255, 255, 1);}
-  85% {opacity: 1;}
   to {opacity: 1; border: 1px solid rgba(255, 255, 255, 1); filter: blur(0px); transform: scale(1);}
 }
 @media only screen and (max-width: 1200px) {
@@ -350,7 +348,7 @@
   content: '';
   display: flex;
   position: relative;
-  top: 294px;
+  top: 318px;
   left: 186px;
   width: 0;
   height: 0;
@@ -388,7 +386,7 @@
   bottom: 20vh;
   right: 5vw;
   opacity: 0;
-  animation: good-job 2s;
+  animation: good-job 2s ease-out;
 }
 @keyframes good-job {
   from {opacity: 1;}

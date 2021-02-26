@@ -3,31 +3,6 @@
   margin-bottom: 100vh;
   text-align: left;
 }
-/* .messageCont::before {
-  height: 100vh;
-  width: 100vw;
-  content: "";
-  background-image: url('../images/seattle.jpg');
-  background-size: cover;
-  position: absolute;
-  z-index: -1999;
-  top: 175%;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  mask-image: linear-gradient(to bottom,
-  rgba(0,0,0,0),
-  rgba(0,0,0,0),
-  rgba(0,0,0,1),
-  rgba(0,0,0,0));
-  opacity: 1;
-  animation: fade-in-messbg 6s;
-}
-@keyframes fade-in-messbg {
-  0% {opacity: 0;}
-  35% {opacity: 0;}
-  100% {opacity: 1;}
-} */
 /*  ------- submit-button --------  */
 .formBtn {
   font-size: x-large!important;
@@ -59,14 +34,11 @@
 /* -----form margin top----------- */
 .myForm {
   margin-top: 5rem;
-  transform: scale(1);
-  animation: pop-in 1s steps(1000);
+  animation: pop-in 2s ease-out;
 }
 @keyframes pop-in {
-  0% {transform: scale(0); opacity: 0;}
-  70% {transform: scale(0.8); opacity: 1;}
-  85% {transform: scale(0.75);}
-  100% {transform: scale(1);}
+  0% {opacity: 0; transform: translateY(100px)}
+  100% {opacity: 1; transform: translateY(0px)}
 }
 
 /* ------------height???------------------------ */

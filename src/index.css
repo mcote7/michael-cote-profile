@@ -140,7 +140,7 @@ body {
   opacity: 0.4;
   filter: blur(0px);
 
-  animation: fade-in-bg 12s;
+  animation: fade-in-bg 8s;
 
 }
 @keyframes fade-in-bg {

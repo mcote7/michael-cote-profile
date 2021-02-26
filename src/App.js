@@ -91,8 +91,8 @@ const App = ({history}) => {
             <Route exact path="/education" component={Education}/>
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/resume" component={Resume}/>
-            <Route exact path="/contact" render={ props => <Message {...props} handleMessage={handleMessage}/>}/>
-            <Route exact path="/michael-cote-profile-2020" render={(props) => ( <GoHome {...props} canPlayAudio={canPlayAudio} /> )}/>
+            <Route exact path="/contact" render={ (props) => ( <Message {...props} handleMessage={handleMessage}/> )}/>
+            <Route exact path="/michael-cote-profile-2020" render={ (props) => ( <GoHome {...props} canPlayAudio={canPlayAudio} /> )}/>
             <Redirect from="/" exact to="/michael-cote-profile-2020"/>
             <Redirect to="/michael-cote-profile-2020"/>
           </Switch>

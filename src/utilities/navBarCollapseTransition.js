@@ -5,8 +5,8 @@ export const navBarCollapseTransition = () => {
   
   if(navbar_Main !== null && navbar_Collapse !== null && [...navbar_Collapse.classList].includes("show")) {
     navbar_Main.animate([
-      {opacity: 1, filter: 'blur(0px)', bottom: '0px'},
-      {opacity: 0, filter: 'blur(12px)', bottom: '-420px'},
+      {opacity: 1, transform: 'translateY(0px)'},
+      {opacity: 0, transform: 'translateY(420px)'},
     ], {
       delay: 750,
       duration: 750
@@ -16,11 +16,11 @@ export const navBarCollapseTransition = () => {
       navbar_Collapse.classList.remove("show");
     }, 1500);
     navbar_Main.animate([
-      {opacity: 0, filter: 'blur(12px)', bottom: '-80px'},
-      {opacity: 1, filter: 'blur(0px)', bottom: '0px'},
+      {opacity: 0, transform: 'translateY(80px)'},
+      {opacity: 1, transform: 'translateY(0px)'},
     ], {
       delay: 1750,
-      duration: 500
+      duration: 501
     });
     setTimeout(() => {
       navbar_Main.style.opacity = 1;

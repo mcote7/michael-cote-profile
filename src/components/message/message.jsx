@@ -22,11 +22,11 @@ class Message extends Form {
     message: Joi.string().min(10).label('Message'),
   };
 
-  UNSAFE_componentDidMount() {
+  componentDidMount() {
     onRoute();
     setTimeout(()=> {
       this.setState({render: true});
-    }, 3500);
+    }, 2000);
   };
 
   doSubmit = (e) => {
