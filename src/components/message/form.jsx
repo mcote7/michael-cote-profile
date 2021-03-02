@@ -50,10 +50,10 @@ class Form extends Component {
     this.setState({data, errors});
   };
 
-  renderButton(label) {
+  renderButton(label, id) {
     return(
     <button
-    disabled={this.validate()} type="submit"
+    disabled={this.validate()} type="submit" id={id}
     className="btn col-lg-12 formBtn">{label}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <span><i className="fa fa-envelope-o" aria-hidden="true"></i></span></button>);
   };

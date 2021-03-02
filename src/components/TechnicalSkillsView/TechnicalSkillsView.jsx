@@ -41,7 +41,7 @@ const TechnicalSkillsView = () => {
       } else {
         console.error('info column is null ... dumbass')
       }
-    }, 7750);
+    }, 6750);
   }, []);
 
   useEffect(()=>{

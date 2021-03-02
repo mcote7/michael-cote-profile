@@ -186,7 +186,7 @@
   transition: 0.2s;
 }
 .intro-info {
-  animation: fade-in-info 4.75s steps(40, end);
+  animation: fade-in-info 3.75s steps(40, end);
 }
 @keyframes fade-in-info {
   from {opacity: 0.3; filter: blur(12px); border: 0.2rem dashed transparent; background-color: black;}

@@ -40,7 +40,6 @@ const App = ({history}) => {
     console.log("audio can play?", canPlayAudio)
   }, [canPlayAudio]);
 
-// --- STARS --------------------------------------------------------
   const [starTop_0, setStarTop_0] = useState(Math.floor(Math.random()*41));
   const [starLeft_0, setStarLeft_0] = useState(Math.floor(Math.random()*100));
   useEffect(()=> {
@@ -65,7 +64,6 @@ const App = ({history}) => {
       setStarLeft_2(Math.floor(Math.random()*100));
     }, 1550);
   },[]);
-// -----------
 
   const [message, setMessage] = useState(false);
   const handleMessage = () => {
