@@ -27,44 +27,10 @@ class Message extends Form {
     setTimeout(()=> {
       this.setState({render: true});
     }, 2000);
-
     setTimeout(() => {
       const name = document.getElementById('name');
       name.focus();
-    }, 2500);
-    setTimeout(() => {
-      const name = document.getElementById('name');
-      name.blur();
-    }, 2800);
-
-    setTimeout(() => {
-    const email = document.getElementById('email');
-      email.focus();
-    }, 2800);
-    setTimeout(() => {
-    const email = document.getElementById('email');
-      email.blur();
-    }, 3100);
-  
-    setTimeout(() => {
-      const message = document.getElementById('message');
-      message.focus();
-    }, 3100);
-    setTimeout(() => {
-      const message = document.getElementById('message');
-      message.blur();
-    }, 3400);
-
-    setTimeout(() => {
-      const subButton = document.getElementById('subButton');
-      subButton.animate([
-        {boxShadow: '0px 0px 0px 0.25rem #00c0f5', transform: 'scale(1)'},
-        {boxShadow: '0px 0px 0px 0.25rem #00c0f5', transform: 'scale(0.8)'},
-        {boxShadow: 'none', transform: 'scale(1)'}
-      ], {
-        duration: 300
-      });
-    }, 3400);
+    }, 3000);
   };
 
   doSubmit = (e) => {

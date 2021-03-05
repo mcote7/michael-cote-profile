@@ -23,6 +23,32 @@ $lcarsPurple: #cc33ff;
 
 $lcarsGreen: #33cccc;
 
+// POSITION - 
+
+.MTauto {
+  margin-top: auto!important;
+}
+.MBauto {
+  margin-bottom: auto!important;
+}
+.MLauto {
+  margin-left: auto!important;
+}
+.MRauto {
+  margin-right: auto!important;
+}
+.Mauto {
+  margin: auto!important;
+}
+
+.digits {
+  margin: 0rem 0.15rem;
+  color: black;
+  font-size: 0.9rem;
+  line-height: 1.15;
+  padding-top: 0.05rem;
+}
+
 // -
 
 .lcars-cont {
@@ -74,40 +100,48 @@ $lcarsGreen: #33cccc;
 }
 // elbow extentions (2) 
 .lcars-left-elbow-extender {
+  display: flex;
   background-color: $lcarsMain;
   width: 100%;
   height: 3rem;
 }
 // filler (2) 
 .lcars-left-side-fill {
+  display: flex;
   background-color: $lcarsYellow;
   width: 100%;
-  height: 6rem;
-  margin: 0.5rem 0rem;
+  height: 6.5rem;
+  margin: 0.25rem 0rem;
 }
 // controlls 
 .lcars-left-controls {
   margin: auto 0rem;
 }
 // filler sm (2) 
-.lcars-left-side-fill-sm {
-  background-color: $lcarsOrange;
+.lcars-left-controls-frame-top {
+  background-color: $lcarsYellow;
   width: 100%;
-  height: 1.25rem;
+  height: 1.5rem;
+  margin: 0.25rem 0rem;
+}
+.lcars-left-controls-frame-bottom {
+  background-color: $lcarsYellow;
+  width: 100%;
+  height: 1.5rem;
   margin: 0.25rem 0rem;
 }
 // buttons side
 .lcars-left-side-button-top {
   background-color: $lcarsBlue;
-  color: $lcarsGreen;
+  color: $lcarsMain;
   width: 100%;
   height: 2rem;
   text-align: end;
   padding-right: 2rem;
 }
 .lcars-left-side-button-bottom {
-  background-color: $lcarsPurple;
-  color: $lcarsGreen;
+  background-color: $lcarsBlue;
+  color: $lcarsMain;
   width: 100%;
   height: 2rem;
   text-align: end;
@@ -133,7 +167,7 @@ $lcarsGreen: #33cccc;
     
     .lcars-top-bar {
       display: flex;
-      padding-right: 3rem;
+      padding-right: 2rem;
       height: 2rem;
       width: 100%;
       background-color: $lcarsMain;
@@ -205,11 +239,26 @@ $lcarsGreen: #33cccc;
     
     .lcars-bottom-bar {
       display: flex;
-      padding-right: 3rem;
+      padding-right: 6rem;
       height: 2rem;
       width: 100%;
       background-color: $lcarsMain;
       border-radius: 0rem 2rem 2rem 0rem;
+
+      .lcars-sub-title-decor {
+        height: 2rem;
+        width: 2rem;
+        background-color: $lcarsOrange;
+        margin-left: auto;
+      }
+      
+      .lcars-sub-title {
+        display: flex;
+        margin: 0rem;
+        background-color: $lcarsPurple;
+        padding: 0rem 0rem 0rem 5rem;
+        border-bottom: 0.7rem solid black;
+      }
     }
   }
 }
