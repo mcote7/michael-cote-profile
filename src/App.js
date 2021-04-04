@@ -12,7 +12,7 @@ import NavBar from './components/NavBar/NavBar';
 import MainView from './components/MainView/MainView';
 import TechnicalSkillsView from './components/TechnicalSkillsView/TechnicalSkillsView';
 
-// optimize Education next ...
+// redesign & optimize Education next ...
 import Education from './components/education/education';
 // import EducationView from './components/EducationView/EducationView';
 
