@@ -59,10 +59,12 @@ const EducationView = () => {
             <div className="lcars-top-elbow-buffer"></div>
           </div>
         </div>
+        
         {/* display row */}
         <div className="lcars-display-main">
-          {/* TODO CONTENT CAROUSEL / INFO DISPLAY */}
+          {/* TODO CONTENT CAROUSEL && INFO DISPLAY */}
         </div>
+        
         {/* bottom frame */}
         <div className="lcars-bottom-frame">
           <div className="lcars-bottom-buffer">

@@ -186,6 +186,7 @@
   transition: 0.2s;
 }
 .intro-info {
+  pointer-events: none;
   animation: fade-in-info 3.75s steps(40, end);
 }
 @keyframes fade-in-info {

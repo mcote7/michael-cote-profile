@@ -86,8 +86,7 @@ const TechnicalSkillsView = () => {
       }, i * 1000);
     }
   };
-
-  // <------------------------------------------------<<<<< {| 
+  // <------------------------------------------------<<<|) 
   return (
     <div className="tech-main-wrap container-fluid">
       <div className="row">
