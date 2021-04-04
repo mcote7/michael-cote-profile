@@ -9,19 +9,50 @@
   font-style: normal;
 }
 
-// COLORS - 
+// applys to whole app ( i think )
+* {
+  user-select: none;
+}
 
-$lcarsMain: #FFCC99;
+// COLORS [TNG] - 
 
-$lcarsYellow: #ffcc66;
+// $lcarsMain: #FFCC99;
+// $lcarsYellow: #ffcc66;
+// $lcarsOrange: #ff8833;
+// $lcarsBlue: #7788ff;
+// $lcarsPurple: #cc33ff;
+// $lcarsGreen: #33cccc;
 
-$lcarsOrange: #ff8833;
+// COLORS [PICARD] - 
 
-$lcarsBlue: #7788ff;
+$P_lightBlue: #45aab2;
+$P_lightBlue-hov: #52b5bc;
 
-$lcarsPurple: #cc33ff;
+$P_darkBlue: #0b3752;
+$P_darkBlue-hov: #0e4567;
 
-$lcarsGreen: #33cccc;
+$P_lightGrey: #91bfbd;
+$P_lightGrey-hov: #a2c8c6;
+
+$P_darkGrey: #4b7585;
+$P_darkGrey-hov: #548496;
+
+$P_darkOrange: #8a2b14;
+$P_darkOrange-hov: #a13217;
+
+$P_lightOrange: #cf6732;
+$P_lightOrange-hov: #d8845a;
+
+$P_Yellow: #ffcb66;
+$P_Yellow-hov: #ffdd99;
+
+// SPACING - 
+
+$lcarsSpace: 0.25rem;
+
+$lcarsSpaceSmall: 0.15rem;
+
+$lcarsSpaceMini: 0.1rem;
 
 // POSITION - 
 
@@ -38,227 +69,317 @@ $lcarsGreen: #33cccc;
   margin-right: auto!important;
 }
 .Mauto {
-  margin: auto!important;
+  margin: auto;
 }
 
 .digits {
-  margin: 0rem 0.15rem;
+  margin: 0rem $lcarsSpaceSmall;
   color: black;
   font-size: 0.9rem;
   line-height: 1.15;
   padding-top: 0.05rem;
 }
 
-// -
+// lcars -
 
 .lcars-cont {
+  display: flex;
   height: auto;
   min-height: 100vh;
   width: 100%;
   font-family: 'lcars';
   background-color: black;
   color: white;
-  display: flex;
   margin: 0;
   padding: 0.5rem 0.5rem 5rem 0.5rem;
   box-shadow: 0px 0px 10px 10px black;
+  
+  
+  // side bar 
+  .lcars-left-col {
+    display: flex;
+    flex-direction: column;
+    // border: 0.25px dashed red;
+    height: calc(100% - 0.5rem);
+    width: calc(15vw - 2rem);
+    min-width: 6.5rem;
+    justify-content: space-evenly;
+    
+    // elbow 
+    .lcars-left-top-elbow {
+      background-color: $P_lightBlue;
+      border-radius: 5rem 0rem 0rem 0rem;
+      width: 100%;
+      height: 5rem;
+    }
+    
+    // elbow extention 
+    .lcars-left-elbow-extender-top {
+      display: flex;
+      background-color: $P_lightBlue;
+      width: 100%;
+      height: 3rem;
+    }
+    
+    // filler top 
+    .lcars-left-side-fill-top {
+      display: flex;
+      background-color: $P_darkGrey;
+      width: 100%;
+      height: 6.5rem;
+      margin: $lcarsSpace 0rem;
+    }
+    
+    // controlls 
+    // top frame 
+    .lcars-left-controls-frame-top {
+      display: flex;
+      background-color: $P_lightGrey;
+      width: 100%;
+      height: 1rem;
+      padding-right: 1rem;
+      
+      .lcars-title-control {
+        margin-left: auto;
+        background-color: black;
+        color: $P_lightGrey;
+        font-size: 1.4rem;
+        line-height: 0.8;
+        padding: 0rem 0.1rem 0rem 0.15rem;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    // buttons side 
+    .lcars-left-side-button-top, .lcars-left-side-button-bottom {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      color: white;
+      width: 100%;
+      height: 3rem;
+      
+      .lcars-button {
+        display: flex;
+        height: 3rem;
+        padding: $lcarsSpace;
+        width: calc(100% - 1.25rem);
+        background-color: $P_lightOrange;
+        border-radius: 3.5rem 0rem 0rem 3.5rem;
+        
+        .lcars-button-text {
+          font-size: 1.75rem;
+          color: black;
+          line-height: 0.9;
+          letter-spacing: 0.5px;
+        }
+      }
+      
+      .lcars-button-cap {
+        display: flex;
+        justify-content: center;
+        width: 1rem;
+        height: 3rem;
+        font-size: 1rem;
+        margin-left: $lcarsSpace;
+        background-color: $P_Yellow;
+        color: black;
+      }
+    }
+    .lcars-left-side-button-bottom {
+      margin-top: $lcarsSpace;
+    }
+    
+    // control frame bottom 
+    .lcars-left-controls-frame-bottom {
+      background-color: $P_lightGrey;
+      width: 100%;
+      height: 1rem;
+    }
+    
+    // filler bottom SET TO HEIGHT AUTO 
+    .lcars-left-side-fill-bottom {
+      display: flex;
+      background-color: $P_darkGrey;
+      width: 100%;
+      height: 6.5rem;
+      margin: $lcarsSpace 0rem;
+    }
+    
+    // elbow extention 
+    .lcars-left-elbow-extender-bottom {
+      display: flex;
+      background-color: $P_darkBlue;
+      width: 100%;
+      height: 3rem;
+    }
+    
+    .lcars-left-bottom-elbow {
+      background-color: $P_darkBlue;
+      border-radius: 0rem 0rem 0rem 5rem;
+      width: 100%;
+      height: 5rem;
+    }
+  }
+  // end side bar 
+  
+  // main column 
+  .lcars-main-col {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 0.5rem);
+    width: calc(85vw + 1rem);
+    // border: 0.25px dashed red;
+
+    .lcars-top-frame {
+      display: flex;
+      flex-direction: column;
+      height: 4rem;
+      width: 100%;
+      background-color: black;
+      // border: 0.25px dashed red;
+      
+      .lcars-top-bar {
+        display: flex;
+        padding-right: 2rem;
+        height: 2rem;
+        width: 100%;
+        background-color: $P_lightBlue;
+        border-radius: 0rem 2rem 2rem 0rem;
+        
+        .lcars-title {
+          padding: $lcarsSpaceSmall $lcarsSpaceMini 0rem $lcarsSpaceSmall;
+          font-size: 2.65rem;
+          letter-spacing: 1px;
+          display: flex;
+          height: 2rem;
+          align-items: center;
+          background-color: black;
+          color: $P_lightBlue;
+          width: min-content;
+          margin-left: auto;
+        }
+      }
+      
+      .lcars-top-buffer {
+        display: flex;
+        height: 2rem;
+        width: 100%;
+        background-color: $P_lightBlue;
+        // border: 0.25px dashed red;
+        
+        .lcars-top-elbow-buffer {
+          display: flex;
+          height: 2rem;
+          width: 100%;
+          background-color: black;
+          border-radius: 2rem 0rem 0rem 0rem;
+          // border: 0.25px dashed red;
+        }
+      }
+    }
+    
+    .lcars-display-main {
+      height: auto;
+      width: 90%;
+      margin: auto;
+      background-color: black;
+      border: 0.25px dashed red;
+    }
+    
+    .lcars-bottom-frame {
+      display: flex;
+      flex-direction: column;
+      height: 4rem;
+      width: 100%;
+      background-color: black;
+      // border: 0.25px dashed red;
+      
+      .lcars-bottom-buffer {
+        display: flex;
+        height: 2rem;
+        width: 100%;
+        background-color: $P_darkBlue;
+        // border: 0.25px dashed red;
+        
+        .lcars-bottom-elbow-buffer {
+          display: flex;
+          height: 2rem;
+          width: 100%;
+          background-color: black;
+          border-radius: 0rem 0rem 0rem 2rem;
+          // border: 0.25px dashed red;
+        }
+      }
+      
+      .lcars-bottom-bar {
+        display: flex;
+        padding-right: 6rem;
+        height: 2rem;
+        width: 100%;
+        background-color: $P_darkBlue;
+        border-radius: 0rem 2rem 2rem 0rem;
+        
+        .lcars-sub-title-decor {
+          height: 2rem;
+          width: 2rem;
+          background-color: $P_lightGrey;
+          margin-left: auto;
+          border-left: $lcarsSpaceSmall solid black;
+          border-right: $lcarsSpaceSmall solid black;
+        }
+        
+        .lcars-sub-title {
+          display: flex;
+          margin: 0rem;
+          background-color: $P_lightGrey;
+          border-right: $lcarsSpaceSmall solid black;
+          align-items: flex-start;
+          flex-direction: column;
+          
+          .sub-title {
+            background-color: black;
+            color: $P_lightGrey;
+            font-size: 1.6rem;
+            line-height: 0.8;
+            width: fit-content;
+            margin: 0rem 0.5rem 0rem auto;
+            padding: 0rem 0rem 0rem 0.2rem;
+          }
+          
+          .lcars-sub-title-btm {
+            height: 0.75rem;
+            width: 9rem;
+            background-color: $P_darkBlue;
+            border-top: $lcarsSpaceMini solid black;
+          }
+        }
+        
+        .lcars-sub-title-decor-sm {
+          height: 2rem;
+          width: 1rem;
+          background-color: $P_lightGrey;
+          margin: 0rem;
+          border-right: $lcarsSpaceMini solid black;
+          
+          .lcars-sub-title-decor-bit {
+            height: 0.75rem;
+            width: 1rem;
+            background-color: $P_lightGrey;
+            border-bottom: 0.1rem solid black;
+            border-right: 0.1rem solid black;
+          }
+        }
+      }
+    }
+  }
+  // end main col 
 }
 
-// add mobile view later 
+  // add mobile view later 
 @media only screen and (max-width: 576px) {
   .lcars-cont {
-    display: none;
+    display: none!important;
   }
 }
-
-// side bar 
-.lcars-left-col {
-  display: flex;
-  flex-direction: column;
-  // border: 0.25px dashed red;
-  height: calc(100% - 0.5rem);
-  width: calc(15vw - 2rem);
-  min-width: 6.5rem;
-  justify-content: space-evenly;
-}
-// elbows 
-.lcars-left-top-elbow {
-  background-color: $lcarsMain;
-  border-radius: 5rem 0rem 0rem 0rem;
-  // border-radius: 50% 0% 0% 100% / 50% 0% 100% 0%;
-  // border-radius: 75% 0% 0% 100% / 75% 0% 100% 0%;
-  width: 100%;
-  height: 5rem;
-}
-.lcars-left-bottom-elbow {
-  background-color: $lcarsMain;
-  border-radius: 0rem 0rem 0rem 5rem;
-  // border-radius: 0% 100% 0% 50% / 0% 0% 100% 50%;
-  // border-radius: 0% 100% 0% 75% / 0% 0% 100% 75%;
-  width: 100%;
-  height: 5rem;
-}
-// elbow extentions (2) 
-.lcars-left-elbow-extender {
-  display: flex;
-  background-color: $lcarsMain;
-  width: 100%;
-  height: 3rem;
-}
-// filler (2) 
-.lcars-left-side-fill {
-  display: flex;
-  background-color: $lcarsYellow;
-  width: 100%;
-  height: 6.5rem;
-  margin: 0.25rem 0rem;
-}
-// controlls 
-.lcars-left-controls {
-  margin: auto 0rem;
-}
-// filler sm (2) 
-.lcars-left-controls-frame-top {
-  background-color: $lcarsYellow;
-  width: 100%;
-  height: 1.5rem;
-  margin: 0.25rem 0rem;
-}
-.lcars-left-controls-frame-bottom {
-  background-color: $lcarsYellow;
-  width: 100%;
-  height: 1.5rem;
-  margin: 0.25rem 0rem;
-}
-// buttons side
-.lcars-left-side-button-top {
-  background-color: $lcarsBlue;
-  color: $lcarsMain;
-  width: 100%;
-  height: 2rem;
-  text-align: end;
-  padding-right: 2rem;
-}
-.lcars-left-side-button-bottom {
-  background-color: $lcarsBlue;
-  color: $lcarsMain;
-  width: 100%;
-  height: 2rem;
-  text-align: end;
-  padding-right: 2rem;
-}
-// end side bar 
-
-// main column 
-.lcars-main-col {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 0.5rem);
-  width: calc(85vw + 1rem);
-  // border: 0.25px dashed red;
-  
-  .lcars-top-frame {
-    display: flex;
-    flex-direction: column;
-    height: 4rem;
-    width: 100%;
-    background-color: black;
-    // border: 0.25px dashed red;
-    
-    .lcars-top-bar {
-      display: flex;
-      padding-right: 2rem;
-      height: 2rem;
-      width: 100%;
-      background-color: $lcarsMain;
-      border-radius: 0rem 2rem 2rem 0rem;
-      
-      .lcars-title {
-        padding: 0.15rem 0.1rem 0rem 0.15rem;
-        font-size: 2.65rem;
-        letter-spacing: 1px;
-        display: flex;
-        height: 2rem;
-        align-items: center;
-        background-color: black;
-        width: min-content;
-        margin-left: auto;
-      }
-    }
-    
-    .lcars-top-buffer {
-      display: flex;
-      height: 2rem;
-      width: 100%;
-      background-color: $lcarsMain;
-      // border: 0.25px dashed red;
-      
-      .lcars-top-elbow-buffer {
-        display: flex;
-        height: 2rem;
-        width: 100%;
-        background-color: black;
-        border-radius: 2rem 0rem 0rem 0rem;
-        // border: 0.25px dashed red;
-      }
-    }
-  }
-  
-  .lcars-display-main {
-    height: auto;
-    width: 100%;
-    margin: auto 0rem;
-    background-color: black;
-    border: 0.25px dashed red;
-  }
-  
-  .lcars-bottom-frame {
-    display: flex;
-    flex-direction: column;
-    height: 4rem;
-    width: 100%;
-    background-color: black;
-    // border: 0.25px dashed red;
-    
-    .lcars-bottom-buffer {
-      display: flex;
-      height: 2rem;
-      width: 100%;
-      background-color: $lcarsMain;
-      // border: 0.25px dashed red;
-      
-      .lcars-bottom-elbow-buffer {
-        display: flex;
-        height: 2rem;
-        width: 100%;
-        background-color: black;
-        border-radius: 0rem 0rem 0rem 2rem;
-        // border: 0.25px dashed red;
-      }
-    }
-    
-    .lcars-bottom-bar {
-      display: flex;
-      padding-right: 6rem;
-      height: 2rem;
-      width: 100%;
-      background-color: $lcarsMain;
-      border-radius: 0rem 2rem 2rem 0rem;
-
-      .lcars-sub-title-decor {
-        height: 2rem;
-        width: 2rem;
-        background-color: $lcarsOrange;
-        margin-left: auto;
-      }
-      
-      .lcars-sub-title {
-        display: flex;
-        margin: 0rem;
-        background-color: $lcarsPurple;
-        padding: 0rem 0rem 0rem 5rem;
-        border-bottom: 0.7rem solid black;
-      }
-    }
-  }
-}
+// 

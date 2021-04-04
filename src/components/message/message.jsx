@@ -29,7 +29,11 @@ class Message extends Form {
     }, 2000);
     setTimeout(() => {
       const name = document.getElementById('name');
-      name.focus();
+      if(name && name !== null && name !== undefined) {
+        name.focus();
+      } else {
+        return;
+      }
     }, 3000);
   };
 

@@ -36,10 +36,11 @@ const TechnicalSkillsView = () => {
     }, 4750);
     setTimeout(() => {
       const infoCol = document.getElementById('infoCol');
-      if(infoCol !== null) {
+      if(infoCol && infoCol !== null && infoCol !== undefined) {
         infoCol.classList.remove('intro-info');
       } else {
-        console.error('info column is null ... dumbass')
+        return;
+        // console.error('info column is null ... dumbass')
       }
     }, 6750);
   }, []);
