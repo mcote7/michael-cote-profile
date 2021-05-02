@@ -128,7 +128,7 @@ const MainView = ({message, canPlayAudio}) => {
       // console.log("e.screenY",e.screenY);
       // console.log("e.screenX",e.screenX);
       let eY = e.screenY - 219;
-      let eX = e.screenX - 139;
+      let eX = e.screenX - 139;//           <-----<<<|) change to page for mobile ? 
       setMyGhostDisplay("block");
       setMyGhostMoveTop(`${eY}px`);
       setMyGhostMoveLeft(`${eX}px`);

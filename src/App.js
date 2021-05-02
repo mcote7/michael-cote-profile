@@ -13,8 +13,8 @@ import MainView from './components/MainView/MainView';
 import TechnicalSkillsView from './components/TechnicalSkillsView/TechnicalSkillsView';
 
 // redesign & optimize Education next ...
-import Education from './components/education/education';
-// import EducationView from './components/EducationView/EducationView';
+// import Education from './components/education/education';
+import EducationView from './components/EducationView/EducationView';
 
 import Projects from './components/projects/projects';
 
@@ -87,7 +87,7 @@ const App = ({history}) => {
         <div id="routes" className="row">
           <Switch>
             <Route exact path="/technical" component={TechnicalSkillsView}/>
-            <Route exact path="/education" component={Education}/>
+            <Route exact path="/education" component={EducationView}/>
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/resume" component={Resume}/>
             <Route exact path="/contact" render={ (props) => ( <Message {...props} handleMessage={handleMessage}/> )}/>

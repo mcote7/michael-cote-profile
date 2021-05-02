@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { onRoute } from '../../utilities/onRoute';
 
 import '../../SASS/education-view.scss';
+import Carousel from './Carousel';
+
 
 const EducationView = () => {
 
@@ -63,6 +65,7 @@ const EducationView = () => {
         {/* display row */}
         <div className="lcars-display-main">
           {/* TODO CONTENT CAROUSEL && INFO DISPLAY */}
+          <Carousel/>
         </div>
         
         {/* bottom frame */}
