@@ -20,7 +20,7 @@ const EducationView = () => {
           <div className="lcars-left-elbow-extender-top"><span className="digits MTauto MLauto">00-065786</span></div>
             <div className="lcars-left-side-fill-top"><span className="digits MBauto MLauto">00-028519</span></div>
             
-              <div className="lcars-left-controls-frame-top MBauto MTauto">
+              <div className="lcars-left-controls-frame-top">
                 <span className="lcars-title-control">CONTROLLER</span>
               </div>
               
@@ -42,7 +42,7 @@ const EducationView = () => {
                     </div>
                 </div>
               
-              <div className="lcars-left-controls-frame-bottom MTauto MBauto"></div>
+              <div className="lcars-left-controls-frame-bottom"><span className="digits MTauto MLauto">00-098701</span></div>
             
             <div className="lcars-left-side-fill-bottom"><span className="digits MTauto MLauto">00-013799</span></div>
           <div className="lcars-left-elbow-extender-bottom"><span className="digits MBauto MLauto">00-044702</span></div>

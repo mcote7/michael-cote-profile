@@ -137,6 +137,7 @@ $lcarsSpaceMini: 0.1rem;
       width: 100%;
       height: 1rem;
       padding-right: 1rem;
+      margin-bottom: $lcarsSpace;
       
       .lcars-title-control {
         margin-left: auto;
@@ -191,9 +192,12 @@ $lcarsSpaceMini: 0.1rem;
     
     // control frame bottom 
     .lcars-left-controls-frame-bottom {
+      display: flex;
       background-color: $P_lightGrey;
       width: 100%;
       height: 1rem;
+      margin-top: $lcarsSpace;
+      flex-grow: 2;
     }
     
     // filler bottom SET TO HEIGHT AUTO 
@@ -203,6 +207,7 @@ $lcarsSpaceMini: 0.1rem;
       width: 100%;
       height: 6.5rem;
       margin: $lcarsSpace 0rem;
+      flex-grow: 1;
     }
     
     // elbow extention 
