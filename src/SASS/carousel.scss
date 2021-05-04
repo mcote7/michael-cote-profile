@@ -1,2 +1,36 @@
 @import '../SASS/variables.scss';
 
+
+
+
+.my-carousel {
+  height: 350px;
+  width: 500px;
+  
+  .my-cell {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    
+    &.angular-img {
+      background-image: url('../components/EducationView/Certificates/AngularCert.png');
+    }
+    &.dojo-img {
+      background-image: url('../components/EducationView/Certificates/DojoCert.png');
+    }
+    &.react-img {
+      background-image: url('../components/EducationView/Certificates/MasterReactCert.png');
+    }
+    &.redux-img {
+      background-image: url('../components/EducationView/Certificates/ReduxCert.png');
+    }
+    &.sass-img {
+      background-image: url('../components/EducationView/Certificates/SassCert.jpg');
+    }
+  }
+}
+
+
+
+

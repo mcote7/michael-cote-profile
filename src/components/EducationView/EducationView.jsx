@@ -1,7 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 import { onRoute } from '../../utilities/onRoute';
 
 import '../../SASS/education-view.scss';
+
+import {EDU} from './education';
+
 import Carousel from './Carousel';
 
 
@@ -10,6 +14,41 @@ const EducationView = () => {
   useEffect(()=> {
     onRoute();
   },[]);
+
+  const [index, setIndex] = useState(0);
+
+  const next = document.getElementById("next");
+  const prev = document.getElementById("prev");
+
+
+  const nextImage = () => {
+    setIndex((index + 1) % EDU.length);
+    // console.log("next", index, '🎠', EDU[index].image)
+    next.animate([
+      {color: '#ffcb66', transform: 'translateY(0rem) scale(1.2)', opacity: 1},
+      {color: '#ffdd99', transform: 'translateY(-1.25rem) scale(1)', opacity: 0.1}
+    ], {
+      duration: 444,
+      easing: 'ease-in'
+    });
+  };
+  
+  const prevImage = () => {
+    const nextIndex = index - 1;
+    if (nextIndex < 0) {
+      setIndex(EDU.length - 1);
+    } else {
+      setIndex(nextIndex);
+    }
+    // console.log("prev", index, '🎠', EDU[index].image)
+    prev.animate([
+      {color: '#ffcb66', transform: 'translateY(0rem) scale(1.2)', opacity: 1},
+      {color: '#ffdd99', transform: 'translateY(1.25rem) scale(1)', opacity: 0.1}
+    ], {
+      duration: 444,
+      easing: 'ease-in'
+    });
+  };
 
   return (
     <div className="lcars-cont">
@@ -24,23 +63,23 @@ const EducationView = () => {
                 <span className="lcars-title-control">CONTROLLER</span>
               </div>
               
-                <div className="lcars-left-side-button-top">
-                  <div className="lcars-button">
-                    <span className="lcars-button-text MLauto MTauto" style={{marginBottom: '-0.1rem'}}>PREV</span>
-                  </div>
-                    <div className="lcars-button-cap" style={{paddingTop: '1.6rem'}}>
-                      <span>&#x25B2;</span>
-                    </div>
+              <div className="lcars-control-wrap">
+                <div className="cusp-top"><div className="top-cusp"></div></div>
+                <div className="lcars-control-outer">
+                  {/* tab */}
                 </div>
-                
-                <div className="lcars-left-side-button-bottom">
-                  <div className="lcars-button">
-                    <span className="lcars-button-text MLauto MBauto">NEXT</span>
+                <div className="cusp-btm"><div className="btm-cusp"></div></div>
+                <div className="lcars-control-inner">
+                  <div className="lcars-control-btn" onClick={nextImage}>
+                    <span className="digits MTauto MLauto">NEXT</span>
+                    <div id="next" className="next-arr"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
                   </div>
-                    <div className="lcars-button-cap">
-                      <span>&#x25BC;</span>
-                    </div>
+                  <div className="lcars-control-btn" onClick={prevImage}>
+                    <span className="digits MBauto MLauto">PREV</span>
+                    <div id="prev" className="prev-arr"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                  </div>
                 </div>
+              </div>
               
               <div className="lcars-left-controls-frame-bottom"><span className="digits MTauto MLauto">00-098701</span></div>
             
@@ -65,7 +104,7 @@ const EducationView = () => {
         {/* display row */}
         <div className="lcars-display-main">
           {/* TODO CONTENT CAROUSEL && INFO DISPLAY */}
-          <Carousel/>
+          <Carousel image={EDU[index].image}/>
         </div>
         
         {/* bottom frame */}

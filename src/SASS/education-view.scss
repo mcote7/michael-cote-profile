@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-// applys to whole app ( i think )
 * {
   user-select: none;
 }
@@ -54,6 +53,12 @@ $lcarsSpaceSmall: 0.15rem;
 
 $lcarsSpaceMini: 0.1rem;
 
+// TIMING - 
+
+$lcarsTransition: 222ms;
+
+$lcarsTransitionSlow: 444ms;
+
 // POSITION - 
 
 .MTauto {
@@ -79,6 +84,10 @@ $lcarsSpaceMini: 0.1rem;
   line-height: 1.15;
   padding-top: 0.05rem;
 }
+
+// 
+
+// 
 
 // lcars -
 
@@ -138,6 +147,7 @@ $lcarsSpaceMini: 0.1rem;
       height: 1rem;
       padding-right: 1rem;
       margin-bottom: $lcarsSpace;
+      border-radius: 0rem 0rem $lcarsSpace 0rem;
       
       .lcars-title-control {
         margin-left: auto;
@@ -145,49 +155,128 @@ $lcarsSpaceMini: 0.1rem;
         color: $P_lightGrey;
         font-size: 1.4rem;
         line-height: 0.8;
-        padding: 0rem 0.1rem 0rem 0.15rem;
+        padding: 0rem $lcarsSpaceMini 0rem $lcarsSpaceSmall;
         letter-spacing: 0.5px;
       }
     }
 
     // buttons side 
-    .lcars-left-side-button-top, .lcars-left-side-button-bottom {
+    .lcars-control-wrap {
       display: flex;
-      flex-direction: row;
-      background-color: black;
-      color: white;
+      position: relative;
+      background-color: $P_darkOrange;
+      height: 8rem;
       width: 100%;
-      height: 3rem;
+      border-radius: 0rem $lcarsSpace $lcarsSpace 0rem;
       
-      .lcars-button {
+      .cusp-top {
         display: flex;
-        height: 3rem;
-        padding: $lcarsSpace;
-        width: calc(100% - 1.25rem);
-        background-color: $P_lightOrange;
-        border-radius: 3.5rem 0rem 0rem 3.5rem;
+        position: absolute;
+        left: 100%;
+        top: 0.75rem;
+        height: $lcarsSpace;
+        width: 1.5rem;
+        background-color: $P_darkOrange;
         
-        .lcars-button-text {
-          font-size: 1.75rem;
-          color: black;
-          line-height: 0.9;
-          letter-spacing: 0.5px;
+        .top-cusp {
+          height: 100%;
+          width: 100%;
+          background-color: black;
+          border-radius: 0rem 0rem 0rem $lcarsSpace;
         }
       }
       
-      .lcars-button-cap {
+      .lcars-control-outer {
         display: flex;
-        justify-content: center;
-        width: 1rem;
-        height: 3rem;
-        font-size: 1rem;
-        margin-left: $lcarsSpace;
-        background-color: $P_Yellow;
-        color: black;
+        position: absolute;
+        left: 100%;
+        top: 1rem;
+        height: 6rem;
+        width: 1.5rem;
+        background-color: $P_darkOrange;
+        border-radius: 0rem $lcarsSpace $lcarsSpace 0rem;
       }
-    }
-    .lcars-left-side-button-bottom {
-      margin-top: $lcarsSpace;
+      
+      .cusp-btm {
+        display: flex;
+        position: absolute;
+        left: 100%;
+        height: $lcarsSpace;
+        width: 1.5rem;
+        background-color: $P_darkOrange;
+        top: calc(100% - 1rem);
+        .btm-cusp {
+          height: 100%;
+          width: 100%;
+          background-color: black;
+          border-radius: $lcarsSpace 0rem 0rem 0rem;
+        }
+      }
+      
+      .lcars-control-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 6rem;
+        width: calc(100% - 1rem);
+        margin: auto;
+        background-color: black;
+        border-radius: $lcarsSpace;
+        
+        .lcars-control-btn {
+          cursor: pointer;
+          display: flex;
+          height: 2.5rem;
+          width: calc(100% - 1rem);
+          padding: $lcarsSpaceSmall;
+          background-color: $P_lightOrange;
+          border-radius: $lcarsSpace;
+          transition: $lcarsTransition;
+          
+          &:hover {
+            background-color: $P_lightOrange-hov;
+            .digits {
+              opacity: 1;
+            }
+          }
+          
+          &:active {
+            background-color: $P_Yellow;
+            .digits {
+              color: $P_Yellow;
+            }
+          }
+          
+          .digits {
+            opacity: 0;
+            letter-spacing: 1px;
+            transition: opacity $lcarsTransitionSlow, color $lcarsTransition;
+          }
+          
+          .next-arr {
+            display: flex;
+            position: absolute;
+            font-size: 1.25rem;
+            left: calc(100% + 0.25rem);
+            top: 2.5rem;
+            color: $P_lightOrange-hov;
+            opacity: 0;
+            transition: $lcarsTransitionSlow;
+          }
+          
+          .prev-arr {
+            display: flex;
+            position: absolute;
+            font-size: 1.25rem;
+            left: calc(100% + 0.25rem);
+            bottom: 2.6rem;
+            color: $P_lightOrange-hov;
+            opacity: 0;
+            transition: $lcarsTransitionSlow;
+          }
+        }
+      }
     }
     
     // control frame bottom 
@@ -197,7 +286,8 @@ $lcarsSpaceMini: 0.1rem;
       width: 100%;
       height: 1rem;
       margin-top: $lcarsSpace;
-      flex-grow: 2;
+      flex-grow: 1;
+      border-radius: 0rem $lcarsSpace 0rem 0rem;
     }
     
     // filler bottom SET TO HEIGHT AUTO 
@@ -205,9 +295,9 @@ $lcarsSpaceMini: 0.1rem;
       display: flex;
       background-color: $P_darkGrey;
       width: 100%;
-      height: 6.5rem;
+      height: 3.5rem;
       margin: $lcarsSpace 0rem;
-      flex-grow: 1;
+      flex-grow: 2;
     }
     
     // elbow extention 
@@ -370,8 +460,8 @@ $lcarsSpaceMini: 0.1rem;
             height: 0.75rem;
             width: 1rem;
             background-color: $P_lightGrey;
-            border-bottom: 0.1rem solid black;
-            border-right: 0.1rem solid black;
+            border-bottom: $lcarsSpaceMini solid black;
+            border-right: $lcarsSpaceMini solid black;
           }
         }
       }
