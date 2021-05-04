@@ -1,12 +1,13 @@
 @import '../SASS/variables.scss';
-
+@import '../SASS/education-view.scss';
 
 
 
 .my-carousel {
   height: 350px;
   width: 500px;
-  
+  border-radius: $lcarsSpace;
+
   .my-cell {
     height: 100%;
     width: 100%;
@@ -14,23 +15,45 @@
     object-fit: cover;
     
     &.angular-img {
-      background-image: url('../components/EducationView/Certificates/AngularCert.png');
+      background-image: url('../components/EducationView/Certificates/Angular4Cert.jpg');
+      animation: image0 999ms ease-out;
     }
     &.dojo-img {
       background-image: url('../components/EducationView/Certificates/DojoCert.png');
+      animation: image1 999ms ease-out;
     }
     &.react-img {
       background-image: url('../components/EducationView/Certificates/MasterReactCert.png');
+      animation: image2 999ms ease-out;
     }
     &.redux-img {
       background-image: url('../components/EducationView/Certificates/ReduxCert.png');
+      animation: image3 999ms ease-out;
     }
     &.sass-img {
       background-image: url('../components/EducationView/Certificates/SassCert.jpg');
+      animation: image4 999ms ease-out;
     }
   }
 }
 
-
-
-
+@keyframes image0 {
+  from {opacity: 0; filter: blur(4px) hue-rotate(0deg); transform: scale3d(0.9, 0.9, 1);}
+  to {opacity: 1; filter: blur(0px) hue-rotate(360deg); transform: scale3d(1, 1, 1);}
+}
+@keyframes image1 {
+  from {opacity: 0; filter: blur(4px) hue-rotate(0deg); transform: scale3d(0.9, 0.9, 1);}
+  to {opacity: 1; filter: blur(0px) hue-rotate(360deg); transform: scale3d(1, 1, 1);}
+}
+@keyframes image2 {
+  from {opacity: 0; filter: blur(4px) hue-rotate(0deg); transform: scale3d(0.9, 0.9, 1);}
+  to {opacity: 1; filter: blur(0px) hue-rotate(360deg); transform: scale3d(1, 1, 1);}
+}
+@keyframes image3 {
+  from {opacity: 0; filter: blur(4px) hue-rotate(0deg); transform: scale3d(0.9, 0.9, 1);}
+  to {opacity: 1; filter: blur(0px) hue-rotate(360deg); transform: scale3d(1, 1, 1);}
+}
+@keyframes image4 {
+  from {opacity: 0; filter: blur(4px) hue-rotate(0deg); transform: scale3d(0.9, 0.9, 1);}
+  to {opacity: 1; filter: blur(0px) hue-rotate(360deg); transform: scale3d(1, 1, 1);}
+}

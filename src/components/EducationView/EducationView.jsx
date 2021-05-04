@@ -56,7 +56,9 @@ const EducationView = () => {
       <div className="lcars-left-col">
         
         <div className="lcars-left-top-elbow"></div>
-          <div className="lcars-left-elbow-extender-top"><span className="digits MTauto MLauto">00-065786</span></div>
+          <div className="lcars-left-elbow-extender-top">
+            <div className="star-trak MTauto MLauto"></div>
+          </div>
             <div className="lcars-left-side-fill-top"><span className="digits MBauto MLauto">00-028519</span></div>
             
               <div className="lcars-left-controls-frame-top">
@@ -102,9 +104,10 @@ const EducationView = () => {
         </div>
         
         {/* display row */}
-        <div className="lcars-display-main">
-          {/* TODO CONTENT CAROUSEL && INFO DISPLAY */}
-          <Carousel image={EDU[index].image}/>
+        <div className="lcars-display-main row">
+          <div className="col">
+            <Carousel image={EDU[index].image}/>
+          </div>
         </div>
         
         {/* bottom frame */}

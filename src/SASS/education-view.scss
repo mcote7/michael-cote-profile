@@ -107,7 +107,6 @@ $lcarsTransitionSlow: 444ms;
   .lcars-left-col {
     display: flex;
     flex-direction: column;
-    // border: 0.25px dashed red;
     height: calc(100% - 0.5rem);
     width: calc(15vw - 2rem);
     min-width: 6.5rem;
@@ -124,9 +123,19 @@ $lcarsTransitionSlow: 444ms;
     // elbow extention 
     .lcars-left-elbow-extender-top {
       display: flex;
+      flex-direction: column;
       background-color: $P_lightBlue;
       width: 100%;
       height: 3rem;
+      
+      .star-trak {
+        height: 3rem;
+        width: 3rem;
+        background-image: url('../images/Star_Trek_alt-512.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: -0.25rem;
+      }
     }
     
     // filler top 
@@ -323,15 +332,13 @@ $lcarsTransitionSlow: 444ms;
     flex-direction: column;
     height: calc(100% - 0.5rem);
     width: calc(85vw + 1rem);
-    // border: 0.25px dashed red;
-
+    
     .lcars-top-frame {
       display: flex;
       flex-direction: column;
       height: 4rem;
       width: 100%;
       background-color: black;
-      // border: 0.25px dashed red;
       
       .lcars-top-bar {
         display: flex;
@@ -360,7 +367,6 @@ $lcarsTransitionSlow: 444ms;
         height: 2rem;
         width: 100%;
         background-color: $P_lightBlue;
-        // border: 0.25px dashed red;
         
         .lcars-top-elbow-buffer {
           display: flex;
@@ -368,17 +374,16 @@ $lcarsTransitionSlow: 444ms;
           width: 100%;
           background-color: black;
           border-radius: 2rem 0rem 0rem 0rem;
-          // border: 0.25px dashed red;
         }
       }
     }
     
     .lcars-display-main {
       height: auto;
-      width: 90%;
+      width: calc(100% - 4rem);
       margin: auto;
       background-color: black;
-      border: 0.25px dashed red;
+      // border: 0.25px dashed red;
     }
     
     .lcars-bottom-frame {
@@ -387,14 +392,12 @@ $lcarsTransitionSlow: 444ms;
       height: 4rem;
       width: 100%;
       background-color: black;
-      // border: 0.25px dashed red;
       
       .lcars-bottom-buffer {
         display: flex;
         height: 2rem;
         width: 100%;
         background-color: $P_darkBlue;
-        // border: 0.25px dashed red;
         
         .lcars-bottom-elbow-buffer {
           display: flex;
@@ -402,7 +405,6 @@ $lcarsTransitionSlow: 444ms;
           width: 100%;
           background-color: black;
           border-radius: 0rem 0rem 0rem 2rem;
-          // border: 0.25px dashed red;
         }
       }
       
