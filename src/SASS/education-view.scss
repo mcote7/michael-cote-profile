@@ -379,11 +379,21 @@ $lcarsTransitionSlow: 444ms;
     }
     
     .lcars-display-main {
-      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
       width: calc(100% - 4rem);
       margin: auto;
       background-color: black;
-      // border: 0.25px dashed red;
+      overflow: scroll;
+      border: 0.25px dashed red;
+      
+      .lcars-display-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     
     .lcars-bottom-frame {

@@ -7,6 +7,7 @@ import '../../SASS/education-view.scss';
 import {EDU} from './education';
 
 import Carousel from './Carousel';
+import Info from './Info';
 
 
 const EducationView = () => {
@@ -16,13 +17,14 @@ const EducationView = () => {
   },[]);
 
   const [index, setIndex] = useState(0);
+  const len = EDU.length;
 
   const next = document.getElementById("next");
   const prev = document.getElementById("prev");
 
 
   const nextImage = () => {
-    setIndex((index + 1) % EDU.length);
+    setIndex((index + 1) % len);
     // console.log("next", index, '🎠', EDU[index].image)
     next.animate([
       {color: '#ffcb66', transform: 'translateY(0rem) scale(1.2)', opacity: 1},
@@ -36,7 +38,7 @@ const EducationView = () => {
   const prevImage = () => {
     const nextIndex = index - 1;
     if (nextIndex < 0) {
-      setIndex(EDU.length - 1);
+      setIndex(len - 1);
     } else {
       setIndex(nextIndex);
     }
@@ -68,7 +70,7 @@ const EducationView = () => {
               <div className="lcars-control-wrap">
                 <div className="cusp-top"><div className="top-cusp"></div></div>
                 <div className="lcars-control-outer">
-                  {/* tab */}
+                  {/* outer tab arrows */}
                 </div>
                 <div className="cusp-btm"><div className="btm-cusp"></div></div>
                 <div className="lcars-control-inner">
@@ -105,8 +107,11 @@ const EducationView = () => {
         
         {/* display row */}
         <div className="lcars-display-main row">
-          <div className="col">
-            <Carousel image={EDU[index].image}/>
+          <div className="col-xl-6 lcars-display-col">
+            <Carousel image={EDU[index].image} len={len} id={EDU[index].id}/>
+          </div>
+          <div className="col-xl-6 lcars-display-col">
+            <Info info={EDU[index].info} logo={EDU[index].logo}/>
           </div>
         </div>
         

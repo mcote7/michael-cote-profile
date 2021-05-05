@@ -2,6 +2,17 @@
 .resumeContainer {
   margin-top: 0vh;
 }
+.meme {
+  display: flex;
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  animation: fafalala 6s ease-out infinite alternate-reverse;
+}
+@keyframes fafalala {
+  from {filter: brightness(220%) hue-rotate(0deg);}
+  to {filter: brightness(220%) hue-rotate(360deg);}
+}
 /* -------------------------------------------- */
 .imageContainer {
   animation: come-in 3s ease-out;

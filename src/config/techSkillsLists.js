@@ -22,7 +22,7 @@ export const FRAMEWORKS_LIST = [
 
 export const DATABASE_LIST = [
   'MongoDB',
-  'Compass',
+  'Firebase',
   'Atlas',
   'Mongoose',
   'MySQL',
@@ -37,5 +37,5 @@ export const TOOLS_LIST = [
   'GitHub',
   'PostMan',
   'AWS',
-  'PhotoShop'
+  'Adobe suite'
 ];

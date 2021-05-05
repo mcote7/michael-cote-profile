@@ -392,6 +392,7 @@ svg {
   margin: 1rem;
   clip-path: $myPloygonX;
   border-radius: $myPloygonBorderRadius;
+  filter: brightness(120%);
   animation: 
     myDelay 1.75s,
     myFade 0.75s ease-in 1.75s;
