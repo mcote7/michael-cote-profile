@@ -5,7 +5,7 @@ import Social from '../MainView/Social';
 import Title from '../MainView/Title';
 import Bio from '../MainView/Bio';
 
-import self from '../../images/self1_edited.jpg';
+import self from '../../images/self2.jpg';
 import angular8 from '../../images/angular8.png';
 
 import '../../SASS/main-view.scss';

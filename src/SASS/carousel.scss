@@ -6,13 +6,17 @@
 .my-carousel {
   height: 350px;
   width: 500px;
+  padding: $lcarsSpace;
   border-radius: $lcarsSpace;
-
+  overflow: hidden;
+  border: 0.5px dotted red;
+  
   .my-cell {
     height: 100%;
     width: 100%;
     background-size: cover;
     object-fit: cover;
+    transition: $lcarsTransitionSlow ease-out;
     
     &.angular-img {
       background-image: url('../components/EducationView/Certificates/Angular4Cert.jpg');
