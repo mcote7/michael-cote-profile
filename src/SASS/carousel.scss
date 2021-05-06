@@ -6,20 +6,59 @@
 
 .my-carousel {
   position: relative;
-  height: 300px;
+  height: 330px;
   width: 450px;
   padding: $lcarsSpace;
   margin-top: 2rem;
-  border-radius: $lcarsSpace;
-  border: 0.5px dotted red;
+  border-top: 0.5rem solid $P_lightGrey;
+  // border: 0.5px dotted red;
   
+  .car-cap {
+    display: flex;
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: $P_lightGrey;
+    top: -0.5rem;
+    left: -0.25rem;
+    border-radius: 50%;
+  }
+  
+  .car-cusp {
+    display: flex;
+    position: absolute;
+    height: 0.75rem;
+    width: 1.5rem;
+    background-color: $P_lightGrey;
+    top: -1.25rem;
+    right: 8.16rem;
+    .cusp-car {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      border-radius: 0rem 0rem 0.75rem 0rem;
+    }
+  }
+
   .cell-frame {
+    display: flex;
     position: absolute;
     top: -2rem;
-    right: 0;
+    right: -1.5rem;
     height: 2rem;
-    width: 4rem;
-    border: 0.5px dotted chartreuse;
+    width: 10rem;
+    background-color: #91bfbd;
+    border-radius: 2rem 1rem 1rem 0rem;
+    // border: 0.5px dotted chartreuse;
+    
+    .cell-frame-display {
+      background-color: black;
+      height: 1.5rem;
+      width: 5rem;
+      margin: auto;
+      border-radius: 1rem;
+      margin-right: 0.25rem;
+    }
   }
   
   .my-cell {

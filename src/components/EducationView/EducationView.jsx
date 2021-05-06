@@ -21,6 +21,7 @@ const EducationView = () => {
 
   const next = document.getElementById("next");
   const prev = document.getElementById("prev");
+  const idx = document.getElementById("certidx");
 
 
   const nextImage = () => {
@@ -32,6 +33,14 @@ const EducationView = () => {
     ], {
       duration: 444,
       easing: 'ease-in'
+    });
+    idx.animate([
+      {backgroundColor: 'black', color: 'black'},
+      {backgroundColor: '#cf6732', color: '#ffcb66'},
+      {backgroundColor: 'black', color: 'black'}
+    ], {
+      duration: 999,
+      easing: 'ease-in-out'
     });
   };
   
