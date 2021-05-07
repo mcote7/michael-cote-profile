@@ -3,6 +3,7 @@ import '../../SASS/carousel.scss';
 
 
 const Carousel = ({image, len, id}) => {
+
   
   return ( 
     <div className="my-carousel">
@@ -15,6 +16,13 @@ const Carousel = ({image, len, id}) => {
       </div>
       
       <div className={`my-cell ${image}`}></div>
+      
+      <div className="speach-wrap">
+        <div className="speach-button">
+          <strong><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i></strong>
+          <small><i class="fa fa-audio-description" aria-hidden="true"></i></small>
+        </div>
+      </div>
     </div>
   );
 }

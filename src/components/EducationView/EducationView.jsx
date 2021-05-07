@@ -36,7 +36,7 @@ const EducationView = () => {
     });
     idx.animate([
       {backgroundColor: 'black', color: 'black'},
-      {backgroundColor: '#cf6732', color: '#ffcb66'},
+      {backgroundColor: '#cf6732', color: 'black'},
       {backgroundColor: 'black', color: 'black'}
     ], {
       duration: 999,
@@ -58,6 +58,14 @@ const EducationView = () => {
     ], {
       duration: 444,
       easing: 'ease-in'
+    });
+    idx.animate([
+      {backgroundColor: 'black', color: 'black'},
+      {backgroundColor: '#cf6732', color: 'black'},
+      {backgroundColor: 'black', color: 'black'}
+    ], {
+      duration: 999,
+      easing: 'ease-in-out'
     });
   };
 
