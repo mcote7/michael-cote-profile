@@ -1,8 +1,19 @@
 import React from 'react';
 import '../../SASS/carousel.scss';
 
+import { useSpeechSynthesis } from 'react-speech-kit';
 
-const Carousel = ({image, len, id}) => {
+
+const Carousel = ({image, len, id, speach}) => {
+
+  const { speak, voices } = useSpeechSynthesis();
+  const voice = voices[7];
+  const rate = 0.9;
+  const volume = 0.3;
+
+  const sayCourse = () => {
+    speak({text: `${speach}`, voice, rate, volume});
+  }
 
   
   return ( 
@@ -18,9 +29,8 @@ const Carousel = ({image, len, id}) => {
       <div className={`my-cell ${image}`}></div>
       
       <div className="speach-wrap">
-        <div className="speach-button">
+        <div className="speach-button" onClick={sayCourse}>
           <strong><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i></strong>
-          <small><i class="fa fa-audio-description" aria-hidden="true"></i></small>
         </div>
       </div>
     </div>

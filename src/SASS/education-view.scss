@@ -420,32 +420,27 @@ $lcarsTransitionSlow: 444ms;
       
       .lcars-bottom-bar {
         display: flex;
-        padding-right: 6rem;
+        padding-right: 4.75rem;
         height: 2rem;
         width: 100%;
         background-color: $P_darkBlue;
         border-radius: 0rem 2rem 2rem 0rem;
         
-        .lcars-sub-title-decor {
-          height: 2rem;
-          width: 2rem;
-          background-color: $P_lightGrey;
-          margin-left: auto;
-          border-left: $lcarsSpaceSmall solid black;
-          border-right: $lcarsSpaceSmall solid black;
-        }
-        
         .lcars-sub-title {
           display: flex;
           margin: 0rem;
           background-color: $P_lightGrey;
-          border-right: $lcarsSpaceSmall solid black;
           align-items: flex-start;
           flex-direction: column;
+          margin-left: auto;
+          height: 1.25rem;
+          border-left: 0.2rem solid black;
+          border-right: 0.2rem solid black;
+          border-bottom: 0.2rem solid black;
           
           .sub-title {
             background-color: black;
-            color: $P_lightGrey;
+            color: $P_Yellow;
             font-size: 1.6rem;
             line-height: 0.8;
             width: fit-content;
@@ -457,23 +452,6 @@ $lcarsTransitionSlow: 444ms;
             height: 0.75rem;
             width: 9rem;
             background-color: $P_darkBlue;
-            border-top: $lcarsSpaceMini solid black;
-          }
-        }
-        
-        .lcars-sub-title-decor-sm {
-          height: 2rem;
-          width: 1rem;
-          background-color: $P_lightGrey;
-          margin: 0rem;
-          border-right: $lcarsSpaceMini solid black;
-          
-          .lcars-sub-title-decor-bit {
-            height: 0.75rem;
-            width: 1rem;
-            background-color: $P_lightGrey;
-            border-bottom: $lcarsSpaceMini solid black;
-            border-right: $lcarsSpaceMini solid black;
           }
         }
       }

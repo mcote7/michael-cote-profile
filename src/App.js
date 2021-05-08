@@ -11,11 +11,9 @@ import GoHome from './utilities/goHome';
 import NavBar from './components/NavBar/NavBar';
 import MainView from './components/MainView/MainView';
 import TechnicalSkillsView from './components/TechnicalSkillsView/TechnicalSkillsView';
-
-// redesign & optimize Education next ...
-// import Education from './components/education/education';
 import EducationView from './components/EducationView/EducationView';
 
+// redesign & optimize Projects next ...
 import Projects from './components/projects/projects';
 
 import Resume from './components/resume';
@@ -27,7 +25,8 @@ const App = ({history}) => {
   const [canPlayAudio, setCanPlayAudio] = useState(false);
 
   useEffect( () => {
-    console.log("%cHello World", rainbowConsole)
+    console.log("%cHello World", rainbowConsole);
+    console.log("%cstyle", "color: chartreuse;")
     document.addEventListener('click', playAudio );
     // eslint-disable-next-line react-hooks/exhaustive-deps 
   },[]);

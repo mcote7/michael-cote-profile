@@ -28,7 +28,7 @@ const SpeechNavigation = ({history}) => {
 
   // speech synth
   const { speak, voices } = useSpeechSynthesis();
-  const voice = voices[9];
+  const voice = voices[7];
   const rate = 0.9;
   const volume = 0.3;
   // speech recog

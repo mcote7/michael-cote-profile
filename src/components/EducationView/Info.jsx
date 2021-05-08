@@ -7,18 +7,15 @@ const Info = ({info, logo}) => {
     console.log("📜", scrollbox);
   };
   return ( 
-      <React.Fragment>
-        <div id="certinfo" className="info-wrap" onScroll={scrollCheck}>
-          {info.toUpperCase()}&nbsp;
-        </div>
-        
-        <div className={`logo ${logo}`}></div>
-              
+    <div className="rel">
+      <div id="certinfo" className="info-wrap" onScroll={scrollCheck}>
+        {info.toUpperCase()}&nbsp;
+      </div>
+      <div className={`logo ${logo}`}></div>
       <div id="carrot" className="carrot-down">
           <i class="fa fa-caret-down" aria-hidden="true"></i>
       </div>
-      </React.Fragment>
-      
+    </div>
   );
 }
 export default Info;

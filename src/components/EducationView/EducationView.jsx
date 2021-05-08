@@ -125,7 +125,7 @@ const EducationView = () => {
         {/* display row */}
         <div className="lcars-display-main row">
           <div className="col-xl-6 lcars-display-col">
-            <Carousel image={EDU[index].image} len={len} id={EDU[index].id}/>
+            <Carousel image={EDU[index].image} len={len} id={EDU[index].id} speach={EDU[index].speach}/>
           </div>
           <div className="col-xl-6 lcars-display-col">
             <Info info={EDU[index].info} logo={EDU[index].logo}/>
@@ -138,13 +138,9 @@ const EducationView = () => {
             <div className="lcars-bottom-elbow-buffer"></div>
           </div>
           <div className="lcars-bottom-bar">
-            <div className="lcars-sub-title-decor"></div>
-              <div className="lcars-sub-title">
-                <div className="sub-title">LCARS-2021</div>
-                <div className="lcars-sub-title-btm MTauto"></div>
-              </div>
-            <div className="lcars-sub-title-decor-sm">
-              <div className="lcars-sub-title-decor-bit"></div>
+            <div className="lcars-sub-title">
+              <div className="sub-title">LCARS-2021</div>
+              <div className="lcars-sub-title-btm MTauto"></div>
             </div>
           </div>
         </div>
