@@ -2,9 +2,10 @@ import React from 'react';
 import '../../SASS/carousel.scss';
 
 const Info = ({info, logo}) => {
-  const scrollbox = document.getElementById("certinfo");
+  // const scrollbox = document.getElementById("certinfo");
+  const carrot = document.getElementById("carrot");
   const scrollCheck = () => {
-    console.log("📜", scrollbox);
+    carrot.style.opacity = 1;
   };
   return ( 
     <div className="rel">
@@ -13,7 +14,7 @@ const Info = ({info, logo}) => {
       </div>
       <div className={`logo ${logo}`}></div>
       <div id="carrot" className="carrot-down">
-          <i class="fa fa-caret-down" aria-hidden="true"></i>
+          <i className="fa fa-caret-down" aria-hidden="true"></i>
       </div>
     </div>
   );

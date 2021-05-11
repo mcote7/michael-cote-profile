@@ -12,9 +12,20 @@ import Info from './Info';
 
 const EducationView = () => {
 
+  const [isDesktop, setIsDesktop] = useState();
+
   useEffect(()=> {
     onRoute();
+    screenCheck();
   },[]);
+
+  const screenCheck = () => {
+    if(window.matchMedia("(max-width: 576px)").matches) {
+      console.log("☎ phone")
+    } else {
+      console.log("🖥 desktop")
+    }
+  };
 
   const [index, setIndex] = useState(0);
   const len = EDU.length;
@@ -22,6 +33,8 @@ const EducationView = () => {
   const next = document.getElementById("next");
   const prev = document.getElementById("prev");
   const idx = document.getElementById("certidx");
+  const scrollbox = document.getElementById("certinfo");
+  const carrot = document.getElementById("carrot");
 
 
   const nextImage = () => {
@@ -39,9 +52,13 @@ const EducationView = () => {
       {backgroundColor: '#cf6732', color: 'black'},
       {backgroundColor: 'black', color: 'black'}
     ], {
-      duration: 999,
+      duration: 444,
       easing: 'ease-in-out'
     });
+    scrollbox.scrollTo({top: 0, behavior: 'auto'});
+    setTimeout(() => {
+      carrot.style.opacity = 0.5;
+    }, 100);
   };
   
   const prevImage = () => {
@@ -64,9 +81,13 @@ const EducationView = () => {
       {backgroundColor: '#cf6732', color: 'black'},
       {backgroundColor: 'black', color: 'black'}
     ], {
-      duration: 999,
+      duration: 444,
       easing: 'ease-in-out'
     });
+    scrollbox.scrollTo({top: 0, behavior: 'auto'});
+    setTimeout(() => {
+      carrot.style.opacity = 0.5;
+    }, 100);
   };
 
   return (
@@ -93,11 +114,11 @@ const EducationView = () => {
                 <div className="lcars-control-inner">
                   <div className="lcars-control-btn" onClick={nextImage}>
                     <span className="digits MTauto MLauto">NEXT</span>
-                    <div id="next" className="next-arr"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                    <div id="next" className="next-arr"><i className="fa fa-caret-up" aria-hidden="true"></i></div>
                   </div>
                   <div className="lcars-control-btn" onClick={prevImage}>
                     <span className="digits MBauto MLauto">PREV</span>
-                    <div id="prev" className="prev-arr"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                    <div id="prev" className="prev-arr"><i className="fa fa-caret-down" aria-hidden="true"></i></div>
                   </div>
                 </div>
               </div>

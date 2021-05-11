@@ -30,7 +30,7 @@ const Carousel = ({image, len, id, speach}) => {
       
       <div className="speach-wrap">
         <div className="speach-button" onClick={sayCourse}>
-          <strong><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i></strong>
+          <strong><i className="fa fa-assistive-listening-systems" aria-hidden="true"></i></strong>
         </div>
       </div>
     </div>
