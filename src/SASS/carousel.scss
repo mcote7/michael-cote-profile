@@ -2,7 +2,7 @@
 @import '../SASS/education-view.scss';
 
 
-// 🎠 CAROUSEL 
+// 🎠 LCARS CAROUSEL ☄ 
 
 .my-carousel {
   position: relative;
@@ -11,7 +11,6 @@
   padding: $lcarsSpace;
   margin-top: 2rem;
   border-top: 0.5rem solid $P_lightGrey;
-  // border: 0.5px dotted red;
   
   .car-cap {
     display: flex;
@@ -49,7 +48,6 @@
     width: 10rem;
     background-color: #91bfbd;
     border-radius: 2rem 1rem 1rem 0rem;
-    // border: 0.5px dotted chartreuse;
     
     .cell-frame-display {
       background-color: black;
@@ -58,6 +56,7 @@
       margin: auto;
       border-radius: 1rem;
       margin-right: 0.25rem;
+      font-size: 1.1rem;
     }
   }
   
@@ -67,7 +66,7 @@
     width: 100%;
     background-size: cover;
     object-fit: cover;
-    transition: $lcarsTransitionSlow ease-out;
+    transition: $lcarsTransitionSlow ease-in-out;
     
     &:hover {
       filter: hue-rotate(180deg);
@@ -88,7 +87,7 @@
     &.sass-img {
       background-image: url('../images/education/Certificates/SassCert.jpg');
     }
-    &.design-img {
+    &.design-1-img {
       background-image: url('../images/education/Certificates/DesignIntroCert_2.jpg');
     }
     &.es6-img {
@@ -108,7 +107,7 @@
     padding: $lcarsSpace 1rem $lcarsSpace $lcarsSpace;
     border-radius: 0.5rem;
     background-color: $P_darkOrange;
-    // border: 0.25px dashed red;
+    // border: 0.1px dotted red;
     
     .speach-button {
       cursor: pointer;
@@ -125,7 +124,6 @@
       color: black;
       border: $lcarsSpace solid black;
       border-left: none;
-      // border: 0.25px dashed chartreuse;
       &:hover {
         background-color: $P_lightOrange-hov;
       }
@@ -136,7 +134,7 @@
   }
 }
 
-// ℹ INFO 
+// ℹ INFO 🌌 
 
 .rel {
   position: relative;

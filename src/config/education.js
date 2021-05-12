@@ -13,7 +13,7 @@ export const EDU = [
     title: 'Angular 4+',
     id: 2, 
     image: 'angular-img', 
-    info: 'Completed course in Angular4, a deep dive into Angular’s core modules and integration with Firebase.', 
+    info: 'Completed course in Angular 4+, a deep dive into Angular’s core modules and integration with Firebase.', 
     logo: 'mosh-logo', 
     date: 'May 2021', 
     speach: 'angular' 
@@ -31,7 +31,7 @@ export const EDU = [
     title: 'React library',
     id: 4, 
     image: 'react-img', 
-    info: 'Completed course in React library, gained knowledge of both legacy ‘class component’ structure and the new ‘functional component’ structure along with MongoDb integration.', 
+    info: 'Completed course in React library, gained knowledge of both legacy ‘class component’ structure and the latest ‘functional component’ structure along with MongoDb integration and testing with Jest.', 
     logo: 'mosh-logo', 
     date: 'July 2020', 
     speach: 'react' 
@@ -45,5 +45,24 @@ export const EDU = [
     date: 'August 2020', 
     speach: 'redux' 
   },
-  
+  {
+    title: 'Design thinking', 
+    id: 6, 
+    image: 'design-1-img', 
+    info: 'Intro to design thinking, NASBA CPE accredited course.', 
+    logo: 'udemy-logo', 
+    date: 'May 2021', 
+    speach: 'design thinking' 
+  },
+  {
+    title: 'JavaScript es6', 
+    id: 7, 
+    image: 'es6-img', 
+    info: 'Level up my JavaScript knowledge with the latest features provided in ES6.', 
+    logo: 'udemy-logo', 
+    date: 'May 2021',
+    speach: 'javascript e s 6' 
+  }
 ];
+
+// 🏫 //
