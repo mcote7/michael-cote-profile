@@ -482,19 +482,25 @@ $lcarsTransitionSlow: 444ms;
     background-position: 50% 50%;
     
     &.angular-img {
-      background-image: url('../components/EducationView/Certificates/Angular4Cert.jpg');
+      background-image: url('../images/education/Certificates/Angular4Cert.jpg');
     }
     &.dojo-img {
-      background-image: url('../components/EducationView/Certificates/DojoCert.png');
+      background-image: url('../images/education/Certificates/DojoCert.png');
     }
     &.react-img {
-      background-image: url('../components/EducationView/Certificates/MasterReactCert.png');
+      background-image: url('../images/education/Certificates/MasterReactCert.png');
     }
     &.redux-img {
-      background-image: url('../components/EducationView/Certificates/ReduxCert.png');
+      background-image: url('../images/education/Certificates/ReduxCert.png');
     }
     &.sass-img {
-      background-image: url('../components/EducationView/Certificates/SassCert.jpg');
+      background-image: url('../images/education/Certificates/SassCert.jpg');
+    }
+    &.design-img {
+      background-image: url('../images/education/Certificates/DesignIntroCert_2.jpg');
+    }
+    &.es6-img {
+      background-image: url('../images/education/Certificates/ES6cert.jpg');
     }
   }
 }
