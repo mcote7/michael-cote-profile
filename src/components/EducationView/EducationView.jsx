@@ -15,11 +15,11 @@ const EducationView = () => {
 
   const [isDesktop, setIsDesktop] = useState();
 
-  useEffect(()=> {
+  useEffect( () => {
     onRoute();
     screenCheck();
     window.addEventListener('resize', screenCheck);
-    // return window.removeEventListener('resize', screenCheck);
+    return () => window.removeEventListener('resize', screenCheck);
   },[]);
 
   const screenCheck = () => {
