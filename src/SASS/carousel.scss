@@ -167,11 +167,10 @@
     padding: 1.5rem;
     margin: 4rem 0rem 2rem 0rem;
     border-radius: 1.75rem;
-    background-color: $P_lightOrange;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 3rem;
-    box-shadow: 0px -10px 10px 1px inset rgba(0,0,0,0.45);
-    // border: 0.5px dotted chartreuse;
+    box-shadow: 0px -18px 10px -10px inset rgba(255,255,255,0.25);
   }
   
   
@@ -206,6 +205,6 @@
     right: 1rem;
     font-size: 2.5rem;
     color: #ffcb66;
-    opacity: 0.5;
+    opacity: 0.25;
   }
 }
