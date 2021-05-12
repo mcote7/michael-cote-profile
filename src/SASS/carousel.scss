@@ -74,24 +74,25 @@
     }
     
     &.angular-img {
-      background-image: url('../components/EducationView/Certificates/Angular4Cert.jpg');
-      animation: image0 444ms ease-out;
+      background-image: url('../images/education/Certificates/Angular4Cert.jpg');
     }
     &.dojo-img {
-      background-image: url('../components/EducationView/Certificates/DojoCert.png');
-      animation: image1 444ms ease-out;
+      background-image: url('../images/education/Certificates/DojoCert.png');
     }
     &.react-img {
-      background-image: url('../components/EducationView/Certificates/MasterReactCert.png');
-      animation: image2 444ms ease-out;
+      background-image: url('../images/education/Certificates/MasterReactCert.png');
     }
     &.redux-img {
-      background-image: url('../components/EducationView/Certificates/ReduxCert.png');
-      animation: image3 444ms ease-out;
+      background-image: url('../images/education/Certificates/ReduxCert.png');
     }
     &.sass-img {
-      background-image: url('../components/EducationView/Certificates/SassCert.jpg');
-      animation: image4 444ms ease-out;
+      background-image: url('../images/education/Certificates/SassCert.jpg');
+    }
+    &.design-img {
+      background-image: url('../images/education/Certificates/DesignIntroCert_2.jpg');
+    }
+    &.es6-img {
+      background-image: url('../images/education/Certificates/ES6cert.jpg');
     }
   }
   
@@ -135,27 +136,6 @@
   }
 }
 
-@keyframes image0 {
-  from {opacity: 0; filter: blur(12px) hue-rotate(0deg);}
-  to {opacity: 1; filter: blur(0px) hue-rotate(180deg);}
-}
-@keyframes image1 {
-  from {opacity: 0; filter: blur(12px) hue-rotate(0deg);}
-  to {opacity: 1; filter: blur(0px) hue-rotate(180deg);}
-}
-@keyframes image2 {
-  from {opacity: 0; filter: blur(12px) hue-rotate(0deg);}
-  to {opacity: 1; filter: blur(0px) hue-rotate(180deg);}
-}
-@keyframes image3 {
-  from {opacity: 0; filter: blur(12px) hue-rotate(0deg);}
-  to {opacity: 1; filter: blur(0px) hue-rotate(180deg);}
-}
-@keyframes image4 {
-  from {opacity: 0; filter: blur(12px) hue-rotate(0deg);}
-  to {opacity: 1; filter: blur(0px) hue-rotate(180deg);}
-}
-
 // ℹ INFO 
 
 .rel {
@@ -185,21 +165,21 @@
     background-repeat: no-repeat;
     
     &.dojo-logo {
-      background-image: url('../components/EducationView/logos/DojoLogo.png');
+      background-image: url('../images/education/logos/DojoLogo.png');
     }
     
     &.udemy-logo {
-      background-image: url('../components/EducationView/logos/UdemyLogo.png');
+      background-image: url('../images/education/logos/UdemyLogo.png');
     }
     
     &.mosh-logo {
       border-radius: 50%;
-      background-image: url('../components/EducationView/logos/MoshLogo.jpg');
+      background-image: url('../images/education/logos/MoshLogo.jpg');
     }
     
     &.ultamite-logo {
       border-radius: 50%;
-      background-image: url('../components/EducationView/logos/UltamiteLogo.jpg');
+      background-image: url('../images/education/logos/UltamiteLogo.jpg');
     }
   }
   
