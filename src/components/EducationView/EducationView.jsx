@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { onRoute } from '../../utilities/onRoute';
 
 import '../../SASS/education-view.scss';
+import '../../SASS/carousel.scss';
 
 import {EDU} from './education';
 
@@ -17,13 +18,17 @@ const EducationView = () => {
   useEffect(()=> {
     onRoute();
     screenCheck();
+    window.addEventListener('resize', screenCheck);
+    // return window.removeEventListener('resize', screenCheck);
   },[]);
 
   const screenCheck = () => {
-    if(window.matchMedia("(max-width: 576px)").matches) {
+    if(window.matchMedia("(max-width: 750px)").matches) {
       console.log("☎ phone")
+      setIsDesktop(false);
     } else {
       console.log("🖥 desktop")
+      setIsDesktop(true);
     }
   };
 
@@ -90,7 +95,7 @@ const EducationView = () => {
     }, 100);
   };
 
-  return (
+  if(isDesktop) return (
     <div className="lcars-cont">
       {/* Lcars left bar frame */}
       <div className="lcars-left-col">
@@ -165,6 +170,15 @@ const EducationView = () => {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  );
+  if(!isDesktop) return (
+    <div className="good-job-cote">
+      <div className="the-certs">
+        {EDU && EDU.map( function ( ed, idx ) {
+          return <div key={idx} className={`my-cert ${ed.image}`}></div>
+        })}
       </div>
     </div>
   );

@@ -460,10 +460,42 @@ $lcarsTransitionSlow: 444ms;
   // end main col 
 }
 
-  // add mobile view later 
-@media only screen and (max-width: 576px) {
+  // mobile view 
+@media only screen and (max-width: 750px) {
   .lcars-cont {
     display: none!important;
+  }
+}
+
+.the-certs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  
+  .my-cert {
+    margin: 1rem auto;
+    height: 300px;
+    width: calc(100vw - 0rem);
+    background-size: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+    &.angular-img {
+      background-image: url('../components/EducationView/Certificates/Angular4Cert.jpg');
+    }
+    &.dojo-img {
+      background-image: url('../components/EducationView/Certificates/DojoCert.png');
+    }
+    &.react-img {
+      background-image: url('../components/EducationView/Certificates/MasterReactCert.png');
+    }
+    &.redux-img {
+      background-image: url('../components/EducationView/Certificates/ReduxCert.png');
+    }
+    &.sass-img {
+      background-image: url('../components/EducationView/Certificates/SassCert.jpg');
+    }
   }
 }
 // 
