@@ -34,7 +34,6 @@ const EducationView = () => {
 
   const [index, setIndex] = useState(0);
   const len = EDU.length;
-
   const next = document.getElementById("next");
   const prev = document.getElementById("prev");
   const idx = document.getElementById("certidx");
@@ -147,7 +146,6 @@ const EducationView = () => {
             <div className="lcars-top-elbow-buffer"></div>
           </div>
         </div>
-        
         {/* display row */}
         <div className="lcars-display-main row">
           <div className="col-xl-6 lcars-display-col">
@@ -157,7 +155,6 @@ const EducationView = () => {
             <Info info={EDU[index].info} logo={EDU[index].logo}/>
           </div>
         </div>
-        
         {/* bottom frame */}
         <div className="lcars-bottom-frame">
           <div className="lcars-bottom-buffer">
@@ -183,5 +180,4 @@ const EducationView = () => {
     </div>
   );
 };
-
 export default EducationView;
