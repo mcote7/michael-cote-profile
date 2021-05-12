@@ -185,16 +185,21 @@
     background-repeat: no-repeat;
     
     &.dojo-logo {
-      background-image: url('../components/EducationView/logos/coding_dojo_logo_gray.png');
+      background-image: url('../components/EducationView/logos/DojoLogo.png');
     }
     
     &.udemy-logo {
-      background-image: url('../components/EducationView/logos/4._Partner_Icons_-_Udemy.png');
+      background-image: url('../components/EducationView/logos/UdemyLogo.png');
     }
     
     &.mosh-logo {
       border-radius: 50%;
-      background-image: url('../components/EducationView/logos/code-with-mosh-logo_300pix.jpg');
+      background-image: url('../components/EducationView/logos/MoshLogo.jpg');
+    }
+    
+    &.ultamite-logo {
+      border-radius: 50%;
+      background-image: url('../components/EducationView/logos/UltamiteLogo.jpg');
     }
   }
   

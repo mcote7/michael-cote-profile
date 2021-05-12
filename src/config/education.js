@@ -1,6 +1,7 @@
 
 export const EDU = [
   {
+    title: 'Coding Dojo',
     id: 1, 
     image: 'dojo-img', 
     info: 'Completed intensive full-time software development program. Developed multiple full-stack projects in ASP.Net, Python/Django & MERN.', 
@@ -9,6 +10,7 @@ export const EDU = [
     speach: 'coding dojo' 
   },
   {
+    title: 'Angular 4+',
     id: 2, 
     image: 'angular-img', 
     info: 'Completed course in Angular4, a deep dive into Angular’s core modules and integration with Firebase.', 
@@ -17,6 +19,7 @@ export const EDU = [
     speach: 'angular' 
   },
   {
+    title: 'SASS workflow',
     id: 3, 
     image: 'sass-img', 
     info: 'Completed course in SASS workflow, taking my stylesheets to the next level.', 
@@ -25,6 +28,7 @@ export const EDU = [
     speach: 'super awesome style sheets' 
   },
   {
+    title: 'React library',
     id: 4, 
     image: 'react-img', 
     info: 'Completed course in React library, gained knowledge of both legacy ‘class component’ structure and the new ‘functional component’ structure along with MongoDb integration.', 
@@ -33,11 +37,13 @@ export const EDU = [
     speach: 'react' 
   },
   {
+    title: 'Redux architecture',
     id: 5, 
     image: 'redux-img', 
     info: 'Completed course in Redux state management and its intergration with React.', 
     logo: 'mosh-logo', 
     date: 'August 2020', 
     speach: 'redux' 
-  }
+  },
+  
 ];

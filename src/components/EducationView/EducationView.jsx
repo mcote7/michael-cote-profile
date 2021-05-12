@@ -5,7 +5,7 @@ import { onRoute } from '../../utilities/onRoute';
 import '../../SASS/education-view.scss';
 import '../../SASS/carousel.scss';
 
-import {EDU} from './education';
+import {EDU} from '../../config/education';
 
 import Carousel from './Carousel';
 import Info from './Info';
