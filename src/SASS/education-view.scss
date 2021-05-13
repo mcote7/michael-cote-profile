@@ -467,42 +467,46 @@ $lcarsTransitionSlow: 444ms;
     display: none!important;
   }
 }
+// 
 
-.the-certs {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
-  
-  .my-cert {
-    margin: 1rem auto;
-    height: 300px;
-    width: calc(100vw - 0rem);
-    background-size: contain;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+.good-job-cote {
+  // 
+  .the-certs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
     
-    &.angular-img {
-      background-image: url('../images/education/Certificates/Angular4Cert.jpg');
-    }
-    &.dojo-img {
-      background-image: url('../images/education/Certificates/DojoCert.png');
-    }
-    &.react-img {
-      background-image: url('../images/education/Certificates/MasterReactCert.png');
-    }
-    &.redux-img {
-      background-image: url('../images/education/Certificates/ReduxCert.png');
-    }
-    &.sass-img {
-      background-image: url('../images/education/Certificates/SassCert.jpg');
-    }
-    &.design-1-img {
-      background-image: url('../images/education/Certificates/DesignIntroCert_2.jpg');
-    }
-    &.es6-img {
-      background-image: url('../images/education/Certificates/ES6cert.jpg');
+    .my-cert {
+      margin: 1rem auto;
+      height: 300px;
+      width: calc(100vw - 0rem);
+      background-size: contain;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      
+      &.angular-img {
+        background-image: url('../images/education/Certificates/Angular4Cert.jpg');
+      }
+      &.dojo-img {
+        background-image: url('../images/education/Certificates/DojoCert.png');
+      }
+      &.react-img {
+        background-image: url('../images/education/Certificates/MasterReactCert.png');
+      }
+      &.redux-img {
+        background-image: url('../images/education/Certificates/ReduxCert.png');
+      }
+      &.sass-img {
+        background-image: url('../images/education/Certificates/SassCert.jpg');
+      }
+      &.design-1-img {
+        background-image: url('../images/education/Certificates/DesignIntroCert_2.jpg');
+      }
+      &.es6-img {
+        background-image: url('../images/education/Certificates/ES6cert.jpg');
+      }
     }
   }
 }
-// 
+// ⭐🌠✨💫 //

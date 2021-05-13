@@ -145,11 +145,14 @@ const EducationView = () => {
       </div>
     </div>
   );
+  // ☎ view 
   if(!isDesktop) return (
     <div className="good-job-cote">
       <div className="the-certs">
         {EDU && EDU.map( function ( ed, idx ) {
-          return <div key={idx} className={`my-cert ${ed.image}`}></div>
+          return (
+            <div key={idx} className={`my-cert ${ed.image}`}></div>
+          ); 
         })}
       </div>
     </div>
