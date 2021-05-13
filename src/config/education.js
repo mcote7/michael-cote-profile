@@ -61,7 +61,7 @@ export const EDU = [
     info: 'Level up my JavaScript knowledge with the latest features provided in ES6.', 
     logo: 'udemy-logo', 
     date: 'May 2021',
-    speach: 'javascript e s 6' 
+    speach: 'java script e s 6' 
   }
 ];
 

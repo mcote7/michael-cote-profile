@@ -36,14 +36,9 @@ const EducationView = () => {
   const len = EDU.length;
   const next = document.getElementById("next");
   const prev = document.getElementById("prev");
-  const idx = document.getElementById("certidx");
-  const scrollbox = document.getElementById("certinfo");
-  const carrot = document.getElementById("carrot");
-
 
   const nextImage = () => {
     setIndex((index + 1) % len);
-    // console.log("next", index, '🎠', EDU[index].image)
     next.animate([
       {color: '#ffcb66', transform: 'translateY(0rem) scale(1.2)', opacity: 1},
       {color: '#ffdd99', transform: 'translateY(-1.25rem) scale(1)', opacity: 0.1}
@@ -51,18 +46,6 @@ const EducationView = () => {
       duration: 444,
       easing: 'ease-in'
     });
-    idx.animate([
-      {backgroundColor: 'black', color: 'black'},
-      {backgroundColor: '#ffcb66', color: 'black'},
-      {backgroundColor: 'black', color: 'black'}
-    ], {
-      duration: 444,
-      easing: 'ease-in-out'
-    });
-    scrollbox.scrollTo({top: 0, behavior: 'auto'});
-    setTimeout(() => {
-      carrot.style.opacity = 0.5;
-    }, 100);
   };
   
   const prevImage = () => {
@@ -72,7 +55,6 @@ const EducationView = () => {
     } else {
       setIndex(nextIndex);
     }
-    // console.log("prev", index, '🎠', EDU[index].image)
     prev.animate([
       {color: '#ffcb66', transform: 'translateY(0rem) scale(1.2)', opacity: 1},
       {color: '#ffdd99', transform: 'translateY(1.25rem) scale(1)', opacity: 0.1}
@@ -80,18 +62,6 @@ const EducationView = () => {
       duration: 444,
       easing: 'ease-in'
     });
-    idx.animate([
-      {backgroundColor: 'black', color: 'black'},
-      {backgroundColor: '#ffcb66', color: 'black'},
-      {backgroundColor: 'black', color: 'black'}
-    ], {
-      duration: 444,
-      easing: 'ease-in-out'
-    });
-    scrollbox.scrollTo({top: 0, behavior: 'auto'});
-    setTimeout(() => {
-      carrot.style.opacity = 0.5;
-    }, 100);
   };
 
   if(isDesktop) return (
@@ -149,7 +119,12 @@ const EducationView = () => {
         {/* display row */}
         <div className="lcars-display-main row">
           <div className="col-xl-6 lcars-display-col">
-            <Carousel image={EDU[index].image} len={len} id={EDU[index].id} speach={EDU[index].speach}/>
+            <Carousel 
+              title={EDU[index].title} 
+              date={EDU[index].date} 
+              image={EDU[index].image} 
+              len={len} id={EDU[index].id} 
+              speach={EDU[index].speach}/>
           </div>
           <div className="col-xl-6 lcars-display-col">
             <Info info={EDU[index].info} logo={EDU[index].logo}/>

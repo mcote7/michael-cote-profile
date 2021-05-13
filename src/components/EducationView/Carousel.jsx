@@ -4,12 +4,12 @@ import '../../SASS/carousel.scss';
 import { useSpeechSynthesis } from 'react-speech-kit';
 
 
-const Carousel = ({image, len, id, speach}) => {
+const Carousel = ({title, date, image, len, id, speach}) => {
 
   const { speak, voices } = useSpeechSynthesis();
   const voice = voices[7];
   const rate = 0.9;
-  const volume = 0.3;
+  const volume = 0.8;
 
   const sayCourse = () => {
     speak({text: `${speach}`, voice, rate, volume});
@@ -18,12 +18,13 @@ const Carousel = ({image, len, id, speach}) => {
   
   return ( 
     <div className="my-carousel">
-      <div className="car-cap"></div>
-      <div className="car-cusp"><div className="cusp-car"></div></div>
-      <div className="cell-frame">
-        <div id="certidx" className="cell-frame-display">
-          {`${id}`}&nbsp;OF&nbsp;{`${len}`}
-        </div>
+      
+      <div className="cell-frame-title">
+        {`${title.toUpperCase()}`}&nbsp;<small>~</small>&nbsp;<small>{`${date.toUpperCase()}`}</small>
+      </div>
+      
+      <div className="cell-frame-len">
+        (&nbsp;&nbsp;{`${id}`}&nbsp;OF&nbsp;{`${len}`}&nbsp;&nbsp;)
       </div>
       
       <div className={`my-cell ${image}`}></div>

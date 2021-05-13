@@ -10,58 +10,28 @@
   width: 450px;
   padding: $lcarsSpace;
   margin-top: 2rem;
-  border-top: 0.5rem solid $P_lightGrey;
   
-  .car-cap {
-    display: flex;
-    position: absolute;
-    height: 0.5rem;
-    width: 0.5rem;
-    background-color: $P_lightGrey;
-    top: -0.5rem;
-    left: -0.25rem;
-    border-radius: 50%;
-  }
-  
-  .car-cusp {
-    display: flex;
-    position: absolute;
-    height: 0.75rem;
-    width: 1.5rem;
-    background-color: $P_lightGrey;
-    top: -1.25rem;
-    right: 8.16rem;
-    .cusp-car {
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      border-radius: 0rem 0rem 0.75rem 0rem;
-    }
-  }
-
-  .cell-frame {
-    display: flex;
+  .cell-frame-title {
     position: absolute;
     top: -2rem;
-    right: -1.5rem;
-    height: 2rem;
-    width: 10rem;
-    background-color: #91bfbd;
-    border-radius: 2rem 1rem 1rem 0rem;
-    
-    .cell-frame-display {
-      background-color: black;
-      height: 1.5rem;
-      width: 5rem;
-      margin: auto;
-      border-radius: 1rem;
-      margin-right: 0.25rem;
-      font-size: 1.1rem;
-    }
+    left: 0rem;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    margin-left: 0.25rem;
+    font-size: 1.5rem;
+    color: $P_Yellow;
+  }
+
+  .cell-frame-len {
+    position: absolute;
+    top: -1.5rem;
+    right: 0rem;
+    border-radius: 1rem;
+    margin-right: 0.25rem;
+    font-size: 1.1rem;
   }
   
   .my-cell {
-    position: relative;
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -101,13 +71,12 @@
     justify-content: center;
     align-items: center;
     left: 101%;
-    top: 1rem;
+    top: 6rem;
     height: 5rem;
     width: 3rem;
     padding: $lcarsSpace 1rem $lcarsSpace $lcarsSpace;
     border-radius: 0.5rem;
     background-color: $P_darkOrange;
-    // border: 0.1px dotted red;
     
     .speach-button {
       cursor: pointer;
@@ -140,23 +109,20 @@
   position: relative;
   .info-wrap {
     overflow: scroll;
-    height: 330px;
-    width: 380px;
     padding: 1.5rem;
-    margin: 4rem 0rem 2rem 0rem;
     background-color: black;
     color: white;
-    font-size: 3rem;
+    font-size: 1.75rem;
     letter-spacing: 2px;
-    box-shadow: 0px -18px 10px -10px inset rgba(255,255,255,0.25);
+    text-align: left;
+    // border: 0.1px dotted red;
   }
-  
   
   .logo {
     display: flex;
     position: absolute;
-    bottom: 2.75rem;
-    left: 0.75rem;
+    top: 1.5rem;
+    left: -1rem;
     height: 2rem;
     width: 2rem;
     background-size: cover;
@@ -179,15 +145,5 @@
       border-radius: 50%;
       background-image: url('../images/education/logos/UltamiteLogo.jpg');
     }
-  }
-  
-  .carrot-down {
-    display: flex;
-    position: absolute;
-    bottom: 2.25rem;
-    right: 1rem;
-    font-size: 2.5rem;
-    color: #ffcb66;
-    opacity: 0.25;
   }
 }
