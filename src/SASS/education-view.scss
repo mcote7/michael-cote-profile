@@ -107,7 +107,7 @@ $lcarsTransitionSlow: 444ms;
   .lcars-left-col {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 0.5rem);
+    height: calc(100% - 0rem);
     width: calc(15vw - 2rem);
     min-width: 6.5rem;
     justify-content: space-evenly;
@@ -330,8 +330,9 @@ $lcarsTransitionSlow: 444ms;
   .lcars-main-col {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 0.5rem);
+    height: calc(100% - 0rem);
     width: calc(85vw + 1rem);
+    overflow: scroll;
     
     .lcars-top-frame {
       display: flex;
@@ -386,7 +387,7 @@ $lcarsTransitionSlow: 444ms;
       width: calc(100% - 4rem);
       margin: auto;
       background-color: black;
-      overflow: scroll;
+      overflow: visible;
       // border: 0.25px dashed red;
       
       .lcars-display-col {

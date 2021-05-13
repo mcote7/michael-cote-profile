@@ -6,8 +6,8 @@
 
 .my-carousel {
   position: relative;
-  height: 330px;
-  width: 450px;
+  height: 350px;
+  width: 500px;
   padding: $lcarsSpace;
   margin-top: 2rem;
   
@@ -107,6 +107,8 @@
 
 .rel {
   position: relative;
+  width: 450px;
+  left: 3rem;
   .info-wrap {
     overflow: scroll;
     padding: 1.5rem;
@@ -145,5 +147,11 @@
       border-radius: 50%;
       background-image: url('../images/education/logos/UltamiteLogo.jpg');
     }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .rel {
+    left: 1rem;
   }
 }
