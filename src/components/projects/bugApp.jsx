@@ -1,5 +1,5 @@
 import React from 'react';
-import img2 from '../../images/bugImg2.jpg';
+import img2 from '../../images/projects/bugImg2.jpg';
 import '../../css/projects.css';
 
 

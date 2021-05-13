@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { onRoute } from './../utilities/onRoute';
-import resume1 from '../images/resume1.jpg';
-import resume2 from '../images/resume2.jpg';
-import self3 from '../images/self3.jpg'
+import resume1 from '../images/resume/resume1.jpg';
+import resume2 from '../images/resume/resume2.jpg';
+import self3 from '../images/resume/self3.jpg';
 import '../css/resume.css';
 
 const Resume = () => {

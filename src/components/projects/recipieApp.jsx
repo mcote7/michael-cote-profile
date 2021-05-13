@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/projects.css';
-import img1 from '../../images/fridgeImg.jpg';
-import img2 from '../../images/fridgeImg2.jpg';
+import img1 from '../../images/projects/fridgeImg.jpg';
+import img2 from '../../images/projects/fridgeImg2.jpg';
 
 const RecipieApp = () => {
   return (

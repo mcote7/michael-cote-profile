@@ -1,6 +1,6 @@
 import React from 'react';
-import img1 from '../../images/movieImg1.jpg';
-import img2 from '../../images/movieImg2.jpg';
+import img1 from '../../images/projects/movieImg1.jpg';
+import img2 from '../../images/projects/movieImg2.jpg';
 import '../../css/projects.css';
 
 const MovieApp = () => {
