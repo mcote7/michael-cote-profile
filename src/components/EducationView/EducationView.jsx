@@ -10,6 +10,8 @@ import {EDU} from '../../config/education';
 import Carousel from './Carousel';
 import Info from './Info';
 
+import { useSpeechSynthesis } from 'react-speech-kit';
+
 
 const EducationView = () => {
 
@@ -24,10 +26,10 @@ const EducationView = () => {
 
   const screenCheck = () => {
     if(window.matchMedia("(max-width: 750px)").matches) {
-      console.log("☎ phone")
+      console.log("☎ is phone")
       setIsDesktop(false);
     } else {
-      console.log("🖥 desktop")
+      console.log("🖥 is desktop")
       setIsDesktop(true);
     }
   };
@@ -63,7 +65,20 @@ const EducationView = () => {
       easing: 'ease-in'
     });
   };
-
+  
+  const { speak, voices } = useSpeechSynthesis();
+  const voice = voices[7];
+  const rate = 0.9;
+  const volume = 0.8;
+  
+  const sayTitle = (title) => {
+    speak({text: `${title}`, voice, rate, volume});
+  }; 
+  
+  const sayInfo = (info) => {
+    speak({text: `${info}`, voice, rate, volume});
+  };
+  
   if(isDesktop) return (
     <div className="lcars-cont">
       {/* Lcars left bar frame */}
@@ -160,12 +175,12 @@ const EducationView = () => {
               
               <div className={`my-cert ${ed.image}`}></div>
               
-              <div className="speak-title">
-                <i style={{position: 'absolute'}} class="fa fa-info-circle" aria-hidden="true"></i>
+              <div onClick={()=> sayTitle(ed.title)} className="speak-title">
+                <i style={{position: 'absolute'}} class="fa fa-volume-up fa-rotate-180" aria-hidden="true"></i>
               </div>
               
-              <div className="speak-info">
-                <i style={{position: 'absolute'}} class="fa fa-info" aria-hidden="true"></i>
+              <div onClick={()=> sayInfo(ed.info)} className="speak-info">
+                <i style={{position: 'absolute'}} class="fa fa-volume-up" aria-hidden="true"></i>
               </div>
             </div>
           );
