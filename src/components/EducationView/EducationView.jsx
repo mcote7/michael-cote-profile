@@ -175,7 +175,7 @@ const EducationView = () => {
               
               <div className={`my-cert ${ed.image}`}></div>
               
-              <div onClick={()=> sayTitle(ed.title)} className="speak-title">
+              <div onClick={()=> sayTitle(ed.speach)} className="speak-title">
                 <i style={{position: 'absolute'}} class="fa fa-volume-up fa-rotate-180" aria-hidden="true"></i>
               </div>
               
