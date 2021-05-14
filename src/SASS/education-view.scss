@@ -475,10 +475,11 @@ $lcarsTransitionSlow: 444ms;
   .the-certs {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     
     .my-cert-wrap {
       position: relative;
+      margin-bottom: 5rem;
       
       .cell-frame-title {
         position: absolute;
@@ -521,6 +522,60 @@ $lcarsTransitionSlow: 444ms;
         }
         &.es6-img {
           background-image: url('../images/education/Certificates/ES6cert.jpg');
+        }
+      }
+      
+      .speak-title {
+        display: flex;
+        position: absolute;
+        color: #ffcb66;
+        bottom: 3rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        background-color: black;
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        justify-content: center;
+        align-items: center;
+        &::before {
+          content: 'title_';
+          position: absolute;
+          font-size: 0.75rem;
+          color: $P_Yellow;
+          background-color: black;
+          top: 0.5rem;
+          right: 1.4rem;
+          font-weight: bolder;
+          border-radius: 0.75rem;
+          padding: 0rem 0.75rem 0rem 0.5rem;
+        }
+      }
+      
+      .speak-info {
+        display: flex;
+        position: absolute;
+        color: #ffcb66;
+        bottom: 3rem;
+        left: 1rem;
+        font-size: 1.5rem;
+        background-color: black;
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        justify-content: center;
+        align-items: center;
+        &::before {
+          content: 'full_info';
+          position: absolute;
+          font-size: 0.75rem;
+          color: $P_Yellow;
+          background-color: black;
+          top: 0.5rem;
+          left: 1.4rem;
+          font-weight: bolder;
+          border-radius: 0.75rem;
+          padding: 0rem 0.5rem 0rem 0.75rem;
         }
       }
     }

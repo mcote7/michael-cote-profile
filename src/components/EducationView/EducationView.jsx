@@ -149,15 +149,26 @@ const EducationView = () => {
   if(!isDesktop) return (
     <div className="good-job-cote">
       <div className="the-certs">
-        {EDU && EDU.map( function ( ed, idx ) {
+        
+        {EDU && EDU.map( ( ed, idx ) => {
           return ( 
             <div key={idx} className="my-cert-wrap">
+              
               <div className="cell-frame-title">
                 {`${ed.title.toUpperCase()}`}<small>&nbsp;_&nbsp;{`${ed.date.toUpperCase()}`}</small><strong className="ml-auto">{`${idx}`}</strong>
               </div>
+              
               <div className={`my-cert ${ed.image}`}></div>
+              
+              <div className="speak-title">
+                <i style={{position: 'absolute'}} class="fa fa-info-circle" aria-hidden="true"></i>
+              </div>
+              
+              <div className="speak-info">
+                <i style={{position: 'absolute'}} class="fa fa-info" aria-hidden="true"></i>
+              </div>
             </div>
-          ); 
+          );
         })}
       </div>
     </div>
