@@ -20,7 +20,7 @@ const Carousel = ({title, date, image, len, id, speach}) => {
     <div className="my-carousel">
       
       <div className="cell-frame-title">
-        {`${title.toUpperCase()}`}&nbsp;<small>~</small>&nbsp;<small>{`${date.toUpperCase()}`}</small>
+        {`${title.toUpperCase()}`}&nbsp;<small>_</small>&nbsp;<small>{`${date.toUpperCase()}`}</small>
       </div>
       
       <div className="cell-frame-len">

@@ -150,8 +150,13 @@ const EducationView = () => {
     <div className="good-job-cote">
       <div className="the-certs">
         {EDU && EDU.map( function ( ed, idx ) {
-          return (
-            <div key={idx} className={`my-cert ${ed.image}`}></div>
+          return ( 
+            <div key={idx} className="my-cert-wrap">
+              <div className="cell-frame-title">
+                {`${ed.title.toUpperCase()}`}<small>&nbsp;_&nbsp;{`${ed.date.toUpperCase()}`}</small><strong className="ml-auto">{`${idx}`}</strong>
+              </div>
+              <div className={`my-cert ${ed.image}`}></div>
+            </div>
           ); 
         })}
       </div>
