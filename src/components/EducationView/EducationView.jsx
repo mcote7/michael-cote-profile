@@ -15,7 +15,7 @@ import { useSpeechSynthesis } from 'react-speech-kit';
 
 const EducationView = () => {
 
-  const [isDesktop, setIsDesktop] = useState();
+  const [isDesktop, setIsDesktop] = useState(null);
 
   useEffect( () => {
     onRoute();
@@ -186,6 +186,11 @@ const EducationView = () => {
           );
         })}
       </div>
+    </div>
+  );
+  if (isDesktop === null) return (
+    <div className="s-t">
+      <div className="star-trak"></div>
     </div>
   );
 };
