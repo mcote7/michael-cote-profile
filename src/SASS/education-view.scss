@@ -480,8 +480,8 @@ $lcarsTransitionSlow: 444ms;
 
 @keyframes good-good {
   from {opacity: 0; transform: translateY(100%);}
-  50% {opacity: 0.25; transform: translateY(0%);}
-  to {opacity: 1;}
+  50% {opacity: 0.25; transform: translateY(-20%);}
+  to {opacity: 1; transform: translateY(0%);}
 }
 
 // 
