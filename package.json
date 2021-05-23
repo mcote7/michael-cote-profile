@@ -2,7 +2,7 @@
   "name": "cote-profile-2020",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mcote7.github.io/michael-cote-profile-2020",
+  "homepage": "http://mcote7.github.io/michael-cote-profile",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.16",
     "@testing-library/jest-dom": "^4.2.4",
