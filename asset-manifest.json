@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile/static/css/main.80ff0df4.chunk.css",
-    "main.js": "/michael-cote-profile/static/js/main.023c2c38.chunk.js",
-    "main.js.map": "/michael-cote-profile/static/js/main.023c2c38.chunk.js.map",
+    "main.css": "/michael-cote-profile/static/css/main.26dfc03f.chunk.css",
+    "main.js": "/michael-cote-profile/static/js/main.287a09ea.chunk.js",
+    "main.js.map": "/michael-cote-profile/static/js/main.287a09ea.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile/static/js/runtime-main.e5502453.js",
     "runtime-main.js.map": "/michael-cote-profile/static/js/runtime-main.e5502453.js.map",
     "static/css/2.7a83d003.chunk.css": "/michael-cote-profile/static/css/2.7a83d003.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.16707cf6.chunk.js.map": "/michael-cote-profile/static/js/2.16707cf6.chunk.js.map",
     "index.html": "/michael-cote-profile/index.html",
     "static/css/2.7a83d003.chunk.css.map": "/michael-cote-profile/static/css/2.7a83d003.chunk.css.map",
-    "static/css/main.80ff0df4.chunk.css.map": "/michael-cote-profile/static/css/main.80ff0df4.chunk.css.map",
+    "static/css/main.26dfc03f.chunk.css.map": "/michael-cote-profile/static/css/main.26dfc03f.chunk.css.map",
     "static/js/2.16707cf6.chunk.js.LICENSE.txt": "/michael-cote-profile/static/js/2.16707cf6.chunk.js.LICENSE.txt",
     "static/media/index.css": "/michael-cote-profile/static/media/8bitCity.733fb383.jpg",
     "static/media/technical-view.scss": "/michael-cote-profile/static/media/Ac437_Acer_VGA_8x8.01936f5e.ttf",
@@ -31,8 +31,8 @@
     "static/media/navtogglegodown.796a4b9e.wav": "/michael-cote-profile/static/media/navtogglegodown.796a4b9e.wav",
     "static/media/navtogglegoup.10d1a68e.wav": "/michael-cote-profile/static/media/navtogglegoup.10d1a68e.wav",
     "static/media/on_route.ceb0e1dc.mp3": "/michael-cote-profile/static/media/on_route.ceb0e1dc.mp3",
-    "static/media/resume1.5a0690ba.jpg": "/michael-cote-profile/static/media/resume1.5a0690ba.jpg",
-    "static/media/resume2.4e6303a4.jpg": "/michael-cote-profile/static/media/resume2.4e6303a4.jpg",
+    "static/media/resume1.70896712.jpg": "/michael-cote-profile/static/media/resume1.70896712.jpg",
+    "static/media/resume2.d9481f26.jpg": "/michael-cote-profile/static/media/resume2.d9481f26.jpg",
     "static/media/self2.02eec248.jpg": "/michael-cote-profile/static/media/self2.02eec248.jpg",
     "static/media/self3.fa553141.jpg": "/michael-cote-profile/static/media/self3.fa553141.jpg"
   },
@@ -40,7 +40,7 @@
     "static/js/runtime-main.e5502453.js",
     "static/css/2.7a83d003.chunk.css",
     "static/js/2.16707cf6.chunk.js",
-    "static/css/main.80ff0df4.chunk.css",
-    "static/js/main.023c2c38.chunk.js"
+    "static/css/main.26dfc03f.chunk.css",
+    "static/js/main.287a09ea.chunk.js"
   ]
 }
