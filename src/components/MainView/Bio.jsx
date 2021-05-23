@@ -27,7 +27,7 @@ const Bio = ({self, angular8, handleMouseDown, handleClick, handleMouseEnter, ha
   },[]);
   
   return (<>
-    <div className="row mt-5">
+    <div className="row mt-5 bio-row-fix">
       {quote0?
       <div className="bioWrap open-base-border-tops col-lg-9 order-lg-1 order-md-1">
         <span className="selfWrap">
