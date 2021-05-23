@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/michael-cote-profile/static/css/main.80ff0df4.chunk.css",
-    "main.js": "/michael-cote-profile/static/js/main.f8360e28.chunk.js",
-    "main.js.map": "/michael-cote-profile/static/js/main.f8360e28.chunk.js.map",
+    "main.js": "/michael-cote-profile/static/js/main.023c2c38.chunk.js",
+    "main.js.map": "/michael-cote-profile/static/js/main.023c2c38.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile/static/js/runtime-main.e5502453.js",
     "runtime-main.js.map": "/michael-cote-profile/static/js/runtime-main.e5502453.js.map",
     "static/css/2.7a83d003.chunk.css": "/michael-cote-profile/static/css/2.7a83d003.chunk.css",
@@ -41,6 +41,6 @@
     "static/css/2.7a83d003.chunk.css",
     "static/js/2.16707cf6.chunk.js",
     "static/css/main.80ff0df4.chunk.css",
-    "static/js/main.f8360e28.chunk.js"
+    "static/js/main.023c2c38.chunk.js"
   ]
 }
