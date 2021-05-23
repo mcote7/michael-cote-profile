@@ -3,11 +3,12 @@
   margin-top: 0vh;
 }
 .meme {
-  display: flex;
-  position: absolute;
-  height: 320px;
-  width: 320px;
-  animation: fafalala 6s ease-out infinite alternate-reverse;
+  margin: 1rem auto;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  animation: fafalala 6s ease-out infinite alternate-reverse, come-in 3s ease-out;
 }
 @keyframes fafalala {
   from {filter: brightness(220%) hue-rotate(0deg);}
@@ -15,6 +16,8 @@
 }
 /* -------------------------------------------- */
 .imageContainer {
+  display: flex;
+  flex-direction: column;
   animation: come-in 3s ease-out;
 }
 @keyframes come-in {
@@ -27,12 +30,13 @@
   margin-bottom: 12rem!important;
 }
 .resumeImg {
-  max-width: 100vw;
+  max-width: 60vw;
+  margin: 1rem auto;
   height: auto;
 }
 
 /* ---------------------------------- */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
   .resumeImg {
     max-width: 90vw;
     height: auto;

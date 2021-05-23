@@ -10,9 +10,11 @@ const Resume = () => {
     onRoute();
   },[]);
   return (
-    <div className="container-fluid resumeContainer routesBackground">
-      <img src={self3} className="meme" alt="me"/>
-      <div className="col-xl-12 p-0 imageContainer">
+    <div className="container-fluid resumeContainer row">
+      <div className="col-xl-3" style={{display: 'flex'}}>
+        <img src={self3} className="meme" alt="me"/>
+      </div>
+      <div className="col-xl-9 imageContainer">
         <img src={resume1} className="resumeImg" alt="img"/>
         <img src={resume2} className="resumeImg yelly" alt="img"/>
       </div>
