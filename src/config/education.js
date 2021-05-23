@@ -62,7 +62,16 @@ export const EDU = [
     logo: 'udemy-logo', 
     date: 'May 2021', 
     speach: 'design thinking' 
-  }
+  },
+  {
+    title: 'TypeScript basics', 
+    id: 8, 
+    image: 'ts-1-img', 
+    info: 'Solidifying the fundamentals.', 
+    logo: 'ultimate-logo', 
+    date: 'May 2021', 
+    speach: 'Type script basics' 
+  },
 ];
 
 // 🏫 //
