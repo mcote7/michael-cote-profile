@@ -118,7 +118,7 @@ const NavBar = ({history, canPlayAudio}) => {
   },[history.location]);
 
   useEffect(() => {
-    if(history.location.pathname === '/michael-cote-profile-2020') {
+    if(history.location.pathname === '/michael-cote-profile') {
       setShowHomeButton(false);
     }
     else {
