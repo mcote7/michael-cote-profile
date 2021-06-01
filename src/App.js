@@ -14,13 +14,47 @@ import TechnicalSkillsView from './components/TechnicalSkillsView/TechnicalSkill
 import EducationView from './components/EducationView/EducationView';
 
 // redesign & optimize Projects next ...
-import Projects from './components/projects/projects';
+// import Projects from './components/projects/projects';
+import ProjectsView from './components/ProjectsView/ProjectsView';
 
 import Resume from './components/resume';
 import Message from './components/message/message';
 
+import useRS from "radioactive-state";
+
 
 const App = ({history}) => {
+
+  const state = useRS({
+    scrollPos: null
+  });
+  
+  const updateScroll = () => {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let result = (winScroll / height) * 95;
+    state.scrollPos = result.toFixed();
+  };
+  
+  const handleDrag = (e) => {
+    const dragEL = document.getElementById('blid');
+    dragEL.style.cursor = "move";
+    document.documentElement.scrollTop = e.clientY * 2;
+  };
+  
+  const handleDragEnd = (e) => {
+    const dragEL = document.getElementById('blid');
+    dragEL.style.cursor = "initial";
+    document.documentElement.scrollTop = e.clientY * 2;
+  };
+
+  const handleScrollTop = (e) => {
+    if(state.scrollPos < 5) {
+      window.scrollTo({top: `${document.documentElement.scrollHeight}`, behavior: 'smooth'})
+    } else {
+      window.scrollTo({top: 0, behavior: 'smooth'})
+    }
+  };
 
   const [canPlayAudio, setCanPlayAudio] = useState(false);
 
@@ -28,6 +62,8 @@ const App = ({history}) => {
     console.log("%cHello World", rainbowConsole);
     console.log("%cstyle", "color: chartreuse;")
     document.addEventListener('click', playAudio );
+    document.addEventListener('scroll', updateScroll );
+    return () => document.removeEventListener('scroll', updateScroll );
     // eslint-disable-next-line react-hooks/exhaustive-deps 
   },[]);
 
@@ -70,12 +106,24 @@ const App = ({history}) => {
     setMessage(true);
   };
   
-    return(
+  return(
     <div className="App mainScreen">
-      <div className="container-fluid">
+      <div className="container-fluid" onDragEnter={(e)=>{e.preventDefault()}} onDragOver={(e)=>{e.preventDefault()}}>
         <div className="myScrollBar">
           <ScrollProgressRead backgroundColor="rgba(97, 218, 251, 0.25)" barColor="rgba(255, 234, 41, 0.5)" height="0.05rem"/>
         </div>
+          {state.scrollPos ? 
+            <div 
+              id="blid"
+              draggable="true" 
+              onDrag={(e)=>handleDrag(e)} 
+              onDragEnd={(e)=>handleDragEnd(e)} 
+              onClick={(e)=>{handleScrollTop(e)}}
+              className="scroll-bar-blob"
+              style={{top: `${state.scrollPos}%`}}>
+              <div className="scroll-tag">{state.scrollPos}%</div>
+            </div>
+          :''}
           <div className="star_0" style={{top: `${starTop_0}%`, left: `${starLeft_0}%`}}></div>
           <div className="star_1" style={{top: `${starTop_1}%`, left: `${starLeft_1}%`}}></div>
           <div className="star_2" style={{top: `${starTop_2}%`, left: `${starLeft_2}%`}}></div>
@@ -87,7 +135,7 @@ const App = ({history}) => {
           <Switch>
             <Route exact path="/technical" component={TechnicalSkillsView}/>
             <Route exact path="/education" component={EducationView}/>
-            <Route exact path="/projects" component={Projects}/>
+            <Route exact path="/projects" component={ProjectsView}/>
             <Route exact path="/resume" component={Resume}/>
             <Route exact path="/contact" render={ (props) => ( <Message {...props} handleMessage={handleMessage}/> )}/>
             <Route exact path="/michael-cote-profile" render={ (props) => ( <GoHome {...props} canPlayAudio={canPlayAudio}/> )}/>
@@ -98,6 +146,7 @@ const App = ({history}) => {
       </div>
       <NavBar history={history} canPlayAudio={canPlayAudio}/>
     </div>
-    );
-  };
+  );
+};
 export default App;
+// 

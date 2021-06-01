@@ -9,8 +9,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
   
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace!important;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace!important;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,6 +36,7 @@ body {
   color: black!important;
   background-color: black!important;
 }
+
 /* --- top scroll bar --- */
 .myScrollBar {
   position: fixed;
@@ -177,6 +177,41 @@ body {
   50% {top: 215%;transform: rotate(-45deg)}
   100% {top: 210%;transform: rotate(0deg)}
 }
+
+/* scroll bar blob  */
+.scroll-bar-blob {
+  cursor: grab;
+  display: flex;
+  position: fixed;
+  /* top: 0; */
+  right: 0;
+  height: 42px;
+  width: 42px;
+  background-image: url('./images/main/mouse-ghost.gif');
+  background-size: 175%;
+  background-position: 50% 50%;
+  z-index: 2999;
+  animation: blob-blob 222ms ease-out;
+}
+.scroll-bar-blob:active {
+  cursor: grabbing;
+}
+
+@keyframes blob-blob {
+  from {opacity: 0; transform: scale(0);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+.scroll-tag {
+  margin: auto;
+  color: cornsilk;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px black;
+  font-size: 1.1rem;
+  padding-top: 2px;
+}
+
+
 /* mobile */
 @media only screen and (max-width: 650px) {
   .gravity {

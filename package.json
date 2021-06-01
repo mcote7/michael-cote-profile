@@ -16,6 +16,7 @@
     "joi-browser": "^13.4.0",
     "lodash": "^4.17.19",
     "node-sass": "^4.14.1",
+    "radioactive-state": "^1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^4.3.1",

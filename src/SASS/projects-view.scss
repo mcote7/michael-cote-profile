@@ -1,0 +1,71 @@
+@import '../SASS/variables.scss';
+
+.pro-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 5rem;
+  margin: 0rem!important;
+  
+  .pro-col {
+    //
+    .pro-card {
+      display: flex;
+      width: 825px;
+      flex-direction: column;
+      align-items: center;
+      
+      .pro-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0rem 0.25rem;
+        
+        a {
+          text-decoration: none;
+          color: cornsilk;
+        }
+      }
+      
+      .i-wrap {
+        height: 425px;
+        width: 825px;
+        background-color: white;
+        transform: scale(1);
+        
+        iframe {
+          border: none;
+          height: 425px;
+          width: 825px;
+        }
+      }
+      
+      .pro-info {
+        // 
+      }
+    }
+  }
+}
+
+// mobile view 
+@media only screen and (max-width: 850px) {
+  .pro-card {
+    width: 825px;
+    
+    .i-wrap {
+      height: 425px;
+      width: 825px;
+      background-color: white;
+      transform: scale(1);
+      
+      iframe {
+        border: none;
+        height: 425px;
+        width: 825px;
+      }
+    }
+  }
+}
