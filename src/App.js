@@ -26,7 +26,8 @@ import useRS from "radioactive-state";
 const App = ({history}) => {
 
   const state = useRS({
-    scrollPos: null
+    scrollPos: null,
+    scrollPosTag: null
   });
   
   const updateScroll = () => {
@@ -34,6 +35,11 @@ const App = ({history}) => {
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let result = (winScroll / height) * 95;
     state.scrollPos = result.toFixed();
+    if(state.scrollPos < 94) {
+      state.scrollPosTag = result.toFixed();
+    } else {
+      state.scrollPosTag = 100;
+    }
   };
   
   const handleDrag = (e) => {
@@ -48,7 +54,7 @@ const App = ({history}) => {
     document.documentElement.scrollTop = e.clientY * 2;
   };
 
-  const handleScrollTop = (e) => {
+  const handleScrollTop = () => {
     if(state.scrollPos < 5) {
       window.scrollTo({top: `${document.documentElement.scrollHeight}`, behavior: 'smooth'})
     } else {
@@ -114,14 +120,14 @@ const App = ({history}) => {
         </div>
           {state.scrollPos ? 
             <div 
-              id="blid"
+              id="blid" 
               draggable="true" 
               onDrag={(e)=>handleDrag(e)} 
               onDragEnd={(e)=>handleDragEnd(e)} 
-              onClick={(e)=>{handleScrollTop(e)}}
-              className="scroll-bar-blob"
+              onClick={handleScrollTop} 
+              className="scroll-bar-blob" 
               style={{top: `${state.scrollPos}%`}}>
-              <div className="scroll-tag">{state.scrollPos}%</div>
+              <div className="scroll-tag">{state.scrollPosTag}%</div>
             </div>
           :''}
           <div className="star_0" style={{top: `${starTop_0}%`, left: `${starLeft_0}%`}}></div>
