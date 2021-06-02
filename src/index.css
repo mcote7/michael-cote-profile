@@ -214,6 +214,9 @@ body {
 
 /* mobile */
 @media only screen and (max-width: 650px) {
+  .scroll-bar-blob {
+    display: none;
+  }
   .gravity {
     animation: 
       gravity-kills-mobile 4s steps(20, end) 1.25s,

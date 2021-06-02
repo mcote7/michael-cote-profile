@@ -42,9 +42,6 @@
       filter: hue-rotate(180deg);
     }
     
-    &.angular-img {
-      background-image: url('../images/education/Certificates/Angular4Cert.jpg');
-    }
     &.dojo-img {
       background-image: url('../images/education/Certificates/DojoCert.png');
     }
@@ -63,8 +60,14 @@
     &.es6-img {
       background-image: url('../images/education/Certificates/ES6cert.jpg');
     }
+    &.angular-img {
+      background-image: url('../images/education/Certificates/Angular4Cert.jpg');
+    }
     &.ts-1-img {
       background-image: url('../images/education/Certificates/TypeScript_basic_cert.PNG');
+    }
+    &.ts-2-img {
+      background-image: url('../images/education/Certificates/TypeScript_master_cert.PNG');
     }
   }
   

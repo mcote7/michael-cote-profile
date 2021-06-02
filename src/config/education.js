@@ -72,6 +72,15 @@ export const EDU = [
     date: 'May 2021', 
     speach: 'Type script basics' 
   },
+  {
+    title: 'TypeScript master class', 
+    id: 9, 
+    image: 'ts-2-img', 
+    info: 'Taking my TypeScript to the next level.', 
+    logo: 'ultimate-logo', 
+    date: 'June 2021', 
+    speach: 'Type script master class' 
+  },
 ];
 
 // 🏫 //
