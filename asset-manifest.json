@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile/static/css/main.619bdab7.chunk.css",
-    "main.js": "/michael-cote-profile/static/js/main.dc4cf364.chunk.js",
-    "main.js.map": "/michael-cote-profile/static/js/main.dc4cf364.chunk.js.map",
+    "main.css": "/michael-cote-profile/static/css/main.2d78d8c7.chunk.css",
+    "main.js": "/michael-cote-profile/static/js/main.583c7068.chunk.js",
+    "main.js.map": "/michael-cote-profile/static/js/main.583c7068.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile/static/js/runtime-main.e5502453.js",
     "runtime-main.js.map": "/michael-cote-profile/static/js/runtime-main.e5502453.js.map",
     "static/css/2.7a83d003.chunk.css": "/michael-cote-profile/static/css/2.7a83d003.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.6bdb654f.chunk.js.map": "/michael-cote-profile/static/js/2.6bdb654f.chunk.js.map",
     "index.html": "/michael-cote-profile/index.html",
     "static/css/2.7a83d003.chunk.css.map": "/michael-cote-profile/static/css/2.7a83d003.chunk.css.map",
-    "static/css/main.619bdab7.chunk.css.map": "/michael-cote-profile/static/css/main.619bdab7.chunk.css.map",
+    "static/css/main.2d78d8c7.chunk.css.map": "/michael-cote-profile/static/css/main.2d78d8c7.chunk.css.map",
     "static/js/2.6bdb654f.chunk.js.LICENSE.txt": "/michael-cote-profile/static/js/2.6bdb654f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/michael-cote-profile/static/media/8bitCity.733fb383.jpg",
     "static/media/technical-view.scss": "/michael-cote-profile/static/media/Ac437_Acer_VGA_8x8.01936f5e.ttf",
@@ -29,13 +29,13 @@
     "static/media/resume1.70896712.jpg": "/michael-cote-profile/static/media/resume1.70896712.jpg",
     "static/media/resume2.d9481f26.jpg": "/michael-cote-profile/static/media/resume2.d9481f26.jpg",
     "static/media/self2.02eec248.jpg": "/michael-cote-profile/static/media/self2.02eec248.jpg",
-    "static/media/self3.fa553141.jpg": "/michael-cote-profile/static/media/self3.fa553141.jpg"
+    "static/media/self3.c20d7ccb.jpg": "/michael-cote-profile/static/media/self3.c20d7ccb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5502453.js",
     "static/css/2.7a83d003.chunk.css",
     "static/js/2.6bdb654f.chunk.js",
-    "static/css/main.619bdab7.chunk.css",
-    "static/js/main.dc4cf364.chunk.js"
+    "static/css/main.2d78d8c7.chunk.css",
+    "static/js/main.583c7068.chunk.js"
   ]
 }
