@@ -4,15 +4,15 @@
 }
 .meme {
   margin: 1rem auto;
-  height: 220px;
-  width: 220px;
+  height: 320px;
+  width: 320px;
   border-radius: 50%;
   margin-top: 1rem;
   animation: fafalala 6s ease-out infinite alternate-reverse, come-in 3s ease-out;
 }
 @keyframes fafalala {
-  from {filter: brightness(220%) hue-rotate(0deg);}
-  to {filter: brightness(220%) hue-rotate(360deg);}
+  from {filter: brightness(120%) hue-rotate(0deg);}
+  to {filter: brightness(120%) hue-rotate(360deg);}
 }
 /* -------------------------------------------- */
 .imageContainer {
