@@ -16,9 +16,9 @@ const ProjectCard = ({title, date, url, info, tech}) => {
       
       <div className="pro-info mt-1">
         <p>{info}</p>
+        <p>Tech used: {tech.map((t)=> ` |${t}| `)}</p>
       </div>
     </div>
   );
-}
-
+};
 export default ProjectCard;
