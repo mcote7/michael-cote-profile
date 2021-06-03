@@ -34,7 +34,6 @@
         height: 425px;
         width: 825px;
         background-color: white;
-        transform: scale(1);
         
         iframe {
           border: none;
@@ -52,19 +51,28 @@
 
 // mobile view 
 @media only screen and (max-width: 850px) {
-  .pro-card {
-    width: 825px;
-    
-    .i-wrap {
-      height: 425px;
-      width: 825px;
-      background-color: white;
-      transform: scale(1);
-      
-      iframe {
-        border: none;
-        height: 425px;
-        width: 825px;
+  .pro-row {
+    //
+    .pro-col {
+      //
+      .pro-card {
+        width: 325px;
+        .pro-title {
+          //
+          flex-direction: column;
+          padding: 0rem 0.25rem 1rem 0.25rem;
+        }
+        .i-wrap {
+          height: 425px;
+          width: 325px;
+          background-color: white;
+          
+          iframe {
+            border: none;
+            height: 425px;
+            width: 325px;
+          }
+        }
       }
     }
   }
