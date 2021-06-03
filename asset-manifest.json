@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/michael-cote-profile/static/css/main.2acb691a.chunk.css",
-    "main.js": "/michael-cote-profile/static/js/main.7a9926c5.chunk.js",
-    "main.js.map": "/michael-cote-profile/static/js/main.7a9926c5.chunk.js.map",
+    "main.css": "/michael-cote-profile/static/css/main.926b66a8.chunk.css",
+    "main.js": "/michael-cote-profile/static/js/main.392be8dc.chunk.js",
+    "main.js.map": "/michael-cote-profile/static/js/main.392be8dc.chunk.js.map",
     "runtime-main.js": "/michael-cote-profile/static/js/runtime-main.e5502453.js",
     "runtime-main.js.map": "/michael-cote-profile/static/js/runtime-main.e5502453.js.map",
     "static/css/2.7a83d003.chunk.css": "/michael-cote-profile/static/css/2.7a83d003.chunk.css",
-    "static/js/2.6bdb654f.chunk.js": "/michael-cote-profile/static/js/2.6bdb654f.chunk.js",
-    "static/js/2.6bdb654f.chunk.js.map": "/michael-cote-profile/static/js/2.6bdb654f.chunk.js.map",
+    "static/js/2.f060d2e5.chunk.js": "/michael-cote-profile/static/js/2.f060d2e5.chunk.js",
+    "static/js/2.f060d2e5.chunk.js.map": "/michael-cote-profile/static/js/2.f060d2e5.chunk.js.map",
     "index.html": "/michael-cote-profile/index.html",
     "static/css/2.7a83d003.chunk.css.map": "/michael-cote-profile/static/css/2.7a83d003.chunk.css.map",
-    "static/css/main.2acb691a.chunk.css.map": "/michael-cote-profile/static/css/main.2acb691a.chunk.css.map",
-    "static/js/2.6bdb654f.chunk.js.LICENSE.txt": "/michael-cote-profile/static/js/2.6bdb654f.chunk.js.LICENSE.txt",
+    "static/css/main.926b66a8.chunk.css.map": "/michael-cote-profile/static/css/main.926b66a8.chunk.css.map",
+    "static/js/2.f060d2e5.chunk.js.LICENSE.txt": "/michael-cote-profile/static/js/2.f060d2e5.chunk.js.LICENSE.txt",
     "static/media/index.css": "/michael-cote-profile/static/media/8bitCity.733fb383.jpg",
     "static/media/technical-view.scss": "/michael-cote-profile/static/media/Ac437_Acer_VGA_8x8.01936f5e.ttf",
     "static/media/education-view.scss": "/michael-cote-profile/static/media/lcars.8f4bddb8.ttf",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.e5502453.js",
     "static/css/2.7a83d003.chunk.css",
-    "static/js/2.6bdb654f.chunk.js",
-    "static/css/main.2acb691a.chunk.css",
-    "static/js/main.7a9926c5.chunk.js"
+    "static/js/2.f060d2e5.chunk.js",
+    "static/css/main.926b66a8.chunk.css",
+    "static/js/main.392be8dc.chunk.js"
   ]
 }
