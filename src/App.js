@@ -42,20 +42,20 @@ const App = ({history}) => {
     }
   };
   
-  const handleDrag = (e) => {
-    const dragEL = document.getElementById('blid');
-    dragEL.style.cursor = "move";
-    document.documentElement.scrollTop = e.clientY * 2;
-  };
+  // const handleDrag = (e) => {
+  //   const dragEL = document.getElementById('blid');
+  //   dragEL.style.cursor = "move";
+  //   document.documentElement.scrollTop = e.clientY * 2;
+  // };
   
-  const handleDragEnd = (e) => {
-    const dragEL = document.getElementById('blid');
-    dragEL.style.cursor = "initial";
-    document.documentElement.scrollTop = e.clientY * 2;
-  };
+  // const handleDragEnd = (e) => {
+  //   const dragEL = document.getElementById('blid');
+  //   dragEL.style.cursor = "initial";
+  //   document.documentElement.scrollTop = e.clientY * 2;
+  // };
 
   const handleScrollTop = () => {
-    if(state.scrollPos < 5) {
+    if(state.scrollPos < 10) {
       window.scrollTo({top: `${document.documentElement.scrollHeight}`, behavior: 'smooth'})
     } else {
       window.scrollTo({top: 0, behavior: 'smooth'})
@@ -121,9 +121,6 @@ const App = ({history}) => {
           {state.scrollPos ? 
             <div 
               id="blid" 
-              draggable="true" 
-              onDrag={(e)=>handleDrag(e)} 
-              onDragEnd={(e)=>handleDragEnd(e)} 
               onClick={handleScrollTop} 
               className="scroll-bar-blob" 
               style={{top: `${state.scrollPos}%`}}>

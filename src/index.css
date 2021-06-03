@@ -180,7 +180,7 @@ body {
 
 /* scroll bar blob  */
 .scroll-bar-blob {
-  cursor: grab;
+  cursor: pointer;
   display: flex;
   position: fixed;
   /* top: 0; */
@@ -193,12 +193,13 @@ body {
   z-index: 2999;
   animation: blob-blob 222ms ease-out;
 }
-.scroll-bar-blob:active {
+/* .scroll-bar-blob:active {
   cursor: grabbing;
-}
+} */
 
 @keyframes blob-blob {
-  from {opacity: 0; transform: scale(0);}
+  from {opacity: 0; filter: blur(12px); transform: scale(0.4);}
+  50% {filter: blur(0px); transform: scale(1.6);}
   to {opacity: 1; transform: scale(1);}
 }
 
