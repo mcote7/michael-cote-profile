@@ -1,5 +1,6 @@
 @import '../SASS/variables.scss';
 
+// featured projects 
 .pro-row {
   display: flex;
   justify-content: center;
@@ -44,6 +45,73 @@
       
       .pro-info {
         // 
+      }
+    }
+  }
+}
+
+// project repos 
+.git-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  .git-col {
+    display: flex;
+    
+    .git-card { // <a/>
+      color: black;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      width: 100%;
+      backface-visibility: hidden;
+      will-change: transform;
+      background-image: url('../images//projects/Octocat.png');
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      box-shadow: 2px 2px 2px 2px transparent;
+      transition: transform 0.2s, box-shaddow 0.2s, background-size 0.3s ease-in-out, background-position 0.3s ease-in-out, filter 0.4s;
+      
+      &:hover { 
+        text-decoration: none;
+        transform: translate3d(0,-0.25rem,0);
+        box-shadow: 2px 2px 2px 2px black;
+        filter: drop-shadow(1px 2px 10px cornsilk);
+        background-size: 25%;
+        background-position: 97.5% 97.5%;
+      }
+      
+      &::before {
+        content: 'github_code_repo';
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        color: $myPurple;
+        font-size: 0.75rem;
+      }
+      
+      .card-title {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        border-bottom: 1px solid;
+        padding-bottom: 0.25rem;
+        
+        .git-logo {
+          font-size: 2.5rem;
+        }
+      }
+      
+      .card-url {
+        //
+      }
+      
+      .card-dates {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: auto;
       }
     }
   }
