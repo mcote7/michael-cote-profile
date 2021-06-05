@@ -14,7 +14,7 @@
   .featured-projects-title {
     text-shadow: 2px 2px 1px black, 3px 3px 1px $myBlue;
     padding: 0.25rem 0.75rem 0.75rem 0.75rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0.5rem;
     width: fit-content;
   }
@@ -88,7 +88,7 @@
   .git-repos-title {
     text-shadow: 2px 2px 1px black, 3px 3px 1px $myBlue;
     padding: 0.25rem 0.75rem 0.75rem 0.75rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0.5rem;
     width: fit-content;
   }
@@ -221,6 +221,14 @@
           }
         }
       }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .git-row {
+    
+    &::before {
+      height: 50vh;
     }
   }
 }
