@@ -1,6 +1,7 @@
 @import '../SASS/variables.scss';
 
 // featured projects 
+
 .pro-row {
   display: flex;
   justify-content: center;
@@ -9,6 +10,10 @@
   width: 100%;
   padding-bottom: 5rem;
   margin: 0rem!important;
+  
+  .featured-projects-title {
+    text-shadow: 2px 2px 1px black, 3px 3px 1px $myBlue;
+  }
   
   .pro-col {
     //
@@ -43,21 +48,48 @@
         }
       }
       
-      .pro-info {
-        // 
-      }
+      // .pro-info {
+      //   // 
+      // }
     }
   }
 }
 
-// project repos 
+// git repos 
+
 .git-row {
   display: flex;
+  position: relative;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 50vh;
+  
+  &::before {
+    content: '';
+    position: sticky;
+    z-index: -1;
+    top: 0rem;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/projects/git-foot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  
+  .git-repos-title {
+    text-shadow: 2px 2px 1px black, 3px 3px 1px $myBlue;
+  }
   
   .git-col {
     display: flex;
+    
+    .in-dev {
+      margin: 0rem auto 8rem auto;
+      padding: 0.5rem;
+      background-color: black;
+      border-radius: 0.5rem;
+    }
     
     .git-card { // <a/>
       color: black;
@@ -71,15 +103,29 @@
       background-repeat: no-repeat;
       background-position: 100% 100%;
       box-shadow: 2px 2px 2px 2px transparent;
-      transition: transform 0.2s, box-shaddow 0.2s, background-size 0.3s ease-in-out, background-position 0.3s ease-in-out, filter 0.4s;
+      transition: transform 0.2s, box-shaddow 0.2s, background-color 0.3s, background-size 0.3s steps(3000), filter 0.4s;
       
       &:hover { 
         text-decoration: none;
         transform: translate3d(0,-0.25rem,0);
         box-shadow: 2px 2px 2px 2px black;
         filter: drop-shadow(1px 2px 10px cornsilk);
-        background-size: 25%;
-        background-position: 97.5% 97.5%;
+        background-size: 30%;
+        background-color: rgb(241, 241, 241);
+        
+        &::before {
+          opacity: 1;
+          transition: 0.4s;
+        }
+        
+        .card-url {
+          color: $myPurple;
+          span {
+            i {
+              opacity: 1;
+            }
+          }
+        }
       }
       
       &::before {
@@ -89,6 +135,8 @@
         right: 5px;
         color: $myPurple;
         font-size: 0.75rem;
+        opacity: 0;
+        transition: 0.4s;
       }
       
       .card-title {
@@ -104,20 +152,39 @@
       }
       
       .card-url {
-        //
+        transition: 0.2s;
+        span {
+          i {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: bold;
+            opacity: 0;
+          }
+        }
+      }
+      
+      .card-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+        // .card-desc {
+        //   //
+        // }
       }
       
       .card-dates {
         display: flex;
         flex-direction: column;
         text-align: left;
-        margin-top: auto;
+        margin-top: 0.25rem;
       }
     }
   }
 }
 
 // mobile view 
+
 @media only screen and (max-width: 850px) {
   .pro-row {
     //

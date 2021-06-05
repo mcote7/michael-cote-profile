@@ -2,6 +2,7 @@ import React from 'react';
 import '../../SASS/projects-view.scss';
 
 const ProjectCard = ({title, date, url, info, tech}) => {
+  
   return ( 
     <div className="pro-card mx-auto">
       
@@ -18,7 +19,9 @@ const ProjectCard = ({title, date, url, info, tech}) => {
         <p>{info}</p>
         <p>Tech used: {tech.map((t)=> ` |${t}| `)}</p>
       </div>
+      
     </div>
   );
 };
+
 export default ProjectCard;

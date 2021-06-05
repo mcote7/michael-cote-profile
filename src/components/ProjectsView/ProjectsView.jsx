@@ -7,6 +7,10 @@ import ProjectCard from '../ProjectsView/ProjectCard';
 
 import moment from 'moment';
 
+//  TODO : get pinned repos = https://gh-pinned-repos-5l2i19um3.vercel.app/?username=mcote7;
+
+//  TODO : when scrollintoview( git_repos ) showGitRepos( set time => {opacity = 1}, 10 * idx )
+
 
 const ProjectsView = () => {
 
@@ -22,22 +26,12 @@ const ProjectsView = () => {
       });
   }, []);
 
-  async function getLanguages(e, languages_url, id) {
-    e.preventDefault();
-    let el = document.getElementById(id); 
-    await fetch(`${languages_url}`, {method: 'GET'})
-      .then(res => res.json())
-      .then(data => {
-        console.log("data", data) // works!!!
-        el.innerHTML = data;
-      });
-  }
-
   return ( <React.Fragment>
     <div className="pro-row row">
-      <div className="pro-col col-sm-12 mx-auto">
+      <h1 className="col-12 mx-auto mb-5 featured-projects-title">featured_projects</h1>
+      <div className="pro-col col-12 mx-auto">
         
-        {/* featured projects */}
+        {/* featured projects in config/projects */}
         {PROJ && PROJ.map((proj, idx) => {
           return(
             <ProjectCard key={idx} title={proj.title} date={proj.date} url={proj.url} info={proj.info} tech={proj.tech} />
@@ -49,9 +43,18 @@ const ProjectsView = () => {
     
     {/* more from git hub api */}
     <div className="git-row my-5">
+      <h1 className="col-12 mx-auto mb-5 git-repos-title">pinned_repos</h1>
+      {/* map pinned here */}
+      <div className="col-12 git-col my-5">
+        <div className="in-dev">🚧 in dev... 🚧</div>
+      </div>
+      
+      <h1 id="git_repos" className="col-12 mx-auto mb-5 git-repos-title">git_repos</h1>
       {GIT && GIT.map(( repo, idx ) => {
+        
         return(
           <div key={idx} className="col-xl-3 col-lg-4 col-md-6 git-col my-3">
+            
             <a 
               id={`${idx}card`}
               className="card git-card" 
@@ -62,27 +65,35 @@ const ProjectsView = () => {
                 <i className="fa fa-github git-logo" aria-hidden="true"></i>
                 <div><small>({idx})</small> <strong>{repo.name}</strong></div>
               </div>
+              
               <div className="card-url">
-                <p>{repo.html_url}</p>
+                <span>{repo.html_url}<i class="fa fa-external-link" aria-hidden="true"></i></span>
               </div>
+              
+              <div className="card-info mt-auto">
+                
+                <div className="card-desc">
+                  <small><i>{repo.description}</i></small>
+                </div>
+                
+                <div className="repo-languages">
+                  <strong><i class="fa fa-code" aria-hidden="true"></i> {repo.language}</strong>
+                </div>
+                
+              </div>
+              
               <div className="card-dates">
                 <small>updated: {moment(repo.updated_at).format('MMMM Do YYYY')}</small>
                 <small>created: {moment(repo.created_at).format('MMMM Do YYYY')}</small>
               </div>
-              <div className="repo-languages">
-                <button 
-                  onClick={(e) => getLanguages(e, repo.languages_url, `${idx}lang`)} 
-                  className="btn btn-secondary">
-                  &lt;Languages/&gt;
-                </button>
-                <p id={`${idx}lang`}></p>
-              </div>
+              
             </a>
+            
           </div>
         );
       })}
     </div>
-  </React.Fragment> );
+  </React.Fragment>);
 };
 
 export default ProjectsView;
