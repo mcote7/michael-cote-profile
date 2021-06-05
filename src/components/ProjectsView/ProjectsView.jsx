@@ -9,7 +9,7 @@ import moment from 'moment';
 
 //  TODO : get pinned repos = https://gh-pinned-repos-5l2i19um3.vercel.app/?username=mcote7;
 
-//  TODO : when scrollintoview( git_repos ) showGitRepos( set time => {opacity = 1}, 10 * idx )
+//  TODO : when scrollintoview( git_repos ) showGitRepos( set time => {opacity = 1}, 10 * idx );
 
 
 const ProjectsView = () => {
@@ -27,9 +27,9 @@ const ProjectsView = () => {
   }, []);
 
   return ( <React.Fragment>
-    <div className="pro-row row">
-      <h1 className="col-12 mx-auto mb-5 featured-projects-title">featured_projects</h1>
-      <div className="pro-col col-12 mx-auto">
+    <div className="row pro-row">
+      <h1 className="col-sm-12 mb-5 featured-projects-title">featured_projects</h1>
+      <div className="col-sm-12 pro-col">
         
         {/* featured projects in config/projects */}
         {PROJ && PROJ.map((proj, idx) => {
@@ -42,18 +42,18 @@ const ProjectsView = () => {
     </div>
     
     {/* more from git hub api */}
-    <div className="git-row my-5">
-      <h1 className="col-12 mx-auto mb-5 git-repos-title">pinned_repos</h1>
+    <div className="my-5 git-row">
+      <h1 className="col-sm-12 mb-5 git-repos-title">pinned_repos</h1>
       {/* map pinned here */}
-      <div className="col-12 git-col my-5">
+      <div className="col-sm-12 my-5 git-col">
         <div className="in-dev">🚧 in dev... 🚧</div>
       </div>
       
-      <h1 id="git_repos" className="col-12 mx-auto mb-5 git-repos-title">git_repos</h1>
+      <h1 id="git_repos" className="col-sm-12 mb-5 git-repos-title">git_repos</h1>
       {GIT && GIT.map(( repo, idx ) => {
         
         return(
-          <div key={idx} className="col-xl-3 col-lg-4 col-md-6 git-col my-3">
+          <div key={idx} className="col-xl-3 col-lg-4 col-md-6 my-3 git-col">
             
             <a 
               id={`${idx}card`}
@@ -70,7 +70,7 @@ const ProjectsView = () => {
                 <span>{repo.html_url}<i class="fa fa-external-link" aria-hidden="true"></i></span>
               </div>
               
-              <div className="card-info mt-auto">
+              <div className="mt-auto card-info">
                 
                 <div className="card-desc">
                   <small><i>{repo.description}</i></small>
@@ -86,11 +86,9 @@ const ProjectsView = () => {
                 <small>updated: {moment(repo.updated_at).format('MMMM Do YYYY')}</small>
                 <small>created: {moment(repo.created_at).format('MMMM Do YYYY')}</small>
               </div>
-              
             </a>
-            
           </div>
-        );
+          );
       })}
     </div>
   </React.Fragment>);
