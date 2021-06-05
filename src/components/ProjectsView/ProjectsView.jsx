@@ -28,7 +28,9 @@ const ProjectsView = () => {
 
   return ( <React.Fragment>
     <div className="pro-row">
-      <h2 className="col-sm-12 mb-5 featured-projects-title">featured_projects</h2>
+      <div className="col-sm-12 mb-5">
+        <h2 className="mx-auto featured-projects-title">featured_projects</h2>
+      </div>
       <div className="col-sm-12 pro-col">
         
         {/* featured projects in config/projects */}
@@ -43,13 +45,17 @@ const ProjectsView = () => {
     
     {/* more from git hub api */}
     <div className="my-5 git-row">
-      <h2 className="col-sm-12 mb-5 git-repos-title">pinned_repos</h2>
+      <div className="col-sm-12 mb-5">
+        <h2 className="mx-auto git-repos-title">pinned_repos</h2>
+      </div>
       {/* map pinned here */}
       <div className="col-sm-12 my-5 git-col">
         <div className="in-dev">🚧 in dev... 🚧</div>
       </div>
       
-      <h2 id="git_repos" className="col-sm-12 mb-5 git-repos-title">git_repos</h2>
+      <div className="col-sm-12 mb-5">
+        <h2 id="git_repos" className="mx-auto git-repos-title">git_repos</h2>
+      </div>
       {GIT && GIT.map(( repo, idx ) => {
         
         return(
