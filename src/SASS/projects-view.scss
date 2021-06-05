@@ -1,7 +1,6 @@
 @import '../SASS/variables.scss';
 
 // featured projects 
-
 .pro-row {
   display: flex;
   justify-content: center;
@@ -20,7 +19,6 @@
   }
   
   .pro-col {
-    //
     .pro-card {
       display: flex;
       width: 825px;
@@ -51,16 +49,11 @@
           width: 825px;
         }
       }
-      
-      // .pro-info {
-      //   // 
-      // }
     }
   }
 }
 
 // git repos 
-
 .git-row {
   display: flex;
   position: relative;
@@ -91,6 +84,16 @@
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0.5rem;
     width: fit-content;
+  }
+  
+  .git-stats {
+    display: flex;
+    flex-direction: column;
+    
+    img {
+      width: 50%;
+      margin: 0rem auto 2rem auto;
+    }
   }
   
   .git-col {
@@ -179,10 +182,6 @@
         display: flex;
         flex-direction: column;
         text-align: left;
-        
-        // .card-desc {
-        //   //
-        // }
       }
       
       .card-dates {
@@ -196,16 +195,12 @@
 }
 
 // mobile view 
-
 @media only screen and (max-width: 850px) {
   .pro-row {
-    //
     .pro-col {
-      //
       .pro-card {
         width: 325px;
         .pro-title {
-          //
           flex-direction: column;
           padding: 0rem 0.25rem 1rem 0.25rem;
         }
@@ -223,6 +218,14 @@
       }
     }
   }
+  .git-row {
+    .git-stats {
+      img {
+        width: 100%;
+        margin: 0rem auto 2rem auto;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 550px) {
   .git-row {
@@ -234,3 +237,5 @@
     }
   }
 }
+
+// 🔥🔥🔥 //
