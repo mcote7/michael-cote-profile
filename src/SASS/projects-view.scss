@@ -228,7 +228,9 @@
   .git-row {
     
     &::before {
-      height: 50vh;
+      height: 80vh;
+      background-size: 215%;
+      background-position: 100% 0%;
     }
   }
 }
