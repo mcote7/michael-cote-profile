@@ -96,15 +96,126 @@
     }
   }
   
+  .git-pinned-col {
+    //
+    
+    .git-pinned-card {
+      padding: 0.5rem;
+      border: 2px solid white;
+      background-color: black;
+      color: white;
+      background-image: url('../images/projects/Octocat.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 100vh;
+      transition: 0.4s;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        height: 96%;
+        width: 98%;
+        z-index: 0;
+        top: 0.25rem;
+        left: 0.25rem;
+        background-color: rgba(0, 0, 0, 0);
+        transition: 0.8s;
+      }
+      
+      &:hover {
+        text-decoration: none;
+        background-position: 0% 30%;
+        
+        &::before {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .octo-cat {
+          top: 0rem;
+        }
+        
+        .text-wrap {
+          .sparkle {
+            opacity: 1;
+            transform: scale3d(1,1,1) rotate(0deg);
+          }
+          .card-title {
+            strong {
+              color: $myYellow;
+            }
+          }
+          .card-url {
+            span {
+              color: $myBlue;
+            }
+            i {
+              opacity: 1;
+            }
+          }
+          
+          .card-info {
+            .card-desc {
+              color: $myRed;
+            }
+          }
+        }
+      }
+      
+      .octo-cat {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background-image: url('../images/projects/Octocat.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 45% 55%;
+        top: -2.75rem;
+        background-color: $myYellow;
+        border-radius: 50%;
+        z-index: -1;
+        transition: 0.2s;
+      }
+      
+      .text-wrap {
+        position: relative;
+        .sparkle {
+          position: absolute;
+          font-size: 1.25rem;
+          opacity: 0;
+          transform: scale3d(0,0,1) rotate(360deg);
+          transition: 0.4s;
+        }
+        .card-title {
+          strong {
+            transition: 0.2s;
+          }
+        }
+        .card-url {
+          transition: 0.2s;
+          span {
+            transition: 0.2s;
+          }
+          i {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: bold;
+            opacity: 0;
+            transition: 0.2s;
+          }
+        }
+        
+        .card-info {
+          .card-desc {
+            text-shadow: 1px 1px 1px black;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+  
   .git-col {
     display: flex;
-    
-    .in-dev {
-      margin: 0rem auto 8rem auto;
-      padding: 0.5rem;
-      background-color: black;
-      border-radius: 0.5rem;
-    }
     
     .git-card { // <a/>
       color: black;
@@ -221,7 +332,7 @@
   .git-row {
     .git-stats {
       img {
-        width: 100%;
+        width: 75%;
         margin: 0rem auto 2rem auto;
       }
     }
@@ -234,6 +345,15 @@
       height: 80vh;
       background-size: 215%;
       background-position: 100% 0%;
+    }
+  }
+  
+  .git-row {
+    .git-stats {
+      img {
+        width: 100%;
+        margin: 0rem auto 2rem auto;
+      }
     }
   }
 }

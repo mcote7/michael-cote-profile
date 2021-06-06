@@ -15,14 +15,21 @@ import moment from 'moment';
 const ProjectsView = () => {
 
   const [GIT, setGIT] = useState();
+  const [PINNED, setPINNED] = useState();
 
   useEffect(()=> {
     onRoute();
     fetch('https://api.github.com/users/mcote7/repos?page=1&per_page=100', {method: 'GET'})
       .then(res => res.json())
       .then(data => {
-        console.log("data", data)
+        // console.log("data", data)
         setGIT(data);
+      });
+    fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=mcote7', {method: 'GET'})
+      .then(res => res.json())
+      .then(data => {
+        console.log("pinned", data)
+        setPINNED(data);
       });
   }, []);
 
@@ -35,7 +42,7 @@ const ProjectsView = () => {
       </div>
       <div className="col-sm-12 pro-col">
         
-        {/* featured projects in config/projects */}
+        {/* 👨‍💻 featured projects in config/projects */}
         {PROJ && PROJ.map((proj, idx) => {
           return(
             <ProjectCard key={idx} title={proj.title} date={proj.date} url={proj.url} info={proj.info} tech={proj.tech} />
@@ -48,7 +55,7 @@ const ProjectsView = () => {
     {/* more from git hub api */}
     <div className="my-5 git-row">
       
-      {/* 🔵 stats cards */}
+      {/* 📈 stats cards */}
       <div className="col-sm-12 mb-5 git-stats">
         <img src="https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=highcontrast" alt="stats"/>
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&layout=compact&theme=highcontrast" alt="langs"/>
@@ -57,13 +64,45 @@ const ProjectsView = () => {
       <div className="col-sm-12 mb-5">
         <h2 className="mx-auto git-repos-title">pinned_repos</h2>
       </div>
-      {/* map pinned repos here */}
-      <div className="col-sm-12 my-5 git-col">
-        <div className="in-dev">🚧 in dev... 🚧</div>
-      </div>
+      
+      {/* 📌 pinned repos */}
+      {PINNED && PINNED.map(( p_repo, index) => {
+        return(
+          <div key={index} className="col-xl-4 col-lg-4 col-md-6 my-3 git-pinned-col">
+            {/* pinned repo card */}
+            <a 
+              id={`${index}p_card`}
+              className="card git-pinned-card mb-5" 
+              href={`${p_repo.link}`} 
+              target="_blank" rel="noopener noreferrer">
+              <div className="octo-cat"></div>
+              <div className="text-wrap">
+                <div className="sparkle">✨</div>
+                <div className="card-title">
+                  <div>
+                    <span><i className="fa fa-github git-logo" aria-hidden="true"></i></span>&nbsp;
+                    <strong>{p_repo.repo}</strong>
+                  </div>
+                </div>
+                <div className="card-url">
+                  <span>{p_repo.link}</span>&nbsp;<i className="fa fa-external-link" aria-hidden="true"></i>
+                </div>
+                <div className="mt-auto card-info">
+                  <div className="card-desc">
+                    <small><i>{p_repo.description}</i></small>
+                  </div>
+                  <div className="repo-languages">
+                    <strong><i className="fa fa-code" aria-hidden="true"></i> {p_repo.language}</strong>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        );
+      })}
       
       {/* all repos : order ❔ */}
-      <div className="col-sm-12 mb-5">
+      <div className="col-sm-12 my-5">
         <h2 id="git_repos" className="mx-auto git-repos-title">git_repos</h2>
       </div>
       
@@ -82,14 +121,14 @@ const ProjectsView = () => {
                 <div><small>({idx})</small> <strong>{repo.name}</strong></div>
               </div>
               <div className="card-url">
-                <span>{repo.html_url}<i class="fa fa-external-link" aria-hidden="true"></i></span>
+                <span>{repo.html_url}<i className="fa fa-external-link" aria-hidden="true"></i></span>
               </div>
               <div className="mt-auto card-info">
                 <div className="card-desc">
                   <small><i>{repo.description}</i></small>
                 </div>
                 <div className="repo-languages">
-                  <strong><i class="fa fa-code" aria-hidden="true"></i> {repo.language}</strong>
+                  <strong><i className="fa fa-code" aria-hidden="true"></i> {repo.language}</strong>
                 </div>
               </div>
               <div className="card-dates">
