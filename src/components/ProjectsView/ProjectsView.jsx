@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../../SASS/projects-view.scss';
 import {onRoute} from '../../utilities/onRoute';
-
 import {PROJ} from '../../config/projects';
 import ProjectCard from '../ProjectsView/ProjectCard';
-
 import moment from 'moment';
 
-//  TODO : get pinned repos = https://gh-pinned-repos-5l2i19um3.vercel.app/?username=mcote7;
-
-//  TODO : when scrollintoview( git_repos ) showGitRepos( set time => {opacity = 1}, 10 * idx );
+//  TODO : when scrollintoview( git_repos ) showGitRepos( set time => {opacity = 1}, 100 * idx );
 
 
 const ProjectsView = () => {
@@ -38,7 +34,7 @@ const ProjectsView = () => {
     
     <div className="pro-row">
       <div className="col-sm-12 mb-5">
-        <h2 className="mx-auto featured-projects-title">featured_projects</h2>
+        <h2 className="mx-auto featured-projects-title">👨‍💻 featured_projects</h2>
       </div>
       <div className="col-sm-12 pro-col">
         
@@ -62,7 +58,7 @@ const ProjectsView = () => {
       </div>
       
       <div className="col-sm-12 mb-5">
-        <h2 className="mx-auto git-repos-title">pinned_repos</h2>
+        <h2 className="mx-auto git-repos-title">📌 pinned_repos</h2>
       </div>
       
       {/* 📌 pinned repos */}
@@ -103,7 +99,7 @@ const ProjectsView = () => {
       
       {/* all repos : order ❔ */}
       <div className="col-sm-12 my-5">
-        <h2 id="git_repos" className="mx-auto git-repos-title">git_repos</h2>
+        <h2 id="git_repos" className="mx-auto git-repos-title">* git_repos</h2>
       </div>
       
       {GIT && GIT.map(( repo, idx ) => {
