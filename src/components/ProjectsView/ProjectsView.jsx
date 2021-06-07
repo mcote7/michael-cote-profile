@@ -71,7 +71,7 @@ const ProjectsView = () => {
               className="card git-pinned-card mb-5" 
               href={`${p_repo.link}`} 
               target="_blank" rel="noopener noreferrer">
-              <div className="octo-cat"></div>
+              <div id={`octo${index}`} className="octo-cat"></div>
               <div className="text-wrap">
                 <div className="sparkle">✨</div>
                 <div className="card-title">

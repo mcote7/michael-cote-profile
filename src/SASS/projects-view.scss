@@ -170,10 +170,28 @@
         background-repeat: no-repeat;
         background-position: 45% 55%;
         top: -2.75rem;
-        background-color: $myYellow;
+        background-color: white;
         border-radius: 50%;
         z-index: -1;
         transition: 0.2s;
+        &#octo0 {
+          background-color: $myBlue;
+        }
+        &#octo1 {
+          background-color: $myYellow;
+        }
+        &#octo2 {
+          background-color: $myPurple;
+        }
+        &#octo3 {
+          background-color: $myRed;
+        }
+        &#octo4 {
+          background-color: $myGreen;
+        }
+        &#octo5 {
+          background-color: $myOrange;
+        }
       }
       
       .text-wrap {
