@@ -59,7 +59,7 @@
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 50vh;
+  // padding-bottom: 50vh;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -321,6 +321,10 @@
         margin-top: 0.25rem;
       }
     }
+  }
+  .buffer-bottom {
+    height: 25vh;
+    width: 100%;
   }
 }
 

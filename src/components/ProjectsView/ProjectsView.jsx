@@ -18,13 +18,13 @@ const ProjectsView = () => {
     fetch('https://api.github.com/users/mcote7/repos?page=1&per_page=100', {method: 'GET'})
       .then(res => res.json())
       .then(data => {
-        // console.log("data", data)
+        // console.log("repos", data)
         setGIT(data);
       });
     fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=mcote7', {method: 'GET'})
       .then(res => res.json())
       .then(data => {
-        console.log("pinned", data)
+        // console.log("pinned", data)
         setPINNED(data);
       });
   }, []);
@@ -49,7 +49,7 @@ const ProjectsView = () => {
     </div>
     
     {/* more from git hub api */}
-    <div className="my-5 git-row">
+    <div className="mt-5 git-row">
       
       {/* 📈 stats cards */}
       <div className="col-sm-12 mb-5 git-stats">
@@ -135,6 +135,7 @@ const ProjectsView = () => {
           </div>
           );
       })}
+      <div className="buffer-bottom"></div>
     </div>
   </React.Fragment>);
 };
