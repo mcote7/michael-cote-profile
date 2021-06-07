@@ -340,14 +340,14 @@
   }
 }
 @media only screen and (max-width: 550px) {
-  .git-row {
+  // .git-row {
     
-    &::before {
-      height: 80vh;
-      background-size: 215%;
-      background-position: 100% 0%;
-    }
-  }
+  //   &::before {
+  //     height: 80vh;
+  //     background-size: 215%;
+  //     background-position: 100% 0%;
+  //   }
+  // }
   
   .git-row {
     .git-stats {
