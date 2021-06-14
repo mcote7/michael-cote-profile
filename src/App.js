@@ -65,6 +65,8 @@ const App = ({history}) => {
   const [canPlayAudio, setCanPlayAudio] = useState(false);
 
   useEffect( () => {
+    // ❕❗❕❗❕❗❕ THIS IS TO NEU SITE <-----<<<|) //
+    history.push('https://mcote7.github.io/michael-cote/');
     console.log("%cHello World", rainbowConsole);
     console.log("%cstyle", "color: chartreuse;")
     document.addEventListener('click', playAudio );
